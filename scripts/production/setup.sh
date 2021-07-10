@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install Git and Git LFS
-sudo apt install -y git
-git lfs install
+sudo apt install -y git git-lfs
+git-lfs install
 
 # Install Apache
 sudo apt install -y apache2

@@ -17,7 +17,6 @@ jobs:
         command: |
           cd ${{ secrets.REMOTE_DIRECTORY }}
           git pull origin main --quiet
-          git lfs checkout
           bash scripts/build.sh
           rm -r /var/www/html/*
           sudo cp -r public/* /var/www/html
