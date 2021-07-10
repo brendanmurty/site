@@ -1,0 +1,54 @@
+/* ---- Murty ---- */
+
+/* Header */
+
+.murty_index header h1 {
+  text-align: center;
+  float: none;
+  margin: 30px 0 10px;
+}
+
+.murty_index header h1 a {
+  border: none;
+  color: var(--secondary-colour);
+  background-color: var(--highlight-colour);
+  padding: 10px 20px;
+}
+
+/* Layout */
+
+.murty_index {
+  background: var(--background-colour);
+  color: var(--foreground-colour);
+}
+
+.murty a {
+  color: var(--highlight-colour);
+  border-color: transparent;
+}
+
+/* Lists */
+
+.listing.avatars ul, .murty_index header {
+  text-align: center;
+}
+
+.listing.avatars li {
+  margin: 0 0 50px;
+}
+
+.listing.avatars img {
+  width: 200px;
+  border-radius: 200px;
+  clear: both;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.listing.avatars .svg {
+  border-radius: 0;
+}
+
+.listing.avatars a {
+  font-size: 24px;
+}

@@ -1,0 +1,48 @@
+/* ---- Isla ---- */
+
+/* Links and text selection */
+
+.isla a,
+.isla a:active,
+.isla a:focus,
+.isla a:hover,
+.isla a:visited {
+  color: var(--highlight-colour);
+  border: none;
+}
+
+.isla ::-moz-selection,
+.isla ::selection {
+  background: var(--highlight-colour);
+  color: var(--secondary-colour);
+  text-shadow: none;
+}
+
+/* Layout */
+
+.isla {
+  background: var(--background-colour);
+  color: var(--foreground-colour);
+}
+
+.isla_index {
+  text-align: center;
+}
+
+.isla_index header h1 {
+  text-align: center;
+  float: none;
+  clear: both;
+  margin: 30px 0 10px;
+}
+
+.isla_index header h1 a,
+.isla_index header h1 a:active,
+.isla_index header h1 a:focus,
+.isla_index header h1 a:hover,
+.isla_index header h1 a:visited {
+  border: none;
+  color: var(--secondary-colour);
+  background-color: var(--highlight-colour);
+  padding: 10px 20px;
+}

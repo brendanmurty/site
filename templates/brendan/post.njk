@@ -1,0 +1,17 @@
+{% include "brendan/header.njk" %}
+<body class="brendan brendan_post">
+  <section id="container">
+    <header>
+      {% include "brendan/heading.njk" %}
+    </header>
+
+    <article>
+      <h1>{{ title }}</h1>
+
+      <p><em>{{ date | date('d LLL yyyy') }}</em></p>
+
+      {{ content | safe }}
+    </article>
+  </section>
+</body>
+{% include "brendan/footer.njk" %}

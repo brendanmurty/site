@@ -1,0 +1,17 @@
+/node_modules
+/vendor
+
+$RECYCLE.BIN/
+.DS_Store
+/.idea
+/.vscode
+.tags
+.tags_swap
+
+*.log
+
+.env
+!.env.example
+
+/building
+/public

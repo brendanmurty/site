@@ -1,0 +1,27 @@
+name: Deployment
+
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Setup checkout
+      uses: actions/checkout@v1
+    - name: Run commands on the server
+      uses: brendanmurty/github-action-ssh@release
+      with:
+        command: |
+          cd ${{ secrets.REMOTE_DIRECTORY }}
+          git pull origin main --quiet
+          git lfs checkout
+          bash scripts/build.sh
+          rm -r /var/www/html/*
+          sudo cp -r public/* /var/www/html
+          cp scripts/production/.htaccess /var/www/html
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        password: ${{ secrets.SSH_PASSWORD }}

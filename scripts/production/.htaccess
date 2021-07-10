@@ -1,0 +1,85 @@
+# General settings
+
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 500 /index.html
+
+## Brendan's domains
+
+RewriteCond %{HTTP_HOST} ^brendanmurty\.com [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^brendanmurty\.com [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
+
+RewriteCond %{HTTP_HOST} ^b\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^b\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
+
+RewriteCond %{HTTP_HOST} ^brendan\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^brendan\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
+
+RewriteCond %{HTTP_HOST} ^bmurty\.dev [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^bmurty\.dev [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
+
+RewriteCond %{HTTP_HOST} ^bmurty\.blog [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan/posts [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^bmurty\.blog [NC]
+RewriteRule ^(.*)$ https://murty.io/brendan/posts [R=301,L,END]
+
+RewriteCond %{HTTP_HOST} ^murty\.photos [NC]
+RewriteRule ^(.*)$ https://murty.io/ [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^murty\.photos [NC]
+RewriteRule ^(.*)$ https://murty.io/ [R=301,L,END]
+
+## Isla's domains
+
+RewriteCond %{HTTP_HOST} ^islamurty\.com [NC]
+RewriteRule ^(.*)$ https://murty.io/isla [R=301,L,END]
+RewriteCond %{HTTP_HOST} ^i\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/isla [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^i\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/isla [R=301,L,END]
+RewriteCond %{HTTP_HOST} ^isla\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/isla [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^isla\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/isla [R=301,L,END]
+
+## Freya's domains
+
+RewriteCond %{HTTP_HOST} ^freyamurty\.com [NC]
+RewriteRule ^(.*)$ https://murty.io/freya [R=301,L,END]
+RewriteCond %{HTTP_HOST} ^f\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/freya [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^f\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/freya [R=301,L,END]
+RewriteCond %{HTTP_HOST} ^freya\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/freya [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^freya\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/freya [R=301,L,END]
+
+## Luca's domains
+
+RewriteCond %{HTTP_HOST} ^lucamurty\.com [NC]
+RewriteRule ^(.*)$ https://murty.io/luca [R=301,L,END]
+RewriteCond %{HTTP_HOST} ^l\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/luca [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^l\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/luca [R=301,L,END]
+RewriteCond %{HTTP_HOST} ^luca\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/luca [R=301,L,END]
+RewriteCond %{HTTPS_HOST} ^luca\.murty\.io [NC]
+RewriteRule ^(.*)$ https://murty.io/luca [R=301,L,END]
+
+# Redirect HTTP requests to their HTTPS equivalent for "murty.io"
+
+RewriteCond %{HTTP_HOST} ^murty\.io [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://murty.io/$1 [R,L]

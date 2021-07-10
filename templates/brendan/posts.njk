@@ -1,0 +1,31 @@
+{% set posts = search.pages("type=post", "date=desc") %}
+{% include "brendan/header.njk" %}
+<body class="brendan brendan_posts">
+  <section id="container">
+    <header>
+      {% include "brendan/heading.njk" %}
+    </header>
+
+    <article>
+      <ul class="brendan_posts">
+      {% for post in posts %}
+      {% if post.data.url != '/brendan/posts/' %}
+        <li>
+          <span class="post-date">
+            {{ post.data.date | date('d LLL yyyy') }}
+          </span>
+          <a class="post-link" href="{{ post.data.url }}">
+            {% if post.data.title %}
+            {{ post.data.title }}
+            {% else %}
+            {{ post.url }}
+            {% endif %}
+          </a>
+        </li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+    </article>
+  </section>
+</body>
+{% include "brendan/footer.njk" %}
