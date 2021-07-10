@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2021.104
+- Code Style: Fix analytics template tabbing
+- Core: Improve JSON Feed embed
 - Version 2021.103
 - Core: Improve setup process for Unix-based systems
 - Version 2021.102
