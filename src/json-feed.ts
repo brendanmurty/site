@@ -5,7 +5,7 @@
 *
 * More information about JSON Feed is available here: https://jsonfeed.org/version/1.1
 *
-* After installing Deno, run this via the "build" script:
+* Run this via the "build" script:
 *    bash scripts/build.sh
 */
 

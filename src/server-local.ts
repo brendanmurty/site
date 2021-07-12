@@ -3,7 +3,7 @@
 * 
 * Returns static files from a local directory, defined in the ".env" file, based on web requests.
 * 
-* After installing Deno, run this via the "serve" script:
+* Run this via the "serve" script:
 *    bash scripts/serve.sh
 */
 
