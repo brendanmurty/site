@@ -1,3 +1,11 @@
+/**
+* Lume Configuration
+*
+* This file defines how the Lume site build process works for this site.
+* 
+* More information at https://lumeland.github.io/getting-started/config-file/
+*/
+
 import lume from "lume/mod.js";
 import date from "lume/plugins/date.js";
 
