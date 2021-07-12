@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2021.105
+- Core: Move JSON Feed variables to load from the ENV file
 - Version 2021.104
 - Code Style: Fix analytics template tabbing
 - Core: Improve JSON Feed embed
