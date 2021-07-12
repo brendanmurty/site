@@ -1,7 +1,7 @@
 /**
 * JSON Feed
 * 
-* Constructs JSON Feed data of Brendan's Posts and saves it to "brendan/posts.json".
+* Constructs a JSON Feed of Markdown files in a post directory and saves the output to a JSON file.
 *
 * More information about JSON Feed is available here: https://jsonfeed.org/version/1.1
 *
@@ -12,19 +12,25 @@
 import { YamlData, JsonFeedData, JsonFeedAuthor, JsonFeedItem } from "./types.ts";
 import { posix } from "https://deno.land/std/path/mod.ts";
 import { parse, parseAll, stringify } from "https://deno.land/std/encoding/yaml.ts";
+import "https://deno.land/x/dotenv/load.ts";
 
-const postsDirectory: string = "building/brendan/posts";
-const fileOutput: string = "public/brendan/posts.json";
+// Set feed properties using variables from the ".env" file
+const jsonFeedVersion: string = Deno.env.get("JSON_FEED_VERSION_URL") || "https://jsonfeed.org/version/1.1";
+const jsonFeedTitle: string = Deno.env.get("JSON_FEED_TITLE") || "";
+const jsonFeedDescription: string = Deno.env.get("JSON_FEED_DESCRIPTION") || "";
+const jsonFeedLanguage: string = Deno.env.get("JSON_FEED_LANGUAGE") || "en-GB";
+const jsonFeedAuthorName: string = Deno.env.get("JSON_FEED_AUTHOR_NAME") || ""
+const jsonFeedAuthorUrl: string = Deno.env.get("JSON_FEED_AUTHOR_URL") || ""
+const jsonFeedDefaultPostTitle: string = Deno.env.get("JSON_FEED_DEFAULT_POST_TITLE") || ""
+const postsDirectory: string = Deno.env.get("JSON_FEED_POSTS_DIR") || "";
+const fileOutput: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
+const urlPosts: string = Deno.env.get("JSON_FEED_URL_POSTS") || "";
+const urlFeed: string = Deno.env.get("JSON_FEED_URL_FEED") || "";
 
-const urlPosts: string = "https://murty.io/brendan/posts/";
-const urlFeed: string = "https://murty.io/brendan/posts.json";
+// Construct the Feed Author object
+const jsonFeedAuthor: JsonFeedAuthor = { name: jsonFeedAuthorName, url: jsonFeedAuthorUrl };
 
-const jsonFeedVersion: string = "https://jsonfeed.org/version/1.1";
-const jsonFeedTitle: string = "Posts by Brendan Murty";
-const jsonFeedDescription: string = "Brendan is Software Engineer with varied commercial experience in web-based development, mentorship, training and project management";
-const jsonFeedLanguage: string = "en-GB";
-const jsonFeedAuthor: JsonFeedAuthor = { name: "Brendan Murty", url: "https://murty.io/brendan" };
-
+// Set absolute paths for the required file-system related variables
 const postsDirectoryAbsolute = posix.join(Deno.cwd(), postsDirectory);
 const fileOutputAbsolute = posix.join(Deno.cwd(), fileOutput);
 
@@ -39,7 +45,7 @@ for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
     let postDate: string = item.name.slice(0, 4) + "-" + item.name.slice(4, 6) + "-" + item.name.slice(6, 8) + "T09:00:00.000Z";
 
     // Set a default title for this post
-    let postTitle: string = "Post by Brendan Murty";
+    let postTitle: string = jsonFeedDefaultPostTitle;
 
     // Attempt to extract the Post Title from the Markdown file's Frontmatter
     const postContent = Deno.readTextFileSync(posix.join(postsDirectoryAbsolute, item.name));
@@ -72,7 +78,7 @@ for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
     jsonFeedItems.sort((a, b) => -a.date_published.localeCompare(b.date_published));
 
     // Construct the JSON Feed contents
-    let jsonFeed: JsonFeedData = {
+    let dataJsonFeed: JsonFeedData = {
       version: jsonFeedVersion,
       title: jsonFeedTitle,
       home_page_url: urlPosts,
@@ -84,7 +90,12 @@ for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
     };
 
     // Save the JSON Feed content to the required file
-    let fileOutputWrite = Deno.writeTextFileSync(fileOutputAbsolute, JSON.stringify(jsonFeed));
-    console.log('  - Post added to JSON Feed: ' + postTitle);
+    let strJsonFeed: string = JSON.stringify(dataJsonFeed) || ""
+    let fileOutputWrite = Deno.writeTextFileSync(fileOutputAbsolute, strJsonFeed);
+    if (strJsonFeed) {
+      console.log('  - Post added to JSON Feed: ' + postTitle);
+    } else {
+      console.log('  - ERROR - could not add post to JSON Feed: ' + postTitle);
+    }
   }
 }
