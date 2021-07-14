@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2021.106
+- Docs: Detail what "_config.js" does
+- Docs: Update Deno scripts following move to a local Deno binary
 - Version 2021.105
 - Core: Move JSON Feed variables to load from the ENV file
 - Version 2021.104
