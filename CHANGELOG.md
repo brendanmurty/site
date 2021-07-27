@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2021.107
+- Brendan: Add link to Polywork profile
 - Version 2021.106
 - Docs: Detail what "_config.js" does
 - Docs: Update Deno scripts following move to a local Deno binary
