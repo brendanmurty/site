@@ -37,15 +37,21 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
         </a>
     </li>
     <li>
+        <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
+            <img alt="" height="40" width="40" class="svg" src="/svg/twitter.svg">
+            <span>Twitter</span>
+        </a>
+    </li>
+    <li>
         <a href="https://www.linkedin.com/in/brendanmurty/" title="View my LinkedIn profile">
             <img alt="" height="40" width="40" class="svg" src="/svg/linkedin.svg">
             <span>LinkedIn</span>
         </a>
     </li>
     <li>
-        <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
-            <img alt="" height="40" width="40" class="svg" src="/svg/twitter.svg">
-            <span>Twitter</span>
+        <a href="https://www.polywork.com/brendanmurty" title="View my Polywork profile">
+            <img alt="" height="40" width="40" class="svg" src="/svg/user-tie-solid.svg">
+            <span>Polywork</span>
         </a>
     </li>
     <li>
