@@ -17,7 +17,7 @@ jobs:
         command: |
           cd ${{ secrets.REMOTE_DIRECTORY }}
           git pull origin main --quiet
-          chmod +x ./scripts/bin/linux/deno
+          chmod +x ./bin/linux/deno
           bash scripts/build.sh
           rm -r /var/www/html/*
           sudo cp -r public/* /var/www/html

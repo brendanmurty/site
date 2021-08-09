@@ -3,12 +3,12 @@
 # Figure out the right Deno binary to use
 if [ "$(uname -s)" == "Linux" ]
 then
-  DENO_BIN="${BASH_SOURCE%/*}/bin/linux/deno"
+  DENO_BIN="${BASH_SOURCE%/*}/../bin/linux/deno"
 elif [ "$(uname -s)" == "Darwin" ]
 then
-  DENO_BIN="${BASH_SOURCE%/*}/bin/macos/deno"
+  DENO_BIN="${BASH_SOURCE%/*}/../bin/macos/deno"
 else
-  DENO_BIN="${BASH_SOURCE%/*}/bin/windows/deno.exe"
+  DENO_BIN="${BASH_SOURCE%/*}/../bin/windows/deno.exe"
 fi
 
 echo "Clearing the 'public' directory"
