@@ -6,7 +6,7 @@ layout: list_sites.njk
 <ul class="sites">
     <li class="first">
         <a href="/brendan">
-            <img height="200" width="200" src="/images/brendan/brendan-murty.jpg" alt="BCM" title="Visit Brendan Murty's website">
+            <img height="200" width="200" src="/images/brendan/brendan-murty-2021.jpeg" alt="BCM" title="Visit Brendan Murty's website">
             <span>Brendan Murty</span>
         </a>
     </li>
