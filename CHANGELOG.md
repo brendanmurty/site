@@ -1,5 +1,10 @@
 # Change Log
 
+- Version 2021.108
+- Core: Move Deno binaries location
+- Core: Update Deno binaries
+- Brendan: Update profile image
+- Brendan: Add link to Strava profile
 - Version 2021.107
 - Brendan: Add link to Polywork profile
 - Version 2021.106
