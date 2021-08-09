@@ -12,12 +12,12 @@ if [ "$(uname -s)" == "Linux" ]
 then
   sudo apt install -y git git-lfs
   git-lfs install
-  chmod +x ./scripts/bin/linux/deno
+  chmod +x ./bin/linux/deno
 elif [ "$(uname -s)" == "Darwin" ]
 then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   brew install git-lfs
-  chmod +x ./scripts/bin/macos/deno
+  chmod +x ./bin/macos/deno
 else
   git lfs install
 fi
