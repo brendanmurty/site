@@ -72,4 +72,10 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
             <span>Steam</span>
         </a>
     </li>
+    <li>
+        <a href="https://www.strava.com/athletes/83769199" title="View my exercise statistics">
+            <img alt="" height="40" width="40" class="svg" src="/svg/bicycle-regular.svg">
+            <span>Strava</span>
+        </a>
+    </li>
 </ul>
