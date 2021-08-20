@@ -6,8 +6,8 @@
 * More information at https://lumeland.github.io/getting-started/config-file/
 */
 
-import lume from "lume/mod.js";
-import date from "lume/plugins/date.js";
+import lume from "lume/mod.ts";
+import date from "lume/plugins/date.ts";
 
 // Convert the contents of ".env" in to YAML format and save it as "building/_data/site.yml".
 // This allows for the Nunjucks templates to access these variables like this: {{ site.FATHOM_ANALYTICS_SITE_CODE }}

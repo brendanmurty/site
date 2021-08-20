@@ -34,7 +34,7 @@ $DENO_BIN run -A --allow-read --allow-write https://deno.land/x/minifier/cli.ts 
 rm building/_assets/css/styles.css
 
 echo "Building the front-end using Lume and '_config.js'"
-$DENO_BIN run -A https://deno.land/x/lume/ci.js > build.log
+$DENO_BIN run -A https://deno.land/x/lume/ci.ts > build.log
 
 echo "Building the JSON Feed for Brendan's posts"
 $DENO_BIN run -A --allow-read --allow-write --allow-env src/json-feed.ts
