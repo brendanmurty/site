@@ -19,6 +19,7 @@ echo "Clearing the 'building' directory and recreating subdirectories"
 rm -r building
 mkdir -p building
 mkdir -p building/_data
+mkdir -p public/brendan
 cp -r assets building/_assets
 cp -r styles building/_styles
 cp -r templates building/_includes
