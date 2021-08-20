@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2021.109
+- Core: Update build process to match new Lume version
+- Core: Update Deno binaries
+- Core: Fix issue building JSON feed
 - Version 2021.108
 - Core: Move Deno binaries location
 - Core: Update Deno binaries
