@@ -1,4 +1,15 @@
 {% if site.FATHOM_ANALYTICS_SITE_CODE %}
-<link rel="preconnect" href="https://cdn.usefathom.com/">
-<script src="https://cdn.usefathom.com/script.js" data-site="{{ site.FATHOM_ANALYTICS_SITE_CODE }}" defer></script>
+<script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//stats.murty.io/tracker.js', 'fathom');
+fathom('set', 'siteId', '{{ site.FATHOM_ANALYTICS_SITE_CODE }}');
+fathom('trackPageview');
+</script>
 {% endif %}
