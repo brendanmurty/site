@@ -1,4 +1,5 @@
 {% if site.FATHOM_ANALYTICS_SITE_CODE %}
+<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 <script>
 (function(f, a, t, h, o, m){
 	a[h]=a[h]||function(){
@@ -12,4 +13,5 @@
 fathom('set', 'siteId', '{{ site.FATHOM_ANALYTICS_SITE_CODE }}');
 fathom('trackPageview');
 </script>
+<!-- / Fathom -->
 {% endif %}
