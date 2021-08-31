@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2021.110
+- Core: Use self-hosted Fathom Analytics instead
 - Version 2021.109
 - Core: Update build process to match new Lume version
 - Core: Update Deno binaries
