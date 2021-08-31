@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2021.111
+- Core: Update Deno binary properties
+- Core: Update Fathom Analytics embed code
 - Version 2021.110
 - Core: Use self-hosted Fathom Analytics instead
 - Version 2021.109
