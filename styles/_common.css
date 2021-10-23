@@ -49,7 +49,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('MDNichrome'), local('MDNichrome-Regular'), url('/fonts/MDNichrome-Regular.otf') format('otf');
+  src: local('MDNichrome'), local('MDNichrome-Regular'), url('/fonts/MDNichrome-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -57,7 +57,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('MDSystem'), local('MDSystem-Regular'), url('/fonts/MDSystem-Regular.otf') format('otf');
+  src: local('MDSystem'), local('MDSystem-Regular'), url('/fonts/MDSystem-Regular.woff') format('woff');
 }
 
 /* General */
