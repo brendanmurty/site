@@ -79,6 +79,8 @@ body {
   font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   height: 100%;
+  background-color: var(--background-colour);
+  color: var(--foreground-colour);
 }
 
 h1, h2, h3, h4 {
@@ -107,16 +109,6 @@ h3 {
   line-height: 30px;
 }
 
-h4, .brendan_resume article li strong {
-  font-size: 20px;
-  line-height: 25px;
-}
-
-h5, .brendan_resume article h4 strong {
-  font-size: 16px;
-  line-height: 25px;
-}
-
 article h1 {
   font-size: 28px;
   line-height: 42px;
@@ -125,18 +117,6 @@ article h1 {
 p {
   margin: 0 0 20px;
   clear: both;
-}
-
-a {
-  color: #00549d;
-  outline: 0;
-  text-decoration: none;
-  border-bottom: 1px solid #aaa;
-}
-
-a:active, a:focus, a:hover, a:visited {
-  color: #00549d;
-  text-decoration: none;
 }
 
 img {
@@ -158,27 +138,21 @@ li {
   margin: 0 0 6px;
 }
 
+a, a:visited, a:hover, a:focus, a:link {
+  color: var(--highlight-colour);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
 /* Alterations for specific screen sizes */
 
 @media only screen and (max-width: 600px) {
-  #container {
-    padding-bottom: 80px
-  }
-
-  nav.sites {
-    position: fixed;
-    width: 100%;
-    max-width: 100%;
-    clear: both;
-    box-sizing: border-box;
-    padding: 16px 0 0;
-    text-align: center;
-    background-color: transparent;
-    color: #000;
-    top: auto;
-    bottom: 10px;
-    left: 10px;
-  }
+  
+  
+  
 }
 
 /* Alterations for printed pages */
@@ -191,4 +165,6 @@ li {
     size: auto;
     margin: 0mm 0mm 0mm 0mm;
   }
+  
+  
 }
