@@ -27,19 +27,19 @@
   float: right;
 }
 
-.brendan ul.social {
+.brendan ul.listing {
   list-style: none;
   margin: 50px 0 25px;
+  width: 33.3%;
+  float: left;
 }
 
-.brendan ul.social li {
+.brendan ul.listing li:not(.listing-header) {
   margin: 0 0 25px;
-  float: left;
-  width: 33.3%;
   line-height: 40px;
 }
 
-.brendan ul.social img.svg {
+.brendan ul.listing img.svg {
   height: 40px;
   width: auto;
   float: left;
@@ -68,7 +68,7 @@
     height: auto;
   }
   
-  .brendan ul.social li {
+  .brendan ul.listing {
     width: 50%;
   }
 }
@@ -83,7 +83,8 @@
     height: auto;
   }
 
-  .brendan ul.social li {
+  .brendan ul.listing {
     width: 100%;
+    float: none;
   }
 }
