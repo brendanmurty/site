@@ -1,4 +1,5 @@
-article, header {
+.murty article,
+.murty header {
   width: 80%;
   padding: 25px 10%;
   margin: 0 auto;
@@ -6,31 +7,27 @@ article, header {
   min-width: 250px;
 }
 
-header h1 a {
-  color: var(--foreground-colour);
-}
-
-ul.sites {
+.murty ul.sites {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-ul.sites li {
+.murty ul.sites li {
   margin: 50px 0 0;
 }
 
-ul.sites li.first {
+.murty ul.sites li.first {
   margin-top: 0;
 }
 
-ul.sites img {
+.murty ul.sites img {
   height: 200px;
   width: 200px;
   border-radius: 200px;
 }
 
-ul.sites span {
+.murty ul.sites span {
   clear: both;
   display: block;
 }

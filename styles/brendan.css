@@ -1,0 +1,33 @@
+.brendan {
+  background: linear-gradient(180deg, #000000, #0c0c0c, #191919, #262626, #333333);
+}
+
+.brendan article,
+.brendan header {
+  width: 80%;
+  padding: 75px 10%;
+  margin: 0 auto;
+  min-width: 250px;
+}
+
+.brendan header {
+  height: 200px;
+  border-bottom: 1px solid var(--secondary-colour);
+}
+
+.brendan header h1 {
+  float: left;
+  line-height: 200px;
+  font-size: 75px;
+  margin: 0;
+}
+
+.brendan header .avatar {
+  float: right;
+}
+
+@media only screen and (max-width: 900px) {
+  
+  
+  
+}
