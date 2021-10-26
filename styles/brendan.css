@@ -39,11 +39,14 @@
   line-height: 40px;
 }
 
+.brendan ul.listing li.listing-header {
+  padding-left: 10px;
+}
+
 .brendan ul.listing img.svg {
   height: 40px;
-  width: auto;
+  width: 60px;
   float: left;
-  margin-right: 15px;
 }
 
 
@@ -69,9 +72,11 @@
   }
   
   .brendan ul.listing {
-    width: 50%;
+    width: 100%;
+    float: none;
   }
 }
+
 
 @media only screen and (max-width: 500px) {
   .brendan header h1 {
@@ -81,10 +86,5 @@
   .brendan header .avatar {
     width: 100px;
     height: auto;
-  }
-
-  .brendan ul.listing {
-    width: 100%;
-    float: none;
   }
 }
