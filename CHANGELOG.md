@@ -1,5 +1,19 @@
 # Change Log
 
+- Version 2021.112
+- Update Deno binaries
+- Improve print styles, common styles and add styles for kids
+- Improve CSS formatting, progress on print styles
+- Improve post list and PDF links, start on print styles
+- Improve alignment in social listings, simplify responsiveness there
+- Improve social listings layout
+- Add social links list styling
+- Responsive styles for some header elements
+- Progress on Brendan's styles
+- Build site listing styles
+- Fix font preloads
+- Fix font embeds
+- Start of redesign
 - Version 2021.111
 - Core: Update Deno binary properties
 - Core: Update Fathom Analytics embed code
