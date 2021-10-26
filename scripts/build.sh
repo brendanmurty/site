@@ -27,7 +27,7 @@ cp -r content/* building
 
 echo "Combining the CSS files"
 mkdir -p building/_assets/css
-cat building/_styles/_variables.css building/_styles/_common.css building/_styles/murty.css building/_styles/brendan.css > building/_assets/css/styles.css
+cat building/_styles/_variables.css building/_styles/_common.css building/_styles/murty.css building/_styles/brendan.css building/_styles/isla.css building/_styles/freya.css building/_styles/luca.css > building/_assets/css/styles.css
 
 echo "Minifying the combined CSS file"
 $DENO_BIN run -A --allow-read --allow-write https://deno.land/x/minifier/cli.ts building/_assets/css/styles.css building/_assets/css/styles.min.css > minify.log
