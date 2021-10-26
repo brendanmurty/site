@@ -49,6 +49,17 @@
   float: left;
 }
 
+ul.brendan_posts .post-date {
+  width: 115px;
+  color: var(--foreground-colour);
+  display: inline-block;
+}
+
+.brendan .pdf-download img {
+  float: left;
+  margin-right: 10px;
+}
+
 
 @media only screen and (max-width: 900px) {
   .brendan article,
@@ -74,6 +85,11 @@
   .brendan ul.listing {
     width: 100%;
     float: none;
+  }
+  
+  ul.brendan_posts .post-date {
+    display: block;
+    width: auto;
   }
 }
 
