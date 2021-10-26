@@ -157,12 +157,18 @@ header h1 a:focus {
 @media print {
   html {
     height: auto;
+    background: #fff;
+    color: #000;
   }
 
   @page {
     size: auto;
     margin: 0mm 0mm 0mm 0mm;
   }
-  
-  
+
+  body {
+    background: transparent;
+    color: #000;
+  }
+
 }
