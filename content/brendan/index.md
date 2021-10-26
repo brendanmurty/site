@@ -65,7 +65,7 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
   </li>
 </ul>
 
-<ul class="listing social">
+<ul class="listing">
   <li class="listing-header">
     <h3>Personal</h3>
   </li>
