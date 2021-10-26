@@ -1,53 +1,7 @@
-/* ---- Freya ---- */
-
-/* Links and text selection */
-
-.freya a,
-.freya a:active,
-.freya a:focus,
-.freya a:hover,
-.freya a:visited {
-  color: var(--highlight-colour);
-  border: none;
-}
-
-.freya ::-moz-selection {
-  background: var(--highlight-colour);
-  color: var(--secondary-colour);
-  text-shadow: none;
-}
-
-.freya ::selection {
-  background: var(--highlight-colour);
-  color: var(--secondary-colour);
-  text-shadow: none;
-}
-
-/* Layout */
-
 .freya {
-  background: var(--background-colour);
-  color: var(--foreground-colour);
-}
-
-.freya_index {
   text-align: center;
 }
 
-.freya_index header h1 {
-  text-align: center;
-  float: none;
-  clear: both;
-  margin: 30px 0 10px;
-}
-
-.freya_index header h1 a,
-.freya_index header h1 a:active,
-.freya_index header h1 a:focus,
-.freya_index header h1 a:hover,
-.freya_index header h1 a:visited {
-  border: none;
-  color: var(--secondary-colour);
-  background-color: var(--highlight-colour);
-  padding: 10px 20px;
+.freya .avatar-image {
+  margin-bottom: 75px;
 }
