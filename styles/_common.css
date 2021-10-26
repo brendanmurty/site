@@ -1,6 +1,5 @@
-/* ---- Common ---- */
-
 /* Reset */
+
 
 @-webkit-viewport {
   width: device-width;
@@ -42,7 +41,9 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+
 /* Fonts */
+
 
 @font-face {
   font-family: 'MDNichrome';
@@ -60,7 +61,9 @@ html {
   src: local('MDSystem'), local('MDSystem-Regular'), url('/fonts/MDSystem-Regular.woff') format('woff');
 }
 
+
 /* General */
+
 
 html {
   -webkit-text-size-adjust: none;
@@ -153,22 +156,40 @@ header h1 a:focus {
   color: var(--foreground-colour);
 }
 
-/* Alterations for printed pages */
+
+/* Print styles */
+
+
 @media print {
   html {
     height: auto;
-    background: #fff;
-    color: #000;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  body {
+    background: transparent !important;
+    color: #000 !important;
+  }
+
+  header, article {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+  }
+
+  header h1 a {
+    color: #000 !important;
+  }
+
+  header .avatar,
+  .pdf-download {
+    display: none;
   }
 
   @page {
     size: auto;
     margin: 0mm 0mm 0mm 0mm;
   }
-
-  body {
-    background: transparent;
-    color: #000;
-  }
-
 }
