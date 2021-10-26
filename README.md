@@ -1,6 +1,6 @@
 # murty.io
 
-This repository contains the website for the [Murty family](https://murty.io/). It's built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/) and [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons.
+This repository contains the website for the [Murty family](https://murty.io/). It's built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), purchased fonts from [Mass-Driver](https://mass-driver.com/) and [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons.
 
 ## Initial Setup
 

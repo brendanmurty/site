@@ -1,265 +1,113 @@
-/* ---- Brendan ---- */
-
-/* Layout */
-
-.brendan {
-  background-color: var(--background-colour);
-  color: var(--foreground-colour);
-  min-width: 350px;
-}
-
-.brendan a {
-  border-color: transparent;
-  color: var(--highlight-colour);
-}
-
-.brendan a:focus,
-.brendan a:hover {
-  border-color: var(--highlight-colour);
-}
-
-.brendan ::-moz-selection,
-.brendan ::selection {
-  background: var(--highlight-colour);
-  color: var(--secondary-colour);
-  text-shadow: none;
-}
-
-.brendan #container {
-  max-width: none;
-  width: 100%;
-}
-
-.brendan article {
-  box-sizing: border-box;
-  float: none;
-  height: 100%;
-  margin: 0 auto;
-  max-width: 1000px;
-  overflow-y: auto;
-  padding: 2%;
-  width: 100%;
-}
-
-/* Header */
-
 .brendan header {
-  padding: 2%;
-  float: left;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #000;
+  height: 200px;
 }
 
 .brendan header h1 {
-  font-size: 45px;
-  line-height: 150px;
-  height: 150px;
-  width: 100%;
-  margin: 0 auto;
-  float: none;
-  padding: 0 2%;
-  max-width: 1000px;
-  box-sizing: border-box;
-}
-
-.brendan header h1 a {
-  border-bottom: none;
-  color: var(--foreground-colour);
-  display: block;
-}
-
-.brendan header h1 .avatar {
   float: left;
-  margin-right: 30px;
-  width: 150px;
-  height: 150px;
-  border-radius: 150px;
+  line-height: 200px;
+  font-size: 65px;
+  margin: 0;
 }
 
-/* Content */
-
-.brendan_index p:first-child {
-  font-size: 28px;
-  line-height: 42px;
+.brendan header .avatar {
+  float: right;
+  border-radius: 200px;
 }
 
-ul.brendan_posts {
-  list-style: none outside none;
-  margin-left: 0;
+.brendan ul.listing {
+  list-style: none;
+  margin: 50px 0 25px;
+  width: 33.3%;
+  float: left;
 }
 
-ul.brendan_posts li {
-  margin: 0 0 10px;
+.brendan ul.listing li:not(.listing-header) {
+  margin: 0 0 25px;
+  line-height: 40px;
+}
+
+.brendan ul.listing li.listing-header {
+  padding-left: 10px;
+}
+
+.brendan ul.listing img.svg {
+  height: 40px;
+  width: 60px;
+  float: left;
 }
 
 ul.brendan_posts .post-date {
   width: 115px;
-  color: var(--secondary-colour);
+  color: var(--foreground-colour);
   display: inline-block;
 }
 
-.brendan_post article img {
-  clear: both;
-  display: block;
+.brendan .pdf-download {
+  margin: 0 0 40px;
 }
 
-.brendan h1,
-.brendan h2,
-.brendan h3,
-.brendan h4,
-.brendan h5 {
-  color: var(--foreground-colour);
-}
-
-.brendan pre,
-.brendan blockquote {
-  color: var(--secondary-colour);
-  background-color: #000;
-}
-
-.brendan article img {
-  max-width: 100%
-}
-
-/* Content lists */
-
-.brendan ul.social {
-  margin: 40px 0 0;
-}
-
-.brendan ul.social li {
-  list-style: none outside none;
+.brendan .pdf-download img {
   float: left;
-  text-align: center;
-  margin-right: 20px;
-  padding: 0;
-  width: 22%;
-  min-width: 140px;
-  height: 100px;
-  box-sizing: border-box;
+  margin-right: 10px;
 }
 
-.brendan ul.social a {
-  width: 100%;
-  float: left;
-  border: none;
-  padding: 10px;
-  line-height: 40px;
-}
 
-.brendan ul.social a span {
-  float: left;
-  margin-left: 12px;
-  border-bottom: 1px solid transparent;
-}
+/* Medium sized screen */
 
-.brendan ul.social a:focus span,
-.brendan ul.social a:hover span {
-  border-color: var(--highlight-colour);
-}
-
-.brendan ul.social img {
-  width: 40px;
-  height: 40px;
-  float: left;
-}
-
-/* Resume page */
-
-.brendan_resume p {
-  padding-left: 20px;
-}
-
-.brendan_resume blockquote {
-  background-color: transparent;
-  color: var(--secondary-colour);
-  font-style: italic;
-}
-
-.brendan_resume blockquote p {
-  padding-left: 0;
-}
-
-.brendan_resume .pdf-download .svg {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-/* Alterations for certain screen sizes */
-
-@media only screen and (max-width: 800px) {
-  .brendan ul.social li {
-    width: 30%;
+@media only screen and (max-width: 900px) {
+  .brendan article,
+  .brendan header {
+    width: 90%;
+    padding: 25px 5%;
+  }
+  
+  .brendan header {
+    height: 100px;
+  }
+  
+  .brendan header h1 {
+    line-height: 100px;
+    font-size: 50px;
   }
 
-	ul.brendan_posts .post-date {
+  .brendan header .avatar {
+    width: 100px;
+    height: auto;
+  }
+  
+  .brendan ul.listing {
+    width: 100%;
+    float: none;
+  }
+  
+  ul.brendan_posts .post-date {
     display: block;
     width: auto;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .brendan header {
-    height: 240px;
-  }
-  
+
+/* Small sized screen */
+
+
+@media only screen and (max-width: 500px) {
   .brendan header h1 {
-    line-height: 70px;
-    text-align: center;
+    font-size: 25px;
   }
 
-  .brendan header h1 .avatar {
-    clear: right;
-    display: block;
-    float: none;
-    margin: 0 auto;
-  }
-  
-  .brendan ul.social li {
-    width: 44%;
+  .brendan header .avatar {
+    width: 100px;
+    height: auto;
   }
 }
 
+
 /* Print styles */
 
+
 @media print {
-  .brendan,
-  .brendan header h1 a,
-  .brendan h1,
-  .brendan h2,
-  .brendan h3,
-  .brendan h4,
-  .brendan h5,
-  .brendan_resume article * {
-    color: #000 !important;
-    background: transparent !important;
-  }
-
-  .brendan_resume {
-    overflow-x: hidden;
-  }
-
-  .brendan_resume article {
-    margin: 0;
-    padding: 0 2%;
-    width: 100%;
-  }
-
-  .brendan_resume article a:after {
-    content: " " attr(href) " ";
-    font-size: 0.75em;
-    font-weight: normal;
-    font-style: italic;
-  }
-
-  .brendan_resume article blockquote {
-    width: 70%;
-    max-width: 70%;
-  }
-  
-  .brendan_resume .pdf-download {
-    display: none;
+  .brendan header {
+    height: auto;
+    border: 0 none;
   }
 }
