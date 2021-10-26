@@ -36,9 +36,18 @@
   float: left;
 }
 
+ul.brendan_posts {
+  list-style: none;
+  margin-left: 0;
+}
+
+ul.brendan_posts li {
+  margin-bottom: 20px
+}
+
 ul.brendan_posts .post-date {
-  width: 115px;
-  color: var(--foreground-colour);
+  width: 125px;
+  color: var(--secondary-colour);
   display: inline-block;
 }
 

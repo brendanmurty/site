@@ -142,6 +142,7 @@ p {
 img {
   height: auto;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 ol {
