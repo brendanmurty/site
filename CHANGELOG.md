@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2021.113
+- Fix max image widths, improve post list styling
 - Version 2021.112
 - Update Deno binaries
 - Improve print styles, common styles and add styles for kids
