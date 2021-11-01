@@ -38,7 +38,13 @@ Improved a legacy in-house CMS by adding a new dynamic content plugin system.
 
 ## Work Experience
 
-### Software Engineer at [Deputy](https://www.deputy.com) (Feb 2021 - Present)
+### Senior Software Engineer at [Deputy](https://www.deputy.com) (Jul 2021 - Present)
+
+I build features on top of Deputy’s core product, build reports and add custom features for our clients.
+
+I also help to drive progress on internal technical projects and consider how to make our implementations scalable and reusable.
+
+### Software Engineer at [Deputy](https://www.deputy.com) (Feb 2021 - Jun 2021)
 
 I build features on top of Deputy's core product, build reports and add custom features for our clients.
 
