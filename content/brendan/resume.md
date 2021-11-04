@@ -12,7 +12,7 @@ layout: brendan/page.njk
 
 ## Summary
 
-I am a Software Engineer with varied commercial experience in web-based software development, mentorship, training and project management. I have created complex systems using various programming languages, front-end frameworks and back-end platforms. I have a passion to continually learn improved methods and techniques.
+I am a Senior Software Engineer with varied commercial experience in web-based software development, mentorship, training and project management. I have created complex systems using various programming languages, front-end frameworks and back-end platforms. I have a passion to continually learn improved methods and techniques.
 
 ## Contact
 
