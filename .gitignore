@@ -3,8 +3,11 @@
 
 $RECYCLE.BIN/
 .DS_Store
+
 /.idea
 /.vscode
+/.vs
+
 .tags
 .tags_swap
 
