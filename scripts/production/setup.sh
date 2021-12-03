@@ -13,8 +13,6 @@ sudo a2enmod headers
 sudo a2enmod ssl
 sudo service apache2 restart
 rm /var/www/html/index.html
-sudo cp ~/site/scripts/production/000-default.conf /etc/apache2/sites-enabled/
-sudo cp ~/site/scripts/production/default_ssl.conf /etc/apache2/sites-enabled/
 cp ~/site/scripts/production/.htaccess /var/www/html
 
 # Build the site in to the "public" directory
@@ -30,6 +28,8 @@ sudo cp ~/site/.env /var/www/html
 sudo snap install core
 sudo snap refresh core
 sudo snap install --classic certbot
+touch /etc/letsencrypt/options-ssl-apache.conf
+mkdir -p /etc/letsencrypt/live/www.murty.io/
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 # Create SSL certificates for the required domains
