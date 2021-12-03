@@ -32,6 +32,5 @@ site.copy("_assets/pdf", "pdf");
 site.copy("_assets/svg", "svg");
 site.copy("_assets/favicon.ico", "favicon.ico");
 site.copy("_assets/robots.txt", "robots.txt");
-site.copy("building/brendan/posts.json", "brendan/posts.json");
 
 export default site;
