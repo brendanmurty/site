@@ -16,16 +16,16 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
     <h3>Pages</h3>
   </li>
   <li>
-      <a href="/brendan/posts" title="View my Posts">
-          <img alt="" class="svg" src="/svg/file-alt.svg">
-          <span>Posts</span>
-      </a>
+    <a href="/brendan/posts" title="View my Posts">
+      <img alt="" class="svg" src="/svg/file-alt.svg">
+      <span>Posts</span>
+    </a>
   </li>
   <li>
-      <a href="/brendan/resume" title="View my Resume">
-          <img alt="" class="svg" src="/svg/briefcase.svg">
-          <span>Resume</span>
-      </a>
+    <a href="/brendan/resume" title="View my Resume">
+      <img alt="" class="svg" src="/svg/briefcase.svg">
+      <span>Resume</span>
+    </a>
   </li>
 </ul>
 
