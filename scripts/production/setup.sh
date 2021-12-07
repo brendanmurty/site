@@ -15,6 +15,7 @@ sudo service apache2 restart
 rm /var/www/html/index.html
 cp ~/site/scripts/production/.htaccess /var/www/html
 sudo cp ~/site/scripts/production/apache.conf /etc/apache2/sites-enabled/000-default.conf
+sudo cp ~/site/scripts/production/apache-ssl.conf /etc/apache2/sites-enabled/default_ssl.conf
 sudo service apache2 restart
 
 # Build the site in to the "public" directory
