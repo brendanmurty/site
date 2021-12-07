@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2021.118
+- Maintenance: Fix tabbing in links list
+- Content: Update description tag content values
 - Version 2021.117
 - Scripts: Update production Apache SSL configuration process
 - Scripts: Update production Apache configuration process
