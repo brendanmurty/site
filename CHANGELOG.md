@@ -1,5 +1,15 @@
 # Change Log
 
+- Version 2021.117
+- Scripts: Update production Apache SSL configuration process
+- Scripts: Update production Apache configuration process
+- Scripts: Revert change to build process order
+- Scripts: Remove duplicated file copy step
+- Scripts: Update build process order
+- Core: Remove another obsolete Apache config file
+- Core: Remove obsolete Apache config file
+- Scripts: Update production setup process
+- Core: Improve Git Ignore configuration
 - Version 2021.116
 - Brendan: Update job title
 - Version 2021.115
