@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2021.121
+- Brendan: Add page titles to tag list pages
 - Version 2021.120
 - Brendan: Add tag lists to post pages, update related styling
 - Brendan: Add tag list pages, update page titles
