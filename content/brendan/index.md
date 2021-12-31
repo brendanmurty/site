@@ -1,5 +1,4 @@
 ---
-title: Brendan Murty
 layout: brendan/index.njk
 ---
 

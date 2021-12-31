@@ -1,4 +1,4 @@
 ---
-title: Posts - Brendan Murty
+title: Posts
 layout: brendan/posts.njk
 ---
