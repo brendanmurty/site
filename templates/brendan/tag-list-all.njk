@@ -18,10 +18,11 @@
 
     <article>
       <h2>Tags</h2>
-      <ul class="brendan_tags">
+      <ul class="tag-list">
       {% for tag in tags %}
         <li>
-          <a class="tag-link" href="/brendan/tags/{{ tag }}">
+          <a class="tag-link" href="/brendan/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
+            <img alt="" class="svg" src="/svg/tag-solid.svg" width="15">
             {{ tag }}
           </a>
         </li>

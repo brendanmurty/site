@@ -60,6 +60,30 @@ ul.brendan_posts .post-date {
   margin-right: 10px;
 }
 
+.brendan .tag-list {
+  margin: 0 0 20px;
+  float: left;
+}
+
+.brendan_tags .tag-list {
+  float: none;
+}
+
+.brendan .tag-list li {
+  float: left;
+  list-style: none outside none;
+  margin: 0 25px 0 0;
+}
+
+.brendan_tags .tag-list li {
+  float: none;
+  margin: 0 0 20px;
+}
+
+.brendan .tag-link .svg {
+  width: 15px;
+  margin-right: 5px;
+}
 
 /* Medium sized screen */
 
