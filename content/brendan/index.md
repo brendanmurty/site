@@ -21,6 +21,12 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
     </a>
   </li>
   <li>
+    <a href="/brendan/tags" title="View my Tags">
+      <img alt="" class="svg" src="/svg/tags-solid.svg">
+      <span>Tags</span>
+    </a>
+  </li>
+  <li>
     <a href="/brendan/resume" title="View my Resume">
       <img alt="" class="svg" src="/svg/briefcase.svg">
       <span>Resume</span>
