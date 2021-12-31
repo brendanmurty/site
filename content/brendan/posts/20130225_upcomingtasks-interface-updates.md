@@ -1,6 +1,8 @@
 ---
 title: UpcomingTasks interface updates
 date: 2013-02-25
+tags:
+  - UpcomingTasks
 ---
 
 [UpcomingTasks](http://upcomingtasks.com) has received some interface updates today, the most obvious of which is the new menu, which uses vertical space more effectively than the previous design. Just press on the page title to toggle the menu.

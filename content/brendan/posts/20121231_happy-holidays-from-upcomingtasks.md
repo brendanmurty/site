@@ -1,6 +1,8 @@
 ---
 title: Happy Holidays from UpcomingTasks
 date: 2012-12-31
+tags:
+  - UpcomingTasks
 ---
 
 It's the holiday season and I've had more time to work on [UpcomingTasks](http://upcomingtasks.com/), so some improvements have been made over the last few weeks. These updates are applied automatically and all users receive them free of any charge.

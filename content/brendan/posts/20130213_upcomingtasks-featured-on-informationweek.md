@@ -1,6 +1,8 @@
 ---
 title: UpcomingTasks featured on InformationWeek
 date: 2013-02-13
+tags:
+  - UpcomingTasks
 ---
 
 InformationWeek, a blog about small and midsize business technology, has featured [UpcomingTasks](http://upcomingtasks.com) in a recent article about Basecamp add-ons.
