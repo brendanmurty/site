@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2021.119
+- Brendan: Improve page titles
+- Core: Update Deno binaries
 - Version 2021.118
 - Maintenance: Fix tabbing in links list
 - Content: Update description tag content values
