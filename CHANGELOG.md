@@ -1,5 +1,10 @@
 # Change Log
 
+- Version 2021.120
+- Brendan: Add tag lists to post pages, update related styling
+- Brendan: Add tag list pages, update page titles
+- Brendan: Add tag list page
+- Brendan: Add tags to current posts
 - Version 2021.119
 - Brendan: Improve page titles
 - Core: Update Deno binaries
