@@ -1,6 +1,8 @@
 ---
 title: UpcomingTasks progress view
 date: 2013-02-22
+tags:
+  - UpcomingTasks
 ---
 
 Check out your recent Basecamp 2 updates with the new progress view in [UpcomingTasks](http://upcomingtasks.com). View recently edited or completed tasks and also view your comments. To begin, simply press the progress bar icon from the homepage.

@@ -1,6 +1,8 @@
 ---
 title: UpcomingTasks updated to include more options for editing tasks
 date: 2013-04-13
+tags:
+  - UpcomingTasks
 ---
 
 Along with some general bug fixes and performance improvements, I've also improved the edit task interface today.

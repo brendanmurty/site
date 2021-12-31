@@ -1,6 +1,8 @@
 ---
 title: Website performance tips
 date: 2013-06-07
+tags:
+  - Performance
 ---
 
 [Colt McAnlis](https://twitter.com/duhroach) gave an insightful talk recently named *Performance Checklist for the Mobile Web* ([Video](http://www.youtube.com/watch?v=0UNWi7FA36M), [Slides](http://mainroach.appspot.com/docs/PCMW.pdf)), where he explains:

@@ -1,6 +1,8 @@
 ---
 title: More Than Writing Code
 date: 2013-12-17
+tags:
+  - Development
 ---
 
 Looking to further my knowledge in my web development career, I recently bought [Effective Programming: More Than Writing Code](http://www.amazon.com/Effective-Programming-More-Than-Writing-ebook/dp/B008HUMTO0) by [Jeff Atwood](https://twitter.com/codinghorror).

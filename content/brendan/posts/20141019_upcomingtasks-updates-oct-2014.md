@@ -1,6 +1,8 @@
 ---
 title: UpcomingTasks Updates in October 2014
 date: 2014-10-19
+tags:
+  - UpcomingTasks
 ---
 
 I've made a few updates to UpcomingTasks over the last month, here's a quick rundown on what's changed.
