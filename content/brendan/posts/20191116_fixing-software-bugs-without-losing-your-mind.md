@@ -1,6 +1,10 @@
 ---
 title: Fixing software bugs without losing your mind
 date: 2019-11-16
+tags:
+  - Development
+  - Debugging
+  - Mental Health
 ---
 
 No matter what we do to avoid them, [all software has bugs](https://m.signalvnoise.com/software-has-bugs-this-is-normal/).

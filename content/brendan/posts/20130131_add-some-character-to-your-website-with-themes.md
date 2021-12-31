@@ -1,6 +1,9 @@
 ---
 title: Add some character to your website with themes
 date: 2013-01-31
+tags:
+  - PHP
+  - CSS
 ---
 
 It's easy to add themes to your website and allow your visitors to customise their experience. This post will guide you through implementing theme support on your website using [PHP](http://php.net/), [CSS](http://en.wikipedia.org/wiki/Cascading_Style_Sheets) and [cookies](http://en.wikipedia.org/wiki/HTTP_cookie).

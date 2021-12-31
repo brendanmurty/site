@@ -1,6 +1,8 @@
 ---
 title: UpcomingTasks on Basecamp Website
 date: 2012-10-16
+tags:
+  - UpcomingTasks
 ---
 
 Check out [UpcomingTasks](http://upcomingtasks.com) on the [Basecamp 2 Extras](https://basecamp.com/2/extras) page!

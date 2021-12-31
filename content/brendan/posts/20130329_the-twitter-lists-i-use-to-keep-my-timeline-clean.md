@@ -1,6 +1,8 @@
 ---
 title: The Twitter lists I use to keep my timeline clean
 date: 2013-03-29
+tags:
+  - Social
 ---
 
 When you've been using [Twitter](https://twitter.com/) for a while, you start to realise that if you follow every account that you're interested in, your timeline quickly becomes quite confusing and busy. I prefer to follow the people that I know personally or those who have very similar interests to my own.
