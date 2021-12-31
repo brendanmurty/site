@@ -10,6 +10,17 @@
 
       <p><em>{{ date | date('d LLL yyyy') }}</em></p>
 
+      <ul class="tag-list">
+        {% for tag in tags %}
+        <li>
+          <a class="tag-link" href="/brendan/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
+            <img alt="" class="svg" src="/svg/tag-solid.svg" width="15">
+            {{ tag }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
       {{ content | safe }}
     </article>
   </section>
