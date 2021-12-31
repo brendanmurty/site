@@ -1,0 +1,33 @@
+{% set posts = search.pages("type=post", "date=desc") %}
+{% set tags = [] %}
+{% for post in posts %}
+{% if post.data.tags %}
+{% for tag in post.data.tags %}
+{% if tag not in tags %}
+{% set tags = (tags.push(tag), tags) %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% include "brendan/header.njk" %}
+<body class="brendan brendan_tags">
+  <section class="container">
+    <header>
+      {% include "brendan/heading.njk" %}
+    </header>
+
+    <article>
+      <h2>Tags</h2>
+      <ul class="brendan_tags">
+      {% for tag in tags %}
+        <li>
+          <a class="tag-link" href="/brendan/tag/{{ tag }}">
+            {{ tag }}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </article>
+  </section>
+</body>
+{% include "brendan/footer.njk" %}
