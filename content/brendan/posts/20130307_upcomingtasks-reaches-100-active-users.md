@@ -1,6 +1,8 @@
 ---
 title: UpcomingTasks reaches 100 active users!
 date: 2013-03-07
+tags:
+  - UpcomingTasks
 ---
 
 I'm very proud of my humble little web app, [UpcomingTasks](http://upcomingtasks.com/), as it's just reached 100 active users!

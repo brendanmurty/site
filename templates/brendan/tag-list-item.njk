@@ -1,13 +1,14 @@
-{% set posts = search.pages("type=post", "date=desc") %}
+{% set tag = url | replace("/brendan/tags/", "") | replace("/", "") %}
+{% set posts = search.pages(tag + " type=post", "date=desc") %}
 {% include "brendan/header.njk" %}
-<body class="brendan brendan_posts">
+<body class="brendan brendan_tag">
   <section class="container">
     <header>
       {% include "brendan/heading.njk" %}
     </header>
 
     <article>
-      <h2>Posts</h2>
+      <h2><a href="/brendan/tags">Tags</a> > {{ tag }}</h2>
       <ul class="brendan_posts">
       {% for post in posts %}
       {% if post.data.url != '/brendan/posts/' %}

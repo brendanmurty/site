@@ -1,6 +1,8 @@
 ---
 title: Blurb content
 date: 2013-02-15
+tags:
+  - PHP
 ---
 
 Need to shorten some content so it fits in a small area? My *blurb* function will shorten any content to the given number of characters.
