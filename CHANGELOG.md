@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.001
+- Brendan: Add "Buy me a coffee" link and sponsorship option
+- Core: Update Deno binaries
 - Version 2021.121
 - Brendan: Add page titles to tag list pages
 - Version 2021.120
