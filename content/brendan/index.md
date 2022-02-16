@@ -75,6 +75,12 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
     <h3>Personal</h3>
   </li>
   <li>
+    <a href="https://www.buymeacoffee.com/brendanmurty" title="Buy me a coffee">
+      <img alt="" class="svg" src="/svg/mug-hot.svg">
+      <span>Buy me a coffee</span>
+    </a>
+  </li>
+  <li>
     <a href="https://www.last.fm/user/brendanmurty" title="Review my favourite music">
       <img alt="" class="svg" src="/svg/lastfm-square-brands.svg">
       <span>Last.fm</span>
