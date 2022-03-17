@@ -27,4 +27,4 @@ All users will still be able to access and modify their Basecamp data at [baseca
 
 ## Who should you contact if you have any questions?
 
-If you have any questions about this, please feel free to email me directly at [brendan@murty.email](mailto:brendan@murty.email)
+If you have any questions about this, please feel free to email me directly at [b@murty.io](b@murty.io)
