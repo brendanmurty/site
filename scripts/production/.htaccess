@@ -24,21 +24,6 @@ RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
 RewriteCond %{HTTPS_HOST} ^brendan\.murty\.io [NC]
 RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
 
-RewriteCond %{HTTP_HOST} ^bmurty\.dev [NC]
-RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
-RewriteCond %{HTTPS_HOST} ^bmurty\.dev [NC]
-RewriteRule ^(.*)$ https://murty.io/brendan [R=301,L,END]
-
-RewriteCond %{HTTP_HOST} ^bmurty\.blog [NC]
-RewriteRule ^(.*)$ https://murty.io/brendan/posts [R=301,L,END]
-RewriteCond %{HTTPS_HOST} ^bmurty\.blog [NC]
-RewriteRule ^(.*)$ https://murty.io/brendan/posts [R=301,L,END]
-
-RewriteCond %{HTTP_HOST} ^murty\.photos [NC]
-RewriteRule ^(.*)$ https://murty.io/ [R=301,L,END]
-RewriteCond %{HTTPS_HOST} ^murty\.photos [NC]
-RewriteRule ^(.*)$ https://murty.io/ [R=301,L,END]
-
 ## Isla's domains
 
 RewriteCond %{HTTP_HOST} ^islamurty\.com [NC]
