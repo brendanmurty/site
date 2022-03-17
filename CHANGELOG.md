@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.004
+- Brendan: Update baby posts
+- Core: Remove unused domains from config files
 - Version 2022.003
 - Brendan: Update UpcomingTasks links
 - Core: Remove unused domains
