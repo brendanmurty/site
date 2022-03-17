@@ -5,7 +5,7 @@ tags:
   - UpcomingTasks
 ---
 
-[UpcomingTasks](http://upcomingtasks.com) has received some interface updates today, the most obvious of which is the new menu, which uses vertical space more effectively than the previous design. Just press on the page title to toggle the menu.
+[UpcomingTasks](/brendan/posts/20161014_farewell-upcomingtasks) has received some interface updates today, the most obvious of which is the new menu, which uses vertical space more effectively than the previous design. Just press on the page title to toggle the menu.
 
 ![Open menu](/images/brendan/interface-menu.png)
 *The new menu in it's open state*
