@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.003
+- Brendan: Update UpcomingTasks links
+- Core: Remove unused domains
 - Version 2022.002
 - Core: Remove analytics
 - Version 2022.001
