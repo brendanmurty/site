@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.005
+- Core: Add new domains
 - Version 2022.004
 - Brendan: Update baby posts
 - Core: Remove unused domains from config files
