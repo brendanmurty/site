@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.006
+- Revert "Core: Remove analytics"
+- Core: Update Deno binaries
 - Version 2022.005
 - Core: Add new domains
 - Version 2022.004
