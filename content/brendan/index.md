@@ -39,7 +39,7 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
     <h3>Work</h3>
   </li>
   <li>
-    <a href="mailto:b@murty.io" title="Send me an email at b@murty.io">
+    <a href="mailto:brendan@murty.au" title="Send me an email at brendan@murty.au">
       <img alt="" class="svg" src="/svg/envelope.svg">
       <span>Email</span>
     </a>
