@@ -18,7 +18,7 @@ I am a Senior Software Engineer with varied commercial experience in web-based s
 
 Email: [brendan@murty.au](mailto:brendan@murty.au)
 
-Website: [b.murty.au](https://b.murty.au)
+Website: [brendan.murty.au](https://brendan.murty.au)
 
 GitHub: [brendanmurty](https://github.com/brendanmurty)
 
