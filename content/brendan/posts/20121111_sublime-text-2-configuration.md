@@ -13,7 +13,7 @@ However, I'm a big fan of customising a tool to meet my specific needs, so I tho
 * [Sublime <span class="caps">SFTP</span>](http://wbond.net/sublime_packages/sftp) - A feature rich <span class="caps">FTP</span> plugin (free trial, $16)
 * [Soda theme](https://github.com/buymeasoda/soda-theme/) - Improve the look of the interface, includes light and dark variations<li>[Droid Sans Mono](http://damieng.com/blog/2007/11/14/droid-sans-mono-great-coding-font) - Font suitable for programming
 * [RailsCasts colour scheme](http://railscasts.com/about) - Light on dark colour scheme
-* [Customised preferences](http://b.murty.io/blog/assets/2012/11/MurtyPreferences.sublime-settings) - My customisations including disabling autocomplete and code folding
+* [Customised preferences](https://github.com/brendanmurty/dotfiles/tree/main/sublime-text) - My customisations including disabling autocomplete and code folding
 </ul>
 
 Any thoughts on this? I'd love to hear them! [Send me a Tweet](https://twitter.com/brendanmurty) to start the discussion.
