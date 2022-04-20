@@ -1,5 +1,12 @@
 # Change Log
 
+- Version 2022.011
+- Core: Update links following repository rename
+- Brendan: Update RSS feed URL
+- Brendan: Update old link
+- Core: Update email address reference
+- Docs: Update email in security reporting section
+- Brendan: Update resume PDF
 - Version 2022.010
 - Core: More domain and email updates
 - Version 2022.009
