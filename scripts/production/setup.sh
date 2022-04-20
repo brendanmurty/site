@@ -35,5 +35,5 @@ touch /etc/letsencrypt/options-ssl-apache.conf
 mkdir -p /etc/letsencrypt/live/www.murty.io/
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
-# Create SSL certificates for the required domains
-sudo certbot certonly --apache -d www.murty.io -d murty.io -d brendan.murty.io -d b.murty.io -d freya.murty.io -d f.murty.io -d isla.murty.io -d i.murty.io -d git.murty.io -d gallery.murty.io -d photos.murty.io -d brendanmurty.com -d www.brendanmurty.com -d freyamurty.com -d www.freyamurty.com -d islamurty.com -d www.islamurty.com -d lucamurty.com -d www.lucamurty.com -d l.murty.io -d luca.murty.io -d murty.id.au -d www.murty.id.au -d murty.au -d www.murty.au
+# Create SSL certificate for the required domains
+sudo certbot certonly --apache -d www.murty.io -d murty.io -d brendan.murty.io -d b.murty.io -d freya.murty.io -d f.murty.io -d isla.murty.io -d i.murty.io -d git.murty.io -d gallery.murty.io -d photos.murty.io -d brendanmurty.com -d www.brendanmurty.com -d freyamurty.com -d www.freyamurty.com -d islamurty.com -d www.islamurty.com -d lucamurty.com -d www.lucamurty.com -d l.murty.io -d luca.murty.io -d murty.id.au -d www.murty.id.au -d murty.au -d www.murty.au -d brendan.murty.au -d b.murty.au -d freya.murty.au -d f.murty.au -d isla.murty.au -d i.murty.au -d git.murty.au -d gallery.murty.au -d photos.murty.au
