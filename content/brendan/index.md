@@ -12,7 +12,7 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
 
 <ul class="listing">
   <li class="listing-header">
-    <h3>Pages</h3>
+    <h2>Pages</h2>
   </li>
   <li>
     <a href="/brendan/posts" title="View my Posts">
@@ -36,7 +36,7 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
 
 <ul class="listing">
   <li class="listing-header">
-    <h3>Work</h3>
+    <h2>Work</h2>
   </li>
   <li>
     <a href="mailto:brendan@murty.au" title="Send me an email at brendan@murty.au">
@@ -72,7 +72,7 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
 
 <ul class="listing">
   <li class="listing-header">
-    <h3>Personal</h3>
+    <h2>Personal</h2>
   </li>
   <li>
     <a href="https://www.buymeacoffee.com/brendanmurty" title="Buy me a coffee">
