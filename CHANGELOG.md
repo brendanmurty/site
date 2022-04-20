@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.009
+- Core: Fix some heading levels
 - Version 2022.008
 - Core: Update SSL setup command
 - Version 2022.007
