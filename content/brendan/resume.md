@@ -50,7 +50,7 @@ I build features on top of Deputy's core product, build reports and add custom f
 
 I also build custom integrations with third-party systems.
 
-### Dad at [Home](https://murty.io) (Nov 2020 - Feb 2021)
+### Dad at [Home](https://murty.au) (Nov 2020 - Feb 2021)
 
 Following the birth of my third child, I took some time off work to spend more time with family.
 
