@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.010
+- Core: More domain and email updates
 - Version 2022.009
 - Core: Fix some heading levels
 - Version 2022.008
