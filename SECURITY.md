@@ -6,7 +6,7 @@ The most recent [tagged commit](https://github.com/brendanmurty/murty.io/tags) i
 
 ## Reporting a Vulnerability
 
-To report a security issue, please email [b@murty.io](mailto:b@murty.io) and include as much information as you can.
+To report a security issue, please email [brendan@murty.au](mailto:brendan@murty.au) and include as much information as you can.
 
 I will review each submission and may respond to the email if needed.
 
