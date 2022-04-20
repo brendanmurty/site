@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.008
+- Core: Update SSL setup command
 - Version 2022.007
 - Brendan: Update resume
 - Core: Change main domain to murty.au
