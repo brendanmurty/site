@@ -34,4 +34,4 @@ echo -e "${blue}Pushing the changes up...${end}"
 git push --quiet
 git push --tags --quiet
 
-echo -e "${blue}The deployment process will now continue here: https://github.com/brendanmurty/murty.io/actions ${end}"
+echo -e "${blue}The deployment process will now continue here: https://github.com/brendanmurty/murty-website/actions ${end}"
