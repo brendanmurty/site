@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2022.007
+- Brendan: Update resume
+- Core: Change main domain to murty.au
+- Docs: Fix wording in security policy
 - Version 2022.006
 - Revert "Core: Remove analytics"
 - Core: Update Deno binaries
