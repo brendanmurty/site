@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.012
+- Core: Add support for customised Fathom Analytics script URL
 - Version 2022.011
 - Core: Update links following repository rename
 - Brendan: Update RSS feed URL
