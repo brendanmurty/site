@@ -26,19 +26,18 @@ LinkedIn: [brendanmurty](https://www.linkedin.com/in/brendanmurty)
 
 ## Key Achievements
 
-Managed a development team of varied skill levels, scoped out suitable tasks for each developer and guided them to complete those tasks.
-
-Documented a complicated release process so that it could be completed by any developer in a remote team.
-
-Led development on a complicated Ecommerce site with a short deadline and varied advanced features while integrating a third-party shipping and tax management plugin.
-
-Released a third-party Basecamp 2 client with a focus on quick use via mobile devices.
-
-Improved a legacy in-house CMS by adding a new dynamic content plugin system.
+- Furthered internal knowledge and engineering processes for a complex legacy data importing system while ensuring that incoming requests matched the supported features of the system.
+- Took ownership of a challenging internal documentation generation process by scoping out tasks, detailing technical requirements, selecting a different programming language to encourage learning in the team and ensuring that all engineers in the team could effectively contribute to the project.
+- Built a modular system for a common customer problem to lower code duplication and to allow other customers to benefit from existing engineering work.
+- Managed a development team of varied skill levels, scoped out suitable tasks for each developer and guided them to complete those tasks.
+- Documented a complicated release process so that it could be completed by any developer in a remote team.
+- Led development on a complicated Ecommerce site with a short deadline and varied advanced features while integrating a third-party shipping and tax management plugin.
+- Released a third-party Basecamp 2 client with a focus on quick use via mobile devices.
+- Improved a legacy in-house CMS by adding a new dynamic content plugin system.
 
 ## Work Experience
 
-### Senior Software Engineer at [Deputy](https://www.deputy.com) (Jul 2021 - Present)
+### Senior Software Engineer at [Deputy](https://www.deputy.com) (Jul 2021 - May 2022)
 
 I build features on top of Deputy’s core product, build reports and add custom features for our clients.
 
