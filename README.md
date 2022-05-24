@@ -51,9 +51,11 @@ bash scripts/build.sh
 
 #### Setup
 
-Navigate to your forked repository on GitHub, then go to `Settings > Secrets > Actions`.
+Navigate to your forked repository on GitHub, then go to `Settings > Environments`.
 
-Then add some new Repository Secrets:
+Create a new Environment named `deploy`.
+
+Then add some new Environment Secrets to the `deploy` Environment:
 
 - SSH Host:
   - Name: `SSH_HOST`
