@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.018
+- Core: Add deployment badge
 - Version 2022.017
 - Docs: Update deployment setup process
 - Core: Remove obsolete gitattributes file
