@@ -10,9 +10,9 @@
 */
 
 import { YamlData, JsonFeedData, JsonFeedAuthor, JsonFeedItem } from "./types.ts";
-import { posix } from "https://deno.land/std/path/mod.ts";
-import { parse, parseAll, stringify } from "https://deno.land/std/encoding/yaml.ts";
-import "https://deno.land/x/dotenv/load.ts";
+import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
+import { parse } from "https://deno.land/std@0.140.0/encoding/yaml.ts";
+import "https://deno.land/x/dotenv@v3.2.0/load.ts";
 
 // Set feed properties using variables from the ".env" file
 const jsonFeedVersion: string = Deno.env.get("JSON_FEED_VERSION_URL") || "https://jsonfeed.org/version/1.1";
@@ -34,15 +34,15 @@ const jsonFeedAuthor: JsonFeedAuthor = { name: jsonFeedAuthorName, url: jsonFeed
 const postsDirectoryAbsolute = posix.join(Deno.cwd(), postsDirectory);
 const fileOutputAbsolute = posix.join(Deno.cwd(), fileOutput);
 
-let jsonFeedItems: JsonFeedItem[] = [];
+const jsonFeedItems: JsonFeedItem[] = [];
 
 // Loop through all the files in the post directory
 for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
   // Check this item is a valid file
   if (item.isFile && item.name != "index.md" && item.name.slice(-3) == ".md") {
     // Extract general information from this file's name
-    let postUrl: string = urlPosts + item.name.slice(0, -3) + "/";
-    let postDate: string = item.name.slice(0, 4) + "-" + item.name.slice(4, 6) + "-" + item.name.slice(6, 8) + "T09:00:00.000Z";
+    const postUrl: string = urlPosts + item.name.slice(0, -3) + "/";
+    const postDate: string = item.name.slice(0, 4) + "-" + item.name.slice(4, 6) + "-" + item.name.slice(6, 8) + "T09:00:00.000Z";
 
     // Set a default title for this post
     let postTitle: string = jsonFeedDefaultPostTitle;
@@ -54,8 +54,8 @@ for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
       const frontmatterEnd = postContent.indexOf("---", 3);
 
       if (frontmatterEnd !== -1) {
-        let frontmatterData = parse(postContent.slice(3, frontmatterEnd)) as YamlData | undefined;
-        
+        const frontmatterData = parse(postContent.slice(3, frontmatterEnd)) as YamlData | undefined;
+
         if (frontmatterData) {
           postTitle = frontmatterData.title as string;
         }
@@ -63,7 +63,7 @@ for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
     }
 
     // Construct this post's item array
-    let jsonFeedItem: JsonFeedItem = {
+    const jsonFeedItem: JsonFeedItem = {
       id: postUrl,
       url: postUrl,
       title: postTitle,
@@ -78,7 +78,7 @@ for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
     jsonFeedItems.sort((a, b) => -a.date_published.localeCompare(b.date_published));
 
     // Construct the JSON Feed contents
-    let dataJsonFeed: JsonFeedData = {
+    const dataJsonFeed: JsonFeedData = {
       version: jsonFeedVersion,
       title: jsonFeedTitle,
       home_page_url: urlPosts,
@@ -90,8 +90,8 @@ for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
     };
 
     // Save the JSON Feed content to the required file
-    let strJsonFeed: string = JSON.stringify(dataJsonFeed) || ""
-    let fileOutputWrite = Deno.writeTextFileSync(fileOutputAbsolute, strJsonFeed);
+    const strJsonFeed: string = JSON.stringify(dataJsonFeed) || ""
+    Deno.writeTextFileSync(fileOutputAbsolute, strJsonFeed);
     if (strJsonFeed) {
       console.log('  - Post added to JSON Feed: ' + postTitle);
     } else {
