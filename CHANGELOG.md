@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2022.014
+- Core: Move away from Deno binaries in the repo, related cleanup
+- Core: Deno code linting improvements
+- Brendan: Update links lists
 - Version 2022.013
 - Brendan: Content updates
 - Core: Refresh log files before each build
