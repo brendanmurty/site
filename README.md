@@ -4,11 +4,12 @@ This repository contains the website for the [Murty family](https://murty.au/). 
 
 ## Initial Setup
 
-To setup a new local development environment, fork this repository, make a local clone of that and then run [scripts/setup.sh](scripts/setup.sh) to complete the initial installation process:
+To setup a new local development environment:
 
-```
-bash scripts/setup.sh
-```
+1. Fork this repository
+2. Make a local clone of that
+3. Install [Deno](https://deno.land/)
+4. Run [scripts/setup.sh](scripts/setup.sh) to complete the initial installation process: `bash scripts/setup.sh`
 
 ## Commands
 

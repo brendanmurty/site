@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install Lume
+deno run -A https://deno.land/x/lume/install.ts
+
 # Create some required untracked directories if they don't already exist
 mkdir -p building
 mkdir -p public
