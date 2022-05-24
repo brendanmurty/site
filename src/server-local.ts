@@ -7,10 +7,10 @@
 *    bash scripts/serve.sh
 */
 
-import { Application, HttpError, Status } from "https://deno.land/x/oak/mod.ts";
-import * as log from "https://deno.land/std/log/mod.ts";
-import { FileHandler } from "https://deno.land/std/log/handlers.ts";
-import "https://deno.land/x/dotenv/load.ts";
+import { Application, HttpError } from "https://deno.land/x/oak@v10.2.1/mod.ts";
+import * as log from "https://deno.land/std@0.125.0/log/mod.ts";
+import { FileHandler } from "https://deno.land/std@0.125.0/log/handlers.ts";
+import "https://deno.land/x/dotenv@v3.2.0/load.ts";
 
 const webDirectory: string = Deno.env.get("WEB_DIRECTORY") || "./public";
 const webIndex: string = Deno.env.get("WEB_INDEX") || "index.html";
@@ -34,7 +34,9 @@ await log.setup({
   }
 });
 
-let log_file: any = log.getLogger();
+// deno-lint-ignore no-explicit-any
+const log_file: any = log.getLogger();
+
 const log_handler = <FileHandler> log_file.handlers[0];
 
 // HTTPS requests are not supported by this script
