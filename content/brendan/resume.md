@@ -39,15 +39,15 @@ LinkedIn: [brendanmurty](https://www.linkedin.com/in/brendanmurty)
 
 ### Senior Software Engineer at [Deputy](https://www.deputy.com) (Jul 2021 - May 2022)
 
-I build features on top of Deputy’s core product, build reports and add custom features for our clients.
+I built features on top of Deputy's core product, including custom reports and custom features to suit client needs.
 
-I also help to drive progress on internal technical projects and consider how to make our implementations scalable and reusable.
+I also helped to drive progress on internal technical projects and considered how to make technical solutions more scalable and reusable.
 
 ### Software Engineer at [Deputy](https://www.deputy.com) (Feb 2021 - Jun 2021)
 
-I build features on top of Deputy's core product, build reports and add custom features for our clients.
+I built features on top of Deputy's core product, including custom reports and custom features to suit client needs.
 
-I also build custom integrations with third-party systems.
+I also built custom integrations with third-party systems.
 
 ### Dad at [Home](https://murty.au) (Nov 2020 - Feb 2021)
 
@@ -55,7 +55,9 @@ Following the birth of my third child, I took some time off work to spend more t
 
 ### Technical Lead at [Jomablue](https://jomablue.com) (Mar 2020 - Nov 2020)
 
-I worked closely with the CTO to lead a team of developers so that they could work efficiently on the product. This role included running daily stand-up meetings, assessing bug reports, scoping out new feature requests, testing code changes and building releases.
+I worked closely with the CTO to lead a team of developers so that they could work efficiently on the product.
+
+This role included running daily stand-up meetings, assessing bug reports, scoping out new feature requests, testing code changes and building releases.
 
 ### Dev Lead at [4mation](https://4mation.com.au) (May 2019 - Mar 2020)
 
@@ -63,11 +65,15 @@ I led technical decisions for a team's projects, mentored other developers, prod
 
 ### Web Developer at [4mation](https://4mation.com.au) (Dec 2017 - May 2019)
 
-I worked with a team of developers on varied web projects using modern techniques and frameworks. I helped drive technical improvements and managed development tasks on some major projects.
+I worked with a team of developers on varied web projects using modern techniques and frameworks. 
+
+I helped drive technical improvements and managed development tasks on some major projects.
 
 ### ACT Project Manager at [Sentral Education](https://sentral.com.au) (Sep 2016 - Dec 2017)
 
-I managed a large development project which included scoping out requirements, organising development tasks for the team and managing expectations internally and externally. Another important part of this role was to organise meetings with clients and business partners and then translate these discussions in to actionable items for the development team.
+I managed a large development project which included scoping out requirements, organising development tasks for the team and managing expectations internally and externally.
+
+Another important part of this role was to organise meetings with clients and business partners and then translate these discussions in to actionable items for the development team.
 
 ### Web Developer at [Sentral Education](https://sentral.com.au) (Jan 2015 - Sep 2016)
 
@@ -75,23 +81,31 @@ I worked in the development team assisting with maintenance and development of n
 
 ### Lead Developer: Siteflex Classic at [Solutions Outsourced](https://solutionsoutsourced.com.au) (Jul 2014 - Dec 2014)
 
-I led a team of developers who built websites using Siteflex Classic. This role also included scoping out and developing new features.
+I led development of Siteflex Classic, a custom in-house CMS with email marketing and newsletter features.
+
+This role also included scoping out and developing new features for the system.
 
 ### Developer and Creator at [UpcomingTasks](https://github.com/brendanmurty/upcomingtasks) (Sep 2012 - Nov 2016)
 
-I created an open-source responsive Basecamp 2 client called UpcomingTasks to easily manage tasks on smaller devices. It used the official API to interact with Basecamp 2 tasks, projects and user data. The system had around 1,000 loyal users.
+I created an open-source responsive Basecamp 2 client called UpcomingTasks to easily manage tasks on smaller devices, which has around 1,000 regular users.
+
+It used the official API to interact with Basecamp 2 tasks, projects and user data.
 
 ### Siteflex Back-end Developer at [Solutions Outsourced](https://solutionsoutsourced.com.au) (Jun 2012 - Jun 2014)
 
-I worked with a team of developers on an internal CMS and SMS/email marketing platform called Siteflex. This included development of new features and maintenance of the product.
+I worked with a team of developers on an internal CMS and SMS/email marketing platform called Siteflex Classic.
+
+This included development of new features and general maintenance of the system.
 
 ### Web Developer at [Solutions Outsourced](https://solutionsoutsourced.com.au) (Sep 2009 - May 2012)
 
-I contributed to the development team by implementing websites on the Siteflex Classic platform, assisted with customer support and planned and maintained a training system for Siteflex.
+I contributed to the development team by implementing websites on the Siteflex Classic platform, assisted with customer support and the planning and maintenance of a new training system that I led.
 
 ### Field Assistant at PBA Surveyors (Apr 2004 - Sep 2009)
 
-I worked with a team of Cadastral and Construction Surveyors around Sydney. I also developed their company website in my free time.
+I worked with a team of Cadastral and Construction Surveyors around Sydney.
+
+I also developed their company website in my free time.
 
 ## References
 
