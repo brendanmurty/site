@@ -12,31 +12,38 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
 
 <ul class="listing">
   <li class="listing-header">
-    <h2>Pages</h2>
+    <h2>Content</h2>
   </li>
   <li>
-    <a href="/brendan/posts" title="View my Posts">
+    <a href="/brendan/posts" title="View my posts">
       <img alt="" class="svg" src="/svg/file-alt.svg">
       <span>Posts</span>
     </a>
   </li>
   <li>
-    <a href="/brendan/tags" title="View my Tags">
+    <a href="/brendan/tags" title="View a list of tags for my posts">
       <img alt="" class="svg" src="/svg/tags-solid.svg">
       <span>Tags</span>
     </a>
   </li>
   <li>
-    <a href="/brendan/resume" title="View my Resume">
-      <img alt="" class="svg" src="/svg/briefcase.svg">
-      <span>Resume</span>
+    <a href="https://glass.photo/brendanmurty" title="View my photos on Glass">
+      <img alt="" class="svg" src="/svg/image-solid.svg">
+      <span>Photos</span>
     </a>
   </li>
+  
 </ul>
 
 <ul class="listing">
   <li class="listing-header">
     <h2>Work</h2>
+  </li>
+  <li>
+    <a href="/brendan/resume" title="View my resume">
+      <img alt="" class="svg" src="/svg/briefcase.svg">
+      <span>Resume</span>
+    </a>
   </li>
   <li>
     <a href="mailto:brendan@murty.au" title="Send me an email at brendan@murty.au">
@@ -48,12 +55,6 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
     <a href="https://github.com/brendanmurty" title="View my code repositories on GitHub">
       <img alt="" class="svg" src="/svg/github.svg">
       <span>GitHub</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
-      <img alt="" class="svg" src="/svg/twitter.svg">
-      <span>Twitter</span>
     </a>
   </li>
   <li>
@@ -75,9 +76,9 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
     <h2>Personal</h2>
   </li>
   <li>
-    <a href="https://www.buymeacoffee.com/brendanmurty" title="Buy me a coffee">
-      <img alt="" class="svg" src="/svg/mug-hot.svg">
-      <span>Buy me a coffee</span>
+    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
+      <img alt="" class="svg" src="/svg/twitter.svg">
+      <span>Twitter</span>
     </a>
   </li>
   <li>
