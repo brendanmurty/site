@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.016
+- Core: Fix Deno binary paths during deployment process
 - Version 2022.015
 - Core: Use a specific version of Lume
 - Core: Remove obsolete Git LFS setup
