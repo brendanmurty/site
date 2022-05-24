@@ -1,16 +1,5 @@
 #!/bin/bash
 
-# Figure out the right Deno binary to use
-if [ "$(uname -s)" == "Linux" ]
-then
-  DENO_BIN="${BASH_SOURCE%/*}/../bin/linux/deno"
-elif [ "$(uname -s)" == "Darwin" ]
-then
-  DENO_BIN="${BASH_SOURCE%/*}/../bin/macos/deno"
-else
-  DENO_BIN="${BASH_SOURCE%/*}/../bin/windows/deno.exe"
-fi
-
 echo "Clearing the 'public' directory"
 rm -r public
 mkdir -p public
@@ -20,7 +9,6 @@ rm -r building
 mkdir -p building
 mkdir -p building/_data
 mkdir -p public/brendan
-cp -r assets building/_assets
 cp -r styles building/_styles
 cp -r templates building/_includes
 cp -r content/* building
@@ -31,12 +19,22 @@ cat building/_styles/_variables.css building/_styles/_common.css building/_style
 
 echo "Minifying the combined CSS file"
 rm minify.log
-$DENO_BIN run -A --allow-read --allow-write https://deno.land/x/minifier/cli.ts building/_assets/css/styles.css building/_assets/css/styles.min.css > minify.log
+deno run -A --allow-read --allow-write https://deno.land/x/minifier@v1.1.1/cli.ts building/_assets/css/styles.css building/_assets/css/styles.min.css > minify.log
 rm building/_assets/css/styles.css
 
 echo "Building the front-end using Lume and '_config.js'"
 rm build.log
-$DENO_BIN run -A https://deno.land/x/lume/ci.ts > build.log
+lume > build.log
+
+echo "Copying static files to 'public' directory"
+cp -r "assets/fonts" "public/fonts"
+cp -r "assets/images" "public/images"
+cp -r "assets/pdf" "public/pdf"
+cp -r "assets/svg" "public/svg"
+cp "assets/favicon.ico" "public/favicon.ico"
+cp "assets/robots.txt" "public/robots.txt"
+mkdir -p "public/css"
+cp "building/_assets/css/styles.min.css" "public/css"
 
 echo "Building the JSON Feed for Brendan's posts"
-$DENO_BIN run -A --allow-read --allow-write --allow-env src/json-feed.ts
+deno run -A --allow-read --allow-write --allow-env src/json-feed.ts

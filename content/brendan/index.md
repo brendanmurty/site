@@ -32,7 +32,6 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
       <span>Photos</span>
     </a>
   </li>
-  
 </ul>
 
 <ul class="listing">
