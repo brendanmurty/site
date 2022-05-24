@@ -1,5 +1,10 @@
 # Change Log
 
+- Version 2022.017
+- Docs: Update deployment setup process
+- Core: Remove obsolete gitattributes file
+- Core: Cleanup gitignore
+- Core: Update funding options
 - Version 2022.016
 - Core: Fix Deno binary paths during deployment process
 - Version 2022.015
