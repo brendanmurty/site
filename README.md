@@ -47,9 +47,7 @@ bash scripts/build.sh
 10. Setup a scheduled task to renew the SSL certificate via `crontab -e`: `0 0 1 * * sudo certbot renew --force-renewal --no-random-sleep-on-renew`
 11. Test it all works for your production domain(s)
 
-### Deployment
-
-#### Setup
+### Deployment - Setup
 
 Navigate to your forked repository on GitHub, then go to `Settings > Environments`.
 
@@ -57,24 +55,28 @@ Create a new Environment named `deploy`.
 
 Then add some new Environment Secrets to the `deploy` Environment:
 
-- SSH Host:
+1. SSH Host:
   - Name: `SSH_HOST`
   - Value: IP address of your web server
   - Example: `123.1.2.3`
-- SSH Username:
+2. SSH Username:
   - Name: `SSH_USERNAME`
   - Value: The username you use to login to the server
   - Example: `jane_doe`
-- SSH Password:
+3. SSH Password:
   - Name: `SSH_PASSWORD`
   - Value: The password you use to login to the server
   - Example: `s$crt534^fff`
-- Remote Directory:
+4. Remote Directory:
   - Name: `REMOTE_DIRECTORY`
   - Value: The directory where the Git repository is located on the server
   - Example: `/home/jane_doe/site`
 
-#### Process
+Go back to your forked repository on GitHub, then go to `Settings > Secrets > Actions`.
+
+Add the above secrets again as Repository Secrets.
+
+### Deployment - Process
 
 After testing locally, commit and push your changes up to your remote forked repository.
 
