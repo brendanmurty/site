@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.021
+- Core: Fix links in JSON feed and only show error lines in output
+- Brendan: Content updates
 - Version 2022.020
 - Docs: Fix deployment process
 - Version 2022.019
