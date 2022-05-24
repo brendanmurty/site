@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.019
+- Docs: Update deployment setup to match new GitHub secrets process
 - Version 2022.018
 - Core: Add deployment badge
 - Version 2022.017
