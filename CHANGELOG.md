@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.015
+- Core: Use a specific version of Lume
+- Core: Remove obsolete Git LFS setup
 - Version 2022.014
 - Core: Move away from Deno binaries in the repo, related cleanup
 - Core: Deno code linting improvements
