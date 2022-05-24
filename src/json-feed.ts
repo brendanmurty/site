@@ -41,7 +41,9 @@ for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
   // Check this item is a valid file
   if (item.isFile && item.name != "index.md" && item.name.slice(-3) == ".md") {
     // Extract general information from this file's name
-    const postUrl: string = urlPosts + item.name.slice(0, -3) + "/";
+    const postNoExtension: string = item.name.slice(0, -3)
+    const postNoDate: string = postNoExtension.slice(9)
+    const postUrl: string = urlPosts + postNoDate + "/";
     const postDate: string = item.name.slice(0, 4) + "-" + item.name.slice(4, 6) + "-" + item.name.slice(6, 8) + "T09:00:00.000Z";
 
     // Set a default title for this post
@@ -92,9 +94,7 @@ for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
     // Save the JSON Feed content to the required file
     const strJsonFeed: string = JSON.stringify(dataJsonFeed) || ""
     Deno.writeTextFileSync(fileOutputAbsolute, strJsonFeed);
-    if (strJsonFeed) {
-      console.log('  - Post added to JSON Feed: ' + postTitle);
-    } else {
+    if (!strJsonFeed) {
       console.log('  - ERROR - could not add post to JSON Feed: ' + postTitle);
     }
   }
