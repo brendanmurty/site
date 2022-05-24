@@ -49,9 +49,9 @@ bash scripts/build.sh
 
 #### Setup
 
-Navigate to your forked repository on GitHub, then go to `Settings > Secrets`.
+Navigate to your forked repository on GitHub, then go to `Settings > Secrets > Actions`.
 
-Add new secrets here:
+Then add some new Repository Secrets:
 
 - SSH Host:
   - Name: `SSH_HOST`
@@ -68,7 +68,7 @@ Add new secrets here:
 - Remote Directory:
   - Name: `REMOTE_DIRECTORY`
   - Value: The directory where the Git repository is located on the server
-  - Example: `/root/site`
+  - Example: `/home/jane_doe/site`
 
 #### Process
 
