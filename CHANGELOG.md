@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.023
+- Brendan: Content updates
 - Version 2022.022
 - Brendan: Content updates
 - Version 2022.021
