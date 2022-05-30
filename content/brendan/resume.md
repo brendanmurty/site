@@ -101,12 +101,6 @@ This included development of new features and general maintenance of the system.
 
 I contributed to the development team by implementing websites on the Siteflex Classic platform, assisted with customer support and the planning and maintenance of a new training system that I led.
 
-### Field Assistant at PBA Surveyors (Apr 2004 - Sep 2009)
-
-I worked with a team of Cadastral and Construction Surveyors around Sydney.
-
-I also developed their company website in my free time.
-
 ## References
 
 ### Hamish Songsmith (Team Lead at [4mation](https://4mation.com.au))
