@@ -2,13 +2,10 @@
 layout: brendan/index.njk
 ---
 
-Father, Partner of [Ella](http://ellacondon.com/),
-Schnitzel Reviewer at [SchnitMyDadSays](http://schnitmydadsays.com/) and
-Senior Software Engineer.
+Outcome-focused, highly collaborative Senior Software Engineer and Technical Lead with significant commercial experience in web-based software development and IT project management within a range of organisational environments. Further expertise in the creation of complex systems using a variety of programming languages, front-end frameworks and back-end platforms.
 
-I share my thoughts on [Twitter](https://twitter.com/brendanmurty),
-manage code on [GitHub](https://github.com/brendanmurty?tab=repositories)
-and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
+Well-regarded leader, business partner and technical manager regularly commended for excellent interpersonal, communication and stakeholder management skills, strong mentoring and training skills tailored for varying experience levels, and the ability to drive team cohesion and performance.
+
 
 <ul class="listing">
   <li class="listing-header">
@@ -32,17 +29,17 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
       <span>Photos</span>
     </a>
   </li>
+  <li>
+    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
+      <img alt="" class="svg" src="/svg/twitter.svg">
+      <span>Twitter</span>
+    </a>
+  </li>
 </ul>
 
 <ul class="listing">
   <li class="listing-header">
     <h2>Work</h2>
-  </li>
-  <li>
-    <a href="/brendan/resume" title="View my resume">
-      <img alt="" class="svg" src="/svg/briefcase.svg">
-      <span>Resume</span>
-    </a>
   </li>
   <li>
     <a href="mailto:brendan@murty.au" title="Send me an email at brendan@murty.au">
@@ -73,12 +70,6 @@ and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
 <ul class="listing">
   <li class="listing-header">
     <h2>Personal</h2>
-  </li>
-  <li>
-    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
-      <img alt="" class="svg" src="/svg/twitter.svg">
-      <span>Twitter</span>
-    </a>
   </li>
   <li>
     <a href="https://www.last.fm/user/brendanmurty" title="Review my favourite music">

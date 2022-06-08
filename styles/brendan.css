@@ -51,15 +51,6 @@ ul.brendan_posts .post-date {
   display: inline-block;
 }
 
-.brendan .pdf-download {
-  margin: 0 0 40px;
-}
-
-.brendan .pdf-download img {
-  float: left;
-  margin-right: 10px;
-}
-
 .brendan .tag-list {
   margin: 0 0 20px;
   float: left;

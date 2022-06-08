@@ -209,10 +209,6 @@ pre {
     color: #000 !important;
   }
 
-  .pdf-download {
-    display: none;
-  }
-
   @page {
     size: auto;
     margin: 0mm 0mm 0mm 0mm;

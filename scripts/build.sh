@@ -29,7 +29,6 @@ lume > build.log
 echo "Copying static files to 'public' directory"
 cp -r "assets/fonts" "public/fonts"
 cp -r "assets/images" "public/images"
-cp -r "assets/pdf" "public/pdf"
 cp -r "assets/svg" "public/svg"
 cp "assets/favicon.ico" "public/favicon.ico"
 cp "assets/robots.txt" "public/robots.txt"
