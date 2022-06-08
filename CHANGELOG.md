@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.025
+- Docs: Update initial setup process
 - Version 2022.024
 - Brendan: Content and index page updates
 - Version 2022.023
