@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.026
+- Brendan: Add Open Graph tags to header
 - Version 2022.025
 - Docs: Update initial setup process
 - Version 2022.024
