@@ -11,6 +11,13 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
+echo "Running tests"
+bash ${BASH_SOURCE%/*}/test.sh
+if [ $? -ne 0 ]; then
+  echo "Tests failed, aborting deploy"
+  exit 1
+fi
+
 # Ask for confirmation from the user before continuing
 read -p "Are you sure you want to create a new version ($1)? (y/n) " ANSWER
 if [ "$ANSWER" != "y" ]; then

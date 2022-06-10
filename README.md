@@ -15,6 +15,14 @@ To setup a new local development environment:
 
 ## Commands
 
+### Run tests
+
+Run [scripts/test.sh](scripts/test.sh):
+
+```
+bash scripts/test.sh
+```
+
 ### Local web server
 
 Run [scripts/serve.sh](scripts/serve.sh):
