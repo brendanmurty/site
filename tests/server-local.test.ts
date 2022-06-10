@@ -9,7 +9,7 @@ Deno.test("src/server-local.ts", async(test) => {
       //  - Wait for the output
       //  - Continue to the tests if no errors were triggered
 
-      // TODO: Make this run in the background while the tests are running
+      // TODO: Update this to run in the background while the tests are running
       const script_run = Deno.run({
         cmd: [
           "deno",
@@ -26,11 +26,6 @@ Deno.test("src/server-local.ts", async(test) => {
 
       const { code } = await script_run.status();
 
-      // const script_output = await script_run.output();
-      // const script_error = await script_run.stderrOutput();
-      // const errorString = new TextDecoder().decode(script_error);
-      // console.log(errorString);
-
       script_run.stdout.close();
       script_run.stderr.close();
       script_run.close();
@@ -41,8 +36,6 @@ Deno.test("src/server-local.ts", async(test) => {
   });
 
   // TODO: Add test - server has started
-
-  // TODO: Add test - public directory is not empty
 
   // TODO: Add test - a ping to the localhost domain returns a valid status code
   

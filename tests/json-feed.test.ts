@@ -27,11 +27,6 @@ Deno.test("src/json-feed.ts", async(test) => {
 
       const { code } = await script_run.status();
 
-      // const script_output = await script_run.output();
-      // const script_error = await script_run.stderrOutput();
-      // const errorString = new TextDecoder().decode(script_error);
-      // console.log(errorString);
-
       script_run.stdout.close();
       script_run.stderr.close();
       script_run.close();

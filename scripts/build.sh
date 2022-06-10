@@ -1,12 +1,5 @@
 #!/bin/bash
 
-echo "Running tests"
-bash ${BASH_SOURCE%/*}/test.sh
-if [ $? -ne 0 ]; then
-  echo "Tests failed, aborting build"
-  exit 1
-fi
-
 echo "Clearing the 'public' directory"
 rm -r public
 mkdir -p public
