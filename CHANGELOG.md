@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.027
+- Brendan: Open Graph improvements and related larger profile image
 - Version 2022.026
 - Brendan: Add Open Graph tags to header
 - Version 2022.025
