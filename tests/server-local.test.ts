@@ -4,11 +4,6 @@ Deno.test("src/server-local.ts", async(test) => {
   await test.step({
     name: "run script",
     fn: async () => {
-      // Setup:
-      //  - Run the "src/server-local.ts" script
-      //  - Wait for the output
-      //  - Continue to the tests if no errors were triggered
-
       // TODO: Update this to run in the background while the tests are running
       const script_run = Deno.run({
         cmd: [

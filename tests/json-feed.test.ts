@@ -1,17 +1,16 @@
 import { assertEquals } from "https://deno.land/std@0.120.0/testing/asserts.ts";
+import "https://deno.land/x/dotenv@v3.2.0/load.ts";
+import { existsSync } from "https://deno.land/std@0.143.0/fs/mod.ts";
 
 // import { validate } from "https://deno.land/x/schema_validator@v0.0.3/mod.ts";
 // import { YamlData, JsonFeedData, JsonFeedAuthor, JsonFeedItem } from "./types.ts";
+
+const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
 
 Deno.test("src/json-feed.ts", async(test) => {
   await test.step({
     name: "run script",
     fn: async () => {
-      // Setup:
-      //  - Run the "src/json-feed.ts" script
-      //  - Wait for the output
-      //  - Continue to the tests if no errors were triggered
-
       const script_run = Deno.run({
         cmd: [
           "deno",
@@ -31,12 +30,23 @@ Deno.test("src/json-feed.ts", async(test) => {
       script_run.stderr.close();
       script_run.close();
 
-      assertEquals(code, 0);
+      assertEquals(
+        code,
+        0
+      );
     }
 
   });
 
-  // TODO: Add test - a JSON file is saved at the path specified in the JSON_FEED_FILE_OUTPUT var in the ENV file
+  await test.step({
+    name: "post JSON file exists",
+    fn: () => {
+      assertEquals(
+        existsSync(postsJsonFile),
+        true
+      );
+    }
+  });
 
   // TODO: Add test - the contents of the JSON file is valid JSON overall
 
