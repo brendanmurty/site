@@ -1,6 +1,6 @@
 import { assertEquals } from "https://deno.land/std@0.120.0/testing/asserts.ts";
 import { existsSync } from "https://deno.land/std@0.143.0/fs/mod.ts";
-import { isJSON } from "https://deno.land/x/deno_validator@v0.0.5/mod.ts";
+import { isJSON } from "https://deno.land/x/is_json@v1.0.2/mod.ts";
 import "https://deno.land/x/dotenv@v3.2.0/load.ts";
 
 // import { validate } from "https://deno.land/x/schema_validator@v0.0.3/mod.ts";
@@ -50,19 +50,18 @@ Deno.test("src/json-feed.ts", async(test) => {
     }
   });
 
-  // await test.step({
-  //   name: "post JSON content is valid",
-  //   fn: async () => {
-  //     const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "public/brendan/posts.json";
-  //     const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
+  await test.step({
+    name: "post JSON content is valid",
+    fn: async () => {
+      const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "public/brendan/posts.json";
+      const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
 
-  //     // TODO: Fix this check, as the JSON content is extracted properly here
-  //     assertEquals(
-  //       isJSON(postsJsonContent, ""),
-  //       true
-  //     );
-  //   }
-  // });
+      assertEquals(
+        isJSON(postsJsonContent),
+        true
+      );
+    }
+  });
 
 
   // TODO: Add test - each item in the "items" array in the JSON file matches the "JsonFeedItem" type definition
