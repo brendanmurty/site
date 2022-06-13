@@ -19,10 +19,10 @@ jobs:
           export PATH="$DENO_INSTALL/bin:$PATH"
           cd ${{ secrets.REMOTE_DIRECTORY }}
           git pull origin main --quiet
-          bin/build
+          ./bin/build
           rm -r /var/www/html/*
           sudo cp -r public/* /var/www/html
-          cp scripts/production/.htaccess /var/www/html
+          cp bin/config/.htaccess /var/www/html
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         password: ${{ secrets.SSH_PASSWORD }}
