@@ -2,10 +2,7 @@
 layout: brendan/index.njk
 ---
 
-Outcome-focused, highly collaborative Senior Software Engineer and Technical Lead with significant commercial experience in web-based software development and IT project management within a range of organisational environments. Further expertise in the creation of complex systems using a variety of programming languages, front-end frameworks and back-end platforms.
-
-Well-regarded leader, business partner and technical manager regularly commended for excellent interpersonal, communication and stakeholder management skills, strong mentoring and training skills tailored for varying experience levels, and the ability to drive team cohesion and performance.
-
+Father, Senior Software Engineer and Schnitzel Reviewer.
 
 <ul class="listing">
   <li class="listing-header">
@@ -35,6 +32,48 @@ Well-regarded leader, business partner and technical manager regularly commended
       <span>Twitter</span>
     </a>
   </li>
+  <li>
+    <a href="https://schnitmydadsays.com/" title="Check out some schnitzel reviews">
+      <img alt="" class="svg" src="/svg/utensils.svg">
+      <span>SchnitMyDadSays</span>
+    </a>
+  </li>
+</ul>
+
+<ul class="listing">
+  <li class="listing-header">
+    <h2>Personal</h2>
+  </li>
+  <li>
+    <a href="https://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam">
+      <img alt="" class="svg" src="/svg/steam.svg">
+      <span>Steam</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://discordapp.com/users/murty#2101" title="Chat with me on Discord">
+      <img alt="" class="svg" src="/svg/discord.svg">
+      <span>Discord</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.last.fm/user/brendanmurty" title="Review my favourite music">
+      <img alt="" class="svg" src="/svg/lastfm-square-brands.svg">
+      <span>Last.fm</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://letterboxd.com/brendanmurty" title="Review my favourite movies">
+      <img alt="" class="svg" src="/svg/film-solid.svg">
+      <span>Letterboxd</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.strava.com/athletes/83769199" title="View my exercise statistics">
+      <img alt="" class="svg" src="/svg/bicycle-regular.svg">
+      <span>Strava</span>
+    </a>
+  </li>
 </ul>
 
 <ul class="listing">
@@ -54,7 +93,7 @@ Well-regarded leader, business partner and technical manager regularly commended
     </a>
   </li>
   <li>
-    <a href="https://www.linkedin.com/in/brendanmurty/" title="View my LinkedIn profile">
+    <a href="https://www.linkedin.com/in/brendanmurty" title="View my LinkedIn profile">
       <img alt="" class="svg" src="/svg/linkedin.svg">
       <span>LinkedIn</span>
     </a>
@@ -63,36 +102,6 @@ Well-regarded leader, business partner and technical manager regularly commended
     <a href="https://www.polywork.com/brendanmurty" title="View my Polywork profile">
       <img alt="" class="svg" src="/svg/user-tie-solid.svg">
       <span>Polywork</span>
-    </a>
-  </li>
-</ul>
-
-<ul class="listing">
-  <li class="listing-header">
-    <h2>Personal</h2>
-  </li>
-  <li>
-    <a href="https://www.last.fm/user/brendanmurty" title="Review my favourite music">
-      <img alt="" class="svg" src="/svg/lastfm-square-brands.svg">
-      <span>Last.fm</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://letterboxd.com/brendanmurty/" title="Review my favourite movies">
-      <img alt="" class="svg" src="/svg/film-solid.svg">
-      <span>Letterboxd</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam">
-      <img alt="" class="svg" src="/svg/steam.svg">
-      <span>Steam</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://www.strava.com/athletes/83769199" title="View my exercise statistics">
-      <img alt="" class="svg" src="/svg/bicycle-regular.svg">
-      <span>Strava</span>
     </a>
   </li>
 </ul>
