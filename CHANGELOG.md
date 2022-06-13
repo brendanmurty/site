@@ -1,5 +1,14 @@
 # Change Log
 
+- Version 2022.028
+- Tests: Comment out unfinished test
+- Core: Update Bash scripts files and structure
+- Brendan: Add more profile links and update ordering of lists
+- Tests: Comment out unfinished test
+- Tests: Progress on JSON feed items
+- Tests: Check if posts JSON file exists
+- Tests: Start build script test, cleanup
+- Tests: Initial setup, commands and docs
 - Version 2022.027
 - Brendan: Open Graph improvements and related larger profile image
 - Version 2022.026
