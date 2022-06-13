@@ -1,9 +1,10 @@
 import "https://deno.land/x/dotenv@v3.2.0/load.ts";
-import { assertEquals, assertNotEquals } from "https://deno.land/std@0.120.0/testing/asserts.ts";
+import { assertEquals, assertNotEquals } from "https://deno.land/std@0.143.0/testing/asserts.ts";
 import { isJSON } from "https://deno.land/x/is_json@v1.0.2/mod.ts";
 import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
 
 Deno.test("src/json-feed.ts", async(test) => {
+
   const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
   const postsDirectory: string = Deno.env.get("JSON_FEED_POSTS_DIR") || "";
 
@@ -30,7 +31,7 @@ Deno.test("src/json-feed.ts", async(test) => {
   await test.step({
     name: "run script",
     fn: async () => {
-      const script_run = Deno.run({
+      const commandResponse = Deno.run({
         cmd: [
           "deno",
           "run",
@@ -43,11 +44,11 @@ Deno.test("src/json-feed.ts", async(test) => {
         stderr: "piped",
       });
 
-      const { code } = await script_run.status();
+      const { code } = await commandResponse.status();
 
-      script_run.stdout.close();
-      script_run.stderr.close();
-      script_run.close();
+      commandResponse.stdout.close();
+      commandResponse.stderr.close();
+      commandResponse.close();
 
       assertEquals(
         code,
@@ -57,7 +58,7 @@ Deno.test("src/json-feed.ts", async(test) => {
   });
 
   await test.step({
-    name: "post JSON file exists and has is not empty",
+    name: "post JSON file exists and is not empty",
     fn: async () => {
       const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
 

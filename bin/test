@@ -1,6 +1,12 @@
 #!/bin/bash
 
+# Silently run the build script as this is required by a few test files
+
+echo "Running 'bin/build'"
+bin/build > /dev/null 2>&1
+
 # Run all of the tests in the "tests" directory and allow these
 # test scripts to also run other Deno scripts as needed.
 
+echo "Running all tests found in the 'tests' directory"
 deno test --allow-run --allow-env --allow-read tests

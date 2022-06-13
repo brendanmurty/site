@@ -1,17 +1,26 @@
-import { assertEquals, assertNotEquals } from "https://deno.land/std@0.120.0/testing/asserts.ts";
-import { exec } from "https://deno.land/x/exec@0.0.5/mod.ts";
+import { assertEquals, assertNotEquals } from "https://deno.land/std@0.143.0/testing/asserts.ts";
 
-Deno.test("scripts/build.sh", async(test) => {
+Deno.test("bin/build", async(test) => {
+
   await test.step({
-    name: "run script",
+    name: "public directory exists and is not empty",
     fn: async () => {
-      const command_output = await exec("bash scripts/build.sh > /dev/null 2>&1");
+      try {
+        const publicIndexFileContents: string = await Deno.readTextFile("public/index.html");
 
-      assertNotEquals(command_output, "");
+        assertNotEquals(
+          publicIndexFileContents,
+          ""
+        );
+      } catch (_) {
+        assertEquals(
+          "File not found",
+          ""
+        );
+      }
+      
     }
   });
-
-  // TODO: Add test - public directory is not empty
 
   // TODO: Add test - public directory has the required sub-directories and files
 
