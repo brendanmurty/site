@@ -1,40 +1,33 @@
-// import { assertEquals } from "https://deno.land/std@0.143.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@0.143.0/testing/asserts.ts";
+Deno.test("src/server-local.ts", async(test) => {
 
-// Deno.test("src/server-local.ts", async(test) => {
-//
-//   await test.step({
-//     name: "run script",
-//     fn: async () => {
-//       // TODO: Update this to run in the background while the tests are running
-//       const script_run = Deno.run({
-//         cmd: [
-//           "deno",
-//           "run",
-//           "--allow-read",
-//           "--allow-net",
-//           "--allow-write",
-//           "--allow-env",
-//           "src/server-local.ts"
-//         ],
-//         stdout: "piped",
-//         stderr: "piped",
-//       });
+  await test.step({
+    name: "valid HTTP response for 'http://127.0.0.1:8000/'",
+    fn: async () => {
+      const response = await fetch("http://127.0.0.1:8000/");
 
-//       const { code } = await script_run.status();
+      await response.body?.cancel();
 
-//       script_run.stdout.close();
-//       script_run.stderr.close();
-//       script_run.close();
+      assertEquals(
+        response.status,
+        200
+      );
+    }
+  });
 
-//       assertEquals(code, 0);
-//     }
+  await test.step({
+    name: "valid HTTP response for 'http://127.0.0.1:8000/css/styles.min.css'",
+    fn: async () => {
+      const response = await fetch("http://127.0.0.1:8000/css/styles.min.css");
 
-//   });
+      await response.body?.cancel();
 
-//   // TODO: Add test - server has started
+      assertEquals(
+        response.status,
+        200
+      );
+    }
 
-//   // TODO: Add test - a ping to the localhost domain returns a valid status code
-  
-//   // TODO: Kill the background "script_run" process when all tests have been completed
+  });
 
-// });
+});

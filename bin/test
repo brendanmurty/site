@@ -1,12 +1,20 @@
 #!/bin/bash
 
-# Silently run the build script as this is required by a few test files
+# Silently run the "bin/serve" script (which also builds the site) in the background
 
-echo "Running 'bin/build'"
-bin/build > /dev/null 2>&1
+echo "Running 'bin/serve' in the background"
+bin/serve &>/dev/null &
+
+echo "Waiting for script"
+sleep 10
 
 # Run all of the tests in the "tests" directory and allow these
 # test scripts to also run other Deno scripts as needed.
 
 echo "Running all tests found in the 'tests' directory"
-deno test --allow-run --allow-env --allow-read tests
+deno test --allow-run --allow-env --allow-read --allow-net tests
+
+# Clean up any background processes created by this script
+
+echo "Terminating related background process"
+trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
