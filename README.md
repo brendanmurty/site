@@ -50,6 +50,8 @@ bin/build
   - All files in the `assets` directory should contain your own static files instead
   - Update or remove the GitHub Sponsors file at [.github/FUNDING.yml](.github/FUNDING.yml)
   - Update the deployment GitHub Action file at [.github/workflows/deployment.yml](.github/workflows/deployment.yml)
+  - Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
+  - Purchase your own license to use [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons or use other icons
 3. Commit all of these changes to your forked repository
 4. SSH in to a new **Ubuntu 20.04** server
 5. Setup Git including [initial configuration](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) and an [SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for GitHub access from your server
