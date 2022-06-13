@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.029
+- Deploy: Update path to config file and fix build command
+- Core: Allow scripts to be executed
 - Version 2022.028
 - Tests: Comment out unfinished test
 - Core: Update Bash scripts files and structure
