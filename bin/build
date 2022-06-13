@@ -1,10 +1,17 @@
 #!/bin/bash
 
-echo "Clearing the 'public' directory"
+# Setup the message colour characters
+
+blue="\033[0;34m"
+yellow="\033[0;33m"
+red="\033[0;31m"
+end="\033[0m"
+
+echo -e "${yellow}Clearing the 'public' directory${end}"
 rm -r public
 mkdir -p public
 
-echo "Clearing the 'building' directory and recreating subdirectories"
+echo -e "${yellow}Clearing the 'building' directory and recreating subdirectories${end}"
 rm -r building
 mkdir -p building
 mkdir -p building/_data
@@ -13,20 +20,20 @@ cp -r styles building/_styles
 cp -r templates building/_includes
 cp -r content/* building
 
-echo "Combining the CSS files"
+echo -e "${yellow}Combining the CSS files${end}"
 mkdir -p building/_assets/css
 cat building/_styles/_variables.css building/_styles/_common.css building/_styles/murty.css building/_styles/brendan.css building/_styles/isla.css building/_styles/freya.css building/_styles/luca.css > building/_assets/css/styles.css
 
-echo "Minifying the combined CSS file"
+echo -e "${yellow}Minifying the combined CSS file${end}"
 rm minify.log
 deno run -A --allow-read --allow-write https://deno.land/x/minifier@v1.1.1/cli.ts building/_assets/css/styles.css building/_assets/css/styles.min.css > minify.log
 rm building/_assets/css/styles.css
 
-echo "Building the front-end using Lume and '_config.js'"
+echo -e "${yellow}Building the front-end using Lume and '_config.js'${end}"
 rm build.log
 lume > build.log
 
-echo "Copying static files to 'public' directory"
+echo -e "${yellow}Copying static files to 'public' directory${end}"
 cp -r "assets/fonts" "public/fonts"
 cp -r "assets/images" "public/images"
 cp -r "assets/svg" "public/svg"
@@ -35,5 +42,5 @@ cp "assets/robots.txt" "public/robots.txt"
 mkdir -p "public/css"
 cp "building/_assets/css/styles.min.css" "public/css"
 
-echo "Building the JSON Feed for Brendan's posts"
+echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"
 deno run -A --allow-read --allow-write --allow-env src/json-feed.ts
