@@ -93,31 +93,28 @@ Deno.test("src/json-feed.ts", async(test) => {
     }
   });
 
-  // await test.step({
-  //   name: "post JSON contains the right number of items",
-  //   fn: async () => {
-  //     const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
-  //     const postsJsonObject = postsJsonContent as unknown as JsonFeedData;
-  //     const countItemsInJSONFile = Object.keys(postsJsonObject.items).length;
+  await test.step({
+    name: "post JSON contains the right number of items",
+    fn: async () => {
+      const postsDirectoryAbsolute = posix.join(Deno.cwd(), postsDirectory);
 
-  //     const postsDirectoryAbsolute = posix.join(Deno.cwd(), postsDirectory);
+      const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
+      const postsJsonObject = JSON.parse(postsJsonContent);
+      const countItemsInJSONFile = Object.keys(postsJsonObject.items).length;
 
-  //     let countValidPostFiles = 0;
-  //     for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
-  //       if (item.isFile && item.name != "index.md" && item.name.slice(-3) == ".md") {
-  //         countValidPostFiles++;
-  //       }
-  //     }
-      
-  //     console.log('valid files', countValidPostFiles);
-  //     console.log('items in JSON', countValidPostFiles);
+      let countValidPostFiles = 0;
+      for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
+        if (item.isFile && item.name != "index.md" && item.name.slice(-3) == ".md") {
+          countValidPostFiles++;
+        }
+      }
 
-  //     assertEquals(
-  //       countValidPostFiles,
-  //       countItemsInJSONFile
-  //     );
-  //   }
-  // });
+      assertEquals(
+        countValidPostFiles,
+        countItemsInJSONFile
+      );
+    }
+  });
 
   // TODO: Add test - each item in the "items" array in the JSON file matches the "JsonFeedItem" type definition
 
