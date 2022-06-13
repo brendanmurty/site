@@ -1,9 +1,7 @@
 import "https://deno.land/x/dotenv@v3.2.0/load.ts";
 import { assertEquals, assertNotEquals } from "https://deno.land/std@0.120.0/testing/asserts.ts";
-import { existsSync } from "https://deno.land/std@0.143.0/fs/mod.ts";
 import { isJSON } from "https://deno.land/x/is_json@v1.0.2/mod.ts";
 import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
-import { YamlData, JsonFeedData, JsonFeedAuthor, JsonFeedItem } from "../src/types.ts";
 
 Deno.test("src/json-feed.ts", async(test) => {
   const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
@@ -56,21 +54,10 @@ Deno.test("src/json-feed.ts", async(test) => {
         0
       );
     }
-
   });
 
   await test.step({
-    name: "post JSON file exists",
-    fn: () => {
-      assertEquals(
-        existsSync(postsJsonFile),
-        true
-      );
-    }
-  });
-
-  await test.step({
-    name: "post JSON file has contents",
+    name: "post JSON file exists and has is not empty",
     fn: async () => {
       const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
 
@@ -115,12 +102,5 @@ Deno.test("src/json-feed.ts", async(test) => {
       );
     }
   });
-
-  // TODO: Add test - each item in the "items" array in the JSON file matches the "JsonFeedItem" type definition
-
-  // TODO: Add test - the main properties of the JSON file matches the "JsonFeedData" type definition
-
-  // TODO: Add test - the "author" property of the JSON file matches the "JsonFeedAuthor" type definition
-
   
 });
