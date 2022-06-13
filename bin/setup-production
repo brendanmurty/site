@@ -1,11 +1,7 @@
 #!/bin/bash
 
-# Install Git and Git LFS
-sudo apt install -y git git-lfs
-git-lfs install
-
-# Install Apache
-sudo apt install -y apache2
+# Install Git and Apache
+sudo apt install -y git apache2
 
 # Configure Apache
 sudo a2enmod rewrite
@@ -13,13 +9,13 @@ sudo a2enmod headers
 sudo a2enmod ssl
 sudo service apache2 restart
 rm /var/www/html/index.html
-cp ~/site/scripts/production/.htaccess /var/www/html
-sudo cp ~/site/scripts/production/apache.conf /etc/apache2/sites-enabled/000-default.conf
-sudo cp ~/site/scripts/production/apache-ssl.conf /etc/apache2/sites-enabled/default_ssl.conf
+cp ~/site/vin/config/.htaccess /var/www/html
+sudo cp ~/site/vin/config/apache.conf /etc/apache2/sites-enabled/000-default.conf
+sudo cp ~/site/vin/config/apache-ssl.conf /etc/apache2/sites-enabled/default_ssl.conf
 sudo service apache2 restart
 
 # Build the site in to the "public" directory
-bash ~/site/scripts/build.sh
+~/site/bin/build
 
 # Copy the "public" files in to the Apache webroot
 sudo cp -r ~/site/public/* /var/www/html

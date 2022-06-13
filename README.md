@@ -17,26 +17,26 @@ To setup a new local development environment:
 
 ### Run tests
 
-Run [scripts/test.sh](scripts/test.sh):
+Run [bin/test](bin/test):
 
 ```
-bash scripts/test.sh
+bin/test
 ```
 
 ### Local web server
 
-Run [scripts/serve.sh](scripts/serve.sh):
+Run [bin/serve](bin/serve):
 
 ```
-bash scripts/serve.sh
+bin/serve
 ```
 
 ### Build site
 
-Run [scripts/build.sh](scripts/build.sh):
+Run [bin/build](bin/build):
 
 ```
-bash scripts/build.sh
+bin/build
 ```
 
 ## Production Use
@@ -54,9 +54,9 @@ bash scripts/build.sh
 4. SSH in to a new **Ubuntu 20.04** server
 5. Setup Git including [initial configuration](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) and an [SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for GitHub access from your server
 6. Git Clone your forked repository in to `~/site` and `cd` in to that directory
-7. Run the main setup script: `bash scripts/setup.sh`
+7. Run the main setup script: `bin/setup`
 8. Edit the `.env` file so it has the appropriate configuration values
-9. Run the production setup script: `bash scripts/production/setup.sh`
+9. Run the production setup script: `bin/setup-production`
 10. Setup a scheduled task to renew the SSL certificate via `crontab -e`: `0 0 1 * * sudo certbot renew --force-renewal --no-random-sleep-on-renew`
 11. Test it all works for your production domain(s)
 
@@ -93,10 +93,10 @@ Add the above secrets again as Repository Secrets.
 
 After testing locally, commit and push your changes up to your remote forked repository.
 
-Then run [scripts/deploy.sh](scripts/deploy.sh) to make a new version and deploy it:
+Then run [bin/deploy](bin/deploy) to make a new version and deploy it:
 
 ```
-bash scripts/deploy.sh "YYYY.xxx"
+bin/deploy "YYYY.xxx"
 ```
 
 Where `YYYY` is the current year, and `xxx` is the revision number for that year.

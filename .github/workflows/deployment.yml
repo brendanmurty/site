@@ -19,7 +19,7 @@ jobs:
           export PATH="$DENO_INSTALL/bin:$PATH"
           cd ${{ secrets.REMOTE_DIRECTORY }}
           git pull origin main --quiet
-          bash scripts/build.sh
+          bin/build
           rm -r /var/www/html/*
           sudo cp -r public/* /var/www/html
           cp scripts/production/.htaccess /var/www/html
