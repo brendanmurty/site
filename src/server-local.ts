@@ -7,7 +7,7 @@
 *    bash scripts/serve.sh
 */
 
-import { Application, HttpError } from "https://deno.land/x/oak@v10.2.1/mod.ts";
+import { Application, HttpError } from "https://deno.land/x/oak@v10.6.0/mod.ts";
 import * as log from "https://deno.land/std@0.125.0/log/mod.ts";
 import { FileHandler } from "https://deno.land/std@0.125.0/log/handlers.ts";
 import "https://deno.land/x/dotenv@v3.2.0/load.ts";
