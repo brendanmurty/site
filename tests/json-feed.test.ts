@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std@0.120.0/testing/asserts.ts";
+import { assertEquals, assertNotEquals } from "https://deno.land/std@0.120.0/testing/asserts.ts";
 import { existsSync } from "https://deno.land/std@0.143.0/fs/mod.ts";
 import { isJSON } from "https://deno.land/x/is_json@v1.0.2/mod.ts";
 import "https://deno.land/x/dotenv@v3.2.0/load.ts";
@@ -8,6 +8,18 @@ import "https://deno.land/x/dotenv@v3.2.0/load.ts";
 
 
 Deno.test("src/json-feed.ts", async(test) => {
+  const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
+
+  await test.step({
+    name: "required var in env file is set (JSON_FEED_FILE_OUTPUT)",
+    fn: () => {
+      assertNotEquals(
+        postsJsonFile,
+        ""
+      );
+    }
+  });
+
   await test.step({
     name: "run script",
     fn: async () => {
@@ -41,8 +53,6 @@ Deno.test("src/json-feed.ts", async(test) => {
   await test.step({
     name: "post JSON file exists",
     fn: () => {
-      const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "public/brendan/posts.json";
-
       assertEquals(
         existsSync(postsJsonFile),
         true
@@ -51,9 +61,20 @@ Deno.test("src/json-feed.ts", async(test) => {
   });
 
   await test.step({
+    name: "post JSON file has contents",
+    fn: async () => {
+      const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
+
+      assertNotEquals(
+        postsJsonContent,
+        ""
+      );
+    }
+  });
+
+  await test.step({
     name: "post JSON content is valid",
     fn: async () => {
-      const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "public/brendan/posts.json";
       const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
 
       assertEquals(
@@ -62,7 +83,6 @@ Deno.test("src/json-feed.ts", async(test) => {
       );
     }
   });
-
 
   // TODO: Add test - each item in the "items" array in the JSON file matches the "JsonFeedItem" type definition
 
