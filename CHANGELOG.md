@@ -1,5 +1,17 @@
 # Change Log
 
+- Version 2022.030
+- Core: Improve script wording and text colours
+- Design: Improve layout on larger screens
+- Tests: Add local server tests and improve test script
+- Core: Update version of Oak used by local server script
+- Tests: Add build script tests
+- Tests: Fix build test, process updates, use newer assertion lib
+- Tests: Merge similar tests for JSON feed script
+- Tests: Finish check for JSON items count
+- Tests: Progress for JSON items test
+- Tests: Add more tests for JSON feed script
+- Tests: Fix JSON content test
 - Version 2022.029
 - Deploy: Update path to config file and fix build command
 - Core: Allow scripts to be executed
