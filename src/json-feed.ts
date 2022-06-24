@@ -6,7 +6,7 @@
 * More information about JSON Feed is available here: https://jsonfeed.org/version/1.1
 *
 * Run this via the "build" script:
-*    bash scripts/build.sh
+*    bin/build
 */
 
 import { YamlData, JsonFeedData, JsonFeedAuthor, JsonFeedItem } from "./types.ts";

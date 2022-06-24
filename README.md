@@ -11,7 +11,7 @@ To setup a new local development environment:
 1. Fork this repository
 2. Make a local clone of that
 3. Install [Deno](https://deno.land/)
-4. Run [scripts/setup.sh](scripts/setup.sh) to complete the initial installation process: `bash scripts/setup.sh`
+4. Run [bin/setup](bin/setup) to complete the initial installation process: `bin/setup`
 
 ## Commands
 

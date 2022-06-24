@@ -4,7 +4,7 @@
 * Returns static files from a local directory, defined in the ".env" file, based on web requests.
 * 
 * Run this via the "serve" script:
-*    bash scripts/serve.sh
+*    bin/serve
 */
 
 import { Application, HttpError } from "https://deno.land/x/oak@v10.6.0/mod.ts";
