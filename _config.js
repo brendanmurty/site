@@ -10,7 +10,7 @@ import lume from "https://deno.land/x/lume@v1.9.0/mod.ts";
 import date from "https://deno.land/x/lume@v1.9.0/plugins/date.ts";
 
 // Convert the contents of ".env" in to YAML format and save it as "building/_data/site.yml".
-// This allows for the Nunjucks templates to access these variables like this: {{ site.FATHOM_ANALYTICS_SITE_CODE }}
+// This allows for the Nunjucks templates to access these variables like this: {{ site.PIRSCH_ANALYTICS_SITE_CODE }}
 const envFileContent = Deno.readTextFileSync("./.env");
 const ymlFileContent = envFileContent.replaceAll("=", ": ");
 
