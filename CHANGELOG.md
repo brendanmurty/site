@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2022.031
+- Core: Move to Pirsch analytics
+- Docs: Fix paths to scripts
+- Docs: Update initial setup process
 - Version 2022.030
 - Core: Improve script wording and text colours
 - Design: Improve layout on larger screens
