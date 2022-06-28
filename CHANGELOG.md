@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.032
+- Core: Fix analytics variable output
 - Version 2022.031
 - Core: Move to Pirsch analytics
 - Docs: Fix paths to scripts
