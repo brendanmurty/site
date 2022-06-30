@@ -6,7 +6,7 @@ import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
 Deno.test("src/json-feed.ts", async(test) => {
 
   const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
-  const postsDirectory: string = Deno.env.get("JSON_FEED_POSTS_DIR") || "";
+  const postsDirectory: string = Deno.env.get("BLOG_POSTS_DIR") || "";
 
   await test.step({
     name: "required var in env file is set (JSON_FEED_FILE_OUTPUT)",
@@ -19,7 +19,7 @@ Deno.test("src/json-feed.ts", async(test) => {
   });
 
   await test.step({
-    name: "required var in env file is set (JSON_FEED_POSTS_DIR)",
+    name: "required var in env file is set (BLOG_POSTS_DIR)",
     fn: () => {
       assertNotEquals(
         postsDirectory,
