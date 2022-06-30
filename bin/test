@@ -15,11 +15,11 @@ bin/serve &>/dev/null &
 echo -e "${yellow}Waiting for script${end}"
 sleep 10
 
-# Run all of the tests in the "tests" directory and allow these
-# test scripts to also run other Deno scripts as needed.
+# Run all of the tests in the "tests" directory, allow these test scripts to also
+# run other Deno scripts and ignore any console output from them
 
 echo -e "${yellow}Running all tests found in the 'tests' directory${end}"
-deno test --allow-run --allow-env --allow-read --allow-net tests
+deno test --allow-run --allow-env --allow-read --allow-net tests --quiet
 
 # Clean up any background processes created by this script
 
