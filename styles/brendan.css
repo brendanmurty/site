@@ -16,7 +16,7 @@
 
 .brendan ul.listing {
   list-style: none;
-  margin: 50px 0 25px;
+  margin: 25px 0 0;
   width: 33.3%;
   float: left;
 }
@@ -24,10 +24,6 @@
 .brendan ul.listing li:not(.listing-header) {
   margin: 0 0 25px;
   line-height: 40px;
-}
-
-.brendan ul.listing li.listing-header {
-  padding-left: 10px;
 }
 
 .brendan ul.listing img.svg {
@@ -74,6 +70,16 @@ ul.brendan_posts .post-date {
 .brendan .tag-link .svg {
   width: 15px;
   margin-right: 5px;
+}
+
+.brendan .post-latest {
+  margin: 50px 0 25px;
+}
+
+.brendan .post-latest .svg {
+  height: 40px;
+  width: 60px;
+  float: left;
 }
 
 /* Medium sized screen */
