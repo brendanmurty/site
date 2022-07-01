@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2022.033
+- Brendan: Add latest post element to index page
+- Core: Add posts latest feature, update related tests and improve test command
+- Core: Split out post list function
 - Version 2022.032
 - Core: Fix analytics variable output
 - Version 2022.031
