@@ -19,7 +19,7 @@ let ymlFileContent = envFileContent.replaceAll("=", ": ");
 // Add the details of the latest post to the site data
 let latestPost = await PostsLatest();
 latestPost = '{ "BLOG_POSTS_LATEST": ' + JSON.stringify(latestPost) + '}';
-ymlFileContent += json2yaml(latestPost);
+ymlFileContent += "\r" + json2yaml(latestPost);
 
 // Save the YAML file so it can be accessed by the page templates
 Deno.writeTextFileSync("./building/_data/site.yml", ymlFileContent);

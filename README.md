@@ -90,6 +90,10 @@ Then add some new Environment Secrets to the `deploy` Environment:
   - Name: `DENO_DEPLOY_TOKEN`
   - Value: The related Access Token from your [Deno Deploy](https://deno.com/deploy) account
   - Example: `aaabbbccc222`
+6. Pirsch analytics site code:
+  - Name: `PIRSCH_ANALYTICS_SITE_CODE`
+  - Value: The related site code from your [Pirsch analytics](https://pirsch.io/) account
+  - Example: `aaabbbccc222`
 
 Go back to your forked repository on GitHub, then go to `Settings > Secrets > Actions`.
 
