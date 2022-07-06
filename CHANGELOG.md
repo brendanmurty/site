@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.035
+- Core: Add basic ENV file setup to Deno Deploy action
 - Version 2022.034
 - Core: Updates to deployment methods, trial using Deno Deploy
 - Version 2022.033
