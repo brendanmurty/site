@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.034
+- Core: Updates to deployment methods, trial using Deno Deploy
 - Version 2022.033
 - Brendan: Add latest post element to index page
 - Core: Add posts latest feature, update related tests and improve test command
