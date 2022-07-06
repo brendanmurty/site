@@ -1,4 +1,4 @@
-import { Application } from "https://deno.land/x/oak@v10.6.0/mod.ts";
+import { Application, Router } from "https://deno.land/x/oak@v10.6.0/mod.ts";
 
 const app = new Application();
 
@@ -12,3 +12,16 @@ app.use(async (ctx, next) => {
     next();
   }
 });
+
+const router = new Router();
+
+// The /api/time endpoint returns the current time in ISO format.
+router.get("/api/time", (ctx) => {
+  ctx.response.body = { time: new Date().toISOString() };
+});
+
+// After creating the router, we can add it to the app.
+app.use(router.routes());
+app.use(router.allowedMethods());
+
+await app.listen({ port: 8000 });
