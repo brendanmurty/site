@@ -86,6 +86,10 @@ Then add some new Environment Secrets to the `deploy` Environment:
   - Name: `REMOTE_DIRECTORY`
   - Value: The directory where the Git repository is located on the server
   - Example: `/home/jane_doe/site`
+5. Deno Deploy key:
+  - Name: `DENO_DEPLOY_TOKEN`
+  - Value: The related Access Token from your [Deno Deploy](https://deno.com/deploy) account
+  - Example: `aaabbbccc222`
 
 Go back to your forked repository on GitHub, then go to `Settings > Secrets > Actions`.
 
