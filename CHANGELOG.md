@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.037
+- Docs: Add Deno Deploy secret note
+- Core: Add empty new line to ENV file
 - Version 2022.036
 - Core: Improve Deno Deploy process
 - Version 2022.035
