@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.041
+- Core: Update Pirsch analytics site code update command for Deno Deploy
 - Version 2022.040
 - Core: Allow Pirsch analytics site code to be used via Deno Deploy
 - Version 2022.039
