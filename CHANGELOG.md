@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.044
+- Core: Setup shortcut domain redirects for Deno Deploy site
 - Version 2022.043
 - Core: Add TODO about domain redirects
 - Core: Update site list to use a consistent main domain
