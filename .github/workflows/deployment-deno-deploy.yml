@@ -16,15 +16,14 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
-
+      - name: Initialise ENV file
+        run: cp .env.example .env
       - name: Install Deno
         uses: denoland/setup-deno@main
         with:
           deno-version: 1.22.1
-
       - name: Build site
         run: deno run -A https://deno.land/x/lume/ci.ts
-
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
