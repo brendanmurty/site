@@ -19,7 +19,7 @@ jobs:
       - name: Initialise ENV file
         run: cp .env.example .env
       - name: Set Pirsch analytics site code in ENV file
-        run: sed 's/PIRSCH_ANALYTICS_SITE_CODE=/PIRSCH_ANALYTICS_SITE_CODE=${{ secrets.PIRSCH_ANALYTICS_SITE_CODE }}/' .env
+        run: sed -i 's/PIRSCH_ANALYTICS_SITE_CODE=/PIRSCH_ANALYTICS_SITE_CODE=${{ secrets.PIRSCH_ANALYTICS_SITE_CODE }}/' .env
       - name: Install Deno
         uses: denoland/setup-deno@main
         with:
