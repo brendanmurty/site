@@ -22,8 +22,10 @@ jobs:
         uses: denoland/setup-deno@main
         with:
           deno-version: 1.22.1
+      - name: Install Lume
+        run: deno run -A https://deno.land/x/lume/install.ts
       - name: Build site
-        run: deno run -A https://deno.land/x/lume/ci.ts
+        run: ./bin/build
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
