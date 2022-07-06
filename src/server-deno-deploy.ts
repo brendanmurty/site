@@ -4,6 +4,9 @@ const app = new Application();
 
 app.use(async (ctx, next) => {
   try {
+    // TODO: Setup redirects to handle shortcut redirects like b.murty.au ---> murty.au/brendan
+    // const request_domain: string = ctx.request.headers.get('host')?.split(':')[0]);
+
     await ctx.send({
       root: `${Deno.cwd()}/public`,
       index: "index.html",
