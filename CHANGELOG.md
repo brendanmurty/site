@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.039
+- Core: Make site list links relative
 - Version 2022.038
 - Core: Update Deno Deploy server script
 - Version 2022.037
