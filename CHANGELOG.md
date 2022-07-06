@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.040
+- Core: Allow Pirsch analytics site code to be used via Deno Deploy
 - Version 2022.039
 - Core: Make site list links relative
 - Version 2022.038
