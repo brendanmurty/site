@@ -1,6 +1,7 @@
 # murty.au
 
-[![Deployment](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml/badge.svg)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
+[![Deployment via Deno Deploy](https://github.com/brendanmurty/murty-website/actions/workflows/deployment-deno-deploy.yml/badge.svg)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment-deno-deploy.yml) 
+[![Deployment via Web Server](https://github.com/brendanmurty/murty-website/actions/workflows/deployment-web-server.yml/badge.svg)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment-web-server.yml)
 
 This repository contains the website for the [Murty family](https://murty.au/). It's built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), purchased fonts from [Mass-Driver](https://mass-driver.com/) and [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons.
 
