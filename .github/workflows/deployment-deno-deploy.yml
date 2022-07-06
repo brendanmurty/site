@@ -1,0 +1,32 @@
+name: Deployment to Deno Deploy
+
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+
+      - name: Install Deno
+        uses: denoland/setup-deno@main
+        with:
+          deno-version: 1.22.1
+
+      - name: Build site
+        run: deno run -A https://deno.land/x/lume/ci.ts
+
+      - name: Upload to Deno Deploy
+        uses: denoland/deployctl@v1
+        with:
+          project: "murty-website"
+          entrypoint: "./src/server-deno-deploy.ts"
