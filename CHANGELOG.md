@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2022.043
+- Core: Add TODO about domain redirects
+- Core: Update site list to use a consistent main domain
+- Docs: Update deployment badges
 - Version 2022.042
 - Core: Fix analytics code update in Deno Deploy process
 - Brendan: Clean up footer code
