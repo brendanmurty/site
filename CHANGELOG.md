@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.038
+- Core: Update Deno Deploy server script
 - Version 2022.037
 - Docs: Add Deno Deploy secret note
 - Core: Add empty new line to ENV file
