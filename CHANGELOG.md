@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.042
+- Core: Fix analytics code update in Deno Deploy process
+- Brendan: Clean up footer code
 - Version 2022.041
 - Core: Update Pirsch analytics site code update command for Deno Deploy
 - Version 2022.040
