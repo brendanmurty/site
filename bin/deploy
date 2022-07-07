@@ -8,17 +8,21 @@ red="\033[0;31m"
 end="\033[0m"
 
 # Exit if the version is not specified as a parameter
+
 if [ $# -eq 0 ]; then
   echo -e "${red}Please specify a version in a format like: 2020.123${end}"
   exit 1
 fi
 
 # Ask for confirmation from the user before continuing
+
 read -p "$(echo -e $blue"Are you sure you want to create a new version ("$1")? (y/n) "$end)" ANSWER
 if [ "$ANSWER" != "y" ]; then
   echo -e "${red}User cancelled, deploy aborted.${end}"
   exit 1
 fi
+
+# Run tests and exit if any tests fail
 
 echo -e "${blue}Running tests${end}"
 ${BASH_SOURCE%/*}/test

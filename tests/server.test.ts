@@ -27,7 +27,6 @@ Deno.test("src/server.ts", async(test) => {
         200
       );
     }
-
   });
 
 });
