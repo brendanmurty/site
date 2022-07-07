@@ -49,7 +49,6 @@ bin/build
   - All files in the `content` directory should contain your own content instead
   - All files in the `assets` directory should contain your own static files instead
   - Update or remove the GitHub Sponsors file at [.github/FUNDING.yml](.github/FUNDING.yml)
-  - Update the deployment GitHub Action file at [.github/workflows/deployment.yml](.github/workflows/deployment.yml)
   - Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
   - Purchase your own license to use [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons or use other icons
 3. Commit all of these changes to your forked repository
@@ -59,8 +58,9 @@ bin/build
   - Create a new Deno Deploy project for this site
   - Link your Deno Deploy project to your forked GitHub repository
   - Add your production domain(s) via `Settings > Domains`
-5. Complete your first deployment by following the related section below
-6. Test it all works for your production domain(s)
+5. Update the deployment GitHub Action file ([.github/workflows/deployment.yml](.github/workflows/deployment.yml)) so that the `project` name in the `denoland/deployctl` section matches your Deno Deploy project name
+6. Complete your first deployment by following the related section below
+7. Test it all works for your production domain(s)
 
 ### Deployment - Setup
 
