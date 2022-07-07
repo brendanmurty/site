@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.046
+- Core: Start move to Deno Deploy for deployments
 - Version 2022.045
 - Core: Use a single, simplified server for local and Deno Deploy usage
 - Core: Add redirect logs for Deno Deploy server
