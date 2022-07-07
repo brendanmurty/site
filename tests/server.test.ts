@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.143.0/testing/asserts.ts";
-Deno.test("src/server-local.ts", async(test) => {
+Deno.test("src/server.ts", async(test) => {
 
   await test.step({
     name: "valid HTTP response for 'http://127.0.0.1:8000/'",

@@ -32,4 +32,4 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "murty-website"
-          entrypoint: "./src/server-deno-deploy.ts"
+          entrypoint: "./src/server.ts"
