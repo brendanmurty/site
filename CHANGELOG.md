@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.047
+- Docs: Improve Deno Deploy setup steps
 - Version 2022.046
 - Core: Start move to Deno Deploy for deployments
 - Version 2022.045
