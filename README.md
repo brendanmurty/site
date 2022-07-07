@@ -54,10 +54,11 @@ bin/build
   - Purchase your own license to use [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons or use other icons
 3. Commit all of these changes to your forked repository
 4. Setup your [Deno Deploy](https://deno.com/deploy) account:
-  - Consider subscribing to the Pro account based on your usage needs
+  - Consider subscribing to the Deno Deploy Pro account based on your usage needs
   - Link to your GitHub account
-  - Create a new project for this site
-  - Link project to your forked GitHub repository
+  - Create a new Deno Deploy project for this site
+  - Link your Deno Deploy project to your forked GitHub repository
+  - Add your production domain(s) via `Settings > Domains`
 5. Complete your first deployment by following the related section below
 6. Test it all works for your production domain(s)
 
