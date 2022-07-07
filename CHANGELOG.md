@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.045
+- Core: Use a single, simplified server for local and Deno Deploy usage
+- Core: Add redirect logs for Deno Deploy server
 - Version 2022.044
 - Core: Setup shortcut domain redirects for Deno Deploy site
 - Version 2022.043
