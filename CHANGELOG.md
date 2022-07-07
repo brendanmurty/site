@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.050
+- Chore: Code style and general cleanup
 - Version 2022.049
 - Docs: Update initial setup process
 - Server: Remove unused include
