@@ -1,7 +1,6 @@
 # murty.au
 
-[![Deployment via Deno Deploy](https://github.com/brendanmurty/murty-website/actions/workflows/deployment-deno-deploy.yml/badge.svg)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment-deno-deploy.yml) 
-[![Deployment via Web Server](https://github.com/brendanmurty/murty-website/actions/workflows/deployment-web-server.yml/badge.svg)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment-web-server.yml)
+[![Deployment](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml/badge.svg)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
 
 This repository contains the website for the [Murty family](https://murty.au/). It's built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), purchased fonts from [Mass-Driver](https://mass-driver.com/) and [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons.
 
@@ -54,14 +53,13 @@ bin/build
   - Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
   - Purchase your own license to use [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons or use other icons
 3. Commit all of these changes to your forked repository
-4. SSH in to a new **Ubuntu 20.04** server
-5. Setup Git including [initial configuration](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) and an [SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for GitHub access from your server
-6. Git Clone your forked repository in to `~/site` and `cd` in to that directory
-7. Run the main setup script: `bin/setup`
-8. Edit the `.env` file so it has the appropriate configuration values
-9. Run the production setup script: `bin/setup-production`
-10. Setup a scheduled task to renew the SSL certificate via `crontab -e`: `0 0 1 * * sudo certbot renew --force-renewal --no-random-sleep-on-renew`
-11. Test it all works for your production domain(s)
+4. Setup your [Deno Deploy](https://deno.com/deploy) account:
+  - Consider subscribing to the Pro account based on your usage needs
+  - Link to your GitHub account
+  - Create a new project for this site
+  - Link project to your forked GitHub repository
+5. Complete your first deployment by following the related section below
+6. Test it all works for your production domain(s)
 
 ### Deployment - Setup
 
@@ -71,27 +69,11 @@ Create a new Environment named `deploy`.
 
 Then add some new Environment Secrets to the `deploy` Environment:
 
-1. SSH Host:
-  - Name: `SSH_HOST`
-  - Value: IP address of your web server
-  - Example: `123.1.2.3`
-2. SSH Username:
-  - Name: `SSH_USERNAME`
-  - Value: The username you use to login to the server
-  - Example: `jane_doe`
-3. SSH Password:
-  - Name: `SSH_PASSWORD`
-  - Value: The password you use to login to the server
-  - Example: `s$crt534^fff`
-4. Remote Directory:
-  - Name: `REMOTE_DIRECTORY`
-  - Value: The directory where the Git repository is located on the server
-  - Example: `/home/jane_doe/site`
-5. Deno Deploy key:
+1. Deno Deploy key:
   - Name: `DENO_DEPLOY_TOKEN`
   - Value: The related Access Token from your [Deno Deploy](https://deno.com/deploy) account
   - Example: `aaabbbccc222`
-6. Pirsch analytics site code:
+2. Pirsch analytics site code:
   - Name: `PIRSCH_ANALYTICS_SITE_CODE`
   - Value: The related site code from your [Pirsch analytics](https://pirsch.io/) account
   - Example: `aaabbbccc222`
@@ -118,3 +100,6 @@ This script will:
 - Create a new Git Tag (`YYYY.xxx` as detailed above)
 - Push changes up to the origin repository
 - This will then trigger an automated deployment process with GitHub Actions via [.github/workflows/deployment.yml](.github/workflows/deployment.yml)
+- That process will then make a new deployment in your related Deno Deploy account
+
+Following this, you need to **promote a deployment** to production status for it to be used by your configured domains.
