@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2022.049
+- Docs: Update initial setup process
+- Server: Remove unused include
 - Version 2022.048
 - Core: Remove redirect logs from server script
 - Version 2022.047
