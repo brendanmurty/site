@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.048
+- Core: Remove redirect logs from server script
 - Version 2022.047
 - Docs: Improve Deno Deploy setup steps
 - Version 2022.046
