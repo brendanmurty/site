@@ -103,4 +103,4 @@ This script will:
 - This will then trigger an automated deployment process with GitHub Actions via [.github/workflows/deployment.yml](.github/workflows/deployment.yml)
 - That process will then make a new deployment in your related Deno Deploy account
 
-Following this, you need to **promote a deployment** to production status for it to be used by your configured domains.
+Following this, in the **Deployments** tab in Deno Deploy, you need to manually select the **Promote to Production** option for this this deployment for it to be used by your configured domains.
