@@ -6,7 +6,7 @@ tags:
   - Basecamp
 ---
 
-After using [Basecamp 2](http://basecamp.com/2) for some time on my [Windows Phone](http://windowsphone.com/), I decided to build a third-party web based mobile client to improve the system for mobile devices. This became [UpcomingTasks](http://upcomingtasks.com/).</p>
+After using [Basecamp 2](http://basecamp.com/2) for some time on my [Windows Phone](http://windowsphone.com/), I decided to build a third-party web based mobile client to improve the system for mobile devices. This became **UpcomingTasks**.</p>
 
 One of the most basic requirements of the web client was that it needed to query the [Basecamp API](https://github.com/37signals/bcx-api) and return the results for display. Here's my *bc_results* PHP function that got the job done:
 

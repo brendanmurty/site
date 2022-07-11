@@ -6,7 +6,7 @@ tags:
   - Media
 ---
 
-Web apps like [UpcomingTasks](http://upcomingtasks.com/) are put to better use when they are added to home screens on devices. This allows the user to access them quickly and your web app earns it's place amongst the users' other apps.
+Web apps like **UpcomingTasks** are put to better use when they are added to home screens on devices. This allows the user to access them quickly and your web app earns it's place amongst the users' other apps.
 
 There are a few things to remember when implementing this feature in your web app.
 
@@ -77,7 +77,7 @@ And after following the directions on the page, it's now on the user's home scre
 
 Looks great!
 
-I'd also recommend a guide to assist your users in adding the page to their home screen, as I've done for UpcomingTasks on the [Add to Home](http://upcomingtasks.com/pages/addtohome.php) page.
+I'd also recommend a guide to assist your users in adding the page to their home screen, as I've done for UpcomingTasks on the Add to Home page.
 
 #### Notes
 

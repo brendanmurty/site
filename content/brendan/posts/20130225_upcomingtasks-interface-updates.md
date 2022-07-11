@@ -15,4 +15,4 @@ Also, as it's where you actually get work done, the task page has also been upda
 ![Open menu](/images/brendan/interface-task.png)
 *Looks like I've completed this task*
 
-Hope you enjoy these updates. If you're feeling generous, please feel free to [donate to support UpcomingTasks development](http://upcomingtasks.com/pages/donate.php)!
+Hope you enjoy these updates. If you're feeling generous, please feel free to donate to support **UpcomingTasks** development.
