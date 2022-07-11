@@ -42,7 +42,11 @@ app.use(async (ctx, next) => {
       root: `${Deno.cwd()}/public`,
       index: "index.html",
     });
-  } catch {
+  } catch (error) {
+    if (error) {
+      console.error(error);
+    }
+
     next();
   }
 });
