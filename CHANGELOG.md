@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2022.051
+- Brendan: Remove links to upcomingtasks.com
+- Docs: Fix grammar in recent updates
+- Docs: Improve deployment steps
 - Version 2022.050
 - Chore: Code style and general cleanup
 - Version 2022.049
