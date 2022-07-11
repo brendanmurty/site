@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.052
+- Server: Catch and show details of errors if they occur
 - Version 2022.051
 - Brendan: Remove links to upcomingtasks.com
 - Docs: Fix grammar in recent updates
