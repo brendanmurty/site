@@ -4,6 +4,18 @@ import { LastFmLovedTracks } from "../src/lastfm-loved-tracks.ts";
 
 Deno.test("src/lastfm-loved-tracks.ts", async(test) => {
 
+  const lastFmApiKey: string = Deno.env.get("LASTFM_API_KEY") || "";
+
+  await test.step({
+    name: "required var in env file is set (LASTFM_API_KEY)",
+    fn: () => {
+      assertNotEquals(
+        lastFmApiKey,
+        ""
+      );
+    }
+  });
+
   await test.step({
     name: "returns an array of items",
     fn: async () => {
