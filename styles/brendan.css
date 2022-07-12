@@ -82,6 +82,11 @@ ul.brendan_posts .post-date {
   float: left;
 }
 
+/* TODO: Apply suitable styles here */
+.brendan .lastfm-loved-tracks {
+  display: none;
+}
+
 /* Medium sized screen */
 
 @media only screen and (max-width: 900px) {

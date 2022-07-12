@@ -15,6 +15,8 @@ export async function LastFmLovedTracks(): Promise<{ artist: string; track: stri
 
   let lovedTracks = [];
   for (const track of apiResponseBody.lovedtracks.track) {
+    // TODO: Get the correct image URL here - https://www.last.fm/api/show/track.getInfo
+
     lovedTracks.push({
       "artist": track.artist.name,
       "track": track.name,

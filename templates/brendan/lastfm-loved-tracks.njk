@@ -1,0 +1,16 @@
+{% if site.LASTFM_LOVED_TRACKS %}
+<aside class="lastfm-loved-tracks">
+  <h2>Favourite Music</h2>
+
+  <ul>
+    {% for loved in site.LASTFM_LOVED_TRACKS %}
+    <li>
+      <a href="{{ loved.url }}">
+        <img alt="" src="{{ loved.image }}">
+        <span>{{ loved.artist }} - {{ loved.track }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}
