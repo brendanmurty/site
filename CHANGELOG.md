@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.054
+- Core: Specify a canonical URL value for site list page
 - Version 2022.053
 - Core: Specify a canonical URL value to make this more obvious for search engines
 - Version 2022.052
