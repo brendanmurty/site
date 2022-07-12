@@ -78,6 +78,10 @@ Then add some new Environment Secrets to the `deploy` Environment:
   - Name: `PIRSCH_ANALYTICS_SITE_CODE`
   - Value: The related site code from your [Pirsch analytics](https://pirsch.io/) account
   - Example: `aaabbbccc222`
+3. Last.fm API key:
+  - Name: `LASTFM_API_KEY`
+  - Value: Your [Last.fm API key](https://www.last.fm/api/account/create) to show your loved tracks on the site
+  - Example: `aaabbbccc222`
 
 Go back to your forked repository on GitHub, then go to `Settings > Secrets > Actions`.
 
