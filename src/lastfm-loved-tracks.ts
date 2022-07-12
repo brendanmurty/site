@@ -4,10 +4,14 @@ export async function LastFmLovedTracks(): Promise<{ artist: string; track: stri
   const lastFmApiKey: string = Deno.env.get("LASTFM_API_KEY") || "";
   const lastFmUsername = "brendanmurty";
 
+  // TODO: Fail if the API key is not set
+
   const apiRequestUrl: string = 'http://ws.audioscrobbler.com/2.0/?method=user.getlovedtracks&user=' + lastFmUsername + '&limit=5&api_key=' + lastFmApiKey + '&format=json';
 
   const apiResponse = await fetch(apiRequestUrl);
   const apiResponseBody = await apiResponse.json();
+
+  // TODO: Fail if "apiResponse.status" is not 200
 
   let lovedTracks = [];
   for (const track of apiResponseBody.lovedtracks.track) {
