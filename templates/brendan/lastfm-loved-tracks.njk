@@ -1,16 +1,15 @@
 {% if site.LASTFM_LOVED_TRACKS %}
-<aside class="lastfm-loved-tracks">
-  <h2>Favourite Music</h2>
-
-  <ul>
-    {% for loved in site.LASTFM_LOVED_TRACKS %}
-    <li>
-      <a href="{{ loved.url }}">
-        <img alt="" class="svg" src="/svg/music-solid.svg">
-        <span>{{ loved.artist }} - {{ loved.track }}</span>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</aside>
+<ul class="listing lastfm-loved-tracks">
+  <li class="listing-header">
+    <h2>Favourite Music</h2>
+  </li>
+  {% for loved in site.LASTFM_LOVED_TRACKS %}
+  <li>
+    <a href="{{ loved.url }}">
+      <img alt="" class="svg" src="/svg/music-solid.svg">
+      <span>{{ loved.artist }} - {{ loved.track }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 {% endif %}

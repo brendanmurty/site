@@ -72,19 +72,16 @@ ul.brendan_posts .post-date {
   margin-right: 5px;
 }
 
-.brendan .post-latest {
-  margin: 50px 0 25px;
-}
-
-.brendan .post-latest .svg {
+.brendan .post-latest .svg,
+.brendan .lastfm-loved-tracks .svg {
   height: 40px;
   width: 60px;
   float: left;
 }
 
-/* TODO: Apply suitable styles here */
-.brendan .lastfm-loved-tracks {
-  display: none;
+.brendan ul.listing.post-latest,
+.brendan ul.listing.lastfm-loved-tracks {
+  width: 100%;
 }
 
 /* Medium sized screen */
