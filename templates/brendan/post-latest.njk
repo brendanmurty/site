@@ -1,7 +1,13 @@
 {% if site.BLOG_POSTS_LATEST %}
-<aside class="post-latest">
-  <h2>Latest Post</h2>
-  <img alt="" class="svg" src="/svg/file-pen-solid.svg">
-  <a href="{{ site.BLOG_POSTS_LATEST.url }}">{{ site.BLOG_POSTS_LATEST.title }}</a>
-</aside>
+<ul class="listing post-latest">
+  <li class="listing-header">
+    <h2>Latest Post</h2>
+  </li>
+  <li>
+    <a href="{{ site.BLOG_POSTS_LATEST.url }}">
+      <img alt="" class="svg" src="/svg/file-pen-solid.svg">
+      <span>{{ site.BLOG_POSTS_LATEST.title }}</span>
+    </a>
+  </li>
+</ul>
 {% endif %}
