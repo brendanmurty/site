@@ -18,8 +18,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Initialise ENV file
         run: cp .env.example .env
-      - name: Set Pirsch analytics site code in ENV file
+      - name: Add Pirsch analytics site code to ENV file
         run: sed -i 's/PIRSCH_ANALYTICS_SITE_CODE=/PIRSCH_ANALYTICS_SITE_CODE=${{ secrets.PIRSCH_ANALYTICS_SITE_CODE }}/' .env
+      - name: Add Last.fm API key to ENV file
+        run: sed -i 's/LASTFM_API_KEY=/LASTFM_API_KEY=${{ secrets.LASTFM_API_KEY }}/' .env
       - name: Install Deno
         uses: denoland/setup-deno@main
         with:
