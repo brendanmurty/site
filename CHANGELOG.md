@@ -1,5 +1,16 @@
 # Change Log
 
+- Version 2022.055
+- Brendan: Favourite Music styling and related layout improvements
+- Brendan: Improve layout consistency for Latest Post section
+- Core: Simplify Last.fm track image method
+- Core: Add error handling to Last.fm Loved Tracks
+- DevOps: Add Last.fm API key to deployment process
+- Core: Add initial front-end elements and styling for Last.fm loved tracks
+- Tests: Add test to check for Last.fm API key
+- Core: Add TODOs for initial Last.fm work
+- Docs: Add section about Last.fm
+- Core: Initial work on Last.fm loved tracks display
 - Version 2022.054
 - Core: Specify a canonical URL value for site list page
 - Version 2022.053
