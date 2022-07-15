@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.057
+- Server: Syntax fixes
 - Version 2022.056
 - Server: Add redirect for UpcomingTasks domain
 - Version 2022.055
