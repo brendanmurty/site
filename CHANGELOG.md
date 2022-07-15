@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.056
+- Server: Add redirect for UpcomingTasks domain
 - Version 2022.055
 - Brendan: Favourite Music styling and related layout improvements
 - Brendan: Improve layout consistency for Latest Post section
