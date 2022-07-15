@@ -42,8 +42,8 @@ app.use(async (ctx, next) => {
 
     // Serve the request from the static site directory
     await ctx.send({
-      root: '${Deno.cwd()}/public',
-      index: "index.html",
+      root: Deno.cwd() + '/public',
+      index: 'index.html'
     });
   } catch (error) {
     if (error) {
