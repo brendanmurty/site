@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.058
+- DevOps: Remove references to unused log files
 - Version 2022.057
 - Server: Syntax fixes
 - Version 2022.056
