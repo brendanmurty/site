@@ -13,5 +13,5 @@ ${BASH_SOURCE%/*}/build
 
 # Start the web server
 
-echo -e "${blue}Server starting${end}"
+echo -e "${blue}Server starting - http://localhost:8000/ ${end}"
 deno run --allow-net --allow-read src/server.ts
