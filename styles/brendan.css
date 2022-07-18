@@ -14,24 +14,6 @@
   border-radius: 200px;
 }
 
-.brendan ul.listing {
-  list-style: none;
-  margin: 25px 0 0;
-  width: 33.3%;
-  float: left;
-}
-
-.brendan ul.listing li:not(.listing-header) {
-  margin: 0 0 25px;
-  line-height: 40px;
-}
-
-.brendan ul.listing img.svg {
-  height: 40px;
-  width: 60px;
-  float: left;
-}
-
 ul.brendan_posts {
   list-style: none;
   margin-left: 0;
@@ -72,6 +54,31 @@ ul.brendan_posts .post-date {
   margin-right: 5px;
 }
 
+.brendan ul.listing {
+  list-style: none;
+  margin: 25px 0 0;
+  width: 33.3%;
+  float: left;
+}
+
+.brendan ul.listing li:not(.listing-header) {
+  margin: 0 0 25px;
+  line-height: 40px;
+  float: left;
+  width: 100%;
+}
+
+.brendan ul.listing li:not(.listing-header) a {
+  width: 100%;
+  float: left;
+}
+
+.brendan ul.listing img.svg {
+  height: 40px;
+  width: 60px;
+  float: left;
+}
+
 .brendan .post-latest .svg,
 .brendan .lastfm-loved-tracks .svg {
   height: 40px;
@@ -82,6 +89,14 @@ ul.brendan_posts .post-date {
 .brendan ul.listing.post-latest,
 .brendan ul.listing.lastfm-loved-tracks {
   width: 100%;
+}
+
+.brendan ul.listing .label {
+  float: left;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Medium sized screen */
