@@ -51,7 +51,7 @@ ul.brendan_posts .post-date {
 
 .brendan .tag-link .icon {
   width: 15px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .brendan ul.listing {
@@ -76,15 +76,7 @@ ul.brendan_posts .post-date {
 .brendan ul.listing .icon {
   height: 40px;
   font-size: 40px;
-  width: 60px;
-  float: left;
-}
-
-.brendan .post-latest .icon,
-.brendan .lastfm-loved-tracks .icon {
-  height: 40px;
-  font-size: 40px;
-  width: 60px;
+  margin-right: 10px;
   float: left;
 }
 
