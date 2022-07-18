@@ -1,5 +1,7 @@
 /* ---- Variables ---- */
 
+/* Defaults and for those who prefer darker colour schemes */
+
 body {
   --highlight-colour: #23c5b0;
   --background-colour: #111;
@@ -17,4 +19,14 @@ body.isla {
 
 body.luca {
   --highlight-colour: #e94e0f;
+}
+
+/* Overrides for those who prefer lighter colour schemes */
+
+@media (prefers-color-scheme: light) {
+  body {
+    --background-colour: #fff;
+    --foreground-colour: #111;
+    --secondary-colour: #888;
+  }
 }

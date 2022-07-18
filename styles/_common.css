@@ -1,6 +1,5 @@
 /* Reset */
 
-
 @-webkit-viewport {
   width: device-width;
 }
@@ -41,9 +40,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-
 /* Fonts */
-
 
 @font-face {
   font-family: 'MDNichrome';
@@ -61,9 +58,7 @@ html {
   src: local('MDSystem'), local('MDSystem-Regular'), url('/fonts/MDSystem-Regular.woff') format('woff');
 }
 
-
 /* General */
-
 
 html {
   -webkit-text-size-adjust: none;
@@ -182,9 +177,18 @@ pre {
   overflow-x: scroll;
 }
 
+/* SVGs */
+
+img.svg {
+  color: var(--foreground-colour);
+}
+
+svg {
+  fill: currentColor;
+}
+
 
 /* Print styles */
-
 
 @media print {
   html {
