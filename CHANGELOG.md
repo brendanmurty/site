@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2022.060
+- Design: Improve spacing around icons
+- Design: Update icon used for latest post
+- Design: Use fixed width icons instead
 - Version 2022.059
 - Design: Move from SVG icons to webfonts, tweaks for dark and light modes
 - Design: Initial work on automatic dark and light modes based on user OS configuration
