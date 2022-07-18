@@ -18,7 +18,7 @@ export async function LastFmLovedTracks(): Promise<{ artist: string; track: stri
     throw new Error("LastFmLovedTracks - Invalid API response.");
   }
 
-  let lovedTracks = [];
+  const lovedTracks = [];
   for (const track of apiResponseBody.lovedtracks.track) {
     lovedTracks.push({
       "artist": track.artist.name,
