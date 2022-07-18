@@ -1,5 +1,15 @@
 # Change Log
 
+- Version 2022.059
+- Design: Move from SVG icons to webfonts, tweaks for dark and light modes
+- Design: Initial work on automatic dark and light modes based on user OS configuration
+- Design: Simplify theme colours
+- Core: Simplify listing page templating and make links relative
+- Design: Simplify colours for site listing page
+- DevOps: Split out site data processing to a new script instead
+- Chore: Apply Deno linting suggestion
+- DevOps: Improve serve start messaging
+- Core: General layout improvements, shorten longer listing titles as needed
 - Version 2022.058
 - DevOps: Remove references to unused log files
 - Version 2022.057
