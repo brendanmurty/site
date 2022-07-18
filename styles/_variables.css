@@ -1,13 +1,6 @@
 /* ---- Variables ---- */
 
-.murty {
-  --highlight-colour: #23c5b0;
-  --background-colour: #191919;
-  --foreground-colour: #fff;
-  --secondary-colour: #111;
-}
-
-.brendan {
+.murty, .brendan {
   --highlight-colour: #23c5b0;
   --background-colour: #111;
   --foreground-colour: #fff;
