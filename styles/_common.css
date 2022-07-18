@@ -58,6 +58,12 @@ html {
   src: local('MDSystem'), local('MDSystem-Regular'), url('/fonts/MDSystem-Regular.woff') format('woff');
 }
 
+/* Icons */
+
+.icon {
+  color: var(--foreground-colour) !important;
+}
+
 /* General */
 
 html {
@@ -176,17 +182,6 @@ pre {
   padding: 20px;
   overflow-x: scroll;
 }
-
-/* SVGs */
-
-img.svg {
-  color: var(--foreground-colour);
-}
-
-svg {
-  fill: currentColor;
-}
-
 
 /* Print styles */
 

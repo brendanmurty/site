@@ -49,7 +49,7 @@ ul.brendan_posts .post-date {
   margin: 0 0 20px;
 }
 
-.brendan .tag-link .svg {
+.brendan .tag-link .icon {
   width: 15px;
   margin-right: 5px;
 }
@@ -73,15 +73,17 @@ ul.brendan_posts .post-date {
   float: left;
 }
 
-.brendan ul.listing img.svg {
+.brendan ul.listing .icon {
   height: 40px;
+  font-size: 40px;
   width: 60px;
   float: left;
 }
 
-.brendan .post-latest .svg,
-.brendan .lastfm-loved-tracks .svg {
+.brendan .post-latest .icon,
+.brendan .lastfm-loved-tracks .icon {
   height: 40px;
+  font-size: 40px;
   width: 60px;
   float: left;
 }

@@ -28,6 +28,7 @@ echo -e "${yellow}Minifying the combined CSS file${end}"
 deno run -A --allow-read --allow-write https://deno.land/x/minifier@v1.1.1/cli.ts building/_assets/css/styles.css building/_assets/css/styles.min.css
 rm building/_assets/css/styles.css
 
+
 echo -e "${yellow}Preparing site data for Lume${end}"
 deno run -A --allow-read --allow-write src/site-data.ts
 
@@ -37,10 +38,10 @@ lume
 echo -e "${yellow}Copying static files to 'public' directory${end}"
 cp -r "assets/fonts" "public/fonts"
 cp -r "assets/images" "public/images"
-cp -r "assets/svg" "public/svg"
 cp "assets/favicon.ico" "public/favicon.ico"
 cp "assets/robots.txt" "public/robots.txt"
 mkdir -p "public/css"
+cp -r "assets/fontawesome" "public/css"
 cp "building/_assets/css/styles.min.css" "public/css"
 
 echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"

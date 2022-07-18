@@ -2,7 +2,7 @@
 
 [![Deployment](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml/badge.svg)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
 
-This repository contains the website for the [Murty family](https://murty.au/). It's built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), purchased fonts from [Mass-Driver](https://mass-driver.com/) and [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons.
+This repository contains the website for the [Murty family](https://murty.au/). It's built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), purchased fonts from [Mass-Driver](https://mass-driver.com/) and [Font Awesome](https://fontawesome.com/)  icons.
 
 ## Initial Setup
 
@@ -50,7 +50,6 @@ bin/build
   - All files in the `assets` directory should contain your own static files instead
   - Update or remove the GitHub Sponsors file at [.github/FUNDING.yml](.github/FUNDING.yml)
   - Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
-  - Purchase your own license to use [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons or use other icons
 3. Commit all of these changes to your forked repository
 4. Setup your [Deno Deploy](https://deno.com/deploy) account:
   - Consider subscribing to the Deno Deploy Pro account based on your usage needs
