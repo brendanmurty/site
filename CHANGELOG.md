@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.061
+- Content: Remove photos profile link
 - Version 2022.060
 - Design: Improve spacing around icons
 - Design: Update icon used for latest post
