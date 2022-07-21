@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.062
+- Content: Remove Polywork profile link
 - Version 2022.061
 - Content: Remove photos profile link
 - Version 2022.060
