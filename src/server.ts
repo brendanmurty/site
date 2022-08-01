@@ -2,7 +2,7 @@ import { Application } from "https://deno.land/x/oak@v10.6.0/mod.ts";
 
 const app = new Application();
 
-app.use(async (context, next) => {
+app.use(async (_context, next) => {
   try {
     await next();
   } catch (error) {
