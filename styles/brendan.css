@@ -29,6 +29,11 @@ ul.brendan_posts .post-date {
   display: inline-block;
 }
 
+.brendan_post article img {
+  clear: both;
+  display: block;
+}
+
 .brendan .tag-list {
   margin: 0 0 20px;
   float: left;
