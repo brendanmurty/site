@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.064
+- DevOps: Simplify server error handler
 - Version 2022.063
 - DevOps: Improve error handling in server script
 - Version 2022.062
