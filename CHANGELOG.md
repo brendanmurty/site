@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2022.065
+- DevOps: Log errors then redirect to avoid browser default error pages on 404s
+- Design: Ensure images in blog posts are displayed correctly
+- Chore: Apply TypeScript linting suggestion
 - Version 2022.064
 - DevOps: Simplify server error handler
 - Version 2022.063
