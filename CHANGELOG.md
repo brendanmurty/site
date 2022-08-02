@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.066
+- Brendan: Content updates
 - Version 2022.065
 - DevOps: Log errors then redirect to avoid browser default error pages on 404s
 - Design: Ensure images in blog posts are displayed correctly
