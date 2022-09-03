@@ -1,3 +1,8 @@
+# Change Log
+
+- Version 2022.070
+- [DevOps: Fix changelog title command](https://github.com/brendanmurty/murty-website/commit/053714c)
+- [Version 2022.069](https://github.com/brendanmurty/murty-website/commit/f6e909a)
 - [DevOps: Add commit links to changelog content, clarify forking process for this](https://github.com/brendanmurty/murty-website/commit/769db80)
 - [Version 2022.068](https://github.com/brendanmurty/murty-website/commit/53bbee3)
 - [DevOps: Update Deno version in deployment process](https://github.com/brendanmurty/murty-website/commit/33e16c3)
