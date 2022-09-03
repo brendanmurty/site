@@ -1,286 +1,285 @@
-# Change Log
-
-- Version 2022.068
-- DevOps: Update Deno version in deployment process
-- Version 2022.067
-- Brendan: Content updates
-- Version 2022.066
-- Brendan: Content updates
-- Version 2022.065
-- DevOps: Log errors then redirect to avoid browser default error pages on 404s
-- Design: Ensure images in blog posts are displayed correctly
-- Chore: Apply TypeScript linting suggestion
-- Version 2022.064
-- DevOps: Simplify server error handler
-- Version 2022.063
-- DevOps: Improve error handling in server script
-- Version 2022.062
-- Content: Remove Polywork profile link
-- Version 2022.061
-- Content: Remove photos profile link
-- Version 2022.060
-- Design: Improve spacing around icons
-- Design: Update icon used for latest post
-- Design: Use fixed width icons instead
-- Version 2022.059
-- Design: Move from SVG icons to webfonts, tweaks for dark and light modes
-- Design: Initial work on automatic dark and light modes based on user OS configuration
-- Design: Simplify theme colours
-- Core: Simplify listing page templating and make links relative
-- Design: Simplify colours for site listing page
-- DevOps: Split out site data processing to a new script instead
-- Chore: Apply Deno linting suggestion
-- DevOps: Improve serve start messaging
-- Core: General layout improvements, shorten longer listing titles as needed
-- Version 2022.058
-- DevOps: Remove references to unused log files
-- Version 2022.057
-- Server: Syntax fixes
-- Version 2022.056
-- Server: Add redirect for UpcomingTasks domain
-- Version 2022.055
-- Brendan: Favourite Music styling and related layout improvements
-- Brendan: Improve layout consistency for Latest Post section
-- Core: Simplify Last.fm track image method
-- Core: Add error handling to Last.fm Loved Tracks
-- DevOps: Add Last.fm API key to deployment process
-- Core: Add initial front-end elements and styling for Last.fm loved tracks
-- Tests: Add test to check for Last.fm API key
-- Core: Add TODOs for initial Last.fm work
-- Docs: Add section about Last.fm
-- Core: Initial work on Last.fm loved tracks display
-- Version 2022.054
-- Core: Specify a canonical URL value for site list page
-- Version 2022.053
-- Core: Specify a canonical URL value to make this more obvious for search engines
-- Version 2022.052
-- Server: Catch and show details of errors if they occur
-- Version 2022.051
-- Brendan: Remove links to upcomingtasks.com
-- Docs: Fix grammar in recent updates
-- Docs: Improve deployment steps
-- Version 2022.050
-- Chore: Code style and general cleanup
-- Version 2022.049
-- Docs: Update initial setup process
-- Server: Remove unused include
-- Version 2022.048
-- Core: Remove redirect logs from server script
-- Version 2022.047
-- Docs: Improve Deno Deploy setup steps
-- Version 2022.046
-- Core: Start move to Deno Deploy for deployments
-- Version 2022.045
-- Core: Use a single, simplified server for local and Deno Deploy usage
-- Core: Add redirect logs for Deno Deploy server
-- Version 2022.044
-- Core: Setup shortcut domain redirects for Deno Deploy site
-- Version 2022.043
-- Core: Add TODO about domain redirects
-- Core: Update site list to use a consistent main domain
-- Docs: Update deployment badges
-- Version 2022.042
-- Core: Fix analytics code update in Deno Deploy process
-- Brendan: Clean up footer code
-- Version 2022.041
-- Core: Update Pirsch analytics site code update command for Deno Deploy
-- Version 2022.040
-- Core: Allow Pirsch analytics site code to be used via Deno Deploy
-- Version 2022.039
-- Core: Make site list links relative
-- Version 2022.038
-- Core: Update Deno Deploy server script
-- Version 2022.037
-- Docs: Add Deno Deploy secret note
-- Core: Add empty new line to ENV file
-- Version 2022.036
-- Core: Improve Deno Deploy process
-- Version 2022.035
-- Core: Add basic ENV file setup to Deno Deploy action
-- Version 2022.034
-- Core: Updates to deployment methods, trial using Deno Deploy
-- Version 2022.033
-- Brendan: Add latest post element to index page
-- Core: Add posts latest feature, update related tests and improve test command
-- Core: Split out post list function
-- Version 2022.032
-- Core: Fix analytics variable output
-- Version 2022.031
-- Core: Move to Pirsch analytics
-- Docs: Fix paths to scripts
-- Docs: Update initial setup process
-- Version 2022.030
-- Core: Improve script wording and text colours
-- Design: Improve layout on larger screens
-- Tests: Add local server tests and improve test script
-- Core: Update version of Oak used by local server script
-- Tests: Add build script tests
-- Tests: Fix build test, process updates, use newer assertion lib
-- Tests: Merge similar tests for JSON feed script
-- Tests: Finish check for JSON items count
-- Tests: Progress for JSON items test
-- Tests: Add more tests for JSON feed script
-- Tests: Fix JSON content test
-- Version 2022.029
-- Deploy: Update path to config file and fix build command
-- Core: Allow scripts to be executed
-- Version 2022.028
-- Tests: Comment out unfinished test
-- Core: Update Bash scripts files and structure
-- Brendan: Add more profile links and update ordering of lists
-- Tests: Comment out unfinished test
-- Tests: Progress on JSON feed items
-- Tests: Check if posts JSON file exists
-- Tests: Start build script test, cleanup
-- Tests: Initial setup, commands and docs
-- Version 2022.027
-- Brendan: Open Graph improvements and related larger profile image
-- Version 2022.026
-- Brendan: Add Open Graph tags to header
-- Version 2022.025
-- Docs: Update initial setup process
-- Version 2022.024
-- Brendan: Content and index page updates
-- Version 2022.023
-- Brendan: Content updates
-- Version 2022.022
-- Brendan: Content updates
-- Version 2022.021
-- Core: Fix links in JSON feed and only show error lines in output
-- Brendan: Content updates
-- Version 2022.020
-- Docs: Fix deployment process
-- Version 2022.019
-- Docs: Update deployment setup to match new GitHub secrets process
-- Version 2022.018
-- Core: Add deployment badge
-- Version 2022.017
-- Docs: Update deployment setup process
-- Core: Remove obsolete gitattributes file
-- Core: Cleanup gitignore
-- Core: Update funding options
-- Version 2022.016
-- Core: Fix Deno binary paths during deployment process
-- Version 2022.015
-- Core: Use a specific version of Lume
-- Core: Remove obsolete Git LFS setup
-- Version 2022.014
-- Core: Move away from Deno binaries in the repo, related cleanup
-- Core: Deno code linting improvements
-- Brendan: Update links lists
-- Version 2022.013
-- Brendan: Content updates
-- Core: Refresh log files before each build
-- Version 2022.012
-- Core: Add support for customised Fathom Analytics script URL
-- Version 2022.011
-- Core: Update links following repository rename
-- Brendan: Update RSS feed URL
-- Brendan: Update old link
-- Core: Update email address reference
-- Docs: Update email in security reporting section
-- Brendan: Update resume PDF
-- Version 2022.010
-- Core: More domain and email updates
-- Version 2022.009
-- Core: Fix some heading levels
-- Version 2022.008
-- Core: Update SSL setup command
-- Version 2022.007
-- Brendan: Update resume
-- Core: Change main domain to murty.au
-- Docs: Fix wording in security policy
-- Version 2022.006
-- Revert "Core: Remove analytics"
-- Core: Update Deno binaries
-- Version 2022.005
-- Core: Add new domains
-- Version 2022.004
-- Brendan: Update baby posts
-- Core: Remove unused domains from config files
-- Version 2022.003
-- Brendan: Update UpcomingTasks links
-- Core: Remove unused domains
-- Version 2022.002
-- Core: Remove analytics
-- Version 2022.001
-- Brendan: Add "Buy me a coffee" link and sponsorship option
-- Core: Update Deno binaries
-- Version 2021.121
-- Brendan: Add page titles to tag list pages
-- Version 2021.120
-- Brendan: Add tag lists to post pages, update related styling
-- Brendan: Add tag list pages, update page titles
-- Brendan: Add tag list page
-- Brendan: Add tags to current posts
-- Version 2021.119
-- Brendan: Improve page titles
-- Core: Update Deno binaries
-- Version 2021.118
-- Maintenance: Fix tabbing in links list
-- Content: Update description tag content values
-- Version 2021.117
-- Scripts: Update production Apache SSL configuration process
-- Scripts: Update production Apache configuration process
-- Scripts: Revert change to build process order
-- Scripts: Remove duplicated file copy step
-- Scripts: Update build process order
-- Core: Remove another obsolete Apache config file
-- Core: Remove obsolete Apache config file
-- Scripts: Update production setup process
-- Core: Improve Git Ignore configuration
-- Version 2021.116
-- Brendan: Update job title
-- Version 2021.115
-- Core: Move to managed Fathom Analytics
-- Core: Fix font preload tags
-- Version 2021.114
-- Brendan: Update job history
-- Version 2021.113
-- Fix max image widths, improve post list styling
-- Version 2021.112
-- Update Deno binaries
-- Improve print styles, common styles and add styles for kids
-- Improve CSS formatting, progress on print styles
-- Improve post list and PDF links, start on print styles
-- Improve alignment in social listings, simplify responsiveness there
-- Improve social listings layout
-- Add social links list styling
-- Responsive styles for some header elements
-- Progress on Brendan's styles
-- Build site listing styles
-- Fix font preloads
-- Fix font embeds
-- Start of redesign
-- Version 2021.111
-- Core: Update Deno binary properties
-- Core: Update Fathom Analytics embed code
-- Version 2021.110
-- Core: Use self-hosted Fathom Analytics instead
-- Version 2021.109
-- Core: Update build process to match new Lume version
-- Core: Update Deno binaries
-- Core: Fix issue building JSON feed
-- Version 2021.108
-- Core: Move Deno binaries location
-- Core: Update Deno binaries
-- Brendan: Update profile image
-- Brendan: Add link to Strava profile
-- Version 2021.107
-- Brendan: Add link to Polywork profile
-- Version 2021.106
-- Docs: Detail what "_config.js" does
-- Docs: Update Deno scripts following move to a local Deno binary
-- Version 2021.105
-- Core: Move JSON Feed variables to load from the ENV file
-- Version 2021.104
-- Code Style: Fix analytics template tabbing
-- Core: Improve JSON Feed embed
-- Version 2021.103
-- Core: Improve setup process for Unix-based systems
-- Version 2021.102
-- Core: Fix execution status of Deno binaries
-- Version 2021.101
-- Core: Fix Git LFS setup for production
-- Version 2021.100
-- Core: Rebuild repository
+- [DevOps: Add commit links to changelog content, clarify forking process for this](https://github.com/brendanmurty/murty-website/commit/769db80)
+- [Version 2022.068](https://github.com/brendanmurty/murty-website/commit/53bbee3)
+- [DevOps: Update Deno version in deployment process](https://github.com/brendanmurty/murty-website/commit/33e16c3)
+- [Version 2022.067](https://github.com/brendanmurty/murty-website/commit/f2a696b)
+- [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/9c936b7)
+- [Version 2022.066](https://github.com/brendanmurty/murty-website/commit/9d9a8dd)
+- [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/fe9c7a9)
+- [Version 2022.065](https://github.com/brendanmurty/murty-website/commit/41e6488)
+- [DevOps: Log errors then redirect to avoid browser default error pages on 404s](https://github.com/brendanmurty/murty-website/commit/c7f1347)
+- [Design: Ensure images in blog posts are displayed correctly](https://github.com/brendanmurty/murty-website/commit/9baaba4)
+- [Chore: Apply TypeScript linting suggestion](https://github.com/brendanmurty/murty-website/commit/756754b)
+- [Version 2022.064](https://github.com/brendanmurty/murty-website/commit/a664320)
+- [DevOps: Simplify server error handler](https://github.com/brendanmurty/murty-website/commit/d1d2e65)
+- [Version 2022.063](https://github.com/brendanmurty/murty-website/commit/e985a87)
+- [DevOps: Improve error handling in server script](https://github.com/brendanmurty/murty-website/commit/e037369)
+- [Version 2022.062](https://github.com/brendanmurty/murty-website/commit/5335c95)
+- [Content: Remove Polywork profile link](https://github.com/brendanmurty/murty-website/commit/9ea8231)
+- [Version 2022.061](https://github.com/brendanmurty/murty-website/commit/19e1e07)
+- [Content: Remove photos profile link](https://github.com/brendanmurty/murty-website/commit/94b47f5)
+- [Version 2022.060](https://github.com/brendanmurty/murty-website/commit/2d0c5ee)
+- [Design: Improve spacing around icons](https://github.com/brendanmurty/murty-website/commit/3b71725)
+- [Design: Update icon used for latest post](https://github.com/brendanmurty/murty-website/commit/0c0e3d7)
+- [Design: Use fixed width icons instead](https://github.com/brendanmurty/murty-website/commit/4de4025)
+- [Version 2022.059](https://github.com/brendanmurty/murty-website/commit/387c717)
+- [Design: Move from SVG icons to webfonts, tweaks for dark and light modes](https://github.com/brendanmurty/murty-website/commit/63a86e1)
+- [Design: Initial work on automatic dark and light modes based on user OS configuration](https://github.com/brendanmurty/murty-website/commit/166cae8)
+- [Design: Simplify theme colours](https://github.com/brendanmurty/murty-website/commit/c4d536e)
+- [Core: Simplify listing page templating and make links relative](https://github.com/brendanmurty/murty-website/commit/7ad5f2a)
+- [Design: Simplify colours for site listing page](https://github.com/brendanmurty/murty-website/commit/e56cd1d)
+- [DevOps: Split out site data processing to a new script instead](https://github.com/brendanmurty/murty-website/commit/fb12222)
+- [Chore: Apply Deno linting suggestion](https://github.com/brendanmurty/murty-website/commit/4e11260)
+- [DevOps: Improve serve start messaging](https://github.com/brendanmurty/murty-website/commit/45d8387)
+- [Core: General layout improvements, shorten longer listing titles as needed](https://github.com/brendanmurty/murty-website/commit/417a6dd)
+- [Version 2022.058](https://github.com/brendanmurty/murty-website/commit/c2aad6f)
+- [DevOps: Remove references to unused log files](https://github.com/brendanmurty/murty-website/commit/b4b3819)
+- [Version 2022.057](https://github.com/brendanmurty/murty-website/commit/fe0299e)
+- [Server: Syntax fixes](https://github.com/brendanmurty/murty-website/commit/9ee51a7)
+- [Version 2022.056](https://github.com/brendanmurty/murty-website/commit/2cd6558)
+- [Server: Add redirect for UpcomingTasks domain](https://github.com/brendanmurty/murty-website/commit/ce3b633)
+- [Version 2022.055](https://github.com/brendanmurty/murty-website/commit/25a15fc)
+- [Brendan: Favourite Music styling and related layout improvements](https://github.com/brendanmurty/murty-website/commit/bda4dc3)
+- [Brendan: Improve layout consistency for Latest Post section](https://github.com/brendanmurty/murty-website/commit/824fc1a)
+- [Core: Simplify Last.fm track image method](https://github.com/brendanmurty/murty-website/commit/b640b14)
+- [Core: Add error handling to Last.fm Loved Tracks](https://github.com/brendanmurty/murty-website/commit/4b228aa)
+- [DevOps: Add Last.fm API key to deployment process](https://github.com/brendanmurty/murty-website/commit/27de9eb)
+- [Core: Add initial front-end elements and styling for Last.fm loved tracks](https://github.com/brendanmurty/murty-website/commit/49ff7cb)
+- [Tests: Add test to check for Last.fm API key](https://github.com/brendanmurty/murty-website/commit/5090324)
+- [Core: Add TODOs for initial Last.fm work](https://github.com/brendanmurty/murty-website/commit/740d25f)
+- [Docs: Add section about Last.fm](https://github.com/brendanmurty/murty-website/commit/288578c)
+- [Core: Initial work on Last.fm loved tracks display](https://github.com/brendanmurty/murty-website/commit/bab6279)
+- [Version 2022.054](https://github.com/brendanmurty/murty-website/commit/f4acc73)
+- [Core: Specify a canonical URL value for site list page](https://github.com/brendanmurty/murty-website/commit/d1cafcb)
+- [Version 2022.053](https://github.com/brendanmurty/murty-website/commit/6be2ebc)
+- [Core: Specify a canonical URL value to make this more obvious for search engines](https://github.com/brendanmurty/murty-website/commit/d15f86f)
+- [Version 2022.052](https://github.com/brendanmurty/murty-website/commit/f50b268)
+- [Server: Catch and show details of errors if they occur](https://github.com/brendanmurty/murty-website/commit/8cd06e0)
+- [Version 2022.051](https://github.com/brendanmurty/murty-website/commit/697f3f2)
+- [Brendan: Remove links to upcomingtasks.com](https://github.com/brendanmurty/murty-website/commit/00e625e)
+- [Docs: Fix grammar in recent updates](https://github.com/brendanmurty/murty-website/commit/414839b)
+- [Docs: Improve deployment steps](https://github.com/brendanmurty/murty-website/commit/b8efb82)
+- [Version 2022.050](https://github.com/brendanmurty/murty-website/commit/4dbce1b)
+- [Chore: Code style and general cleanup](https://github.com/brendanmurty/murty-website/commit/1f4cc7f)
+- [Version 2022.049](https://github.com/brendanmurty/murty-website/commit/02c16a5)
+- [Docs: Update initial setup process](https://github.com/brendanmurty/murty-website/commit/6b7fffc)
+- [Server: Remove unused include](https://github.com/brendanmurty/murty-website/commit/d0baa62)
+- [Version 2022.048](https://github.com/brendanmurty/murty-website/commit/0c38e91)
+- [Core: Remove redirect logs from server script](https://github.com/brendanmurty/murty-website/commit/eacdbe9)
+- [Version 2022.047](https://github.com/brendanmurty/murty-website/commit/3e7bd2b)
+- [Docs: Improve Deno Deploy setup steps](https://github.com/brendanmurty/murty-website/commit/9deb4f1)
+- [Version 2022.046](https://github.com/brendanmurty/murty-website/commit/b5f963c)
+- [Core: Start move to Deno Deploy for deployments](https://github.com/brendanmurty/murty-website/commit/1b4fed1)
+- [Version 2022.045](https://github.com/brendanmurty/murty-website/commit/a4ccdb5)
+- [Core: Use a single, simplified server for local and Deno Deploy usage](https://github.com/brendanmurty/murty-website/commit/43fedaf)
+- [Core: Add redirect logs for Deno Deploy server](https://github.com/brendanmurty/murty-website/commit/edef444)
+- [Version 2022.044](https://github.com/brendanmurty/murty-website/commit/a6ce3a0)
+- [Core: Setup shortcut domain redirects for Deno Deploy site](https://github.com/brendanmurty/murty-website/commit/921f812)
+- [Version 2022.043](https://github.com/brendanmurty/murty-website/commit/d361db2)
+- [Core: Add TODO about domain redirects](https://github.com/brendanmurty/murty-website/commit/b407f87)
+- [Core: Update site list to use a consistent main domain](https://github.com/brendanmurty/murty-website/commit/734d9ea)
+- [Docs: Update deployment badges](https://github.com/brendanmurty/murty-website/commit/674be7f)
+- [Version 2022.042](https://github.com/brendanmurty/murty-website/commit/661fbfd)
+- [Core: Fix analytics code update in Deno Deploy process](https://github.com/brendanmurty/murty-website/commit/0af805c)
+- [Brendan: Clean up footer code](https://github.com/brendanmurty/murty-website/commit/c131a81)
+- [Version 2022.041](https://github.com/brendanmurty/murty-website/commit/f3a8c06)
+- [Core: Update Pirsch analytics site code update command for Deno Deploy](https://github.com/brendanmurty/murty-website/commit/7c9d451)
+- [Version 2022.040](https://github.com/brendanmurty/murty-website/commit/0943b0a)
+- [Core: Allow Pirsch analytics site code to be used via Deno Deploy](https://github.com/brendanmurty/murty-website/commit/2abaa80)
+- [Version 2022.039](https://github.com/brendanmurty/murty-website/commit/31eba74)
+- [Core: Make site list links relative](https://github.com/brendanmurty/murty-website/commit/69e8312)
+- [Version 2022.038](https://github.com/brendanmurty/murty-website/commit/a6634e4)
+- [Core: Update Deno Deploy server script](https://github.com/brendanmurty/murty-website/commit/e351886)
+- [Version 2022.037](https://github.com/brendanmurty/murty-website/commit/3c6e8cf)
+- [Docs: Add Deno Deploy secret note](https://github.com/brendanmurty/murty-website/commit/3a227a4)
+- [Core: Add empty new line to ENV file](https://github.com/brendanmurty/murty-website/commit/0c26717)
+- [Version 2022.036](https://github.com/brendanmurty/murty-website/commit/9442cdf)
+- [Core: Improve Deno Deploy process](https://github.com/brendanmurty/murty-website/commit/0377da4)
+- [Version 2022.035](https://github.com/brendanmurty/murty-website/commit/764c19f)
+- [Core: Add basic ENV file setup to Deno Deploy action](https://github.com/brendanmurty/murty-website/commit/edad41a)
+- [Version 2022.034](https://github.com/brendanmurty/murty-website/commit/fa4242e)
+- [Core: Updates to deployment methods, trial using Deno Deploy](https://github.com/brendanmurty/murty-website/commit/588bdf2)
+- [Version 2022.033](https://github.com/brendanmurty/murty-website/commit/035ee69)
+- [Brendan: Add latest post element to index page](https://github.com/brendanmurty/murty-website/commit/3358ad5)
+- [Core: Add posts latest feature, update related tests and improve test command](https://github.com/brendanmurty/murty-website/commit/e8c966b)
+- [Core: Split out post list function](https://github.com/brendanmurty/murty-website/commit/5e8b0cb)
+- [Version 2022.032](https://github.com/brendanmurty/murty-website/commit/60e302d)
+- [Core: Fix analytics variable output](https://github.com/brendanmurty/murty-website/commit/fba363b)
+- [Version 2022.031](https://github.com/brendanmurty/murty-website/commit/ee40173)
+- [Core: Move to Pirsch analytics](https://github.com/brendanmurty/murty-website/commit/5bf51d6)
+- [Docs: Fix paths to scripts](https://github.com/brendanmurty/murty-website/commit/4d65d98)
+- [Docs: Update initial setup process](https://github.com/brendanmurty/murty-website/commit/ad2e649)
+- [Version 2022.030](https://github.com/brendanmurty/murty-website/commit/08b6c09)
+- [Core: Improve script wording and text colours](https://github.com/brendanmurty/murty-website/commit/6b3ca21)
+- [Design: Improve layout on larger screens](https://github.com/brendanmurty/murty-website/commit/6254402)
+- [Tests: Add local server tests and improve test script](https://github.com/brendanmurty/murty-website/commit/af81dbc)
+- [Core: Update version of Oak used by local server script](https://github.com/brendanmurty/murty-website/commit/f56bd83)
+- [Tests: Add build script tests](https://github.com/brendanmurty/murty-website/commit/128486d)
+- [Tests: Fix build test, process updates, use newer assertion lib](https://github.com/brendanmurty/murty-website/commit/47436bc)
+- [Tests: Merge similar tests for JSON feed script](https://github.com/brendanmurty/murty-website/commit/386db04)
+- [Tests: Finish check for JSON items count](https://github.com/brendanmurty/murty-website/commit/b616bef)
+- [Tests: Progress for JSON items test](https://github.com/brendanmurty/murty-website/commit/99b2ffa)
+- [Tests: Add more tests for JSON feed script](https://github.com/brendanmurty/murty-website/commit/a4f4aed)
+- [Tests: Fix JSON content test](https://github.com/brendanmurty/murty-website/commit/33eb1ee)
+- [Version 2022.029](https://github.com/brendanmurty/murty-website/commit/4b0a360)
+- [Deploy: Update path to config file and fix build command](https://github.com/brendanmurty/murty-website/commit/6dad9e2)
+- [Core: Allow scripts to be executed](https://github.com/brendanmurty/murty-website/commit/8e3014c)
+- [Version 2022.028](https://github.com/brendanmurty/murty-website/commit/9450c93)
+- [Tests: Comment out unfinished test](https://github.com/brendanmurty/murty-website/commit/93cb3a7)
+- [Core: Update Bash scripts files and structure](https://github.com/brendanmurty/murty-website/commit/4b80957)
+- [Brendan: Add more profile links and update ordering of lists](https://github.com/brendanmurty/murty-website/commit/255413f)
+- [Tests: Comment out unfinished test](https://github.com/brendanmurty/murty-website/commit/92c88b7)
+- [Tests: Progress on JSON feed items](https://github.com/brendanmurty/murty-website/commit/123805f)
+- [Tests: Check if posts JSON file exists](https://github.com/brendanmurty/murty-website/commit/66443c9)
+- [Tests: Start build script test, cleanup](https://github.com/brendanmurty/murty-website/commit/60c919f)
+- [Tests: Initial setup, commands and docs](https://github.com/brendanmurty/murty-website/commit/caf2b03)
+- [Version 2022.027](https://github.com/brendanmurty/murty-website/commit/49f74c1)
+- [Brendan: Open Graph improvements and related larger profile image](https://github.com/brendanmurty/murty-website/commit/ddbcb46)
+- [Version 2022.026](https://github.com/brendanmurty/murty-website/commit/a3c7c7d)
+- [Brendan: Add Open Graph tags to header](https://github.com/brendanmurty/murty-website/commit/c0c9007)
+- [Version 2022.025](https://github.com/brendanmurty/murty-website/commit/7780998)
+- [Docs: Update initial setup process](https://github.com/brendanmurty/murty-website/commit/20a8089)
+- [Version 2022.024](https://github.com/brendanmurty/murty-website/commit/e55b407)
+- [Brendan: Content and index page updates](https://github.com/brendanmurty/murty-website/commit/f4122f9)
+- [Version 2022.023](https://github.com/brendanmurty/murty-website/commit/927b751)
+- [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/f31753c)
+- [Version 2022.022](https://github.com/brendanmurty/murty-website/commit/3b0fc65)
+- [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/f395442)
+- [Version 2022.021](https://github.com/brendanmurty/murty-website/commit/453a591)
+- [Core: Fix links in JSON feed and only show error lines in output](https://github.com/brendanmurty/murty-website/commit/86619b7)
+- [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/2760b86)
+- [Version 2022.020](https://github.com/brendanmurty/murty-website/commit/cbf0b43)
+- [Docs: Fix deployment process](https://github.com/brendanmurty/murty-website/commit/5f64d8c)
+- [Version 2022.019](https://github.com/brendanmurty/murty-website/commit/2b10b95)
+- [Docs: Update deployment setup to match new GitHub secrets process](https://github.com/brendanmurty/murty-website/commit/770434e)
+- [Version 2022.018](https://github.com/brendanmurty/murty-website/commit/6c0053f)
+- [Core: Add deployment badge](https://github.com/brendanmurty/murty-website/commit/ba8d910)
+- [Version 2022.017](https://github.com/brendanmurty/murty-website/commit/b0aac04)
+- [Docs: Update deployment setup process](https://github.com/brendanmurty/murty-website/commit/2721584)
+- [Core: Remove obsolete gitattributes file](https://github.com/brendanmurty/murty-website/commit/c818716)
+- [Core: Cleanup gitignore](https://github.com/brendanmurty/murty-website/commit/ba58987)
+- [Core: Update funding options](https://github.com/brendanmurty/murty-website/commit/cfe7b23)
+- [Version 2022.016](https://github.com/brendanmurty/murty-website/commit/8e8d053)
+- [Core: Fix Deno binary paths during deployment process](https://github.com/brendanmurty/murty-website/commit/823b266)
+- [Version 2022.015](https://github.com/brendanmurty/murty-website/commit/573612a)
+- [Core: Use a specific version of Lume](https://github.com/brendanmurty/murty-website/commit/f0ccb67)
+- [Core: Remove obsolete Git LFS setup](https://github.com/brendanmurty/murty-website/commit/3faebf5)
+- [Version 2022.014](https://github.com/brendanmurty/murty-website/commit/97ca02d)
+- [Core: Move away from Deno binaries in the repo, related cleanup](https://github.com/brendanmurty/murty-website/commit/3b34cf7)
+- [Core: Deno code linting improvements](https://github.com/brendanmurty/murty-website/commit/b8a798c)
+- [Brendan: Update links lists](https://github.com/brendanmurty/murty-website/commit/94a15e7)
+- [Version 2022.013](https://github.com/brendanmurty/murty-website/commit/7fcf80e)
+- [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/35e738e)
+- [Core: Refresh log files before each build](https://github.com/brendanmurty/murty-website/commit/3210a65)
+- [Version 2022.012](https://github.com/brendanmurty/murty-website/commit/b9640e4)
+- [Core: Add support for customised Fathom Analytics script URL](https://github.com/brendanmurty/murty-website/commit/53326b1)
+- [Version 2022.011](https://github.com/brendanmurty/murty-website/commit/fba739b)
+- [Core: Update links following repository rename](https://github.com/brendanmurty/murty-website/commit/687e767)
+- [Brendan: Update RSS feed URL](https://github.com/brendanmurty/murty-website/commit/ed8323c)
+- [Brendan: Update old link](https://github.com/brendanmurty/murty-website/commit/3e631ac)
+- [Core: Update email address reference](https://github.com/brendanmurty/murty-website/commit/f3f92df)
+- [Docs: Update email in security reporting section](https://github.com/brendanmurty/murty-website/commit/bda4ced)
+- [Brendan: Update resume PDF](https://github.com/brendanmurty/murty-website/commit/ec2646f)
+- [Version 2022.010](https://github.com/brendanmurty/murty-website/commit/f3b10db)
+- [Core: More domain and email updates](https://github.com/brendanmurty/murty-website/commit/ab74981)
+- [Version 2022.009](https://github.com/brendanmurty/murty-website/commit/9e00f4f)
+- [Core: Fix some heading levels](https://github.com/brendanmurty/murty-website/commit/865f807)
+- [Version 2022.008](https://github.com/brendanmurty/murty-website/commit/e252a56)
+- [Core: Update SSL setup command](https://github.com/brendanmurty/murty-website/commit/5aa352d)
+- [Version 2022.007](https://github.com/brendanmurty/murty-website/commit/de82f9b)
+- [Brendan: Update resume](https://github.com/brendanmurty/murty-website/commit/9625e44)
+- [Core: Change main domain to murty.au](https://github.com/brendanmurty/murty-website/commit/44973a3)
+- [Docs: Fix wording in security policy](https://github.com/brendanmurty/murty-website/commit/4fc6d08)
+- [Version 2022.006](https://github.com/brendanmurty/murty-website/commit/766497c)
+- [Revert "Core: Remove analytics"](https://github.com/brendanmurty/murty-website/commit/4c0c66a)
+- [Core: Update Deno binaries](https://github.com/brendanmurty/murty-website/commit/f3ed464)
+- [Version 2022.005](https://github.com/brendanmurty/murty-website/commit/73f9620)
+- [Core: Add new domains](https://github.com/brendanmurty/murty-website/commit/ef30969)
+- [Version 2022.004](https://github.com/brendanmurty/murty-website/commit/c379e73)
+- [Brendan: Update baby posts](https://github.com/brendanmurty/murty-website/commit/6b6d213)
+- [Core: Remove unused domains from config files](https://github.com/brendanmurty/murty-website/commit/ff19354)
+- [Version 2022.003](https://github.com/brendanmurty/murty-website/commit/2e8dae9)
+- [Brendan: Update UpcomingTasks links](https://github.com/brendanmurty/murty-website/commit/4f4fb6e)
+- [Core: Remove unused domains](https://github.com/brendanmurty/murty-website/commit/e9aed8a)
+- [Version 2022.002](https://github.com/brendanmurty/murty-website/commit/30a6a63)
+- [Core: Remove analytics](https://github.com/brendanmurty/murty-website/commit/0b7e6f0)
+- [Version 2022.001](https://github.com/brendanmurty/murty-website/commit/8c774d4)
+- [Brendan: Add "Buy me a coffee" link and sponsorship option](https://github.com/brendanmurty/murty-website/commit/71ea4f8)
+- [Core: Update Deno binaries](https://github.com/brendanmurty/murty-website/commit/989812c)
+- [Version 2021.121](https://github.com/brendanmurty/murty-website/commit/91094da)
+- [Brendan: Add page titles to tag list pages](https://github.com/brendanmurty/murty-website/commit/81b41bd)
+- [Version 2021.120](https://github.com/brendanmurty/murty-website/commit/b798fea)
+- [Brendan: Add tag lists to post pages, update related styling](https://github.com/brendanmurty/murty-website/commit/98de640)
+- [Brendan: Add tag list pages, update page titles](https://github.com/brendanmurty/murty-website/commit/ab68464)
+- [Brendan: Add tag list page](https://github.com/brendanmurty/murty-website/commit/a25a07a)
+- [Brendan: Add tags to current posts](https://github.com/brendanmurty/murty-website/commit/5b7207d)
+- [Version 2021.119](https://github.com/brendanmurty/murty-website/commit/8d76fdf)
+- [Brendan: Improve page titles](https://github.com/brendanmurty/murty-website/commit/296093c)
+- [Core: Update Deno binaries](https://github.com/brendanmurty/murty-website/commit/92379df)
+- [Version 2021.118](https://github.com/brendanmurty/murty-website/commit/30483e1)
+- [Maintenance: Fix tabbing in links list](https://github.com/brendanmurty/murty-website/commit/60a1d46)
+- [Content: Update description tag content values](https://github.com/brendanmurty/murty-website/commit/316ab98)
+- [Version 2021.117](https://github.com/brendanmurty/murty-website/commit/62f0fa1)
+- [Scripts: Update production Apache SSL configuration process](https://github.com/brendanmurty/murty-website/commit/a17e5a9)
+- [Scripts: Update production Apache configuration process](https://github.com/brendanmurty/murty-website/commit/1dae031)
+- [Scripts: Revert change to build process order](https://github.com/brendanmurty/murty-website/commit/78a4e07)
+- [Scripts: Remove duplicated file copy step](https://github.com/brendanmurty/murty-website/commit/63ead70)
+- [Scripts: Update build process order](https://github.com/brendanmurty/murty-website/commit/74066ae)
+- [Core: Remove another obsolete Apache config file](https://github.com/brendanmurty/murty-website/commit/59c3619)
+- [Core: Remove obsolete Apache config file](https://github.com/brendanmurty/murty-website/commit/86e63da)
+- [Scripts: Update production setup process](https://github.com/brendanmurty/murty-website/commit/63bafcd)
+- [Core: Improve Git Ignore configuration](https://github.com/brendanmurty/murty-website/commit/0c30995)
+- [Version 2021.116](https://github.com/brendanmurty/murty-website/commit/ac700d5)
+- [Brendan: Update job title](https://github.com/brendanmurty/murty-website/commit/8a04ae4)
+- [Version 2021.115](https://github.com/brendanmurty/murty-website/commit/34fa927)
+- [Core: Move to managed Fathom Analytics](https://github.com/brendanmurty/murty-website/commit/43707d2)
+- [Core: Fix font preload tags](https://github.com/brendanmurty/murty-website/commit/28843b9)
+- [Version 2021.114](https://github.com/brendanmurty/murty-website/commit/6639392)
+- [Brendan: Update job history](https://github.com/brendanmurty/murty-website/commit/1f88455)
+- [Version 2021.113](https://github.com/brendanmurty/murty-website/commit/ef451d6)
+- [Fix max image widths, improve post list styling](https://github.com/brendanmurty/murty-website/commit/3ffe298)
+- [Version 2021.112](https://github.com/brendanmurty/murty-website/commit/ad2b94c)
+- [Update Deno binaries](https://github.com/brendanmurty/murty-website/commit/6516a78)
+- [Improve print styles, common styles and add styles for kids](https://github.com/brendanmurty/murty-website/commit/dadb8d9)
+- [Improve CSS formatting, progress on print styles](https://github.com/brendanmurty/murty-website/commit/a3e54f7)
+- [Improve post list and PDF links, start on print styles](https://github.com/brendanmurty/murty-website/commit/6a03124)
+- [Improve alignment in social listings, simplify responsiveness there](https://github.com/brendanmurty/murty-website/commit/b91ada9)
+- [Improve social listings layout](https://github.com/brendanmurty/murty-website/commit/76df723)
+- [Add social links list styling](https://github.com/brendanmurty/murty-website/commit/4296bd0)
+- [Responsive styles for some header elements](https://github.com/brendanmurty/murty-website/commit/77b9c67)
+- [Progress on Brendan's styles](https://github.com/brendanmurty/murty-website/commit/49f68c3)
+- [Build site listing styles](https://github.com/brendanmurty/murty-website/commit/fe800d3)
+- [Fix font preloads](https://github.com/brendanmurty/murty-website/commit/d269b97)
+- [Fix font embeds](https://github.com/brendanmurty/murty-website/commit/e5b22b2)
+- [Start of redesign](https://github.com/brendanmurty/murty-website/commit/c92f9c9)
+- [Version 2021.111](https://github.com/brendanmurty/murty-website/commit/ad14a5a)
+- [Core: Update Deno binary properties](https://github.com/brendanmurty/murty-website/commit/b192d08)
+- [Core: Update Fathom Analytics embed code](https://github.com/brendanmurty/murty-website/commit/810a130)
+- [Version 2021.110](https://github.com/brendanmurty/murty-website/commit/2f51748)
+- [Core: Use self-hosted Fathom Analytics instead](https://github.com/brendanmurty/murty-website/commit/2f92f6a)
+- [Version 2021.109](https://github.com/brendanmurty/murty-website/commit/c296ed2)
+- [Core: Update build process to match new Lume version](https://github.com/brendanmurty/murty-website/commit/242048b)
+- [Core: Update Deno binaries](https://github.com/brendanmurty/murty-website/commit/9040bd9)
+- [Core: Fix issue building JSON feed](https://github.com/brendanmurty/murty-website/commit/b79e004)
+- [Version 2021.108](https://github.com/brendanmurty/murty-website/commit/27f3977)
+- [Core: Move Deno binaries location](https://github.com/brendanmurty/murty-website/commit/f022f25)
+- [Core: Update Deno binaries](https://github.com/brendanmurty/murty-website/commit/5c42494)
+- [Brendan: Update profile image](https://github.com/brendanmurty/murty-website/commit/32b656e)
+- [Brendan: Add link to Strava profile](https://github.com/brendanmurty/murty-website/commit/018577f)
+- [Version 2021.107](https://github.com/brendanmurty/murty-website/commit/814f375)
+- [Brendan: Add link to Polywork profile](https://github.com/brendanmurty/murty-website/commit/a9ee6b1)
+- [Version 2021.106](https://github.com/brendanmurty/murty-website/commit/af2e836)
+- [Docs: Detail what "_config.js" does](https://github.com/brendanmurty/murty-website/commit/caf2ee1)
+- [Docs: Update Deno scripts following move to a local Deno binary](https://github.com/brendanmurty/murty-website/commit/cdf3e9b)
+- [Version 2021.105](https://github.com/brendanmurty/murty-website/commit/228e9aa)
+- [Core: Move JSON Feed variables to load from the ENV file](https://github.com/brendanmurty/murty-website/commit/2fefc78)
+- [Version 2021.104](https://github.com/brendanmurty/murty-website/commit/5d8e8e7)
+- [Code Style: Fix analytics template tabbing](https://github.com/brendanmurty/murty-website/commit/99d5ee2)
+- [Core: Improve JSON Feed embed](https://github.com/brendanmurty/murty-website/commit/f2a7ecc)
+- [Version 2021.103](https://github.com/brendanmurty/murty-website/commit/1200962)
+- [Core: Improve setup process for Unix-based systems](https://github.com/brendanmurty/murty-website/commit/2cc8823)
+- [Version 2021.102](https://github.com/brendanmurty/murty-website/commit/2da6ae7)
+- [Core: Fix execution status of Deno binaries](https://github.com/brendanmurty/murty-website/commit/408b86c)
+- [Version 2021.101](https://github.com/brendanmurty/murty-website/commit/4169fd8)
+- [Core: Fix Git LFS setup for production](https://github.com/brendanmurty/murty-website/commit/47091bc)
+- [Version 2021.100](https://github.com/brendanmurty/murty-website/commit/ac8f43f)
+- [Core: Rebuild repository](https://github.com/brendanmurty/murty-website/commit/a02146d)
