@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2022.068
+- DevOps: Update Deno version in deployment process
 - Version 2022.067
 - Brendan: Content updates
 - Version 2022.066
