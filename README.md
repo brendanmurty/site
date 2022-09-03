@@ -45,7 +45,7 @@ bin/build
 
 1. Make a fork of this repository
 2. Update some files in the forked repository:
-  - Files in the `scripts/production` directory must use your production domain(s) and server details instead
+  - The `bin/deploy` script must be updated to use your forked repository URLs when updating `CHANGELOG.md`
   - All files in the `content` directory should contain your own content instead
   - All files in the `assets` directory should contain your own static files instead
   - Update or remove the GitHub Sponsors file at [.github/FUNDING.yml](.github/FUNDING.yml)
