@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2022.070
+- Version 2022.071
+- [Content: Fix link to Farewell UpcomingTasks post](https://github.com/brendanmurty/murty-website/commit/efe2ae3)
+- [Version 2022.070](https://github.com/brendanmurty/murty-website/commit/dc9b36b)
 - [DevOps: Fix changelog title command](https://github.com/brendanmurty/murty-website/commit/053714c)
 - [Version 2022.069](https://github.com/brendanmurty/murty-website/commit/f6e909a)
 - [DevOps: Add commit links to changelog content, clarify forking process for this](https://github.com/brendanmurty/murty-website/commit/769db80)
