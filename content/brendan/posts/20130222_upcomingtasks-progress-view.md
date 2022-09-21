@@ -5,7 +5,7 @@ tags:
   - UpcomingTasks
 ---
 
-Check out your recent Basecamp 2 updates with the new progress view in [UpcomingTasks](/brendan/posts/20161014_farewell-upcomingtasks). View recently edited or completed tasks and also view your comments. To begin, simply press the progress bar icon from the homepage.
+Check out your recent Basecamp 2 updates with the new progress view in [UpcomingTasks](/brendan/posts/farewell-upcomingtasks). View recently edited or completed tasks and also view your comments. To begin, simply press the progress bar icon from the homepage.
 
 ![Progress icon in navigation](/images/brendan/progress-nav.png)
 *The progress bar icon is your friend*
