@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2022.071
+- Version 2022.072
+- [Brendan: Add Mastodon profile link](https://github.com/brendanmurty/murty-website/commit/9e4b9b2)
+- [Version 2022.071](https://github.com/brendanmurty/murty-website/commit/a3dee04)
 - [Content: Fix link to Farewell UpcomingTasks post](https://github.com/brendanmurty/murty-website/commit/efe2ae3)
 - [Version 2022.070](https://github.com/brendanmurty/murty-website/commit/dc9b36b)
 - [DevOps: Fix changelog title command](https://github.com/brendanmurty/murty-website/commit/053714c)
