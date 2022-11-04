@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2022.072
+- Version 2022.073
+- [DevOps: Update Deno version used in deployment action](https://github.com/brendanmurty/murty-website/commit/f8fd606)
+- [Version 2022.072](https://github.com/brendanmurty/murty-website/commit/8cd2bcf)
 - [Brendan: Add Mastodon profile link](https://github.com/brendanmurty/murty-website/commit/9e4b9b2)
 - [Version 2022.071](https://github.com/brendanmurty/murty-website/commit/a3dee04)
 - [Content: Fix link to Farewell UpcomingTasks post](https://github.com/brendanmurty/murty-website/commit/efe2ae3)
