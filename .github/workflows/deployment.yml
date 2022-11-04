@@ -23,9 +23,9 @@ jobs:
       - name: Add Last.fm API key to ENV file
         run: sed -i 's/LASTFM_API_KEY=/LASTFM_API_KEY=${{ secrets.LASTFM_API_KEY }}/' .env
       - name: Install Deno
-        uses: denoland/setup-deno@main
+        uses: denoland/setup-deno@v1
         with:
-          deno-version: 1.25.0
+          deno-version: v1.x
       - name: Install Lume
         run: deno run -A https://deno.land/x/lume/install.ts
       - name: Build site
