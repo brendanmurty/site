@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2022.073
+- Version 2022.074
+- [Brendan: Add Mastodon profile to link tag](https://github.com/brendanmurty/murty-website/commit/a69dc3f)
+- [Version 2022.073](https://github.com/brendanmurty/murty-website/commit/7cffda8)
 - [DevOps: Update Deno version used in deployment action](https://github.com/brendanmurty/murty-website/commit/f8fd606)
 - [Version 2022.072](https://github.com/brendanmurty/murty-website/commit/8cd2bcf)
 - [Brendan: Add Mastodon profile link](https://github.com/brendanmurty/murty-website/commit/9e4b9b2)
