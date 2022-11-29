@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2022.078
+- Version 2022.079
+- [Brendan: Update Mastodon profile links](https://github.com/brendanmurty/murty-website/commit/a41e0d3)
+- [Version 2022.078](https://github.com/brendanmurty/murty-website/commit/b9e1111)
 - [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/d8cb444)
 - [Version 2022.077](https://github.com/brendanmurty/murty-website/commit/1104cbf)
 - [Brendan: Move Mastodon profile links](https://github.com/brendanmurty/murty-website/commit/a25dbd0)
