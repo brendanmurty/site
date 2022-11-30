@@ -28,7 +28,6 @@ echo -e "${yellow}Minifying the combined CSS file${end}"
 deno run -A --allow-read --allow-write https://deno.land/x/minifier@v1.1.1/cli.ts building/_assets/css/styles.css building/_assets/css/styles.min.css
 rm building/_assets/css/styles.css
 
-
 echo -e "${yellow}Preparing site data for Lume${end}"
 deno run -A --allow-read --allow-write src/site-data.ts
 
@@ -46,3 +45,6 @@ cp "building/_assets/css/styles.min.css" "public/css"
 
 echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"
 deno run -A --allow-read --allow-write --allow-env src/json-feed.ts
+
+echo -e "${yellow}Removing the 'building' directory${end}"
+rm -r building

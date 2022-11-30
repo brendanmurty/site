@@ -46,6 +46,7 @@ bin/build
 1. Make a fork of this repository
 2. Update some files in the forked repository:
   - The `bin/deploy` script must be updated to use your forked repository URLs when updating `CHANGELOG.md`
+  - The `bin/deploy` script must be updated to use your own Deno Deploy project name in the `deployctl` line
   - All files in the `content` directory should contain your own content instead
   - All files in the `assets` directory should contain your own static files instead
   - Update or remove the GitHub Sponsors file at [.github/FUNDING.yml](.github/FUNDING.yml)
@@ -57,7 +58,6 @@ bin/build
   - Create a new Deno Deploy project for this site
   - Link your Deno Deploy project to your forked GitHub repository
   - Add your production domain(s) via `Settings > Domains`
-5. Update the deployment GitHub Action file ([.github/workflows/deployment.yml](.github/workflows/deployment.yml)) so that the `project` name in the `denoland/deployctl` section matches your Deno Deploy project name
 6. Complete your first deployment by following the related section below
 7. Test it all works for your production domain(s)
 

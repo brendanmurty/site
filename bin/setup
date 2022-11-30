@@ -1,8 +1,12 @@
 #!/bin/bash
 
-# Install Lume
+# Install Lume - https://deno.land/x/lume
 
 deno run -A https://deno.land/x/lume@v1.13.1/install.ts
+
+# Install Deno deployctl - https://deno.com/deploy/docs/deployctl
+
+deno install --allow-read --allow-write --allow-env --allow-net --allow-run --no-check -r -f https://deno.land/x/deploy/deployctl.ts
 
 # Create some required untracked directories if they don't already exist
 
@@ -13,4 +17,8 @@ mkdir -p public
 
 cp -n .env.example .env
 
-echo "Please edit '.env' to suit this environment."
+echo ""
+echo "Manual setup required:"
+echo "1. Edit '.env' to suit this environment."
+echo "2. Create a new system environment variable named 'DENO_DEPLOY_TOKEN', instructions at https://deno.com/deploy/docs/deployctl"
+echo "3. Add Pirsch site code to the 'PIRSCH_ANALYTICS_SITE_CODE' variable in '.env'"
