@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2022.079
+- Version 2022.080
+- [DevOps: Move from GitHub Actions to direct deployment using deployctl](https://github.com/brendanmurty/murty-website/commit/6c36442)
+- [DevOps: Upgrade Lume version](https://github.com/brendanmurty/murty-website/commit/a97b363)
+- [Version 2022.079](https://github.com/brendanmurty/murty-website/commit/6e61eb3)
 - [Brendan: Update Mastodon profile links](https://github.com/brendanmurty/murty-website/commit/a41e0d3)
 - [Version 2022.078](https://github.com/brendanmurty/murty-website/commit/b9e1111)
 - [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/d8cb444)
