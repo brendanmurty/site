@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2022.080
+- Version 2022.081
+- [DevOps: Remove unused GitHub config files](https://github.com/brendanmurty/murty-website/commit/d9b281a)
+- [Docs: Simplify readme following recent changes](https://github.com/brendanmurty/murty-website/commit/0abc985)
+- [Version 2022.080](https://github.com/brendanmurty/murty-website/commit/e7454dd)
 - [DevOps: Move from GitHub Actions to direct deployment using deployctl](https://github.com/brendanmurty/murty-website/commit/6c36442)
 - [DevOps: Upgrade Lume version](https://github.com/brendanmurty/murty-website/commit/a97b363)
 - [Version 2022.079](https://github.com/brendanmurty/murty-website/commit/6e61eb3)
