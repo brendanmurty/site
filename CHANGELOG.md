@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2022.081
+- Version 2022.082
+- [Brendan: Remove Strava and Tags links from Index page](https://github.com/brendanmurty/murty-website/commit/50c8a5e)
+- [Version 2022.081](https://github.com/brendanmurty/murty-website/commit/84e1147)
 - [DevOps: Remove unused GitHub config files](https://github.com/brendanmurty/murty-website/commit/d9b281a)
 - [Docs: Simplify readme following recent changes](https://github.com/brendanmurty/murty-website/commit/0abc985)
 - [Version 2022.080](https://github.com/brendanmurty/murty-website/commit/e7454dd)
