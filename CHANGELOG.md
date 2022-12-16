@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2022.082
+- Version 2022.083
+- [Core: Update listing page to show Brendan Index inline](https://github.com/brendanmurty/murty-website/commit/95daf18)
+- [Core: Remove meta tag code duplication](https://github.com/brendanmurty/murty-website/commit/c697554)
+- [Version 2022.082](https://github.com/brendanmurty/murty-website/commit/7a9050c)
 - [Brendan: Remove Strava and Tags links from Index page](https://github.com/brendanmurty/murty-website/commit/50c8a5e)
 - [Version 2022.081](https://github.com/brendanmurty/murty-website/commit/84e1147)
 - [DevOps: Remove unused GitHub config files](https://github.com/brendanmurty/murty-website/commit/d9b281a)
