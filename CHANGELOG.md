@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2022.084
+- Version 2022.085
+- [Core: Layout and avatar sizing improvements](https://github.com/brendanmurty/murty-website/commit/278f4f7)
+- [Version 2022.084](https://github.com/brendanmurty/murty-website/commit/2dc919e)
 - [Core: Styling improvements for smaller screens](https://github.com/brendanmurty/murty-website/commit/18f39b2)
 - [Version 2022.083](https://github.com/brendanmurty/murty-website/commit/f3f391b)
 - [Core: Update listing page to show Brendan Index inline](https://github.com/brendanmurty/murty-website/commit/95daf18)
