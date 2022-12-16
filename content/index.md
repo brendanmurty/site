@@ -1,4 +1,4 @@
 ---
 title: Murty
-layout: list_sites.njk
+layout: index.njk
 ---
