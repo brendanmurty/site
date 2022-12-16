@@ -1,17 +1,22 @@
 .brendan header {
-  height: 200px;
+  height: 150px;
 }
 
 .brendan header h1 {
   float: left;
-  line-height: 200px;
+  line-height: 150px;
   font-size: 65px;
   margin: 0;
 }
 
 .brendan header .avatar {
-  float: right;
-  border-radius: 200px;
+  float: left;
+  margin-right: 30px;
+  border-radius: 150px;
+}
+
+.brendan .intro {
+  margin: 0;
 }
 
 ul.brendan_posts {
