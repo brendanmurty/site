@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2022.083
+- Version 2022.084
+- [Core: Styling improvements for smaller screens](https://github.com/brendanmurty/murty-website/commit/18f39b2)
+- [Version 2022.083](https://github.com/brendanmurty/murty-website/commit/f3f391b)
 - [Core: Update listing page to show Brendan Index inline](https://github.com/brendanmurty/murty-website/commit/95daf18)
 - [Core: Remove meta tag code duplication](https://github.com/brendanmurty/murty-website/commit/c697554)
 - [Version 2022.082](https://github.com/brendanmurty/murty-website/commit/7a9050c)
