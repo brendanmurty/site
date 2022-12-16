@@ -1,33 +1,29 @@
-.murty article,
-.murty header {
-  width: 80%;
-  padding: 25px 10%;
-  margin: 0 auto;
-  text-align: center;
-  min-width: 250px;
-}
-
 .murty ul.sites {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.murty ul.sites li {
-  margin: 50px 0 0;
+.murty ul.sites > li {
+  margin: 60px 0 0;
+  text-align: left;
+  clear: both;
+  float: left;
 }
 
-.murty ul.sites li.first {
+.murty ul.sites > li.first {
   margin-top: 0;
 }
 
-.murty ul.sites img {
+.murty ul.sites .list-avatar {
   height: 200px;
   width: 200px;
   border-radius: 200px;
+  margin-right: 30px;
+  float: left;
 }
 
-.murty ul.sites span {
-  clear: both;
-  display: block;
+.murty ul.sites .list-name {
+  display: inline-block;
+  line-height: 200px;
 }
