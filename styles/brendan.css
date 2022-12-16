@@ -132,9 +132,7 @@ ul.brendan_posts .post-date {
   }
 }
 
-
-/* Small sized screen */
-
+/* Small sized screens */
 
 @media only screen and (max-width: 500px) {
   .brendan header h1 {
@@ -147,9 +145,7 @@ ul.brendan_posts .post-date {
   }
 }
 
-
 /* Print styles */
-
 
 @media print {
   .brendan header {
