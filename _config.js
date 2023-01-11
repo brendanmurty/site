@@ -6,8 +6,8 @@
 * More information at https://lume.land/docs/configuration/config-file/
 */
 
-import lume from "https://deno.land/x/lume@v1.9.0/mod.ts";
-import date from "https://deno.land/x/lume@v1.9.0/plugins/date.ts";
+import lume from "https://deno.land/x/lume@v1.15.0/mod.ts";
+import date from "https://deno.land/x/lume@v1.15.0/plugins/date.ts";
 
 // Build the site using Lume
 const site = lume({
