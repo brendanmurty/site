@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2022.085
+- Version 2023.001
+- [Core: Upgrade package versions in build process](https://github.com/brendanmurty/murty-website/commit/e80f4ea)
+- [Brendan: Add KRudd tweet post](https://github.com/brendanmurty/murty-website/commit/ea3cbf3)
+- [Version 2022.085](https://github.com/brendanmurty/murty-website/commit/b1b1afb)
 - [Core: Layout and avatar sizing improvements](https://github.com/brendanmurty/murty-website/commit/278f4f7)
 - [Version 2022.084](https://github.com/brendanmurty/murty-website/commit/2dc919e)
 - [Core: Styling improvements for smaller screens](https://github.com/brendanmurty/murty-website/commit/18f39b2)
