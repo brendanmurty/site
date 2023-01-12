@@ -1,4 +1,4 @@
-{% set posts = search.pages("type=post", "date=desc") %}
+{% set posts = search.pages("type=post") %}
 {% set tags = [] %}
 {% for post in posts %}
 {% if post.data.tags %}
@@ -19,7 +19,7 @@
     <article>
       <h2>Tags</h2>
       <ul class="tag-list">
-      {% for tag in tags %}
+      {% for tag in tags|sort %}
         <li>
           <a class="tag-link" href="/brendan/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
             <span class="icon fa-fw fa-solid fa-tag"></span>
