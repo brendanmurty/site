@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.003
+- Version 2023.004
+- [Brendan: Update top header to point to main URL instead](https://github.com/brendanmurty/murty-website/commit/00ef065)
+- [Version 2023.003](https://github.com/brendanmurty/murty-website/commit/b74fcbc)
 - [Core: Fix URLs in post list JSON and Latest Post element](https://github.com/brendanmurty/murty-website/commit/7bff41a)
 - [Version 2023.002](https://github.com/brendanmurty/murty-website/commit/1eaf682)
 - [Brendan: Add Last.fm music listening stats post for 2022](https://github.com/brendanmurty/murty-website/commit/88c0185)
