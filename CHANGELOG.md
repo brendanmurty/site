@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.004
+- Version 2023.005
+- [Brendan: Order tags on list page alphabetically](https://github.com/brendanmurty/murty-website/commit/d1d513e)
+- [Version 2023.004](https://github.com/brendanmurty/murty-website/commit/3b42b0d)
 - [Brendan: Update top header to point to main URL instead](https://github.com/brendanmurty/murty-website/commit/00ef065)
 - [Version 2023.003](https://github.com/brendanmurty/murty-website/commit/b74fcbc)
 - [Core: Fix URLs in post list JSON and Latest Post element](https://github.com/brendanmurty/murty-website/commit/7bff41a)
