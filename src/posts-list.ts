@@ -12,8 +12,7 @@ export async function PostsList(postsDirectoryAbsolute: string, postsUrl: string
     if (item.isFile && item.name != "index.md" && item.name.slice(-3) == ".md") {
       // Extract general information from this file's name
       const postNoExtension: string = item.name.slice(0, -3);
-      const postNoDate: string = postNoExtension.slice(9);
-      const postUrl: string = postsUrl + postNoDate + "/";
+      const postUrl: string = postsUrl + postNoExtension + "/";
       const postDate: string = item.name.slice(0, 4) + "-" + item.name.slice(4, 6) + "-" + item.name.slice(6, 8) + "T09:00:00.000Z";
 
       // Set a default title for this post
