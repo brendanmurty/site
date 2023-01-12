@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.001
+- Version 2023.002
+- [Brendan: Add Last.fm music listening stats post for 2022](https://github.com/brendanmurty/murty-website/commit/88c0185)
+- [Version 2023.001](https://github.com/brendanmurty/murty-website/commit/95c95d5)
 - [Core: Upgrade package versions in build process](https://github.com/brendanmurty/murty-website/commit/e80f4ea)
 - [Brendan: Add KRudd tweet post](https://github.com/brendanmurty/murty-website/commit/ea3cbf3)
 - [Version 2022.085](https://github.com/brendanmurty/murty-website/commit/b1b1afb)
