@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.002
+- Version 2023.003
+- [Core: Fix URLs in post list JSON and Latest Post element](https://github.com/brendanmurty/murty-website/commit/7bff41a)
+- [Version 2023.002](https://github.com/brendanmurty/murty-website/commit/1eaf682)
 - [Brendan: Add Last.fm music listening stats post for 2022](https://github.com/brendanmurty/murty-website/commit/88c0185)
 - [Version 2023.001](https://github.com/brendanmurty/murty-website/commit/95c95d5)
 - [Core: Upgrade package versions in build process](https://github.com/brendanmurty/murty-website/commit/e80f4ea)
