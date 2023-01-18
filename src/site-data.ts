@@ -3,7 +3,7 @@ import { PostsLatest } from "./posts-latest.ts";
 import { LastFmLovedTracks } from "./lastfm-loved-tracks.ts";
 
 // Convert the contents of ".env" in to YAML format and save it as "building/_data/site.yml".
-// This allows for the Nunjucks templates to access these variables like this: {{ site.PIRSCH_ANALYTICS_SITE_CODE }}
+// This allows for the Nunjucks templates to access these variables like this: {{ site.GOOGLE_ANALYTICS_SITE_CODE }}
 const EnvFileContent = Deno.readTextFileSync("./.env");
 let YmlFileContent = EnvFileContent.replaceAll("=", ": ");
 

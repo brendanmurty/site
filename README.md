@@ -22,7 +22,7 @@ To setup a new local development environment:
 5. Install [Deno](https://deno.land/)
 6. Run [bin/setup](bin/setup) to complete the initial installation process: `bin/setup`
 7. Update your `.env` file:
-  - `PIRSCH_ANALYTICS_SITE_CODE`: The related site code from your [Pirsch analytics](https://pirsch.io/) account
+  - `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
   - `LASTFM_API_KEY`: Your [Last.fm API key](https://www.last.fm/api/account/create) to show your loved tracks on the site
 8. Create a new system environment variable named 'DENO_DEPLOY_TOKEN' by following [their documentation](https://deno.com/deploy/docs/deployctl)
 
