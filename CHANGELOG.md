@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.006
+- Version 2023.007
+- [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/83b089d)
+- [Core: Move to Google Analytics](https://github.com/brendanmurty/murty-website/commit/c99d755)
+- [Version 2023.006](https://github.com/brendanmurty/murty-website/commit/622cc18)
 - [Brendan: Update Mastodon profile links](https://github.com/brendanmurty/murty-website/commit/5335ab9)
 - [Version 2023.005](https://github.com/brendanmurty/murty-website/commit/59cbe80)
 - [Brendan: Order tags on list page alphabetically](https://github.com/brendanmurty/murty-website/commit/d1d513e)
