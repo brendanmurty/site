@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.007
+- Version 2023.008
+- [Tests: Improve process, remove obsolete test](https://github.com/brendanmurty/murty-website/commit/3b3452b)
+- [Tests: Fix test commands and improve JSON Feed test](https://github.com/brendanmurty/murty-website/commit/a57bd0d)
+- [Version 2023.007](https://github.com/brendanmurty/murty-website/commit/9d74596)
 - [Brendan: Content updates](https://github.com/brendanmurty/murty-website/commit/83b089d)
 - [Core: Move to Google Analytics](https://github.com/brendanmurty/murty-website/commit/c99d755)
 - [Version 2023.006](https://github.com/brendanmurty/murty-website/commit/622cc18)
