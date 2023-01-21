@@ -10,7 +10,7 @@ end="\033[0m"
 # Silently run the "bin/serve" script (which also builds the site) in the background
 
 echo -e "${yellow}Running 'bin/serve' in the background${end}"
-bin/serve &>/dev/null &
+bin/serve &
 
 echo -e "${yellow}Waiting for script${end}"
 sleep 10
