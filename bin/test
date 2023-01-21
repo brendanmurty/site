@@ -7,21 +7,12 @@ yellow="\033[0;33m"
 red="\033[0;31m"
 end="\033[0m"
 
-# Silently run the "bin/serve" script (which also builds the site) in the background
-
-echo -e "${yellow}Running 'bin/serve' in the background${end}"
-bin/serve &
-
-echo -e "${yellow}Waiting for script${end}"
-sleep 10
+# Build site to test the output
+echo -e "${yellow}Building the site to prepare for tests${end}"
+bin/build > /dev/null
 
 # Run all of the tests in the "tests" directory, allow these test scripts to also
 # run other Deno scripts and ignore any console output from them
 
 echo -e "${yellow}Running all tests found in the 'tests' directory${end}"
 deno test --allow-run --allow-env --allow-read --allow-net tests --quiet
-
-# Clean up any background processes created by this script
-
-echo -e "${yellow}Terminating related background process${end}"
-trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT

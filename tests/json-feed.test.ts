@@ -5,16 +5,6 @@ import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
 
 Deno.test("src/json-feed.ts", async(test) => {
 
-  // Build site to test output
-  const buildCommand = Deno.run({
-    cmd: [
-      "bash",
-      "bin/build"
-    ],
-    stdout: "piped",
-    stderr: "piped",
-  });
-
   // Attempt to get the values of some variables from the ".env" file
   const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
   const postsDirectory: string = Deno.env.get("BLOG_POSTS_DIR") || "";
@@ -114,8 +104,5 @@ Deno.test("src/json-feed.ts", async(test) => {
       );
     }
   });
-  
-  buildCommand.stdout.close();
-  buildCommand.stderr.close();
-  buildCommand.close();
+
 });

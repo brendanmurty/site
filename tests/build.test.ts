@@ -1,7 +1,7 @@
 import { assertEquals, assertNotEquals } from "https://deno.land/std@0.143.0/testing/asserts.ts";
 
 Deno.test("bin/build", async(test) => {
-
+  
   await test.step({
     name: "non-empty file 'public/index.html' was found",
     fn: async () => {
