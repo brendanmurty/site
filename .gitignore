@@ -13,6 +13,9 @@ $RECYCLE.BIN/
 .env
 !.env.example
 
+/vendor
+
+/inbox
+
 /building
 /public
-/vendor

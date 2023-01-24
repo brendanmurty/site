@@ -28,6 +28,9 @@ echo -e "${yellow}Minifying the combined CSS file${end}"
 deno run -A --allow-read --allow-write https://deno.land/x/minifier@v1.1.1/cli.ts building/_assets/css/styles.css building/_assets/css/styles.min.css
 rm building/_assets/css/styles.css
 
+echo -e "${yellow}Building photo posts for photos in 'inbox' directory${end}"
+deno run -A --allow-read --allow-write src/photo-posts-generate.ts
+
 echo -e "${yellow}Preparing site data for Lume${end}"
 deno run -A --allow-read --allow-write src/site-data.ts
 
