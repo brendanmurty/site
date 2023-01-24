@@ -7,10 +7,10 @@ Deno.test("src/photo-data.ts", async(test) => {
   await test.step({
     name: "exif data is returned for a photo with data",
     fn: async () => {
-      const exifData = await GetExifDataFromPhoto("./assets/images/brendan", "brendan-luca_750.jpg");
+      const exifData = await GetExifDataFromPhoto("./tests/assets", "test-photo.jpg");
 
       assertEquals(
-        exifData.device,
+        exifData.photo_device,
         "Apple iPhone 8"
       );
     }
