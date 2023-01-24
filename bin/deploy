@@ -48,7 +48,7 @@ git push --quiet
 git push --tags --quiet
 
 echo -e "${blue}Building site...${end}"
-${BASH_SOURCE%/*}/
+${BASH_SOURCE%/*}/build
 
 echo -e "${blue}Starting deployment...${end}"
 deployctl deploy --prod --project=murty-website ./src/server.ts
