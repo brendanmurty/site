@@ -31,6 +31,10 @@ rm building/_assets/css/styles.css
 echo -e "${yellow}Building photo posts for photos in 'inbox' directory${end}"
 deno run -A --allow-read --allow-write src/photo-posts-generate.ts
 
+echo -e "${yellow}Removing EXIF data from all files in the 'assets/images' directory${end}"
+exiftool -recurse -all= assets/images
+exiftool -recurse -delete_original assets/images
+
 echo -e "${yellow}Preparing site data for Lume${end}"
 deno run -A --allow-read --allow-write src/site-data.ts
 
