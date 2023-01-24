@@ -1,6 +1,6 @@
 import { create } from "../vendor/deno-exif/mod.ts";
 
-export function GetExifDataFromPhoto(photoDirectory: string, photoFile: string): Record<string,string|number> {
+export function GetExifDataFromPhoto(photoDirectory: string, photoFile: string): Record<string, string | number> {
   // Get the EXIF data from the image
   const parser = create(Deno.readFileSync(photoDirectory + '/' + photoFile));
   const result = parser.parse();
@@ -11,12 +11,10 @@ export function GetExifDataFromPhoto(photoDirectory: string, photoFile: string):
   const photoFnumber: string = (result.tags.FNumber) ? 'f/' + result.tags.FNumber : '';
 
   return {
-    'direcory': photoDirectory,
-    'file': photoFile,
-    'device': photoDevice,
-    'width': result.imageSize.width,
-    'height': result.imageSize.height,
-    'lens': photoLens,
-    'fnumber': photoFnumber,
+    'photo_device': photoDevice,
+    'photo_width': result.imageSize.width,
+    'photo_height': result.imageSize.height,
+    'photo_lens': photoLens,
+    'photo_fnumber': photoFnumber,
   };
 }

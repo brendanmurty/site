@@ -1,22 +1,19 @@
 import { format } from "https://deno.land/std@0.173.0/datetime/mod.ts";
-
 import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
+import { json2yaml } from "https://deno.land/x/json2yaml@v1.0.1/mod.ts";
 import { GetExifDataFromPhoto } from "./photo-data.ts";
 
-export async function GeneratePhotoPosts() {
-  const inboxDirectory = posix.join(Deno.cwd(), 'inbox');
-  const imagesDirectory = posix.join(Deno.cwd(), 'assets/images/brendan');
-  const postsDirectory = posix.join(Deno.cwd(), 'content/brendan/posts');
-  const photoItems: Record<string, string|number>[] = [];
+export async function GeneratePhotoPosts(): Promise<void> {
+  const inboxDirectory = 'inbox';
+  const imagesDirectory = 'assets/images/brendan';
+  const postsDirectory = 'content/brendan/posts';
 
-  for await (const item of Deno.readDir(inboxDirectory)) {
+  for await (const item of Deno.readDir(posix.join(Deno.cwd(), inboxDirectory))) {
     if (item.isFile && (item.name.slice(-4) == '.jpg' || item.name.slice(-5) == '.jpeg')) {
-      
-      const exifData = await GetExifDataFromPhoto(inboxDirectory, item.name);
-      
-      const dateToday: string = format(new Date(), 'yyyyMMdd');
-
-      const imageFileName: string = dateToday + '_photo-' + item.name
+      // A JPG photo file was found, start processing it
+      const dateFile: string = format(new Date(), 'yyyyMMdd');
+      const dateMeta: string = format(new Date(), 'yyyy-MM-dd');
+      const imageFileName: string = dateFile + '_photo-' + item.name
         .slice(0, -4)
         .replaceAll('_', '')
         .replaceAll('-', '')
@@ -24,37 +21,33 @@ export async function GeneratePhotoPosts() {
         .replaceAll('.', '')
         .toLowerCase() + 
         '.jpg';
-
       const postFileName: string = imageFileName.replace('.jpg', '.md');
+      const photoUrl: string = 'https://murty.au/images/brendan/' + imageFileName;
 
       console.log("Generating photo post for '" + item.name + "' named '" + postFileName + "'");
 
-      // TODO: create markdown file content
+      const exifData = await GetExifDataFromPhoto(inboxDirectory, item.name);
+
+      const markdownContent =  '---' + "\r" + 
+        'title: Photo - ' + dateFile + "\r" + 
+        'date: ' + dateMeta + "\r" + 
+        'tags: ' + "\r" + 
+        '  - Photo' + "\r" + 
+        json2yaml(JSON.stringify(exifData)) + 
+        'photo_file: ' + imageFileName + "\r" + 
+        'photo_url: ' + photoUrl + "\r" + 
+        '---' + "\r" + 
+        '' + "\r" + 
+        '![](/images/brendan/' + imageFileName + ')' + "\r";
       
-      // TODO: add photo exif data to a new 'photo' array in the front-matter block
+      Deno.writeTextFileSync(posix.join(Deno.cwd(), postsDirectory, postFileName), markdownContent);
 
-      // TODO: add 'url' property to this 'photo' array that contains a absolute array (to use for the social image in the 'header-meta' template
-
-      // TODO: move photo to 'imagesDirectory'
-
-      // TODO: add image embed in markdown file
-
-      // TODO: add "Photo" to tag array in the front-matter block
-
-      // TODO: save all of this generated markdown content to 'postsDirectory' > 'postFileName'
-
-      photoItems.push(exifData);
-
+      Deno.renameSync(
+        posix.join(Deno.cwd(), inboxDirectory, item.name),
+        posix.join(Deno.cwd(), imagesDirectory, imageFileName)
+      );
     }
   }
-
-  // TODO: remove this line after this is finished
-  console.log(photoItems);
-
-  return photoItems;
 }
 
-// TODO: consider how to best handle the output from this script, does it need any?
-
-// TODO: remove this line after this is finished
-GeneratePhotoPosts();
+await GeneratePhotoPosts();

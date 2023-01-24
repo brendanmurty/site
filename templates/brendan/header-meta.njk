@@ -2,10 +2,10 @@
 <meta name="description" content="Brendan is a Senior Software Engineer, Father and Schnitzel Reviewer.">
 <meta property="og:title" content="{% if title %}Brendan Murty - {{ title }}{% else %}Brendan Murty{% endif %}" />
 <meta property="og:description" content="Brendan is a Senior Software Engineer, Father and Schnitzel Reviewer." />
-{% if photo.url %}
-<meta property="og:image" content="{{ photo.url }}" />
-<meta property="og:image:width" content="{{ photo.width }}" />
-<meta property="og:image:height" content="{{ photo.height }}" />
+{% if photo_url %}
+<meta property="og:image" content="{{ photo_url }}" />
+<meta property="og:image:width" content="{{ photo_width }}" />
+<meta property="og:image:height" content="{{ photo_height }}" />
 {% else %}
 <meta property="og:image" content="https://murty.au/images/brendan/brendan-luca_750.jpg" />
 <meta property="og:image:alt" content="Brendan wearing glasses while holding Luca with trees in the background" />
