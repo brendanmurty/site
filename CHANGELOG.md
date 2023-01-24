@@ -1,6 +1,19 @@
 # Change Log
 
-- Version 2023.008
+- Version 2023.009
+- [Photos: Fix test fail after test image now has no EXIF data](https://github.com/brendanmurty/murty-website/commit/cb73f32)
+- [Core: Remove EXIF data from all current public images](https://github.com/brendanmurty/murty-website/commit/bff66fd)
+- [Photos: Setup EXIF data removal process while building](https://github.com/brendanmurty/murty-website/commit/a43b246)
+- [Photos: Add EXIF data section styling](https://github.com/brendanmurty/murty-website/commit/f84a9e9)
+- [Photos: Finalise initial post build and display process](https://github.com/brendanmurty/murty-website/commit/a4824f1)
+- [Photos: Setup for using the photo as the social share image for the generated post](https://github.com/brendanmurty/murty-website/commit/06806a6)
+- [Photos: Improve output in posts template](https://github.com/brendanmurty/murty-website/commit/0675412)
+- [Photos: Cleanup](https://github.com/brendanmurty/murty-website/commit/51a49f1)
+- [Photos: Progress on post generation process](https://github.com/brendanmurty/murty-website/commit/12bae08)
+- [Photos: Add comments](https://github.com/brendanmurty/murty-website/commit/b94207f)
+- [Photos: Initial work on EXIF data script](https://github.com/brendanmurty/murty-website/commit/ebf761e)
+- [Core: Fix build process in deploy script](https://github.com/brendanmurty/murty-website/commit/25fbf21)
+- [Version 2023.008](https://github.com/brendanmurty/murty-website/commit/9307547)
 - [Tests: Improve process, remove obsolete test](https://github.com/brendanmurty/murty-website/commit/3b3452b)
 - [Tests: Fix test commands and improve JSON Feed test](https://github.com/brendanmurty/murty-website/commit/a57bd0d)
 - [Version 2023.007](https://github.com/brendanmurty/murty-website/commit/9d74596)
