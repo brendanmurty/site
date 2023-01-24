@@ -9,8 +9,6 @@ export async function GeneratePhotoPosts() {
   const postsDirectory = posix.join(Deno.cwd(), 'content/brendan/posts');
   const photoItems: Record<string, string>[] = [];
 
-  console.log(inboxDirectory);
-
   for await (const item of Deno.readDir(inboxDirectory)) {
     if (item.isFile && (item.name.slice(-4) == '.jpg' || item.name.slice(-5) == '.jpeg')) {
       
@@ -36,7 +34,7 @@ export async function GeneratePhotoPosts() {
       // TODO: move photo to 'imagesDirectory'
       // TODO: add image embed in markdown file
       // TODO: add "Photo" to tag array in the front-matter block
-      // TODO: save markdown file content to 'postsDirectory' > 'postFileName'
+      // TODO: save all of this generated markdown content to 'postsDirectory' > 'postFileName'
 
       photoItems.push(exifData);
 
