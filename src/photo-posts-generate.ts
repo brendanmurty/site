@@ -7,7 +7,7 @@ export async function GeneratePhotoPosts() {
   const inboxDirectory = posix.join(Deno.cwd(), 'inbox');
   const imagesDirectory = posix.join(Deno.cwd(), 'assets/images/brendan');
   const postsDirectory = posix.join(Deno.cwd(), 'content/brendan/posts');
-  const photoItems: Record<string, string>[] = [];
+  const photoItems: Record<string, string|number>[] = [];
 
   for await (const item of Deno.readDir(inboxDirectory)) {
     if (item.isFile && (item.name.slice(-4) == '.jpg' || item.name.slice(-5) == '.jpeg')) {
@@ -30,10 +30,17 @@ export async function GeneratePhotoPosts() {
       console.log("Generating photo post for '" + item.name + "' named '" + postFileName + "'");
 
       // TODO: create markdown file content
+      
       // TODO: add photo exif data to a new 'photo' array in the front-matter block
+
+      // TODO: add 'url' property to this 'photo' array that contains a absolute array (to use for the social image in the 'header-meta' template
+
       // TODO: move photo to 'imagesDirectory'
+
       // TODO: add image embed in markdown file
+
       // TODO: add "Photo" to tag array in the front-matter block
+
       // TODO: save all of this generated markdown content to 'postsDirectory' > 'postFileName'
 
       photoItems.push(exifData);
