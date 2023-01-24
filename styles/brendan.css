@@ -24,11 +24,11 @@ ul.brendan_posts {
   margin-left: 0;
 }
 
-ul.brendan_posts li {
-  margin-bottom: 20px
+ul.brendan_posts li, .brendan .photo-data li {
+  margin-bottom: 20px;
 }
 
-ul.brendan_posts .post-date {
+ul.brendan_posts .post-date, .brendan .photo-data .data-title {
   width: 125px;
   color: var(--secondary-colour);
   display: inline-block;
@@ -103,6 +103,11 @@ ul.brendan_posts .post-date {
   text-overflow: ellipsis;
 }
 
+.brendan .photo-data {
+  list-style: none outside none;
+  margin: 20px 0;
+}
+
 /* Medium sized screen */
 
 @media only screen and (max-width: 900px) {
@@ -131,7 +136,7 @@ ul.brendan_posts .post-date {
     float: none;
   }
   
-  ul.brendan_posts .post-date {
+  ul.brendan_posts .post-date, .brendan .photo-data .data-title {
     display: block;
     width: auto;
   }
