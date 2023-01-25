@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.009
+- Version 2023.010
+- [Content: New photo post](https://github.com/brendanmurty/murty-website/commit/8762a31)
+- [Photos: Fix ordering of content file copy in build process](https://github.com/brendanmurty/murty-website/commit/5803dc1)
+- [Version 2023.009](https://github.com/brendanmurty/murty-website/commit/44a27aa)
 - [Photos: Fix test fail after test image now has no EXIF data](https://github.com/brendanmurty/murty-website/commit/cb73f32)
 - [Core: Remove EXIF data from all current public images](https://github.com/brendanmurty/murty-website/commit/bff66fd)
 - [Photos: Setup EXIF data removal process while building](https://github.com/brendanmurty/murty-website/commit/a43b246)
