@@ -18,7 +18,6 @@ mkdir -p building/_data
 mkdir -p public/brendan
 cp -r styles building/_styles
 cp -r templates building/_includes
-cp -r content/* building
 
 echo -e "${yellow}Combining the CSS files${end}"
 mkdir -p building/_assets/css
@@ -34,6 +33,9 @@ deno run -A --allow-read --allow-write src/photo-posts-generate.ts
 echo -e "${yellow}Removing EXIF data from all files in the 'assets/images' directory${end}"
 exiftool -recurse -all= assets/images
 exiftool -recurse -delete_original assets/images
+
+echo -e "${yellow}Preparing page content files${end}"
+cp -r content/* building
 
 echo -e "${yellow}Preparing site data for Lume${end}"
 deno run -A --allow-read --allow-write src/site-data.ts
