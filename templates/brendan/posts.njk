@@ -1,4 +1,3 @@
-{% set posts = search.pages("type=post", "date=desc") %}
 {% include "brendan/header.njk" %}
 <body class="brendan brendan_posts">
   <section class="container">
@@ -8,24 +7,7 @@
 
     <article>
       <h2>Posts</h2>
-      <ul class="brendan_posts">
-      {% for post in posts %}
-      {% if post.data.url != '/brendan/posts/' %}
-        <li>
-          <span class="post-date">
-            {{ post.data.date | date('d LLL yyyy') }}
-          </span>
-          <a class="post-link" href="{{ post.data.url }}">
-            {% if post.data.title %}
-            {{ post.data.title }}
-            {% else %}
-            {{ post.url }}
-            {% endif %}
-          </a>
-        </li>
-      {% endif %}
-      {% endfor %}
-      </ul>
+      {% include "brendan/posts-list.njk" %}
     </article>
   </section>
 </body>

@@ -16,7 +16,7 @@
 }
 
 .brendan .intro {
-  margin: 0;
+  margin: 25px 0 0;
 }
 
 ul.brendan_posts {
@@ -66,9 +66,20 @@ ul.brendan_posts .post-date, .brendan .photo-data .data-title {
 
 .brendan ul.listing {
   list-style: none;
-  margin: 25px 0 0;
-  width: 33.3%;
+  margin: 50px 0 0;
   float: left;
+}
+
+.brendan ul.listing.twothirds {
+  width: 66.6%;
+}
+
+.brendan ul.listing.third {
+  width: 33.3%;
+}
+
+.brendan ul.listing.half {
+  width: 50%;
 }
 
 .brendan ul.listing li:not(.listing-header) {
@@ -88,11 +99,6 @@ ul.brendan_posts .post-date, .brendan .photo-data .data-title {
   font-size: 40px;
   margin-right: 10px;
   float: left;
-}
-
-.brendan ul.listing.post-latest,
-.brendan ul.listing.lastfm-loved-tracks {
-  width: 100%;
 }
 
 .brendan ul.listing .label {
@@ -131,7 +137,10 @@ ul.brendan_posts .post-date, .brendan .photo-data .data-title {
     height: auto;
   }
   
-  .brendan ul.listing {
+  .brendan ul.listing,
+  .brendan ul.listing.third, 
+  .brendan ul.listing.twothirds, 
+  .brendan ul.listing.half {
     width: 100%;
     float: none;
   }
