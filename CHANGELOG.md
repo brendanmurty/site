@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.011
+- Version 2023.012
+- [Core: Improve header spacing consistency](https://github.com/brendanmurty/murty-website/commit/6a12c35)
+- [Version 2023.011](https://github.com/brendanmurty/murty-website/commit/62e95d0)
 - [Core: Add breadcrumb links to Post and Tag templates](https://github.com/brendanmurty/murty-website/commit/a8fe04a)
 - [Core: Layout improvements, re-instate Tags link, show post list on index page](https://github.com/brendanmurty/murty-website/commit/af06109)
 - [Version 2023.010](https://github.com/brendanmurty/murty-website/commit/e1d59f2)
