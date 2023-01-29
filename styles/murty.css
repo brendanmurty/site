@@ -15,6 +15,10 @@
   margin-top: 0;
 }
 
+.murty ul.sites > li header {
+  padding-top: 0;
+}
+
 .murty ul.sites .list-avatar {
   height: auto;
   width: 150px;
