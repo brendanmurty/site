@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.010
+- Version 2023.011
+- [Core: Add breadcrumb links to Post and Tag templates](https://github.com/brendanmurty/murty-website/commit/a8fe04a)
+- [Core: Layout improvements, re-instate Tags link, show post list on index page](https://github.com/brendanmurty/murty-website/commit/af06109)
+- [Version 2023.010](https://github.com/brendanmurty/murty-website/commit/e1d59f2)
 - [Content: New photo post](https://github.com/brendanmurty/murty-website/commit/8762a31)
 - [Photos: Fix ordering of content file copy in build process](https://github.com/brendanmurty/murty-website/commit/5803dc1)
 - [Version 2023.009](https://github.com/brendanmurty/murty-website/commit/44a27aa)
