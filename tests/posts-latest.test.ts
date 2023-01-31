@@ -10,7 +10,7 @@ Deno.test("src/posts-latest.ts", async(test) => {
       const returnedItem = await PostsLatest();
 
       assertNotEquals(
-        returnedItem["title"],
+        returnedItem[0]["title"],
         ""
       );
     }

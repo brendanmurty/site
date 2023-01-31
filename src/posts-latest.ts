@@ -3,7 +3,7 @@ import "https://deno.land/x/dotenv@v3.2.0/load.ts";
 import { PostsList } from "./posts-list.ts";
 import { JsonFeedItem } from "./types.ts";
 
-export async function PostsLatest(): Promise<JsonFeedItem> {
+export async function PostsLatest(): Promise<JsonFeedItem[]> {
   const postsDirectory: string = Deno.env.get("BLOG_POSTS_DIR") || "";
   const urlPosts: string = Deno.env.get("BLOG_POSTS_URL") || "";
   const jsonFeedDefaultPostTitle: string = Deno.env.get("JSON_FEED_DEFAULT_POST_TITLE") || "";
