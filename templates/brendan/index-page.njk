@@ -7,19 +7,7 @@
     Father, Schnitzel Reviewer at <a href="https://schnitmydadsays.com/">SchnitMyDadSays</a> and Senior Software Engineer.
   </p>
 
-  <ul class="listing twothirds">
-    <li class="listing-header">
-      <h2>Posts</h2>
-    </li>
-    <li>
-      {% include "brendan/posts-list.njk" %}
-    </li>
-  </ul>
-
-  <ul class="listing third">
-    <li class="listing-header">
-      <h2>Work</h2>
-    </li>
+  <ul class="listing full connect">
     <li>
       <a href="mailto:brendan@murty.au" title="Send me an email at brendan@murty.au">
         <span class="icon fa-fw fa-solid fa-envelope"></span>
@@ -38,8 +26,17 @@
         <span class="label">LinkedIn</span>
       </a>
     </li>
-    <li class="listing-header">
-      <h2>Personal</h2>
+    <li>
+      <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
+        <span class="icon fa-fw fa-brands fa-twitter"></span>
+        <span class="label">Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a rel="me" href="https://mastodon.social/@murty" title="View my Mastodon profile">
+        <span class="icon fa-fw fa-brands fa-mastodon"></span>
+        <span class="label">Mastodon</span>
+      </a>
     </li>
     <li>
       <a href="https://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam">
@@ -65,26 +62,20 @@
         <span class="label">Letterboxd</span>
       </a>
     </li>
+  </ul>
+
+  <ul class="listing twothirds">
+    <li class="listing-header">
+      <h2>Posts</h2>
+    </li>
+    <li>
+      {% include "brendan/posts-list.njk" %}
+    </li>
+  </ul>
+
+  <ul class="listing third">
     <li class="listing-header">
       <h2>Content</h2>
-    </li>
-    <li>
-      <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
-        <span class="icon fa-fw fa-brands fa-twitter"></span>
-        <span class="label">Twitter</span>
-      </a>
-    </li>
-    <li>
-      <a rel="me" href="https://mastodon.social/@murty" title="View my Mastodon profile">
-        <span class="icon fa-fw fa-brands fa-mastodon"></span>
-        <span class="label">Mastodon</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://schnitmydadsays.com/" title="Check out some schnitzel reviews">
-        <span class="icon fa-fw fa-solid fa-utensils"></span>
-        <span class="label">SchnitMyDadSays</span>
-      </a>
     </li>
     <li>
       <a href="/brendan/posts" title="View all of my posts">
@@ -96,6 +87,12 @@
       <a href="/brendan/tags" title="View all of my post tags">
         <span class="icon fa-fw fa-solid fa-tag"></span>
         <span class="label">Tags</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://schnitmydadsays.com/" title="Check out some schnitzel reviews">
+        <span class="icon fa-fw fa-solid fa-utensils"></span>
+        <span class="label">SchnitMyDadSays</span>
       </a>
     </li>
     {% include "brendan/lastfm-loved-tracks.njk" %}

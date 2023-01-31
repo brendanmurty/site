@@ -15,7 +15,8 @@
   margin-top: 0;
 }
 
-.murty ul.sites > li header {
+.murty ul.sites > li header,
+.murty ul.sites > li article {
   padding-top: 0;
 }
 
