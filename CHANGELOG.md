@@ -1,6 +1,10 @@
 # Change Log
 
-- Version 2023.012
+- Version 2023.013
+- [Tests: Fixes following move to returning multiple post items instead of just one](https://github.com/brendanmurty/murty-website/commit/8c028b2)
+- [Layout: Show 10 recent posts instead of all on home page, section spacing improvements](https://github.com/brendanmurty/murty-website/commit/4763106)
+- [Design: Move social links below intro, related layout improvements](https://github.com/brendanmurty/murty-website/commit/4b42035)
+- [Version 2023.012](https://github.com/brendanmurty/murty-website/commit/3d4526e)
 - [Core: Improve header spacing consistency](https://github.com/brendanmurty/murty-website/commit/6a12c35)
 - [Version 2023.011](https://github.com/brendanmurty/murty-website/commit/62e95d0)
 - [Core: Add breadcrumb links to Post and Tag templates](https://github.com/brendanmurty/murty-website/commit/a8fe04a)
