@@ -24,7 +24,9 @@ ul.brendan_posts li, .brendan .photo-data li {
   margin-bottom: 20px;
 }
 
-ul.brendan_posts .post-date, .brendan .photo-data .data-title {
+ul.brendan_posts .post-date, 
+.brendan ul.listing.posts .post-date, 
+.brendan .photo-data .data-title {
   width: 125px;
   color: var(--secondary-colour);
   display: inline-block;
@@ -165,7 +167,9 @@ ul.brendan_posts .post-date, .brendan .photo-data .data-title {
     margin: 30px 0 0;
   }
   
-  ul.brendan_posts .post-date, .brendan .photo-data .data-title {
+  ul.brendan_posts .post-date,
+  .brendan ul.listing.posts .post-date,
+  .brendan .photo-data .data-title {
     display: block;
     width: auto;
   }

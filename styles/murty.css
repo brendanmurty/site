@@ -5,19 +5,22 @@
 }
 
 .murty ul.sites > li {
-  margin: 60px 0 0;
+  margin: 30px 0 0;
+  padding: 30px 0 0;
   text-align: left;
+  float: left;
   clear: both;
   width: 100%;
 }
 
 .murty ul.sites > li.first {
   margin-top: 0;
+  padding-top: 0;
 }
 
 .murty ul.sites > li header,
 .murty ul.sites > li article {
-  padding-top: 0;
+  padding: 0;
 }
 
 .murty ul.sites .list-avatar {
@@ -31,16 +34,12 @@
 .murty ul.sites .list-name {
   display: inline-block;
   line-height: 150px;
+  margin: 0; 
 }
 
 /* Small sized screens */
 
 @media only screen and (max-width: 900px) {
-  .murty ul.sites > li:not(.brendan) {
-    width: 90%;
-    padding: 0 5%;
-  }
-
   .murty ul.sites .list-avatar {
     width: 100px;
     border-radius: 100px;

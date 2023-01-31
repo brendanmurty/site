@@ -1,0 +1,12 @@
+{% if site.BLOG_POSTS_LATEST %}
+{% for post in site.BLOG_POSTS_LATEST %}
+<li>
+  <span class="post-date">
+    {{ post.date_published | date('d LLL yyyy') }}
+  </span>
+  <a class="post-link" href="{{ post.url }}">
+    {{ post.title }}
+  </a>
+</li>
+{% endfor %}
+{% endif %}

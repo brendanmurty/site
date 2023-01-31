@@ -14,7 +14,7 @@ export async function PostsLatest(): Promise<JsonFeedItem> {
   // Get an array of all of the valid Markdown files in the posts directory
   const postItems = await PostsList(postsDirectoryAbsolute, urlPosts, jsonFeedDefaultPostTitle);
 
-  // Return the most recent post item in the array
-  return postItems[0];
+  // Return the 10 most recent post items from the array
+  return postItems.slice(0, 10);
 }
 
