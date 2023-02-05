@@ -20,6 +20,7 @@
 
 .murty ul.sites > li header,
 .murty ul.sites > li article {
+  width: 100%;
   padding: 0;
 }
 

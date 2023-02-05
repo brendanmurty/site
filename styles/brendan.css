@@ -163,7 +163,7 @@ ul.brendan_posts .post-date,
   }
 
   .brendan ul.listing.connect li {
-    width: 100%;
+    width: 50%;
     margin: 30px 0 0;
   }
   
@@ -185,6 +185,11 @@ ul.brendan_posts .post-date,
   .brendan header .avatar {
     width: 100px;
     height: auto;
+  }
+
+  .brendan ul.listing.connect li {
+    width: 100%;
+    margin: 30px 0 0;
   }
 }
 
