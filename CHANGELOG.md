@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.013
+- Version 2023.014
+- [Core: Improve layout of social links at smaller screen sizes](https://github.com/brendanmurty/murty-website/commit/8aee2c5)
+- [Version 2023.013](https://github.com/brendanmurty/murty-website/commit/0dd30e8)
 - [Tests: Fixes following move to returning multiple post items instead of just one](https://github.com/brendanmurty/murty-website/commit/8c028b2)
 - [Layout: Show 10 recent posts instead of all on home page, section spacing improvements](https://github.com/brendanmurty/murty-website/commit/4763106)
 - [Design: Move social links below intro, related layout improvements](https://github.com/brendanmurty/murty-website/commit/4b42035)
