@@ -25,10 +25,22 @@
 
       {% if photo_file %}
       <ul class="photo-data">
-        {% if photo_device %}<li><span class="data-title">Device</span><span class="data-value">{{ photo_device }}</span></li>{% endif %}
-        {% if photo_width and photo_height %}<li><span class="data-title">Dimensions</span><span class="data-value">{{ photo_width }} x {{ photo_height }}</span></li>{% endif %}
-        {% if photo_lens %}<li><span class="data-title">Lens</span><span class="data-value">{{ photo_lens }}</span></li>{% endif %}
-        {% if photo_fnumber %}<li><span class="data-title">Focal length</span><span class="data-value">{{ photo_fnumber }}</span></li>{% endif %}
+        {% if photo_device %}<li>
+          <span class="data-title">Device</span>
+          <span class="data-value">{{ photo_device }}</span>
+        </li>{% endif %}
+        {% if photo_aperture %}<li>
+          <span class="data-title">Aperture</span>
+          <span class="data-value">ƒ/{{ photo_aperture }}</span>
+        </li>{% endif %}
+        {% if photo_width and photo_height %}<li>
+          <span class="data-title">Dimensions</span>
+          <span class="data-value">{{ photo_width }}px x {{ photo_height }}px</span>
+        </li>{% endif %}
+        {% if photo_lens %}<li>
+          <span class="data-title">Lens</span>
+          <span class="data-value">{{ photo_lens }}</span>
+        </li>{% endif %}
       </ul>
       {% endif %}
     </article>

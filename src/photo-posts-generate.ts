@@ -9,7 +9,7 @@ export async function GeneratePhotoPosts(): Promise<void> {
   const postsDirectory = 'content/brendan/posts';
 
   for await (const item of Deno.readDir(posix.join(Deno.cwd(), inboxDirectory))) {
-    if (item.isFile && (item.name.slice(-4) == '.jpg' || item.name.slice(-5) == '.jpeg')) {
+    if (item.isFile && (item.name.toLowerCase().slice(-4) == '.jpg' || item.name.toLowerCase().slice(-5) == '.jpeg')) {
       // A JPG photo file was found, start processing it
       const dateFile: string = format(new Date(), 'yyyyMMdd');
       const dateMeta: string = format(new Date(), 'yyyy-MM-dd');
