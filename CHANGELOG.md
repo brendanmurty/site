@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.015
+- Version 2023.016
+- [Content: Add new photo post](https://github.com/brendanmurty/murty-website/commit/313638e)
+- [Photos: Update which EXIF data is shown for future photo posts](https://github.com/brendanmurty/murty-website/commit/20aa184)
+- [Version 2023.015](https://github.com/brendanmurty/murty-website/commit/6c4d435)
 - [Photos: Update labelling for aperture data](https://github.com/brendanmurty/murty-website/commit/b4ed3bf)
 - [Version 2023.014](https://github.com/brendanmurty/murty-website/commit/f4f0303)
 - [Core: Improve layout of social links at smaller screen sizes](https://github.com/brendanmurty/murty-website/commit/8aee2c5)
