@@ -43,6 +43,9 @@ deno run -A --allow-read --allow-write src/site-data.ts
 echo -e "${yellow}Building the front-end using Lume and '_config.js'${end}"
 lume
 
+echo -e "${yellow}Updating 'public/sitemap.xml' to use the production URL${end}"
+sed -i 's/http:\/\/localhost\//https:\/\/murty.au\//g' public/sitemap.xml
+
 echo -e "${yellow}Copying static files to 'public' directory${end}"
 cp -r "assets/fonts" "public/fonts"
 cp -r "assets/images" "public/images"
