@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.017
+- Version 2023.018
+- [Photos: Use some icons from Feather for EXIF data fields](https://github.com/brendanmurty/murty-website/commit/957e271)
+- [Core: Add Feather icons, update related folder structure](https://github.com/brendanmurty/murty-website/commit/4e47054)
+- [Version 2023.017](https://github.com/brendanmurty/murty-website/commit/f77221e)
 - [Core: Add sitemap to improve SEO](https://github.com/brendanmurty/murty-website/commit/3f702f7)
 - [Version 2023.016](https://github.com/brendanmurty/murty-website/commit/fdd4cdb)
 - [Content: Add new photo post](https://github.com/brendanmurty/murty-website/commit/313638e)
