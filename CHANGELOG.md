@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.016
+- Version 2023.017
+- [Core: Add sitemap to improve SEO](https://github.com/brendanmurty/murty-website/commit/3f702f7)
+- [Version 2023.016](https://github.com/brendanmurty/murty-website/commit/fdd4cdb)
 - [Content: Add new photo post](https://github.com/brendanmurty/murty-website/commit/313638e)
 - [Photos: Update which EXIF data is shown for future photo posts](https://github.com/brendanmurty/murty-website/commit/20aa184)
 - [Version 2023.015](https://github.com/brendanmurty/murty-website/commit/6c4d435)
