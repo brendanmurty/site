@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.018
+- Version 2023.019
+- [Content: Add public resume, update index page layout](https://github.com/brendanmurty/murty-website/commit/1560dad)
+- [Version 2023.018](https://github.com/brendanmurty/murty-website/commit/de3168f)
 - [Photos: Use some icons from Feather for EXIF data fields](https://github.com/brendanmurty/murty-website/commit/957e271)
 - [Core: Add Feather icons, update related folder structure](https://github.com/brendanmurty/murty-website/commit/4e47054)
 - [Version 2023.017](https://github.com/brendanmurty/murty-website/commit/f77221e)
