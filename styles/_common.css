@@ -64,6 +64,10 @@ html {
   color: var(--foreground-colour) !important;
 }
 
+.icon-invert {
+  filter: invert(1);
+}
+
 /* General */
 
 html {

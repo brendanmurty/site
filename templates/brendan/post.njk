@@ -27,23 +27,38 @@
       <ul class="photo-data">
         {% if photo_device %}<li>
           <span class="data-title">Device</span>
-          <span class="data-value">{{ photo_device }}</span>
+          <span class="data-value">
+            <img class="data-icon icon-invert" src="/icons/camera.svg">
+            {{ photo_device }}
+          </span>
         </li>{% endif %}
         {% if photo_aperture %}<li>
           <span class="data-title">Aperture</span>
-          <span class="data-value">ƒ/{{ photo_aperture }}</span>
+          <span class="data-value">
+            <img class="data-icon icon-invert" src="/icons/aperture.svg">
+            ƒ/{{ photo_aperture }}
+          </span>
         </li>{% endif %}
         {% if photo_megapixel %}<li>
           <span class="data-title">Megapixels</span>
-          <span class="data-value">{{ photo_megapixel }}</span>
+          <span class="data-value">
+            <img class="data-icon icon-invert" src="/icons/target.svg">
+            {{ photo_megapixel }}
+          </span>
         </li>{% endif %}
         {% if photo_iso %}<li>
           <span class="data-title">ISO</span>
-          <span class="data-value">{{ photo_iso }}</span>
+          <span class="data-value">
+            <img class="data-icon icon-invert" src="/icons/info.svg">
+            {{ photo_iso }}
+          </span>
         </li>{% endif %}
         {% if photo_focallength %}<li>
           <span class="data-title">Focal Length</span>
-          <span class="data-value">{{ photo_focallength }}mm</span>
+          <span class="data-value">
+            <img class="data-icon icon-invert" src="/icons/eye.svg">
+            {{ photo_focallength }}mm
+          </span>
         </li>{% endif %}
       </ul>
       {% endif %}

@@ -32,9 +32,14 @@ ul.brendan_posts .post-date,
   display: inline-block;
 }
 
-.brendan_post article img {
+.brendan_post article img:not(.data-icon) {
   clear: both;
   display: block;
+}
+
+.brendan_post .data-icon {
+  vertical-align: text-bottom;
+  margin-right: 4px;
 }
 
 .brendan .tag-list {
@@ -177,7 +182,7 @@ ul.brendan_posts .post-date,
 
 /* Small sized screens */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   .brendan header h1 {
     font-size: 25px;
   }
