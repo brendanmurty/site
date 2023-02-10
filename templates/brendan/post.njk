@@ -33,13 +33,17 @@
           <span class="data-title">Aperture</span>
           <span class="data-value">ƒ/{{ photo_aperture }}</span>
         </li>{% endif %}
-        {% if photo_width and photo_height %}<li>
-          <span class="data-title">Dimensions</span>
-          <span class="data-value">{{ photo_width }}px x {{ photo_height }}px</span>
+        {% if photo_megapixel %}<li>
+          <span class="data-title">Megapixels</span>
+          <span class="data-value">{{ photo_megapixel }}</span>
         </li>{% endif %}
-        {% if photo_lens %}<li>
-          <span class="data-title">Lens</span>
-          <span class="data-value">{{ photo_lens }}</span>
+        {% if photo_iso %}<li>
+          <span class="data-title">ISO</span>
+          <span class="data-value">{{ photo_iso }}</span>
+        </li>{% endif %}
+        {% if photo_focallength %}<li>
+          <span class="data-title">Focal Length</span>
+          <span class="data-value">{{ photo_focallength }}mm</span>
         </li>{% endif %}
       </ul>
       {% endif %}
