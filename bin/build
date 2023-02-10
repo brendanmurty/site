@@ -52,6 +52,7 @@ cp -r "assets/fonts" "public/fonts"
 cp -r "assets/images" "public/images"
 cp "assets/favicon.ico" "public/favicon.ico"
 cp "assets/robots.txt" "public/robots.txt"
+cp "assets/Resume - Brendan Murty.pdf" "public/brendan/Resume - Brendan Murty.pdf"
 mkdir -p public/css
 cp -r assets/icons/fontawesome public/css
 cp -r assets/icons/feather public/icons
