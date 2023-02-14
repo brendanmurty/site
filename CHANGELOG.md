@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.020
+- Version 2023.021
+- [Core: SEO improvements](https://github.com/brendanmurty/murty-website/commit/b55a58a)
+- [Version 2023.020](https://github.com/brendanmurty/murty-website/commit/640b791)
 - [Core: SEO improvements](https://github.com/brendanmurty/murty-website/commit/fd1be8d)
 - [Version 2023.019](https://github.com/brendanmurty/murty-website/commit/a31ec7b)
 - [Content: Add public resume, update index page layout](https://github.com/brendanmurty/murty-website/commit/1560dad)
