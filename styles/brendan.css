@@ -132,12 +132,39 @@ ul.brendan_posts .post-date,
   text-overflow: ellipsis;
 }
 
+/* Photo posts and Gallery list views */
+
 .brendan .photo-data {
   list-style: none outside none;
   margin: 20px 0;
 }
 
-/* Medium sized screen */
+ul.brendan_gallery {
+  list-style: none outside none;
+  margin: 40px 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+ul.brendan_gallery li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  align-self: flex-end;
+  width: calc(33% - 80px);
+  max-width: 500px;
+  min-width: 270px;
+}
+
+ul.brendan_gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Medium sized screens */
 
 @media only screen and (max-width: 750px) {
 
@@ -180,11 +207,13 @@ ul.brendan_posts .post-date,
     display: block;
     width: auto;
   }
+
 }
 
 /* Small sized screens */
 
 @media only screen and (max-width: 550px) {
+
   .brendan header h1 {
     font-size: 25px;
   }
@@ -198,13 +227,16 @@ ul.brendan_posts .post-date,
     width: 100%;
     margin: 30px 0 0;
   }
+
 }
 
 /* Print styles */
 
 @media print {
+
   .brendan header {
     height: auto;
     border: 0 none;
   }
+
 }

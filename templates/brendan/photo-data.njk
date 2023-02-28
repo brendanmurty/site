@@ -1,0 +1,46 @@
+{% if photo_file %}
+<ul class="photo-data">
+  <li>
+    <span class="data-title">Created</span>
+    <span class="data-value">
+      <img class="data-icon icon-invert" src="/icons/calendar.svg">
+      {{ date | date('d LLL yyyy') }}
+    </span>
+  </li>
+  {% if photo_device %}<li>
+    <span class="data-title">Device</span>
+    <span class="data-value">
+      <img class="data-icon icon-invert" src="/icons/camera.svg">
+      {{ photo_device }}
+    </span>
+  </li>{% endif %}
+  {% if photo_aperture %}<li>
+    <span class="data-title">Aperture</span>
+    <span class="data-value">
+      <img class="data-icon icon-invert" src="/icons/aperture.svg">
+      ƒ/{{ photo_aperture }}
+    </span>
+  </li>{% endif %}
+  {% if photo_megapixel %}<li>
+    <span class="data-title">Megapixels</span>
+    <span class="data-value">
+      <img class="data-icon icon-invert" src="/icons/target.svg">
+      {{ photo_megapixel }}
+    </span>
+  </li>{% endif %}
+  {% if photo_iso %}<li>
+    <span class="data-title">ISO</span>
+    <span class="data-value">
+      <img class="data-icon icon-invert" src="/icons/info.svg">
+      {{ photo_iso }}
+    </span>
+  </li>{% endif %}
+  {% if photo_focallength %}<li>
+    <span class="data-title">Focal Length</span>
+    <span class="data-value">
+      <img class="data-icon icon-invert" src="/icons/eye.svg">
+      {{ photo_focallength }}mm
+    </span>
+  </li>{% endif %}
+</ul>
+{% endif %}

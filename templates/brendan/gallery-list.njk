@@ -1,0 +1,12 @@
+{% set posts = search.pages("Photo", "date=desc") %}
+<ul class="brendan_gallery">
+{% for post in posts %}
+{% if post.data.photo_file %}
+  <li>
+    <a href="{{ post.data.url }}" title="{{ post.data.title }}">
+      <img src="{{ post.data.photo_url }}" alt="{{ post.data.title }}" width="350" height="350" />
+    </a>
+  </li>
+{% endif %}
+{% endfor %}
+</ul>

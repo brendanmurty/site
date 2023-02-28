@@ -1,0 +1,3 @@
+---
+layout: brendan/gallery.njk
+---
