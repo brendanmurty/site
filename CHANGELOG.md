@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.022
+- Version 2023.023
+- [Photos: Add gallery view and improve related features](https://github.com/brendanmurty/murty-website/commit/c057285)
+- [Core: Code style improvements in Build script](https://github.com/brendanmurty/murty-website/commit/a155192)
+- [Version 2023.022](https://github.com/brendanmurty/murty-website/commit/e0a4922)
 - [Core: Apply Prettier suggestions for "tests" files](https://github.com/brendanmurty/murty-website/commit/8a9c26d)
 - [Core: Apply Prettier suggestions for "css" files](https://github.com/brendanmurty/murty-website/commit/91145ae)
 - [Core: Apply Prettier suggestions for "src" files](https://github.com/brendanmurty/murty-website/commit/3eed60a)
