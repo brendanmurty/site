@@ -9,12 +9,14 @@ let YmlFileContent = EnvFileContent.replaceAll("=", ": ");
 
 // Add the latest post properties to the site data
 const LatestPost = await PostsLatest();
-const DataLatestPost = '{ "BLOG_POSTS_LATEST": ' + JSON.stringify(LatestPost) + '}';
+const DataLatestPost =
+  '{ "BLOG_POSTS_LATEST": ' + JSON.stringify(LatestPost) + "}";
 YmlFileContent += "\r" + json2yaml(DataLatestPost);
 
 // Add the Last.fm loved tracks to the site data
 const LastfmLovedTracks = await LastFmLovedTracks();
-const DataLastfmLovedTracks = '{ "LASTFM_LOVED_TRACKS": ' + JSON.stringify(LastfmLovedTracks) + '}';
+const DataLastfmLovedTracks =
+  '{ "LASTFM_LOVED_TRACKS": ' + JSON.stringify(LastfmLovedTracks) + "}";
 YmlFileContent += "\r" + json2yaml(DataLastfmLovedTracks);
 
 // Save the YAML file so it can be accessed by the page templates
