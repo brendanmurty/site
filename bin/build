@@ -37,7 +37,6 @@ exiftool -recurse -delete_original assets/images
 echo -e "${yellow}Preparing page content files${end}"
 cp -r content/* building
 
-
 echo -e "${yellow}Preparing site data for Lume${end}"
 deno run -A --allow-read --allow-write src/site-data.ts
 
