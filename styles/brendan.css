@@ -20,12 +20,13 @@ ul.brendan_posts {
   margin-left: 0;
 }
 
-ul.brendan_posts li, .brendan .photo-data li {
+ul.brendan_posts li,
+.brendan .photo-data li {
   margin-bottom: 20px;
 }
 
-ul.brendan_posts .post-date, 
-.brendan ul.listing.posts .post-date, 
+ul.brendan_posts .post-date,
+.brendan ul.listing.posts .post-date,
 .brendan .photo-data .data-title {
   width: 125px;
   color: var(--secondary-colour);
@@ -75,7 +76,7 @@ ul.brendan_posts .post-date,
 
 .brendan ul.listing,
 .brendan ul.listing li,
-.brendan ul.listing li > a {
+.brendan ul.listing li>a {
   box-sizing: border-box;
 }
 
@@ -139,16 +140,17 @@ ul.brendan_posts .post-date,
 /* Medium sized screen */
 
 @media only screen and (max-width: 750px) {
+
   .brendan article,
   .brendan header {
     width: 90%;
     padding: 25px 5%;
   }
-  
+
   .brendan header {
     height: 100px;
   }
-  
+
   .brendan header h1 {
     line-height: 100px;
     font-size: 50px;
@@ -158,11 +160,11 @@ ul.brendan_posts .post-date,
     width: 100px;
     height: auto;
   }
-  
+
   .brendan ul.listing,
-  .brendan ul.listing.third, 
-  .brendan ul.listing.twothirds, 
-  .brendan ul.listing.half, 
+  .brendan ul.listing.third,
+  .brendan ul.listing.twothirds,
+  .brendan ul.listing.half,
   .brendan ul.listing.full {
     width: 100%;
   }
@@ -171,7 +173,7 @@ ul.brendan_posts .post-date,
     width: 50%;
     margin: 30px 0 0;
   }
-  
+
   ul.brendan_posts .post-date,
   .brendan ul.listing.posts .post-date,
   .brendan .photo-data .data-title {
