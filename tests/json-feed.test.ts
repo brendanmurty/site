@@ -1,10 +1,12 @@
 import "https://deno.land/x/dotenv@v3.2.0/load.ts";
-import { assertEquals, assertNotEquals } from "https://deno.land/std@0.143.0/testing/asserts.ts";
+import {
+  assertEquals,
+  assertNotEquals
+} from "https://deno.land/std@0.143.0/testing/asserts.ts";
 import { isJSON } from "https://deno.land/x/is_json@v1.0.2/mod.ts";
 import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
 
-Deno.test("src/json-feed.ts", async(test) => {
-
+Deno.test("src/json-feed.ts", async (test) => {
   // Attempt to get the values of some variables from the ".env" file
   const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
   const postsDirectory: string = Deno.env.get("BLOG_POSTS_DIR") || "";
@@ -12,20 +14,14 @@ Deno.test("src/json-feed.ts", async(test) => {
   await test.step({
     name: "required var in env file is set (JSON_FEED_FILE_OUTPUT)",
     fn: () => {
-      assertNotEquals(
-        postsJsonFile,
-        ""
-      );
+      assertNotEquals(postsJsonFile, "");
     }
   });
 
   await test.step({
     name: "required var in env file is set (BLOG_POSTS_DIR)",
     fn: () => {
-      assertNotEquals(
-        postsDirectory,
-        ""
-      );
+      assertNotEquals(postsDirectory, "");
     }
   });
 
@@ -42,7 +38,7 @@ Deno.test("src/json-feed.ts", async(test) => {
           "src/json-feed.ts"
         ],
         stdout: "piped",
-        stderr: "piped",
+        stderr: "piped"
       });
 
       const { code } = await jsonFeedCommand.status();
@@ -51,10 +47,7 @@ Deno.test("src/json-feed.ts", async(test) => {
       jsonFeedCommand.stderr.close();
       jsonFeedCommand.close();
 
-      assertEquals(
-        code,
-        0
-      );
+      assertEquals(code, 0);
     }
   });
 
@@ -63,10 +56,7 @@ Deno.test("src/json-feed.ts", async(test) => {
     fn: async () => {
       const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
 
-      assertNotEquals(
-        postsJsonContent,
-        ""
-      );
+      assertNotEquals(postsJsonContent, "");
     }
   });
 
@@ -75,10 +65,7 @@ Deno.test("src/json-feed.ts", async(test) => {
     fn: async () => {
       const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
 
-      assertEquals(
-        isJSON(postsJsonContent),
-        true
-      );
+      assertEquals(isJSON(postsJsonContent), true);
     }
   });
 
@@ -93,16 +80,16 @@ Deno.test("src/json-feed.ts", async(test) => {
 
       let countValidPostFiles = 0;
       for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
-        if (item.isFile && item.name != "index.md" && item.name.slice(-3) == ".md") {
+        if (
+          item.isFile &&
+          item.name != "index.md" &&
+          item.name.slice(-3) == ".md"
+        ) {
           countValidPostFiles++;
         }
       }
 
-      assertEquals(
-        countValidPostFiles,
-        countItemsInJSONFile
-      );
+      assertEquals(countValidPostFiles, countItemsInJSONFile);
     }
   });
-
 });
