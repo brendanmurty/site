@@ -1,6 +1,11 @@
 # Change Log
 
-- Version 2023.021
+- Version 2023.022
+- [Core: Apply Prettier suggestions for "tests" files](https://github.com/brendanmurty/murty-website/commit/8a9c26d)
+- [Core: Apply Prettier suggestions for "css" files](https://github.com/brendanmurty/murty-website/commit/91145ae)
+- [Core: Apply Prettier suggestions for "src" files](https://github.com/brendanmurty/murty-website/commit/3eed60a)
+- [Core: Define Prettier code formatter rules](https://github.com/brendanmurty/murty-website/commit/aac12a2)
+- [Version 2023.021](https://github.com/brendanmurty/murty-website/commit/5538b23)
 - [Core: SEO improvements](https://github.com/brendanmurty/murty-website/commit/b55a58a)
 - [Version 2023.020](https://github.com/brendanmurty/murty-website/commit/640b791)
 - [Core: SEO improvements](https://github.com/brendanmurty/murty-website/commit/fd1be8d)
