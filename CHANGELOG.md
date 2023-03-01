@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.027
+- Version 2023.028
+- [Photos: Make photo and thumb image paths relative except in the related meta tag](https://github.com/brendanmurty/murty-website/commit/dc7106e)
+- [Version 2023.027](https://github.com/brendanmurty/murty-website/commit/0d62247)
 - [Photos: Update file extension of the generated thumbnails to match their generated format](https://github.com/brendanmurty/murty-website/commit/c32ad18)
 - [Version 2023.026](https://github.com/brendanmurty/murty-website/commit/6f070b6)
 - [Gallery: Use thumbnail images if they exist in the post data](https://github.com/brendanmurty/murty-website/commit/0522300)
