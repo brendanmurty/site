@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.024
+- Version 2023.025
+- [DevOps: Add related VS Code config and docs](https://github.com/brendanmurty/murty-website/commit/c544d3e)
+- [Version 2023.024](https://github.com/brendanmurty/murty-website/commit/030799b)
 - [Design: Improve gallery display](https://github.com/brendanmurty/murty-website/commit/c052ffb)
 - [Version 2023.023](https://github.com/brendanmurty/murty-website/commit/00ed4c5)
 - [Photos: Add gallery view and improve related features](https://github.com/brendanmurty/murty-website/commit/c057285)
