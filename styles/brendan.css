@@ -1,3 +1,11 @@
+.brendan header {
+  padding: 25px 10px;
+}
+
+.brendan article {
+  padding: 0 10px 25px;
+}
+
 .brendan header h1 {
   float: left;
   line-height: 150px;
@@ -16,7 +24,7 @@
 }
 
 article>h2 {
-  margin: 30px 0 15px;
+  margin: 0 0 15px;
 }
 
 ul.brendan_posts {
@@ -160,7 +168,6 @@ ul.brendan_gallery {
   display: flex;
   flex-flow: row wrap;
   gap: 40px;
-  justify-content: center;
 }
 
 ul.brendan_gallery li {
@@ -191,12 +198,6 @@ ul.brendan_gallery a:active {
 /* Medium sized screens */
 
 @media only screen and (max-width: 750px) {
-
-  .brendan article,
-  .brendan header {
-    width: 90%;
-    padding: 25px 5%;
-  }
 
   .brendan header {
     height: 100px;
@@ -236,6 +237,15 @@ ul.brendan_gallery a:active {
     width: auto;
   }
 
+  ul.brendan_gallery {
+    margin: 20px 0;
+    gap: 20px;
+  }
+
+  ul.brendan_gallery li {
+    width: calc(50% - 40px);
+  }
+
 }
 
 /* Small sized screens */
@@ -254,6 +264,14 @@ ul.brendan_gallery a:active {
   .brendan ul.listing.connect li {
     width: 100%;
     margin: 30px 0 0;
+  }
+
+  ul.brendan_gallery {
+    gap: 0;
+  }
+
+  ul.brendan_gallery li {
+    width: 100%;
   }
 
 }
