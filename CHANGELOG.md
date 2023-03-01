@@ -1,6 +1,10 @@
 # Change Log
 
-- Version 2023.025
+- Version 2023.026
+- [Gallery: Use thumbnail images if they exist in the post data](https://github.com/brendanmurty/murty-website/commit/0522300)
+- [Photos: Create thumbnail images for current photo posts](https://github.com/brendanmurty/murty-website/commit/7d9a95f)
+- [Gallery: Automatically generate thumbnail images](https://github.com/brendanmurty/murty-website/commit/2a98625)
+- [Version 2023.025](https://github.com/brendanmurty/murty-website/commit/726d3b1)
 - [DevOps: Add related VS Code config and docs](https://github.com/brendanmurty/murty-website/commit/c544d3e)
 - [Version 2023.024](https://github.com/brendanmurty/murty-website/commit/030799b)
 - [Design: Improve gallery display](https://github.com/brendanmurty/murty-website/commit/c052ffb)
