@@ -13,7 +13,11 @@ export async function GeneratePhotoThumbail(
 
   const thumbnailImageEncoded = await photoDecoded.encode();
 
-  const thumbnailImagePath = thumbnailDirectory + "/500_" + photoFile;
+  const thumbnailImagePath =
+    thumbnailDirectory +
+    "/500_" +
+    photoFile.slice(0, -4).replaceAll(".", "") +
+    ".png";
 
   Deno.writeFileSync(thumbnailImagePath, thumbnailImageEncoded);
 
