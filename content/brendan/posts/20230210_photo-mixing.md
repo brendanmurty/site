@@ -11,8 +11,8 @@ photo_megapixel: 12
 photo_iso: 101
 photo_focallength: 6.81
 photo_file: 20230210_photo-mixing.jpg
-photo_url: https://murty.au/images/brendan/20230210_photo-mixing.jpg
-photo_thumb_url: https://murty.au/images/brendan/thumbnails/500_20230210_photo-mixing.png
+photo_url: /images/brendan/20230210_photo-mixing.jpg
+photo_thumb_url: /images/brendan/thumbnails/500_20230210_photo-mixing.png
 ---
 
 ![](/images/brendan/20230210_photo-mixing.jpg)

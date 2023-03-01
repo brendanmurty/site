@@ -32,8 +32,7 @@ export async function GeneratePhotoPosts(): Promise<void> {
           .toLowerCase() +
         ".jpg";
       const postFileName: string = imageFileName.replace(".jpg", ".md");
-      const photoUrl: string =
-        "https://murty.au/images/brendan/" + imageFileName;
+      const photoUrl: string = "/images/brendan/" + imageFileName;
 
       console.log(
         "Generating photo post for '" +
@@ -72,7 +71,7 @@ export async function GeneratePhotoPosts(): Promise<void> {
         "photo_url: " +
         photoUrl +
         "\r" +
-        "photo_thumb_url: https://murty.au/" +
+        "photo_thumb_url: " +
         thumbnailImageUrl +
         "\r" +
         "---" +

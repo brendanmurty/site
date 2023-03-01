@@ -21,5 +21,5 @@ export async function GeneratePhotoThumbail(
 
   Deno.writeFileSync(thumbnailImagePath, thumbnailImageEncoded);
 
-  return thumbnailImagePath.replace("assets/", "");
+  return thumbnailImagePath.replace("assets/", "/");
 }
