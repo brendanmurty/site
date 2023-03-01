@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.030
+- Version 2023.031
+- [Design: Layout, spacing and gallery updates](https://github.com/brendanmurty/murty-website/commit/088b90f)
+- [Design: Improve page heading spacing and make date display on post pages consistent with the others](https://github.com/brendanmurty/murty-website/commit/dd073c3)
+- [Version 2023.030](https://github.com/brendanmurty/murty-website/commit/7c5c6e7)
 - [Design: Improve layout and spacing, hide recent posts list on smaller screens](https://github.com/brendanmurty/murty-website/commit/e9868bf)
 - [Version 2023.029](https://github.com/brendanmurty/murty-website/commit/263de8b)
 - [Brendan: More templating structure improvements](https://github.com/brendanmurty/murty-website/commit/7320843)
