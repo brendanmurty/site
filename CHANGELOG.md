@@ -1,6 +1,10 @@
 # Change Log
 
-- Version 2023.028
+- Version 2023.029
+- [Brendan: More templating structure improvements](https://github.com/brendanmurty/murty-website/commit/7320843)
+- [Brendan: Templating structure improvements](https://github.com/brendanmurty/murty-website/commit/21d546f)
+- [Photos: Templating structure improvements](https://github.com/brendanmurty/murty-website/commit/a5c49ae)
+- [Version 2023.028](https://github.com/brendanmurty/murty-website/commit/b14c4c9)
 - [Photos: Make photo and thumb image paths relative except in the related meta tag](https://github.com/brendanmurty/murty-website/commit/dc7106e)
 - [Version 2023.027](https://github.com/brendanmurty/murty-website/commit/0d62247)
 - [Photos: Update file extension of the generated thumbnails to match their generated format](https://github.com/brendanmurty/murty-website/commit/c32ad18)
