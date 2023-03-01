@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.032
+- Version 2023.033
+- [Docs: Add screenshot](https://github.com/brendanmurty/murty-website/commit/2de846e)
+- [Version 2023.032](https://github.com/brendanmurty/murty-website/commit/06f3a98)
 - [Design: Fix header vertical spacing on smaller screens](https://github.com/brendanmurty/murty-website/commit/0bca130)
 - [Version 2023.031](https://github.com/brendanmurty/murty-website/commit/3384536)
 - [Design: Layout, spacing and gallery updates](https://github.com/brendanmurty/murty-website/commit/088b90f)
