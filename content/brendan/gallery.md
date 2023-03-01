@@ -1,3 +1,3 @@
 ---
-layout: brendan/gallery.njk
+layout: brendan/photos/gallery.njk
 ---
