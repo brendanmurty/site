@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.026
+- Version 2023.027
+- [Photos: Update file extension of the generated thumbnails to match their generated format](https://github.com/brendanmurty/murty-website/commit/c32ad18)
+- [Version 2023.026](https://github.com/brendanmurty/murty-website/commit/6f070b6)
 - [Gallery: Use thumbnail images if they exist in the post data](https://github.com/brendanmurty/murty-website/commit/0522300)
 - [Photos: Create thumbnail images for current photo posts](https://github.com/brendanmurty/murty-website/commit/7d9a95f)
 - [Gallery: Automatically generate thumbnail images](https://github.com/brendanmurty/murty-website/commit/2a98625)
