@@ -1,10 +1,14 @@
 # murty.au
 
+## Summary
+
 This repository contains the website for the [Murty family](https://murty.au/).
 
 It's built with [Deno](https://deno.land/) and [Lume](https://lumeland.github.io/)
 
 I've used fonts I've purchased from [Mass-Driver](https://mass-driver.com/) and icons from [Font Awesome](https://fontawesome.com/) and [Feather](https://feathericons.com/).
+
+![Screenshot of main index page](docs/assets/screenshot1.png)
 
 ## Initial Setup
 
