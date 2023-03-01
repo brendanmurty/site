@@ -15,6 +15,10 @@
   margin: 25px 0 0;
 }
 
+article>h2 {
+  margin: 30px 0 15px;
+}
+
 ul.brendan_posts {
   list-style: none;
   margin-left: 0;
@@ -26,11 +30,18 @@ ul.brendan_posts li,
 }
 
 ul.brendan_posts .post-date,
+.brendan_post .post-date,
 .brendan ul.listing.posts .post-date,
 .brendan .photo-data .data-title {
   width: 125px;
   color: var(--secondary-colour);
   display: inline-block;
+}
+
+.brendan_post .post-date {
+  float: left;
+  clear: both;
+  width: 100%;
 }
 
 .brendan_post article img:not(.data-icon) {
