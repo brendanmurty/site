@@ -70,7 +70,11 @@ ul.brendan_posts .post-date,
 
 .brendan ul.listing {
   list-style: none;
-  margin: 50px 0 0;
+  margin: 35px 0 0;
+  float: left;
+}
+
+.brendan ul.listing li {
   float: left;
 }
 
@@ -109,12 +113,12 @@ ul.brendan_posts .post-date,
 }
 
 .brendan ul.listing.connect {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .brendan ul.listing.connect li {
   width: 33.3%;
-  margin: 30px 0 0;
+  margin: 25px 0 0;
 }
 
 .brendan ul.listing .icon {
@@ -195,6 +199,10 @@ ul.brendan_gallery a:active {
   .brendan header .avatar {
     width: 100px;
     height: auto;
+  }
+
+  .brendan ul.listing.posts {
+    display: none;
   }
 
   .brendan ul.listing,
