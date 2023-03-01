@@ -1,2 +1,2 @@
 type: post
-layout: brendan/post.njk
+layout: brendan/posts/post.njk

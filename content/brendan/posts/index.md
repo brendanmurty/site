@@ -1,4 +1,4 @@
 ---
 title: Posts
-layout: brendan/posts.njk
+layout: brendan/posts/posts.njk
 ---

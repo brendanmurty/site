@@ -1,2 +1,2 @@
 type: tag
-layout: brendan/tag-list-item.njk
+layout: brendan/posts/tag.njk

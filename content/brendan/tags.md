@@ -1,4 +1,4 @@
 ---
 title: Tags
-layout: brendan/tag-list-all.njk
+layout: brendan/posts/tags.njk
 ---
