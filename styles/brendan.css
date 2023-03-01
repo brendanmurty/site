@@ -164,6 +164,15 @@ ul.brendan_gallery img {
   object-fit: cover;
 }
 
+ul.brendan_gallery a {
+  display: inline-grid;
+}
+
+ul.brendan_gallery a:hover,
+ul.brendan_gallery a:active {
+  opacity: 0.5;
+}
+
 /* Medium sized screens */
 
 @media only screen and (max-width: 750px) {
