@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.023
+- Version 2023.024
+- [Design: Improve gallery display](https://github.com/brendanmurty/murty-website/commit/c052ffb)
+- [Version 2023.023](https://github.com/brendanmurty/murty-website/commit/00ed4c5)
 - [Photos: Add gallery view and improve related features](https://github.com/brendanmurty/murty-website/commit/c057285)
 - [Core: Code style improvements in Build script](https://github.com/brendanmurty/murty-website/commit/a155192)
 - [Version 2023.022](https://github.com/brendanmurty/murty-website/commit/e0a4922)
