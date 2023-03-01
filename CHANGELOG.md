@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.029
+- Version 2023.030
+- [Design: Improve layout and spacing, hide recent posts list on smaller screens](https://github.com/brendanmurty/murty-website/commit/e9868bf)
+- [Version 2023.029](https://github.com/brendanmurty/murty-website/commit/263de8b)
 - [Brendan: More templating structure improvements](https://github.com/brendanmurty/murty-website/commit/7320843)
 - [Brendan: Templating structure improvements](https://github.com/brendanmurty/murty-website/commit/21d546f)
 - [Photos: Templating structure improvements](https://github.com/brendanmurty/murty-website/commit/a5c49ae)
