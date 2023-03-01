@@ -2,6 +2,7 @@ import { format } from "https://deno.land/std@0.173.0/datetime/mod.ts";
 import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
 import { json2yaml } from "https://deno.land/x/json2yaml@v1.0.1/mod.ts";
 import { GetExifDataFromPhoto } from "./photo-data.ts";
+import { GeneratePhotoThumbail } from "./photo-thumbnail-generate.ts";
 
 export async function GeneratePhotoPosts(): Promise<void> {
   const inboxDirectory = "inbox";
@@ -42,7 +43,14 @@ export async function GeneratePhotoPosts(): Promise<void> {
           "'"
       );
 
+      // Extract and process the EXIF data from the photo
       const exifData = await GetExifDataFromPhoto(inboxDirectory, item.name);
+
+      // Generate and save a smaller thumbnail version of this photo
+      const thumbnailImageUrl = await GeneratePhotoThumbail(
+        inboxDirectory,
+        item.name
+      );
 
       const markdownContent =
         "---" +
@@ -63,6 +71,9 @@ export async function GeneratePhotoPosts(): Promise<void> {
         "\r" +
         "photo_url: " +
         photoUrl +
+        "\r" +
+        "photo_thumb_url: https://murty.au/" +
+        thumbnailImageUrl +
         "\r" +
         "---" +
         "\r" +
