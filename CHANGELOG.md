@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.034
+- Version 2023.035
+- [Photos: Use a thumbnail image as the social share image if it's available for a post](https://github.com/brendanmurty/murty-website/commit/3cc1394)
+- [Version 2023.034](https://github.com/brendanmurty/murty-website/commit/c64b119)
 - [Content: Update kids images and improve their general page designs](https://github.com/brendanmurty/murty-website/commit/34573e4)
 - [Version 2023.033](https://github.com/brendanmurty/murty-website/commit/1779189)
 - [Docs: Add screenshot](https://github.com/brendanmurty/murty-website/commit/2de846e)
