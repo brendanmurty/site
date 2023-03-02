@@ -11,6 +11,13 @@ app.use(async (context) => {
     const request_domain: string =
       context.request.headers.get("host")?.split(":")[0] || "";
     switch (request_domain) {
+      case "murty.io":
+      case "murty.email":
+      case "murty.social":
+      case "www.murty.au":
+      case "www.murty.io":
+        context.response.redirect("https://murty.au/");
+        break;
       case "b.murty.io":
       case "brendan.murty.io":
       case "b.murty.au":
