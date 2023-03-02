@@ -7,7 +7,7 @@ const app = new Application();
 
 app.use(async (context) => {
   try {
-    // Redirect the user when a shortcut domain is requested
+    // Redirects based on the domain requested by the visitor
     const request_domain: string =
       context.request.headers.get("host")?.split(":")[0] || "";
     switch (request_domain) {
@@ -53,13 +53,13 @@ app.use(async (context) => {
         break;
     }
 
-    // Serve the request from the static site directory
+    // Serve remaining valid requests from the static site directory
     await context.send({
       root: Deno.cwd() + "/public",
       index: "index.html"
     });
   } catch (error) {
-    // Catch errors and simplify the log message for them
+    // Catch any errors and simplify the log message for them
     if (isHttpError(error)) {
       console.log(
         "Error: " + error.message + " (" + context.request.url.href + ")"
@@ -73,5 +73,5 @@ app.use(async (context) => {
   }
 });
 
-// Listen for requests on port 8000
+// Listen for visitor requests on port 8000
 await app.listen({ port: 8000 });
