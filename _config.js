@@ -1,14 +1,14 @@
 /**
-* Lume Configuration
-*
-* This file defines how the Lume site build process works for this site.
-* 
-* More information at https://lume.land/docs/configuration/config-file/
-*/
+ * Lume Configuration
+ *
+ * This file defines how the Lume site build process works for this site.
+ *
+ * More information at https://lume.land/docs/configuration/config-file/
+ */
 
-import lume from "https://deno.land/x/lume@v1.15.2/mod.ts";
-import date from "https://deno.land/x/lume@v1.15.2/plugins/date.ts";
-import sitemap from "https://deno.land/x/lume@v1.15.2/plugins/sitemap.ts";
+import lume from "https://deno.land/x/lume@v1.15.3/mod.ts";
+import date from "https://deno.land/x/lume@v1.15.3/plugins/date.ts";
+import sitemap from "https://deno.land/x/lume@v1.15.3/plugins/sitemap.ts";
 
 // Build the site using Lume
 const site = lume({
