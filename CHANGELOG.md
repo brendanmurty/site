@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.035
+- Version 2023.036
+- [Server: Setup redirects for some top-level alias domains](https://github.com/brendanmurty/murty-website/commit/2104582)
+- [Version 2023.035](https://github.com/brendanmurty/murty-website/commit/855d4d2)
 - [Photos: Use a thumbnail image as the social share image if it's available for a post](https://github.com/brendanmurty/murty-website/commit/3cc1394)
 - [Version 2023.034](https://github.com/brendanmurty/murty-website/commit/c64b119)
 - [Content: Update kids images and improve their general page designs](https://github.com/brendanmurty/murty-website/commit/34573e4)
