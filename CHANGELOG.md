@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.033
+- Version 2023.034
+- [Content: Update kids images and improve their general page designs](https://github.com/brendanmurty/murty-website/commit/34573e4)
+- [Version 2023.033](https://github.com/brendanmurty/murty-website/commit/1779189)
 - [Docs: Add screenshot](https://github.com/brendanmurty/murty-website/commit/2de846e)
 - [Version 2023.032](https://github.com/brendanmurty/murty-website/commit/06f3a98)
 - [Design: Fix header vertical spacing on smaller screens](https://github.com/brendanmurty/murty-website/commit/0bca130)
