@@ -2,7 +2,7 @@
 
 # Install Lume - https://deno.land/x/lume
 
-deno run -A https://deno.land/x/lume@v1.13.1/install.ts
+deno run -A https://deno.land/x/lume@v1.15.3/install.ts
 
 # Install Deno deployctl - https://deno.com/deploy/docs/deployctl
 
