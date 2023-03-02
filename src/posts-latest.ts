@@ -1,5 +1,6 @@
-import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
-import "https://deno.land/x/dotenv@v3.2.0/load.ts";
+import { posix } from "https://deno.land/std@0.178.0/path/mod.ts";
+import "https://deno.land/x/dotenv@v3.2.2/load.ts";
+
 import { PostsList } from "./posts-list.ts";
 import { JsonFeedItem } from "./types.ts";
 

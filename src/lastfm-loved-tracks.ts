@@ -1,4 +1,4 @@
-import "https://deno.land/x/dotenv@v3.2.0/load.ts";
+import "https://deno.land/x/dotenv@v3.2.2/load.ts";
 
 export async function LastFmLovedTracks(): Promise<
   { artist: string; track: string; url: string }[]

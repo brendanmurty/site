@@ -1,6 +1,7 @@
-import { format } from "https://deno.land/std@0.173.0/datetime/mod.ts";
-import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
+import { format } from "https://deno.land/std@0.178.0/datetime/mod.ts";
+import { posix } from "https://deno.land/std@0.178.0/path/mod.ts";
 import { json2yaml } from "https://deno.land/x/json2yaml@v1.0.1/mod.ts";
+
 import { GetExifDataFromPhoto } from "./photo-data.ts";
 import { GeneratePhotoThumbail } from "./photo-thumbnail-generate.ts";
 
