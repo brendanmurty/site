@@ -1,6 +1,12 @@
 # Change Log
 
-- Version 2023.036
+- Version 2023.037
+- [Core: Update Lume version in Lume config file](https://github.com/brendanmurty/murty-website/commit/6db1963)
+- [DevOps: Update Lume version in setup script](https://github.com/brendanmurty/murty-website/commit/ac66db5)
+- [Core: Upgrade dependencies in Deno scripts](https://github.com/brendanmurty/murty-website/commit/40b0fa7)
+- [Server: Upgrade Oak version](https://github.com/brendanmurty/murty-website/commit/36bf060)
+- [Server: Improve code comments](https://github.com/brendanmurty/murty-website/commit/8f182ee)
+- [Version 2023.036](https://github.com/brendanmurty/murty-website/commit/399a255)
 - [Server: Setup redirects for some top-level alias domains](https://github.com/brendanmurty/murty-website/commit/2104582)
 - [Version 2023.035](https://github.com/brendanmurty/murty-website/commit/855d4d2)
 - [Photos: Use a thumbnail image as the social share image if it's available for a post](https://github.com/brendanmurty/murty-website/commit/3cc1394)
