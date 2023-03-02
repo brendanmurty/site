@@ -1,7 +1,7 @@
 import {
   Application,
   isHttpError
-} from "https://deno.land/x/oak@v10.6.0/mod.ts";
+} from "https://deno.land/x/oak@v11.1.0/mod.ts";
 
 const app = new Application();
 
