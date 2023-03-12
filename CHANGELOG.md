@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.037
+- Version 2023.038
+- [DevOps: Use Deno import maps to simplify common dependency URLs and to make upgrading them easier](https://github.com/brendanmurty/murty-website/commit/e39dae5)
+- [Version 2023.037](https://github.com/brendanmurty/murty-website/commit/f6078b6)
 - [Core: Update Lume version in Lume config file](https://github.com/brendanmurty/murty-website/commit/6db1963)
 - [DevOps: Update Lume version in setup script](https://github.com/brendanmurty/murty-website/commit/ac66db5)
 - [Core: Upgrade dependencies in Deno scripts](https://github.com/brendanmurty/murty-website/commit/40b0fa7)
