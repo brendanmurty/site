@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.040
+- Version 2023.041
+- [Make post list on home page use relative links instead of using the production URL](https://github.com/brendanmurty/murty-website/commit/f2e6ba1)
+- [Version 2023.040](https://github.com/brendanmurty/murty-website/commit/2942c3f)
 - [DevOps: Update Oak import as Deno Deploy needs it this way](https://github.com/brendanmurty/murty-website/commit/57e199b)
 - [Version 2023.039](https://github.com/brendanmurty/murty-website/commit/fc7a422)
 - [DevOps: Improve Lume setup, add more import maps](https://github.com/brendanmurty/murty-website/commit/81cb6c3)
