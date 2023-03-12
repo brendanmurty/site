@@ -1,4 +1,4 @@
-import { json2yaml } from "https://deno.land/x/json2yaml@v1.0.1/mod.ts";
+import { json2yaml } from "json2yaml/mod.ts";
 
 import { PostsLatest } from "./posts-latest.ts";
 import { LastFmLovedTracks } from "./lastfm-loved-tracks.ts";

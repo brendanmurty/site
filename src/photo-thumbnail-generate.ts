@@ -1,4 +1,4 @@
-import { Image } from "https://deno.land/x/imagescript@1.2.15/mod.ts";
+import { Image } from "imagescript/mod.ts";
 
 export async function GeneratePhotoThumbail(
   photoDirectory: string,

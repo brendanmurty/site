@@ -40,7 +40,7 @@ cp -r content/* building
 echo -e "${yellow}Preparing site data for Lume${end}"
 deno run -A --allow-read --allow-write src/site-data.ts
 
-echo -e "${yellow}Building the front-end using Lume and '_config.js'${end}"
+echo -e "${yellow}Building the front-end using Lume and '_config.ts'${end}"
 lume
 
 echo -e "${yellow}Updating 'public/sitemap.xml' to use the production URL${end}"

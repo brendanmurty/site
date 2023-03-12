@@ -1,8 +1,14 @@
 {
   "imports": {
-    "std/": "https://deno.land/std@0.179.0/",
     "dotenv/": "https://deno.land/x/dotenv@v3.2.2/",
+    "imagescript/": "https://deno.land/x/imagescript@1.2.15/",
+    "is_json/": "https://deno.land/x/is_json@v1.0.2/",
     "json2yaml/": "https://deno.land/x/json2yaml@v1.0.1/",
-    "is_json/": "https://deno.land/x/is_json@v1.0.2/"
+    "lume/": "https://deno.land/x/lume@v1.15.3/",
+    "oak/": "https://deno.land/x/oak@v11.1.0/",
+    "std/": "https://deno.land/std@0.179.0/"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -"
   }
 }
