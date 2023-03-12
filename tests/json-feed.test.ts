@@ -1,10 +1,7 @@
-import "https://deno.land/x/dotenv@v3.2.0/load.ts";
-import {
-  assertEquals,
-  assertNotEquals
-} from "https://deno.land/std@0.143.0/testing/asserts.ts";
-import { isJSON } from "https://deno.land/x/is_json@v1.0.2/mod.ts";
-import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
+import "dotenv/load.ts";
+import { assertEquals, assertNotEquals } from "std/testing/asserts.ts";
+import { isJSON } from "is_json/mod.ts";
+import { posix } from "std/path/mod.ts";
 
 Deno.test("src/json-feed.ts", async (test) => {
   // Attempt to get the values of some variables from the ".env" file

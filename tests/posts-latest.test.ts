@@ -1,5 +1,6 @@
-import "https://deno.land/x/dotenv@v3.2.0/load.ts";
-import { assertNotEquals } from "https://deno.land/std@0.143.0/testing/asserts.ts";
+import "dotenv/load.ts";
+import { assertNotEquals } from "std/testing/asserts.ts";
+
 import { PostsLatest } from "../src/posts-latest.ts";
 
 Deno.test("src/posts-latest.ts", async (test) => {

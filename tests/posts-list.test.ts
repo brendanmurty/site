@@ -1,9 +1,7 @@
-import "https://deno.land/x/dotenv@v3.2.0/load.ts";
-import {
-  assertEquals,
-  assertNotEquals
-} from "https://deno.land/std@0.143.0/testing/asserts.ts";
-import { posix } from "https://deno.land/std@0.140.0/path/mod.ts";
+import "dotenv/load.ts";
+import { assertEquals, assertNotEquals } from "std/testing/asserts.ts";
+import { posix } from "std/path/mod.ts";
+
 import { PostsList } from "../src/posts-list.ts";
 
 Deno.test("src/posts-list.ts", async (test) => {

@@ -1,5 +1,5 @@
-import { posix } from "https://deno.land/std@0.178.0/path/mod.ts";
-import { parse } from "https://deno.land/std@0.178.0/encoding/yaml.ts";
+import { posix } from "std/path/mod.ts";
+import { parse } from "std/encoding/yaml.ts";
 
 import { JsonFeedItem, YamlData } from "./types.ts";
 

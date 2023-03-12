@@ -1,7 +1,4 @@
-import {
-  assertEquals,
-  assertNotEquals
-} from "https://deno.land/std@0.143.0/testing/asserts.ts";
+import { assertEquals, assertNotEquals } from "std/testing/asserts.ts";
 
 Deno.test("bin/build", async (test) => {
   await test.step({

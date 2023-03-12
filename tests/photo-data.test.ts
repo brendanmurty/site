@@ -1,5 +1,6 @@
-import "https://deno.land/x/dotenv@v3.2.0/load.ts";
-import { assertEquals } from "https://deno.land/std@0.143.0/testing/asserts.ts";
+import "dotenv/load.ts";
+import { assertEquals } from "std/testing/asserts.ts";
+
 import { GetExifDataFromPhoto } from "../src/photo-data.ts";
 
 Deno.test("src/photo-data.ts", async (test) => {
