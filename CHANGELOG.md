@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.039
+- Version 2023.040
+- [DevOps: Update Oak import as Deno Deploy needs it this way](https://github.com/brendanmurty/murty-website/commit/57e199b)
+- [Version 2023.039](https://github.com/brendanmurty/murty-website/commit/fc7a422)
 - [DevOps: Improve Lume setup, add more import maps](https://github.com/brendanmurty/murty-website/commit/81cb6c3)
 - [DevOps: Additional Deno package updates](https://github.com/brendanmurty/murty-website/commit/eece6ac)
 - [Version 2023.038](https://github.com/brendanmurty/murty-website/commit/f4c2f15)
