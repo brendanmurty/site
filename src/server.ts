@@ -1,4 +1,7 @@
-import { Application, isHttpError } from "oak/mod.ts";
+import {
+  Application,
+  isHttpError
+} from "https://deno.land/x/oak@v12.1.0/mod.ts";
 
 const app = new Application();
 
