@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.041
+- Version 2023.042
+- [Content: New role at Boulevard](https://github.com/brendanmurty/murty-website/commit/682ea51)
+- [Docs: Improve summary content](https://github.com/brendanmurty/murty-website/commit/5e2f4de)
+- [Version 2023.041](https://github.com/brendanmurty/murty-website/commit/61dd303)
 - [Make post list on home page use relative links instead of using the production URL](https://github.com/brendanmurty/murty-website/commit/f2e6ba1)
 - [Version 2023.040](https://github.com/brendanmurty/murty-website/commit/2942c3f)
 - [DevOps: Update Oak import as Deno Deploy needs it this way](https://github.com/brendanmurty/murty-website/commit/57e199b)
