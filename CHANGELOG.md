@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.042
+- Version 2023.043
+- [Content: Fix date in metadata of latest post](https://github.com/brendanmurty/murty-website/commit/f68bf06)
+- [Version 2023.042](https://github.com/brendanmurty/murty-website/commit/e2f7b8e)
 - [Content: New role at Boulevard](https://github.com/brendanmurty/murty-website/commit/682ea51)
 - [Docs: Improve summary content](https://github.com/brendanmurty/murty-website/commit/5e2f4de)
 - [Version 2023.041](https://github.com/brendanmurty/murty-website/commit/61dd303)
