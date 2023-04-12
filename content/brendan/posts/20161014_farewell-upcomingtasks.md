@@ -17,7 +17,7 @@ All of your project, task and user data is stored in your Basecamp 2 account and
 
 ## What happens on the 15th of November, 2016?
 
-The website, upcomingtasks.com, will redirect to this blog post.
+The website will redirect to this blog post.
 
 All related UpcomingTasks services and accounts will be shut down.
 
