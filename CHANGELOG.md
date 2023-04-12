@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.043
+- Version 2023.044
+- [Server: Remove redirects for obsolete domains](https://github.com/brendanmurty/murty-website/commit/9e72154)
+- [Content: Remove reference to old domain](https://github.com/brendanmurty/murty-website/commit/387976d)
+- [Version 2023.043](https://github.com/brendanmurty/murty-website/commit/0b5eb1e)
 - [Content: Fix date in metadata of latest post](https://github.com/brendanmurty/murty-website/commit/f68bf06)
 - [Version 2023.042](https://github.com/brendanmurty/murty-website/commit/e2f7b8e)
 - [Content: New role at Boulevard](https://github.com/brendanmurty/murty-website/commit/682ea51)
