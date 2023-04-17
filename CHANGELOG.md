@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.049
+- Version 2023.050
+- [Design: Improve header sizing fixes](https://github.com/brendanmurty/murty-website/commit/ac95b74)
+- [Version 2023.049](https://github.com/brendanmurty/murty-website/commit/7efeca2)
 - [Design: Fix header size on smaller screens](https://github.com/brendanmurty/murty-website/commit/0b8403d)
 - [Version 2023.048](https://github.com/brendanmurty/murty-website/commit/662d8b6)
 - [Brendan: Improve quality of new avatar images](https://github.com/brendanmurty/murty-website/commit/eadf120)
