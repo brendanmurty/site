@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.044
+- Version 2023.045
+- [DevOps: Fix Lume command in build script](https://github.com/brendanmurty/murty-website/commit/6a5f308)
+- [Content: New avatar image for Brendan](https://github.com/brendanmurty/murty-website/commit/ce3ef1d)
+- [Version 2023.044](https://github.com/brendanmurty/murty-website/commit/8ae4788)
 - [Server: Remove redirects for obsolete domains](https://github.com/brendanmurty/murty-website/commit/9e72154)
 - [Content: Remove reference to old domain](https://github.com/brendanmurty/murty-website/commit/387976d)
 - [Version 2023.043](https://github.com/brendanmurty/murty-website/commit/0b5eb1e)
