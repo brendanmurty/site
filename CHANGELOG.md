@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.046
+- Version 2023.047
+- [Brendan: Update new avatar image file names, update references](https://github.com/brendanmurty/murty-website/commit/39f91f9)
+- [Version 2023.046](https://github.com/brendanmurty/murty-website/commit/4c3ceed)
 - [Core: Update default social share image](https://github.com/brendanmurty/murty-website/commit/870a317)
 - [Version 2023.045](https://github.com/brendanmurty/murty-website/commit/d30090e)
 - [DevOps: Fix Lume command in build script](https://github.com/brendanmurty/murty-website/commit/6a5f308)
