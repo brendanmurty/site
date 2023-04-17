@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.047
+- Version 2023.048
+- [Brendan: Improve quality of new avatar images](https://github.com/brendanmurty/murty-website/commit/eadf120)
+- [Version 2023.047](https://github.com/brendanmurty/murty-website/commit/6cdadca)
 - [Brendan: Update new avatar image file names, update references](https://github.com/brendanmurty/murty-website/commit/39f91f9)
 - [Version 2023.046](https://github.com/brendanmurty/murty-website/commit/4c3ceed)
 - [Core: Update default social share image](https://github.com/brendanmurty/murty-website/commit/870a317)
