@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.050
+- Version 2023.051
+- [DevOps: Fix sitemap update command](https://github.com/brendanmurty/murty-website/commit/59afd29)
+- [Version 2023.050](https://github.com/brendanmurty/murty-website/commit/6a5837d)
 - [Design: Improve header sizing fixes](https://github.com/brendanmurty/murty-website/commit/ac95b74)
 - [Version 2023.049](https://github.com/brendanmurty/murty-website/commit/7efeca2)
 - [Design: Fix header size on smaller screens](https://github.com/brendanmurty/murty-website/commit/0b8403d)
