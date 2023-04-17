@@ -62,11 +62,11 @@ Deno.test("bin/build", async (test) => {
   });
 
   await test.step({
-    name: "non-empty file 'public/images/brendan/brendan-murty-2021.jpeg' was found",
+    name: "non-empty file 'public/images/brendan/brendan-murty-2023.jpg' was found",
     fn: async () => {
       try {
         const publicIndexFileContents: string = await Deno.readTextFile(
-          "public/images/brendan/brendan-murty-2021.jpeg"
+          "public/images/brendan/brendan-murty-2023.jpg"
         );
 
         assertNotEquals(publicIndexFileContents, "");
