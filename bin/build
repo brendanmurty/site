@@ -55,6 +55,7 @@ cp "assets/Resume - Brendan Murty.pdf" "public/brendan/Resume - Brendan Murty.pd
 mkdir -p public/css
 cp -r assets/icons/fontawesome public/css
 cp -r assets/icons/feather public/icons
+cp -r assets/icons/seeklogo public/icons
 cp "building/_assets/css/styles.min.css" "public/css/styles.min.css"
 
 echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"
