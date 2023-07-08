@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.055
+- Version 2023.056
+- [Content: Fix link to old Sublime Text preferences](https://github.com/brendanmurty/murty-website/commit/780f614)
+- [Version 2023.055](https://github.com/brendanmurty/murty-website/commit/d6a96a0)
 - [Design: Improve contrast](https://github.com/brendanmurty/murty-website/commit/f22a322)
 - [Version 2023.054](https://github.com/brendanmurty/murty-website/commit/3b99619)
 - [Brendan: Update intro content](https://github.com/brendanmurty/murty-website/commit/51d3721)
