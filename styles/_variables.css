@@ -4,9 +4,9 @@
 
 body {
   --highlight-colour: #23c5b0;
-  --background-colour: #111;
-  --foreground-colour: #fff;
-  --secondary-colour: #888;
+  --background-colour: #000000;
+  --foreground-colour: #FFFFFF;
+  --secondary-colour: #888888;
 }
 
 body.freya {
@@ -25,8 +25,8 @@ body.luca {
 
 @media (prefers-color-scheme: light) {
   body {
-    --background-colour: #fff;
-    --foreground-colour: #111;
-    --secondary-colour: #888;
+    --background-colour: #FFFFFF;
+    --foreground-colour: #000000;
+    --secondary-colour: #888888;
   }
 }
