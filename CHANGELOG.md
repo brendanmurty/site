@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.051
+- Version 2023.052
+- [Core: Remove unused Feather icons, update related build process](https://github.com/brendanmurty/murty-website/commit/2fc6d01)
+- [Brendan: Add Threads profile link using logo from Seeklogo](https://github.com/brendanmurty/murty-website/commit/e8e3bee)
+- [Version 2023.051](https://github.com/brendanmurty/murty-website/commit/78a12d5)
 - [DevOps: Fix sitemap update command](https://github.com/brendanmurty/murty-website/commit/59afd29)
 - [Version 2023.050](https://github.com/brendanmurty/murty-website/commit/6a5837d)
 - [Design: Improve header sizing fixes](https://github.com/brendanmurty/murty-website/commit/ac95b74)
