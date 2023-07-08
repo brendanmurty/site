@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.056
+- Version 2023.057
+- [Design: Fix icons on gallery detail pages](https://github.com/brendanmurty/murty-website/commit/6427bb4)
+- [Version 2023.056](https://github.com/brendanmurty/murty-website/commit/bee9b75)
 - [Content: Fix link to old Sublime Text preferences](https://github.com/brendanmurty/murty-website/commit/780f614)
 - [Version 2023.055](https://github.com/brendanmurty/murty-website/commit/d6a96a0)
 - [Design: Improve contrast](https://github.com/brendanmurty/murty-website/commit/f22a322)
