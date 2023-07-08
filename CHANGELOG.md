@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.052
+- Version 2023.053
+- [Brendan: Re-order social and content links](https://github.com/brendanmurty/murty-website/commit/fbcd427)
+- [Version 2023.052](https://github.com/brendanmurty/murty-website/commit/e8bcca1)
 - [Core: Remove unused Feather icons, update related build process](https://github.com/brendanmurty/murty-website/commit/2fc6d01)
 - [Brendan: Add Threads profile link using logo from Seeklogo](https://github.com/brendanmurty/murty-website/commit/e8e3bee)
 - [Version 2023.051](https://github.com/brendanmurty/murty-website/commit/78a12d5)
