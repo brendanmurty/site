@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.053
+- Version 2023.054
+- [Brendan: Update intro content](https://github.com/brendanmurty/murty-website/commit/51d3721)
+- [Version 2023.053](https://github.com/brendanmurty/murty-website/commit/d92c809)
 - [Brendan: Re-order social and content links](https://github.com/brendanmurty/murty-website/commit/fbcd427)
 - [Version 2023.052](https://github.com/brendanmurty/murty-website/commit/e8bcca1)
 - [Core: Remove unused Feather icons, update related build process](https://github.com/brendanmurty/murty-website/commit/2fc6d01)
