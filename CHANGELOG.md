@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.054
+- Version 2023.055
+- [Design: Improve contrast](https://github.com/brendanmurty/murty-website/commit/f22a322)
+- [Version 2023.054](https://github.com/brendanmurty/murty-website/commit/3b99619)
 - [Brendan: Update intro content](https://github.com/brendanmurty/murty-website/commit/51d3721)
 - [Version 2023.053](https://github.com/brendanmurty/murty-website/commit/d92c809)
 - [Brendan: Re-order social and content links](https://github.com/brendanmurty/murty-website/commit/fbcd427)
