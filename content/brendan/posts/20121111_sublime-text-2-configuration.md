@@ -9,11 +9,11 @@ tags:
 
 However, I'm a big fan of customising a tool to meet my specific needs, so I thought I'd share my current Sublime Text 2 configuration:
 
-* [Sublime Package Control](http://wbond.net/sublime_packages/package_control) - Simplify the installation and management of plugins
-* [Sublime <span class="caps">SFTP</span>](http://wbond.net/sublime_packages/sftp) - A feature rich <span class="caps">FTP</span> plugin (free trial, $16)
-* [Soda theme](https://github.com/buymeasoda/soda-theme/) - Improve the look of the interface, includes light and dark variations<li>[Droid Sans Mono](http://damieng.com/blog/2007/11/14/droid-sans-mono-great-coding-font) - Font suitable for programming
-* [RailsCasts colour scheme](http://railscasts.com/about) - Light on dark colour scheme
-* [Customised preferences](https://github.com/brendanmurty/dotfiles/tree/main/sublime-text) - My customisations including disabling autocomplete and code folding
+- [Sublime Package Control](http://wbond.net/sublime_packages/package_control) - Simplify the installation and management of plugins
+- [Sublime <span class="caps">SFTP</span>](http://wbond.net/sublime_packages/sftp) - A feature rich <span class="caps">FTP</span> plugin (free trial, $16)
+- [Soda theme](https://github.com/buymeasoda/soda-theme/) - Improve the look of the interface, includes light and dark variations<li>[Droid Sans Mono](http://damieng.com/blog/2007/11/14/droid-sans-mono-great-coding-font) - Font suitable for programming
+- [RailsCasts colour scheme](http://railscasts.com/about) - Light on dark colour scheme
+- [Customised preferences](https://github.com/brendanmurty/dotfiles/tree/main/sublime-text) - My customisations including disabling autocomplete and code folding
 </ul>
 
 Any thoughts on this? I'd love to hear them! [Send me a Tweet](https://twitter.com/brendanmurty) to start the discussion.
@@ -24,4 +24,4 @@ I'm now using the [Revelation](https://github.com/daylerees/colour-schemes#revel
 
 ### Update (15 Jan 2014)
 
-I'm now sharing my [Sublime Text 3 preferences](https://github.com/brendanmurty/dotfiles/tree/main/sublime-text) on GitHub! Feel free to have a look at my current setup.
+I'm now sharing my [Sublime Text 3 preferences](https://github.com/brendanmurty/dotfiles/tree/64c37fc7c0c04552a4fcade931237e12af1fd9d3/sublime-text) on GitHub! Feel free to have a look at my current setup.
