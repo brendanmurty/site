@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.059
+- Version 2023.060
+- [Docs: Improve website preview image](https://github.com/brendanmurty/murty-website/commit/a5dabf6)
+- [Version 2023.059](https://github.com/brendanmurty/murty-website/commit/7ab349a)
 - [Docs: Fix formatting](https://github.com/brendanmurty/murty-website/commit/a70095c)
 - [Version 2023.058](https://github.com/brendanmurty/murty-website/commit/143f9b5)
 - [Docs: Update website preview image](https://github.com/brendanmurty/murty-website/commit/badab44)
