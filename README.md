@@ -4,7 +4,7 @@
 
 This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/) and [Lume](https://lumeland.github.io/).
 
-I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.com/), some icons from [Font Awesome](https://fontawesome.com/) and a [Threads logo from Seeklogo](https://seeklogo.com/vector-logo/489791/threads).
+I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
 ![Screenshot of main index page](docs/assets/website-preview.png)
 

@@ -55,8 +55,6 @@ cp "assets/Resume - Brendan Murty.pdf" "public/brendan/Resume - Brendan Murty.pd
 mkdir -p public/css
 cp -r assets/icons/fontawesome public/css
 cp "building/_assets/css/styles.min.css" "public/css/styles.min.css"
-mkdir -p public/icons
-cp -r assets/icons/seeklogo public/icons/seeklogo
 
 echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"
 deno run -A --allow-read --allow-write --allow-env src/json-feed.ts
