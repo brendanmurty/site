@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.062
+- Version 2023.063
+- [Core: Block some Google, ad, and AI bots](https://github.com/brendanmurty/murty-website/commit/018d63e)
+- [Version 2023.062](https://github.com/brendanmurty/murty-website/commit/acbe9e0)
 - [Core: Move to Fathom analytics](https://github.com/brendanmurty/murty-website/commit/c0747fe)
 - [Version 2023.061](https://github.com/brendanmurty/murty-website/commit/a84d30a)
 - [Design: Update FontAwesome, use their Threads icon instead](https://github.com/brendanmurty/murty-website/commit/c0ecf0f)
