@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.061
+- Version 2023.062
+- [Core: Move to Fathom analytics](https://github.com/brendanmurty/murty-website/commit/c0747fe)
+- [Version 2023.061](https://github.com/brendanmurty/murty-website/commit/a84d30a)
 - [Design: Update FontAwesome, use their Threads icon instead](https://github.com/brendanmurty/murty-website/commit/c0ecf0f)
 - [Version 2023.060](https://github.com/brendanmurty/murty-website/commit/f97c2c2)
 - [Docs: Improve website preview image](https://github.com/brendanmurty/murty-website/commit/a5dabf6)
