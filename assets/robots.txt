@@ -4,6 +4,9 @@ Disallow: /
 User-agent: Adsbot-Google
 Disallow: /
 
+User-agent: Google-Extended
+Disallow: /
+
 User-agent: CCBot
 Disallow: /
 
