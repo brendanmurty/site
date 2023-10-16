@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.063
+- Version 2023.064
+- [Core: Update robots config](https://github.com/brendanmurty/murty-website/commit/c4ff742)
+- [Version 2023.063](https://github.com/brendanmurty/murty-website/commit/0a71809)
 - [Core: Block some Google, ad, and AI bots](https://github.com/brendanmurty/murty-website/commit/018d63e)
 - [Version 2023.062](https://github.com/brendanmurty/murty-website/commit/acbe9e0)
 - [Core: Move to Fathom analytics](https://github.com/brendanmurty/murty-website/commit/c0747fe)
