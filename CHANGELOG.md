@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.064
+- Version 2023.065
+- [Core: Fix URL replacement in Sitemap](https://github.com/brendanmurty/murty-website/commit/8ca6578)
+- [Version 2023.064](https://github.com/brendanmurty/murty-website/commit/ebcf106)
 - [Core: Update robots config](https://github.com/brendanmurty/murty-website/commit/c4ff742)
 - [Version 2023.063](https://github.com/brendanmurty/murty-website/commit/0a71809)
 - [Core: Block some Google, ad, and AI bots](https://github.com/brendanmurty/murty-website/commit/018d63e)
