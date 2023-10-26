@@ -1,6 +1,10 @@
 # Change Log
 
-- Version 2023.065
+- Version 2023.066
+- [Core: Test fixes](https://github.com/brendanmurty/murty-website/commit/b08ae71)
+- [Core: Upgrade ENV load process, related packages](https://github.com/brendanmurty/murty-website/commit/8e0631e)
+- [Core: Upgrade Lume, fix template imports](https://github.com/brendanmurty/murty-website/commit/88757f7)
+- [Version 2023.065](https://github.com/brendanmurty/murty-website/commit/3932cda)
 - [Core: Fix URL replacement in Sitemap](https://github.com/brendanmurty/murty-website/commit/8ca6578)
 - [Version 2023.064](https://github.com/brendanmurty/murty-website/commit/ebcf106)
 - [Core: Update robots config](https://github.com/brendanmurty/murty-website/commit/c4ff742)
