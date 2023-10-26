@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.066
+- Version 2023.067
+- [Core: Update Deno lock file](https://github.com/brendanmurty/murty-website/commit/ed35feb)
+- [Version 2023.066](https://github.com/brendanmurty/murty-website/commit/e6ec8ca)
 - [Core: Test fixes](https://github.com/brendanmurty/murty-website/commit/b08ae71)
 - [Core: Upgrade ENV load process, related packages](https://github.com/brendanmurty/murty-website/commit/8e0631e)
 - [Core: Upgrade Lume, fix template imports](https://github.com/brendanmurty/murty-website/commit/88757f7)
