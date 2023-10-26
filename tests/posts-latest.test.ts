@@ -1,5 +1,4 @@
 import { assertNotEquals } from "std/testing/asserts.ts";
-
 import { PostsLatest } from "../src/posts-latest.ts";
 
 Deno.test("src/posts-latest.ts", async (test) => {

@@ -1,5 +1,5 @@
 import { assertNotEquals } from "std/testing/asserts.ts";
-
+import { load } from "std/dotenv/mod.ts";
 import { LastFmLovedTracks } from "../src/lastfm-loved-tracks.ts";
 
 Deno.test("src/lastfm-loved-tracks.ts", async (test) => {
