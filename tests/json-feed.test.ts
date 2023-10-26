@@ -1,10 +1,11 @@
-import "dotenv/load.ts";
+import { load } from "std/dotenv/mod.ts";
 import { assertEquals, assertNotEquals } from "std/testing/asserts.ts";
 import { isJSON } from "is_json/mod.ts";
 import { posix } from "std/path/mod.ts";
 
 Deno.test("src/json-feed.ts", async (test) => {
   // Attempt to get the values of some variables from the ".env" file
+  await load({ export: true });
   const postsJsonFile: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
   const postsDirectory: string = Deno.env.get("BLOG_POSTS_DIR") || "";
 

@@ -1,10 +1,11 @@
 import { posix } from "std/path/mod.ts";
-import "dotenv/load.ts";
-
+import { load } from "std/dotenv/mod.ts";
 import { PostsList } from "./posts-list.ts";
 import { JsonFeedItem } from "./types.ts";
 
 export async function PostsLatest(): Promise<JsonFeedItem[]> {
+  await load({ export: true });
+
   const postsDirectory: string = Deno.env.get("BLOG_POSTS_DIR") || "";
   const urlPosts: string = Deno.env.get("BLOG_POSTS_URL") || "";
   const jsonFeedDefaultPostTitle: string =

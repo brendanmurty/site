@@ -1,5 +1,5 @@
 import { posix } from "std/path/mod.ts";
-import { parse } from "std/encoding/yaml.ts";
+import { parse } from "std/yaml/mod.ts";
 
 import { JsonFeedItem, YamlData } from "./types.ts";
 

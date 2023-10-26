@@ -1,8 +1,10 @@
-import "dotenv/load.ts";
+import { load } from "std/dotenv/mod.ts";
 
 export async function LastFmLovedTracks(): Promise<
   { artist: string; track: string; url: string }[]
 > {
+  await load({ export: true });
+
   const lastFmApiKey: string = Deno.env.get("LASTFM_API_KEY") || "";
   const lastFmApiUrl = "http://ws.audioscrobbler.com/2.0/";
   const lastFmUsername = "brendanmurty";

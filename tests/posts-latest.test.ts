@@ -1,4 +1,3 @@
-import "dotenv/load.ts";
 import { assertNotEquals } from "std/testing/asserts.ts";
 
 import { PostsLatest } from "../src/posts-latest.ts";

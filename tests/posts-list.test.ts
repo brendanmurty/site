@@ -1,10 +1,12 @@
-import "dotenv/load.ts";
 import { assertEquals, assertNotEquals } from "std/testing/asserts.ts";
 import { posix } from "std/path/mod.ts";
+import { load } from "std/dotenv/mod.ts";
 
 import { PostsList } from "../src/posts-list.ts";
 
 Deno.test("src/posts-list.ts", async (test) => {
+  await load({ export: true });
+
   const postsDirectory: string = Deno.env.get("BLOG_POSTS_DIR") || "";
   const urlPosts: string = Deno.env.get("BLOG_POSTS_URL") || "";
   const jsonFeedDefaultPostTitle: string =

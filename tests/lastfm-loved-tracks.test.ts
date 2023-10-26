@@ -1,9 +1,10 @@
 import { assertNotEquals } from "std/testing/asserts.ts";
-import "dotenv/load.ts";
 
 import { LastFmLovedTracks } from "../src/lastfm-loved-tracks.ts";
 
 Deno.test("src/lastfm-loved-tracks.ts", async (test) => {
+  await load({ export: true });
+
   const lastFmApiKey: string = Deno.env.get("LASTFM_API_KEY") || "";
 
   await test.step({

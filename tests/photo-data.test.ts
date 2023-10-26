@@ -1,4 +1,3 @@
-import "dotenv/load.ts";
 import { assertEquals } from "std/testing/asserts.ts";
 
 import { GetExifDataFromPhoto } from "../src/photo-data.ts";
