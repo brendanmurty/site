@@ -8,11 +8,12 @@ const app = new Application();
 app.use(async (context) => {
   // Page redirects
   if (
-    context.request.url.pathname ===
-    "/brendan/posts/20230306_lead-software-engineer-at-boulevard/"
+    context.request.url.pathname.startsWith(
+      "/brendan/posts/20230306_lead-software-engineer-at-boulevard"
+    )
   ) {
     context.response.redirect(
-      "/brendan/posts/20230306_lead-software-engineer-at-liquidise"
+      "/brendan/posts/20230306_lead-software-engineer-at-liquidise/"
     );
     return true;
   }
