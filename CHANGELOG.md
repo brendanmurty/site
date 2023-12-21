@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2023.068
+- Version 2023.069
+- [Server: Improve page redirect](https://github.com/brendanmurty/murty-website/commit/e47bc24)
+- [Version 2023.068](https://github.com/brendanmurty/murty-website/commit/ffa1283)
 - [Server: Add page redirect, domain redirect cleanup](https://github.com/brendanmurty/murty-website/commit/2db848f)
 - [Brendan: Content update](https://github.com/brendanmurty/murty-website/commit/11fe690)
 - [Version 2023.067](https://github.com/brendanmurty/murty-website/commit/c29037a)
