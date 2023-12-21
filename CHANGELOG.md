@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.067
+- Version 2023.068
+- [Server: Add page redirect, domain redirect cleanup](https://github.com/brendanmurty/murty-website/commit/2db848f)
+- [Brendan: Content update](https://github.com/brendanmurty/murty-website/commit/11fe690)
+- [Version 2023.067](https://github.com/brendanmurty/murty-website/commit/c29037a)
 - [Core: Update Deno lock file](https://github.com/brendanmurty/murty-website/commit/ed35feb)
 - [Version 2023.066](https://github.com/brendanmurty/murty-website/commit/e6ec8ca)
 - [Core: Test fixes](https://github.com/brendanmurty/murty-website/commit/b08ae71)
