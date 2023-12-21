@@ -8,5 +8,11 @@
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -"
+  },
+  "deploy": {
+    "project": "24b235a9-8938-42fd-8ada-e519d03932fe",
+    "exclude": [],
+    "include": [],
+    "entrypoint": "src/server.ts"
   }
 }

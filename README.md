@@ -37,8 +37,10 @@ To setup a new local development environment:
 - `LASTFM_API_KEY`: Your [Last.fm API key](https://www.last.fm/api/account/create) to show your loved tracks on the site
 
 8. Create a new system environment variable named `DENO_DEPLOY_TOKEN` by following [their documentation](https://deno.com/deploy/docs/deployctl)
-9. Install [exiftool](https://exiftool.org/) on your local machine
-10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
+9. Edit `deno.jsonc`: Remove the `deploy.project` value, on your first deploy this will be set to your own project ID
+10. Edit `bin/deploy`: Edit the `deployctl` command to use your own Deno project name
+11. Install [exiftool](https://exiftool.org/) on your local machine
+12. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
