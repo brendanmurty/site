@@ -1,14 +1,14 @@
 {% set posts = search.pages("type=post", "date=desc") %}
 <ul class="brendan_posts">
 {% for post in posts %}
-{% if post.data.url != '/brendan/posts/' %}
+{% if post.url != '/brendan/posts/' %}
   <li>
     <span class="post-date">
-      {{ post.data.date | date('d LLL yyyy') }}
+      {{ post.date | date('d LLL yyyy') }}
     </span>
-    <a class="post-link" href="{{ post.data.url }}">
-      {% if post.data.title %}
-      {{ post.data.title }}
+    <a class="post-link" href="{{ post.url }}">
+      {% if post.title %}
+      {{ post.title }}
       {% else %}
       {{ post.url }}
       {% endif %}

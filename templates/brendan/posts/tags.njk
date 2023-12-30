@@ -1,8 +1,8 @@
 {% set posts = search.pages("type=post") %}
 {% set tags = [] %}
 {% for post in posts %}
-{% if post.data.tags %}
-{% for tag in post.data.tags %}
+{% if post.tags %}
+{% for tag in post.tags %}
 {% if tag not in tags %}
 {% set tags = (tags.push(tag), tags) %}
 {% endif %}

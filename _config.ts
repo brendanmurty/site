@@ -9,6 +9,7 @@
 import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import nunjucks from "lume/plugins/nunjucks.ts";
 
 // Build the site using Lume
 const site = lume({
@@ -17,6 +18,7 @@ const site = lume({
   prettyUrls: true
 });
 
+site.use(nunjucks());
 site.use(date());
 site.use(sitemap());
 
