@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2023.070
+- Version 2023.071
+- [Brendan: Content update](https://github.com/brendanmurty/murty-website/commit/8e9e14b)
+- [Core: Upgrade to Lume 2](https://github.com/brendanmurty/murty-website/commit/8720a47)
+- [Version 2023.070](https://github.com/brendanmurty/murty-website/commit/7fb2da7)
 - [Deploy: Config and docs updates](https://github.com/brendanmurty/murty-website/commit/cd0e53b)
 - [Version 2023.069](https://github.com/brendanmurty/murty-website/commit/4b58837)
 - [Server: Improve page redirect](https://github.com/brendanmurty/murty-website/commit/e47bc24)
