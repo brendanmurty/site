@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.001
+- Version 2024.002
+- [Core: Add extra domain redirect](https://github.com/brendanmurty/murty-website/commit/dfcdbd8)
+- [Core: Update lock file](https://github.com/brendanmurty/murty-website/commit/df3b01c)
+- [Version 2024.001](https://github.com/brendanmurty/murty-website/commit/cf6cd8d)
 - [Core: Upgrade third-party packages](https://github.com/brendanmurty/murty-website/commit/b49e979)
 - [Docs: Update preview image](https://github.com/brendanmurty/murty-website/commit/e6a882b)
 - [Version 2023.071](https://github.com/brendanmurty/murty-website/commit/99da18d)
