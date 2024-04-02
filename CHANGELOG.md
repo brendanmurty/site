@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.003
+- Version 2024.004
+- [Brendan: Content update](https://github.com/brendanmurty/murty-website/commit/cafb484)
+- [Version 2024.003](https://github.com/brendanmurty/murty-website/commit/c999687)
 - [Brendan: Content update](https://github.com/brendanmurty/murty-website/commit/d7d7f0e)
 - [Version 2024.002](https://github.com/brendanmurty/murty-website/commit/0053acc)
 - [Core: Add extra domain redirect](https://github.com/brendanmurty/murty-website/commit/dfcdbd8)
