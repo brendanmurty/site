@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.005
+- Version 2024.006
+- [Core: Environment config value updates](https://github.com/brendanmurty/murty-website/commit/a779f28)
+- [Core: Move to Google Analytics](https://github.com/brendanmurty/murty-website/commit/4812217)
+- [Version 2024.005](https://github.com/brendanmurty/murty-website/commit/281aff8)
 - [Core: Block ads and AI bots](https://github.com/brendanmurty/murty-website/commit/88e0236)
 - [Version 2024.004](https://github.com/brendanmurty/murty-website/commit/6a17c36)
 - [Brendan: Content update](https://github.com/brendanmurty/murty-website/commit/cafb484)
