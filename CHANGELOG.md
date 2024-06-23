@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.004
+- Version 2024.005
+- [Core: Block ads and AI bots](https://github.com/brendanmurty/murty-website/commit/88e0236)
+- [Version 2024.004](https://github.com/brendanmurty/murty-website/commit/6a17c36)
 - [Brendan: Content update](https://github.com/brendanmurty/murty-website/commit/cafb484)
 - [Version 2024.003](https://github.com/brendanmurty/murty-website/commit/c999687)
 - [Brendan: Content update](https://github.com/brendanmurty/murty-website/commit/d7d7f0e)
