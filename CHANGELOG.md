@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.010
+- Version 2024.011
+- [Docs: Improve readme](https://github.com/brendanmurty/murty-website/commit/604a48d)
+- [Version 2024.010](https://github.com/brendanmurty/murty-website/commit/4e9610e)
 - [Docs: Improve readme](https://github.com/brendanmurty/murty-website/commit/b534a61)
 - [Version 2024.009](https://github.com/brendanmurty/murty-website/commit/67d6b37)
 - [Core: Config and styles improvements](https://github.com/brendanmurty/murty-website/commit/929e2d7)
