@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.007
+- Version 2024.008
+- [Core: Move hosts from Deno Deploy to GitHub Pages](https://github.com/brendanmurty/murty-website/commit/e8fc87b)
+- [Version 2024.007](https://github.com/brendanmurty/murty-website/commit/9712c2a)
 - [Core: Move hosts from Deno Deploy to GitHub Pages](https://github.com/brendanmurty/murty-website/commit/aabb3ed)
 - [Create CNAME](https://github.com/brendanmurty/murty-website/commit/c94ffa2)
 - [Version 2024.006](https://github.com/brendanmurty/murty-website/commit/5d357b4)
