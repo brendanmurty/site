@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<title>Brendan Murty - Add some character to your website with themes</title>
+<meta name="author" content="Brendan Murty">
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="480">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://murty.au/brendan/posts/20130131_add-some-character-to-your-website-with-themes/" />
+<link rel="canonical" href="https://murty.au/brendan/posts/20130131_add-some-character-to-your-website-with-themes/" />
+<link rel="preload" href="/fonts/MDNichrome-Regular.woff" as="font" crossorigin="anonymous">
+<link rel="preload" href="/fonts/MDSystem-Regular.woff" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+<meta name="theme-color" content="#23c5b0">
+<meta name="description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer.">
+<meta property="og:title" content="Brendan Murty - Add some character to your website with themes" />
+<meta property="og:description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer." />
+
+<meta property="og:image" content="https://murty.au/images/brendan/brendan-luca-2023_750.jpg" />
+
+<link rel="me" href="https://mastodon.social/@murty">
+<link rel="icon" sizes="192x192" href="/images/brendan/icon-192.png">
+<link rel="alternate" title="Posts by Brendan Murty" type="application/json" href="https://murty.au/brendan/posts.json">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ57BB9D59"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-TZ57BB9D59');
+</script>
+
+</head>
+<body class="brendan brendan_post">
+  <section class="container">
+    <header>
+      <h1>
+  <img class="avatar" alt="" width="150" height="150" src="/images/brendan/brendan-luca-2023_200.jpg">
+  <a href="/">Brendan Murty</a>
+</h1>
+
+    </header>
+
+    <article>
+      <h2><a href="/">Home</a> > <a href="/brendan/posts">Posts</a> > Add some character to your website with themes</h2>
+
+      <p class="post-date">31 Jan 2013</p>
+
+      <ul class="tag-list">
+        
+        <li>
+          <a class="tag-link" href="/brendan/tags/PHP" title="View posts tagged with PHP">
+            <span class="icon fa-fw fa-solid fa-tag"></span>
+            PHP
+          </a>
+        </li>
+        
+        <li>
+          <a class="tag-link" href="/brendan/tags/CSS" title="View posts tagged with CSS">
+            <span class="icon fa-fw fa-solid fa-tag"></span>
+            CSS
+          </a>
+        </li>
+        
+      </ul>
+
+      <p>It's easy to add themes to your website and allow your visitors to customise their experience. This post will guide you through implementing theme support on your website using <a href="http://php.net/">PHP</a>, <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> and <a href="http://en.wikipedia.org/wiki/HTTP_cookie">cookies</a>.</p>
+<p>There are a few requirements of a theming system:</p>
+<ol>
+<li>Setting up your CSS files</li>
+<li>Showing a list of themes</li>
+<li>Allow the user to select a theme</li>
+<li>Include the selected theme styles</li>
+</ol>
+<h3>Setting up your CSS files</h3>
+<p>This method is designed around the idea of placing common styles in a file named *common.css *and placing theme specific styling in other CSS files. The filename of these files will become the theme name, like so:</p>
+<ul>
+<li><em>red.css</em> is displayed as <em>Red</em></li>
+<li>*dark-blue.css *is displayed as <em>Dark Blue</em></li>
+<li><em>salmon.css</em> is displayed as <em>Salmon</em></li>
+</ul>
+<p>For this example, the CSS files are placed in a top level folder named <em>styles</em>. Feel free to update this by changing the value of the <strong>$folder</strong> variables in the PHP functions.</p>
+<h4>theme-list.php</h4>
+<p>&lt;?php
+// theme_list - Return a list of the available themes
+function theme_list(){
+$folder='/styles/';// Path to the themes folder</p>
+<p>// Extract a list of files in the folder and sort them
+$dir=opendir($folder);
+$files=array();
+while($files[]=readdir($dir));
+sort($files);
+closedir($dir);</p>
+<p>// Create the theme selector list
+$return='';
+foreach($files as $file){
+$ext=pathinfo($file,PATHINFO_EXTENSION);
+if($file!='.' &amp;&amp; $file!='..' &amp;&amp; $ext=='css' &amp;&amp; $file!='common.css'){
+$theme_name=str_replace('.'.$ext,'',$file);
+$theme_title=str_replace(&quot;_&quot;,&quot; &quot;,str_replace(&quot;-&quot;,&quot; &quot;,ucwords(strtolower($theme_name))));
+$return.='<li><a href="/theme-set.php?theme='.$theme_name.'">'.$theme_title.'</a></li>';
+}
+}
+if($return!=''){ return '<ul class="themes">'.$return.'</ul>'; }
+}
+?&gt;</p>
+<h4>theme-get.php</h4>
+<p>&lt;?php
+// theme_get - Return the currently selected theme name
+function theme_get(){
+$theme_selected='red';// Set the default theme
+$folder='/styles/';// Path to the themes folder
+session_start();
+if(isset($_COOKIE['theme']) &amp;&amp; $_COOKIE['theme']!=''){
+$theme_requested=$_COOKIE['theme'];
+if($folder.$theme_requested.'.css')){
+$theme_selected=$theme_requested;
+}
+}
+return $theme_selected;
+}</p>
+<p>// Output the CSS includes to the page
+$theme_selected=theme_get();
+print '<link rel="stylesheet" href="/styles/common.css">';
+print '<link rel="stylesheet" href="/styles/'.$theme_selected.'.css">';
+?&gt;</p>
+<h4>theme-set.php</h4>
+<p>&lt;?php
+// theme_set - Update the theme in use
+function theme_set($theme){
+if($theme!=''){
+$folder='/styles/'
+if(file_exists($folder.$theme.'.css')){
+session_start();
+setcookie(&quot;theme&quot;,$theme,time()+60<em>60</em>24*14);
+}
+}
+}</p>
+<p>// Check the URL for a theme
+if(isset($_GET['theme']) &amp;&amp; $_GET['theme']!=''){
+// Clean this data! One method: http://stackoverflow.com/questions/4223980/the-ultimate-clean-secure-function
+$theme_clean=your_clean_function($_GET['theme']);</p>
+<p>// Set the theme then redirect to the home page
+theme_set($theme_clean);
+header('Location: /');
+}
+?&gt;</p>
+<h3>Notes</h3>
+<p>Themes aren't suitable for every website, so use them wisely to allow for customisations that suit your visitors' needs. Also, don't forget to ensure your default theme remains usable, including suitably sized text and clear link styling.</p>
+
+
+      
+    </article>
+  </section>
+</body>
+</html>

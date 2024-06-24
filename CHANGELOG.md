@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.006
+- Version 2024.007
+- [Core: Move hosts from Deno Deploy to GitHub Pages](https://github.com/brendanmurty/murty-website/commit/aabb3ed)
+- [Create CNAME](https://github.com/brendanmurty/murty-website/commit/c94ffa2)
+- [Version 2024.006](https://github.com/brendanmurty/murty-website/commit/5d357b4)
 - [Core: Environment config value updates](https://github.com/brendanmurty/murty-website/commit/a779f28)
 - [Core: Move to Google Analytics](https://github.com/brendanmurty/murty-website/commit/4812217)
 - [Version 2024.005](https://github.com/brendanmurty/murty-website/commit/281aff8)

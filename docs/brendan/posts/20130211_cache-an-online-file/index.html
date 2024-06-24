@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<title>Brendan Murty - Cache an online file</title>
+<meta name="author" content="Brendan Murty">
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="480">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://murty.au/brendan/posts/20130211_cache-an-online-file/" />
+<link rel="canonical" href="https://murty.au/brendan/posts/20130211_cache-an-online-file/" />
+<link rel="preload" href="/fonts/MDNichrome-Regular.woff" as="font" crossorigin="anonymous">
+<link rel="preload" href="/fonts/MDSystem-Regular.woff" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+<meta name="theme-color" content="#23c5b0">
+<meta name="description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer.">
+<meta property="og:title" content="Brendan Murty - Cache an online file" />
+<meta property="og:description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer." />
+
+<meta property="og:image" content="https://murty.au/images/brendan/brendan-luca-2023_750.jpg" />
+
+<link rel="me" href="https://mastodon.social/@murty">
+<link rel="icon" sizes="192x192" href="/images/brendan/icon-192.png">
+<link rel="alternate" title="Posts by Brendan Murty" type="application/json" href="https://murty.au/brendan/posts.json">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ57BB9D59"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-TZ57BB9D59');
+</script>
+
+</head>
+<body class="brendan brendan_post">
+  <section class="container">
+    <header>
+      <h1>
+  <img class="avatar" alt="" width="150" height="150" src="/images/brendan/brendan-luca-2023_200.jpg">
+  <a href="/">Brendan Murty</a>
+</h1>
+
+    </header>
+
+    <article>
+      <h2><a href="/">Home</a> > <a href="/brendan/posts">Posts</a> > Cache an online file</h2>
+
+      <p class="post-date">11 Feb 2013</p>
+
+      <ul class="tag-list">
+        
+        <li>
+          <a class="tag-link" href="/brendan/tags/PHP" title="View posts tagged with PHP">
+            <span class="icon fa-fw fa-solid fa-tag"></span>
+            PHP
+          </a>
+        </li>
+        
+        <li>
+          <a class="tag-link" href="/brendan/tags/Performance" title="View posts tagged with Performance">
+            <span class="icon fa-fw fa-solid fa-tag"></span>
+            Performance
+          </a>
+        </li>
+        
+      </ul>
+
+      <p>When connecting to a third-party web service, it's a good idea to keep a cached version of the required files in case the third-party service is having issues. This way your website will at least show old data instead of no data at all.</p>
+<p>&lt;?php
+/*
+cache - Downloads a file to a certain folder (if required), returns the local path</p>
+<p>Notes:
+local_folder should start and end with a forward slash
+max_age_minutes is the number of minutes before a new file should be downloaded</p>
+<p>Usage:
+$file_path=cache('http://test.com/data.txt','/test/data/','data2.txt',15);
+*/
+function cache($media_url,$local_folder,$local_filename,$max_age_minutes=5){
+if($media_url &amp;&amp; $local_folder &amp;&amp; $local_filename){
+$local_folder='/cache'.$local_folder;//Convert to a real path on the server
+$make_new_file='1';//Default to creating a new cached file</p>
+<p>//Check if there is already a local version of this file
+if(file_exists($local_folder.$local_filename)){
+$file_mod_time=time_relative(filemtime($local_folder.$local_filename));
+if(strstr($file_mod_time,'minute')){
+$minutes=ereg_replace('[^0-9]','',$file_mod_time);//Remove all but numbers
+if($max_age_minutes-1&gt;$minutes){ $make_new_file='0'; }//File isn't old enough to require a download
+}
+}</p>
+<p $create_local_path="@mkdir($local_folder,0777);">if($make_new_file=='1'){//Create a new local file
+@$file=fopen($media_url,&quot;r&quot;);//Open the remote file for reading
+if($file){
+//Create the local directory
+if(!file_exists($local_folder))</p>
+<p>//Create the local file
+$fc=@fopen($local_folder.$local_filename,&quot;w+&quot;);
+while(!feof($file)){
+$line=@fread($file,1028);
+@fwrite($fc,$line);
+}
+fclose($fc);
+}
+}</p>
+<p>//Convert the local path to a URL
+$local_folder=str_replace('/domains/test.com/','http://test.com/',$local_folder);
+return $local_folder.$local_filename;
+}
+}</p>
+<p>?&gt;</p>
+
+
+      
+    </article>
+  </section>
+</body>
+</html>

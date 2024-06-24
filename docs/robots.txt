@@ -1,0 +1,79 @@
+# Disallow the Google Media Partners bot.
+User-agent: Mediapartners-Google
+Disallow: /
+
+# Disallow the Google Ads bot.
+User-agent: Adsbot-Google
+Disallow: /
+
+# Disallow the Amazon AI bot.
+User-agent: Amazonbot
+Disallow: /
+
+# Disallow the Anthropic AI bot.
+User-agent: anthropic-ai
+Disallow: /
+
+# Disallow the Apple Intelligence bot.
+User-Agent: Applebot
+Disallow: /
+
+# Disallow the ByteDance bot.
+User-agent: Bytespider
+Disallow: /
+
+# Disallow the Common Crawl bot.
+User-agent: CCBot
+Disallow: /
+
+# Disallow the bot for OpenAI LLMs (ChatGPT).
+User-agent: ChatGPT
+Disallow: /
+
+# Disallow the Anthropic AI bot.
+User-agent: Claude-Web
+Disallow: /
+
+# Disallow the Anthropic AI bot.
+User-agent: ClaudeBot
+Disallow: /
+
+# Disallow You bot.
+User-agent: Diffbot
+Disallow: /
+
+# Disallow the bot for Meta LLMs.
+User-Agent: FacebookBot
+Disallow: /
+
+# Disallow the bot for Google LLMs (Bard, Gemini).
+User-agent: Google-Extended
+Disallow: /
+
+# Disallow the OpenAI bot.
+User-agent: GPTBot
+Disallow: /
+
+# Disallow Hive's bot for image generation (Image2dataset).
+User-agent: Image2dataset
+Disallow: /
+
+# Disallow Hive's bot for image generation (ImageSift).
+User-agent: ImagesiftBot
+Disallow: /
+
+# Disallow the bot for webz.io index.
+User-agent: Omgili
+Disallow: /
+
+# Disallow the bot for webz.io index.
+User-agent: Omgilibot
+Disallow: /
+
+# Disallow the Perplexity bot.
+User-agent: PerplexityBot
+Disallow: /
+
+# Disallow the you.com bot.
+User-agent: YouBot
+Disallow: /

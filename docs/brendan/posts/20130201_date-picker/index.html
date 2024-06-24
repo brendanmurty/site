@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<title>Brendan Murty - Date picker</title>
+<meta name="author" content="Brendan Murty">
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="480">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://murty.au/brendan/posts/20130201_date-picker/" />
+<link rel="canonical" href="https://murty.au/brendan/posts/20130201_date-picker/" />
+<link rel="preload" href="/fonts/MDNichrome-Regular.woff" as="font" crossorigin="anonymous">
+<link rel="preload" href="/fonts/MDSystem-Regular.woff" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+<meta name="theme-color" content="#23c5b0">
+<meta name="description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer.">
+<meta property="og:title" content="Brendan Murty - Date picker" />
+<meta property="og:description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer." />
+
+<meta property="og:image" content="https://murty.au/images/brendan/brendan-luca-2023_750.jpg" />
+
+<link rel="me" href="https://mastodon.social/@murty">
+<link rel="icon" sizes="192x192" href="/images/brendan/icon-192.png">
+<link rel="alternate" title="Posts by Brendan Murty" type="application/json" href="https://murty.au/brendan/posts.json">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ57BB9D59"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-TZ57BB9D59');
+</script>
+
+</head>
+<body class="brendan brendan_post">
+  <section class="container">
+    <header>
+      <h1>
+  <img class="avatar" alt="" width="150" height="150" src="/images/brendan/brendan-luca-2023_200.jpg">
+  <a href="/">Brendan Murty</a>
+</h1>
+
+    </header>
+
+    <article>
+      <h2><a href="/">Home</a> > <a href="/brendan/posts">Posts</a> > Date picker</h2>
+
+      <p class="post-date">1 Feb 2013</p>
+
+      <ul class="tag-list">
+        
+        <li>
+          <a class="tag-link" href="/brendan/tags/PHP" title="View posts tagged with PHP">
+            <span class="icon fa-fw fa-solid fa-tag"></span>
+            PHP
+          </a>
+        </li>
+        
+      </ul>
+
+      <p>A simple date picker designed for use on mobile devices. Creates three dropdown menus allowing for selection of dates in the last 10 years. Also allows for customising the currently selected date, which defaults to today's date.</p>
+<p><img src="/images/brendan/date-picker.png" alt="Date picker">
+<em>The finished result</em></p>
+<p><?
+	// form_date_picker
+	// Purpose: Create a date picker allowing selection of dates in the next 10 years
+	// Notes: Defaults to selecting today but custom selected date can be set (in YYYY-MM-DD format)
+	// Example: <?= form_date_picker('2012-12-25'); ?>
+function form_date_picker($custom_date=''){
+$this_year=date('Y');
+$ten_years=$this_year+11;</p>
+<p>if($custom_date==''){ // Use todays date
+$selected_day=date('j');
+$selected_month=date('m');
+$selected_year=date('Y');
+}else{ // Use a custom date
+$date_parts=explode('-',$custom_date);
+$selected_day=$date_parts['2'];
+$selected_month=$date_parts['1'];
+$selected_year=$date_parts['0'];
+}</p>
+<p>// Day
+$f='<select id="date_day" name="date_day">';
+for($i=1;$i&lt;32;$i++){
+$n=$i;
+if($n&lt;10){ $n='0'.$n; }
+$f.='&lt;option label=&quot;'.$i.'&quot; value=&quot;'.$n.'&quot;';
+if($i==$selected_day){ $f.=' selected=&quot;selected&quot;'; }
+$f.='&gt;'.$i.'</option>';
+}
+$f.='</select>';</p>
+<p>// Month
+$f.='<select id="date_month" name="date_month">';
+for($i=1;$i&lt;13;$i++){
+$timestamp=mktime(0,0,0,$i,1,$this_year);
+$l=date('M',$timestamp);
+if($i&lt;10){ $i='0'.$i; }
+$f.='&lt;option label=&quot;'.$l.'&quot; value=&quot;'.$i.'&quot;';
+if($i==$selected_month){ $f.=' selected=&quot;selected&quot;'; }
+$f.='&gt;'.$i.'</option>';
+}
+$f.='</select>';</p>
+<p>// Year
+$f.='<select id="date_year" name="date_year">';
+for($i=$this_year;$i&lt;$ten_years;$i++){
+$f.='&lt;option label=&quot;'.$i.'&quot; value=&quot;'.$i.'&quot;';
+if($i==$selected_year){ $f.=' selected=&quot;selected&quot;'; }
+$f.='&gt;'.$i.'</option>';
+}
+$f.='</select>';</p>
+<p>return $f;
+}
+?&gt;</p>
+
+
+      
+    </article>
+  </section>
+</body>
+</html>
