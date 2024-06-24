@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.008
+- Version 2024.009
+- [Core: Config and styles improvements](https://github.com/brendanmurty/murty-website/commit/929e2d7)
+- [Version 2024.008](https://github.com/brendanmurty/murty-website/commit/e6c18b5)
 - [Core: Move hosts from Deno Deploy to GitHub Pages](https://github.com/brendanmurty/murty-website/commit/e8fc87b)
 - [Version 2024.007](https://github.com/brendanmurty/murty-website/commit/9712c2a)
 - [Core: Move hosts from Deno Deploy to GitHub Pages](https://github.com/brendanmurty/murty-website/commit/aabb3ed)

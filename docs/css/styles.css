@@ -1,4 +1,6 @@
-/* ---- Variables ---- */
+/* COMMON */
+
+/* Variables */
 
 /* Defaults and for those who prefer darker colour schemes */
 
@@ -29,7 +31,9 @@ body.luca {
     --foreground-colour: #000000;
     --secondary-colour: #888888;
   }
-}/* Reset */
+}
+
+/* Reset */
 
 @-webkit-viewport {
   width: device-width;
@@ -304,7 +308,7 @@ pre {
   overflow-x: scroll;
 }
 
-/* Print styles */
+/* Reset - Print styles */
 
 @media print {
   html {
@@ -335,7 +339,11 @@ pre {
     size: auto;
     margin: 0mm 0mm 0mm 0mm;
   }
-}.murty ul.sites {
+}
+
+/* Common styles */
+
+.murty ul.sites {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -386,7 +394,9 @@ pre {
   .murty ul.sites .list-name {
     line-height: 100px;
   }
-}.brendan header {
+}/* BRENDAN */
+
+.brendan header {
   padding: 25px 10px;
 }
 
@@ -676,27 +686,31 @@ ul.brendan_gallery a:active {
 /* Print styles */
 
 @media print {
-
   .brendan header {
     height: auto;
     border: 0 none;
   }
+}/* ISLA */
 
-}.isla {
+.isla {
   text-align: center;
 }
 
 .isla .avatar-image {
   margin-bottom: 40px;
   border-radius: 150px;
-}.freya {
+}/* FREYA */
+
+.freya {
   text-align: center;
 }
 
 .freya .avatar-image {
   margin-bottom: 40px;
   border-radius: 150px;
-}.luca {
+}/* LUCA */
+
+.luca {
   text-align: center;
 }
 
