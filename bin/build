@@ -26,7 +26,7 @@ cp -r templates $BUILD_DIR/_includes
 
 echo -e "${yellow}Combining the CSS files${end}"
 mkdir -p $BUILD_DIR/_assets/css
-cat $BUILD_DIR/_styles/_variables.css $BUILD_DIR/_styles/_common.css $BUILD_DIR/_styles/murty.css $BUILD_DIR/_styles/brendan.css $BUILD_DIR/_styles/isla.css $BUILD_DIR/_styles/freya.css $BUILD_DIR/_styles/luca.css > $BUILD_DIR/_assets/css/styles.css
+cat $BUILD_DIR/_styles/all.css $BUILD_DIR/_styles/brendan.css $BUILD_DIR/_styles/isla.css $BUILD_DIR/_styles/freya.css $BUILD_DIR/_styles/luca.css > $BUILD_DIR/_assets/css/styles.css
 
 echo -e "${yellow}Building photo posts for photos in 'inbox' directory${end}"
 deno run -A --allow-read --allow-write src/photo-posts-generate.ts

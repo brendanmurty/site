@@ -1,3 +1,5 @@
+/* BRENDAN */
+
 .brendan header {
   padding: 25px 10px;
 }
@@ -288,10 +290,8 @@ ul.brendan_gallery a:active {
 /* Print styles */
 
 @media print {
-
   .brendan header {
     height: auto;
     border: 0 none;
   }
-
 }
