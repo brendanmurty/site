@@ -1,13 +1,9 @@
 #!/bin/bash
 
-# Install Deno deployctl - https://deno.com/deploy/docs/deployctl
-
-deno install --allow-read --allow-write --allow-env --allow-net --allow-run --no-check -r -f https://deno.land/x/deploy/deployctl.ts
-
 # Create some required untracked directories if they don't already exist
 
-mkdir -p building
-mkdir -p public
+mkdir -p build
+mkdir -p docs
 mkdir -p inbox
 
 # Create local untracked copies of third-party dependencies
@@ -16,13 +12,18 @@ rm -rf vendor
 mkdir -p vendor
 git clone --quiet --depth 1 git@github.com:brendanmurty/deno_exif.git vendor/deno-exif
 
+# Install Deno Lume
+deno install --global --allow-run --allow-env --allow-read --name lume --force --reload https://deno.land/x/lume_cli/mod.ts
+
 # Setup an initial ENV file if it doesn't already exist
 
 cp -n .env.example .env
 
+# Done, detail next steps
+
 echo ""
 echo "Manual setup required:"
 echo "1. Edit '.env' to suit this environment."
-echo "2. Create a new system environment variable named 'DENO_DEPLOY_TOKEN', instructions at https://deno.com/deploy/docs/deployctl"
+echo "2. Update your GitHub Pages configuration, details in README.md"
 echo "3. Add Google Analytics site code to the 'GOOGLE_ANALYTICS_SITE_CODE' variable in '.env'"
 echo "4. Install exiftool on your local machine - https://exiftool.org/"

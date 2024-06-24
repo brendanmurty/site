@@ -13,8 +13,8 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 
 // Build the site using Lume
 const site = lume({
-  src: "./building",
-  dest: "./public",
+  src: "./build",
+  dest: "./docs",
   prettyUrls: true
 });
 
