@@ -2,7 +2,7 @@
 
 ## Summary
 
-This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/) and [Lume](https://lumeland.github.io/).
+This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/) and [Lume](https://lumeland.github.io/), and is hosted via [GitHub Pages](https://pages.github.com/).
 
 I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
@@ -68,7 +68,7 @@ bin/build
 
 ### Deployment
 
-After testing locally, run [bin/deploy](bin/deploy) to make a new version and deploy it:
+After testing locally, run [bin/deploy](bin/deploy) to make a new version and deploy it via [GitHub Pages](https://pages.github.com/) in the `docs` directory:
 
 ```
 bin/deploy YYYY.xxx
@@ -82,4 +82,4 @@ This script will:
 - Create a new Git Tag (`YYYY.xxx` as detailed above)
 - Push changes up to the origin repository
 - Build the site
-- Trigger GitHub Pages to deploy the site
+- Trigger GitHub Pages to deploy a new version of the site
