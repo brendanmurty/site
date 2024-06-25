@@ -1,6 +1,11 @@
 # Change Log
 
-- Version 2024.011
+- Version 2024.012
+- [Test: Fix CSS file test](https://github.com/brendanmurty/murty-website/commit/768a343)
+- [Core: Improve deploy process](https://github.com/brendanmurty/murty-website/commit/8be27cd)
+- [Core: Reinstate CSS minifier](https://github.com/brendanmurty/murty-website/commit/e66cba9)
+- [Core: Update site files](https://github.com/brendanmurty/murty-website/commit/f88fd28)
+- [Version 2024.011](https://github.com/brendanmurty/murty-website/commit/fcddffb)
 - [Docs: Improve readme](https://github.com/brendanmurty/murty-website/commit/604a48d)
 - [Version 2024.010](https://github.com/brendanmurty/murty-website/commit/4e9610e)
 - [Docs: Improve readme](https://github.com/brendanmurty/murty-website/commit/b534a61)
