@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.012
+- Version 2024.013
+- [Server: Remove obsolete domain redirects](https://github.com/brendanmurty/murty-website/commit/cb436d9)
+- [Docs: Update contributing process](https://github.com/brendanmurty/murty-website/commit/681cf4a)
+- [Version 2024.012](https://github.com/brendanmurty/murty-website/commit/cd6bfb9)
 - [Test: Fix CSS file test](https://github.com/brendanmurty/murty-website/commit/768a343)
 - [Core: Improve deploy process](https://github.com/brendanmurty/murty-website/commit/8be27cd)
 - [Core: Reinstate CSS minifier](https://github.com/brendanmurty/murty-website/commit/e66cba9)
