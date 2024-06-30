@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.015
+- Version 2024.016
+- [Core: Fix build test following removal of CSS minifier](https://github.com/brendanmurty/murty-website/commit/b3e6333)
+- [Version 2024.015](https://github.com/brendanmurty/murty-website/commit/2b79438)
 - [Core: Move local server to Docker container](https://github.com/brendanmurty/murty-website/commit/bb0eac7)
 - [Core: Remove problematic CSS minifier](https://github.com/brendanmurty/murty-website/commit/6f17b05)
 - [Core: Simplify EXIF data extract for photos](https://github.com/brendanmurty/murty-website/commit/04e279a)
