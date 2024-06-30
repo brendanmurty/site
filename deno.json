@@ -9,6 +9,8 @@
   "tasks": {
     "build": "bash ./bin/build.sh",
     "deploy": "bash ./bin/deploy.sh ",
+    "docker-build": "docker build --progress=plain --no-cache --tag murty-website .",
+    "docker-run": "docker run --publish 8000:8000 --detach --name=murty-website murty-website",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "serve": "bash ./bin/serve.sh",
     "setup": "bash ./bin/setup.sh",

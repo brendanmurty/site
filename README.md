@@ -50,20 +50,20 @@ Run [bin/test.sh](bin/test.sh):
 deno task test
 ```
 
-### Local Web Server
-
-Run [bin/serve.sh](bin/serve.sh):
-
-```
-deno task serve
-```
-
 ### Build Site
 
 Run [bin/build.sh](bin/build.sh):
 
 ```
 deno task build
+```
+
+### Local Web Server
+
+Run [bin/serve.sh](bin/serve.sh):
+
+```
+deno task serve
 ```
 
 ### Deployment
