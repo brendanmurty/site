@@ -2,7 +2,7 @@
 
 ## Summary
 
-This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/) and [Lume](https://lumeland.github.io/), and is hosted by [GitHub Pages](https://pages.github.com/).
+This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/) and [Docker](https://www.docker.com/). The resulting static site is hosted by [GitHub Pages](https://pages.github.com/).
 
 I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
@@ -27,15 +27,16 @@ To setup a new local development environment:
 - Set to deploy on the `main` branch for the `/docs` directory
 - Add your own domain for this and update that in the `CNAME` file
 
-5. Install [Deno](https://deno.land/)
-6. Run [bin/setup.sh](bin/setup.sh) to complete the initial installation process: `deno task setup`
-7. Update your `.env` file:
+6. Install [Deno](https://deno.land/)
+7. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+8. Run [bin/setup.sh](bin/setup.sh) to complete the initial installation process: `deno task setup`
+9. Update your `.env` file:
 
 - `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
 - `LASTFM_API_KEY`: Your [Last.fm API key](https://www.last.fm/api/account/create) to show your loved tracks on the site
 
-9. Install [exiftool](https://exiftool.org/) on your local machine
-10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
+10. Install [exiftool](https://exiftool.org/) on your local machine
+11. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -60,11 +61,11 @@ deno task build
 
 ### Local Web Server
 
-Run [bin/serve.sh](bin/serve.sh):
-
 ```
 deno task serve
 ```
+
+Refer to the `tasks > serve` section in [deno.json](deno.json) for details on how this works via Docker.
 
 ### Deployment
 

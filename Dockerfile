@@ -2,7 +2,7 @@
 FROM denoland/deno:alpine-1.44.4 as builder
 
 # Install system dependencies
-RUN apk add --no-cache bash git openssh-client
+RUN apk add --no-cache bash exiftool
 
 WORKDIR /app
 COPY . .
