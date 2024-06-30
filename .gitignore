@@ -12,8 +12,6 @@ $RECYCLE.BIN/
 .env
 !.env.example
 
-/vendor
-
 /inbox
 
 /build

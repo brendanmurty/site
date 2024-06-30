@@ -6,12 +6,6 @@ mkdir -p build
 mkdir -p docs
 mkdir -p inbox
 
-# Create local untracked copies of third-party dependencies
-
-rm -rf vendor
-mkdir -p vendor
-git clone --quiet --depth 1 git@github.com:brendanmurty/deno_exif.git vendor/deno-exif
-
 # Install Deno packages
 
 deno install --global --allow-run --allow-env --allow-read --name lume --force --reload https://deno.land/x/lume_cli/mod.ts

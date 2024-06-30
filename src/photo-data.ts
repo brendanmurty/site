@@ -1,4 +1,4 @@
-import { create } from "../vendor/deno-exif/mod.ts";
+import { create } from "deno-exif/mod.ts";
 
 export function GetExifDataFromPhoto(
   photoDirectory: string,

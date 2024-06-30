@@ -1,5 +1,6 @@
 {
   "imports": {
+    "deno-exif/": "https://deno.land/x/deno_exif@0.0.4/",
     "imagescript/": "https://deno.land/x/imagescript@1.2.17/",
     "is_json/": "https://deno.land/x/is_json@v1.0.2/",
     "json2yaml/": "https://deno.land/x/json2yaml@v1.0.1/",
