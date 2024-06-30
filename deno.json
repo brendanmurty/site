@@ -7,6 +7,11 @@
     "std/": "https://deno.land/std@0.210.0/"
   },
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -"
+    "build": "bash ./bin/build.sh",
+    "deploy": "bash ./bin/deploy.sh ",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "serve": "bash ./bin/serve.sh",
+    "setup": "bash ./bin/setup.sh",
+    "test": "bash ./bin/test.sh"
   }
 }

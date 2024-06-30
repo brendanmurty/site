@@ -1,4 +1,4 @@
-#!/bin/bash
+# Test
 
 # Setup the message colour characters
 
@@ -8,11 +8,14 @@ red="\033[0;31m"
 end="\033[0m"
 
 # Build site to test the output
+
 echo -e "${yellow}Building the site to prepare for tests${end}"
-bin/build > /dev/null
+
+deno task build
 
 # Run all of the tests in the "tests" directory, allow these test scripts to also
 # run other Deno scripts and ignore any console output from them
 
 echo -e "${yellow}Running all tests found in the 'tests' directory${end}"
+
 deno test --allow-run --allow-env --allow-read --allow-net tests --quiet

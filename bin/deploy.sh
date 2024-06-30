@@ -1,4 +1,4 @@
-#!/bin/bash
+# Deploy
 
 # Setup the message colour characters
 
@@ -26,14 +26,14 @@ fi
 # Run tests and exit if any tests fail
 
 echo -e "${blue}Running tests${end}"
-${BASH_SOURCE%/*}/test
+deno task test
 if [ $? -ne 0 ]; then
   echo -e "${red}Tests failed, deploy aborted.${end}"
   exit 1
 fi
 
 echo -e "${blue}Building site...${end}"
-${BASH_SOURCE%/*}/build
+deno task build
 
 echo -e "${blue}Updating the changelog...${end}"
 

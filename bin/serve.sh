@@ -1,4 +1,4 @@
-#!/bin/bash
+# Serve
 
 # Setup the message colour characters
 
@@ -9,9 +9,10 @@ end="\033[0m"
 
 # Build the site and front-end assets first
 
-${BASH_SOURCE%/*}/build
+deno task build
 
 # Start the web server
 
 echo -e "${blue}Server starting - http://localhost:8000/ ${end}"
+
 deno run --allow-net --allow-read src/server.ts

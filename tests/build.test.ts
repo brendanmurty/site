@@ -1,6 +1,6 @@
 import { assertEquals, assertNotEquals } from "std/testing/asserts.ts";
 
-Deno.test("bin/build", async (test) => {
+Deno.test("build", async (test) => {
   await test.step({
     name: "non-empty file 'docs/index.html' was found",
     fn: async () => {

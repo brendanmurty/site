@@ -1,4 +1,4 @@
-#!/bin/bash
+# Build
 
 # Setup the message colour characters
 

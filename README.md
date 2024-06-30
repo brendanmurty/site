@@ -16,7 +16,7 @@ To setup a new local development environment:
 2. Make a local clone of that forked repository
 3. Update some files in the forked repository:
 
-- The `bin/deploy` script must be updated to use your forked repository URLs when updating `CHANGELOG.md`
+- The `bin/deploy.sh` script must be updated to use your forked repository URLs when updating `CHANGELOG.md`
 - All files in the `content` directory should contain your own content instead
 - All files in the `assets` directory should contain your own static files instead
 - Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
@@ -28,7 +28,7 @@ To setup a new local development environment:
 - Add your own domain for this and update that in the `CNAME` file
 
 5. Install [Deno](https://deno.land/)
-6. Run [bin/setup](bin/setup) to complete the initial installation process: `bin/setup`
+6. Run [bin/setup.sh](bin/setup.sh) to complete the initial installation process: `deno task setup`
 7. Update your `.env` file:
 
 - `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
@@ -44,34 +44,34 @@ To setup a new local development environment:
 
 ### Run Tests
 
-Run [bin/test](bin/test):
+Run [bin/test.sh](bin/test.sh):
 
 ```
-bin/test
+deno task test
 ```
 
 ### Local Web Server
 
-Run [bin/serve](bin/serve):
+Run [bin/serve.sh](bin/serve.sh):
 
 ```
-bin/serve
+deno task serve
 ```
 
 ### Build Site
 
-Run [bin/build](bin/build):
+Run [bin/build.sh](bin/build.sh):
 
 ```
-bin/build
+deno task build
 ```
 
 ### Deployment
 
-After testing locally, run [bin/deploy](bin/deploy) to make a new version, build it in the `docs` directory, and deploy it via [GitHub Pages](https://pages.github.com/):
+After testing locally, run [bin/deploy.sh](bin/deploy.sh) to make a new version, build it in the `docs` directory, and deploy it via [GitHub Pages](https://pages.github.com/):
 
 ```
-bin/deploy YYYY.xxx
+deno task deploy YYYY.xxx
 ```
 
 Where `YYYY` is the current year, and `xxx` is the revision number for that year.
