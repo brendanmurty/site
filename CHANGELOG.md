@@ -1,6 +1,11 @@
 # Change Log
 
-- Version 2024.014
+- Version 2024.015
+- [Core: Move local server to Docker container](https://github.com/brendanmurty/murty-website/commit/bb0eac7)
+- [Core: Remove problematic CSS minifier](https://github.com/brendanmurty/murty-website/commit/6f17b05)
+- [Core: Simplify EXIF data extract for photos](https://github.com/brendanmurty/murty-website/commit/04e279a)
+- [Core: Initial Docker setup, script improvements](https://github.com/brendanmurty/murty-website/commit/49df9b7)
+- [Version 2024.014](https://github.com/brendanmurty/murty-website/commit/7694026)
 - [Core: Use Deno Tasks to make helper script commands easier](https://github.com/brendanmurty/murty-website/commit/2aa7105)
 - [Version 2024.013](https://github.com/brendanmurty/murty-website/commit/c4cba02)
 - [Server: Remove obsolete domain redirects](https://github.com/brendanmurty/murty-website/commit/cb436d9)
