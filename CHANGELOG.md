@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.013
+- Version 2024.014
+- [Core: Use Deno Tasks to make helper script commands easier](https://github.com/brendanmurty/murty-website/commit/2aa7105)
+- [Version 2024.013](https://github.com/brendanmurty/murty-website/commit/c4cba02)
 - [Server: Remove obsolete domain redirects](https://github.com/brendanmurty/murty-website/commit/cb436d9)
 - [Docs: Update contributing process](https://github.com/brendanmurty/murty-website/commit/681cf4a)
 - [Version 2024.012](https://github.com/brendanmurty/murty-website/commit/cd6bfb9)
