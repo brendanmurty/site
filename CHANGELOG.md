@@ -1,6 +1,12 @@
 # Change Log
 
-- Version 2024.017
+- Version 2024.018
+- [Core: Keep current RSS feed URL](https://github.com/brendanmurty/murty-website/commit/8588dd6)
+- [Core: Avoid broken links for previous post URLs](https://github.com/brendanmurty/murty-website/commit/2e4a287)
+- [Core: Fix a template include path](https://github.com/brendanmurty/murty-website/commit/2e3d15e)
+- [Core: Flatten file structure and simplify URLs](https://github.com/brendanmurty/murty-website/commit/b75dab9)
+- [Core: Flatten sub-page file structure](https://github.com/brendanmurty/murty-website/commit/d3bb333)
+- [Version 2024.017](https://github.com/brendanmurty/murty-website/commit/154dd77)
 - [Content: New blog post](https://github.com/brendanmurty/murty-website/commit/4b32654)
 - [Version 2024.016](https://github.com/brendanmurty/murty-website/commit/2c6d4ef)
 - [Core: Fix build test following removal of CSS minifier](https://github.com/brendanmurty/murty-website/commit/b3e6333)

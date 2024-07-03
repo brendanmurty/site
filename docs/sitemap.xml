@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://murty.au/</loc>
-    <lastmod>2024-06-30T12:10:05.774Z</lastmod>
+    <lastmod>2024-07-03T11:25:18.550Z</lastmod>
   </url>
   <url>
     <loc>https://murty.au/brendan/</loc>
-    <lastmod>2024-06-30T12:10:05.733Z</lastmod>
+    <lastmod>2024-07-03T11:25:18.530Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/gallery/</loc>
-    <lastmod>2024-06-30T12:10:05.733Z</lastmod>
+    <loc>https://murty.au/freya/</loc>
+    <lastmod>2024-07-03T11:25:18.537Z</lastmod>
+  </url>
+  <url>
+    <loc>https://murty.au/gallery/</loc>
+    <lastmod>2024-07-03T11:25:18.539Z</lastmod>
+  </url>
+  <url>
+    <loc>https://murty.au/isla/</loc>
+    <lastmod>2024-07-03T11:25:18.551Z</lastmod>
+  </url>
+  <url>
+    <loc>https://murty.au/luca/</loc>
+    <lastmod>2024-07-03T11:25:18.555Z</lastmod>
   </url>
   <url>
     <loc>https://murty.au/posts/</loc>
-    <lastmod>2024-06-30T12:10:05.764Z</lastmod>
+    <lastmod>2024-07-03T11:25:18.591Z</lastmod>
   </url>
   <url>
     <loc>https://murty.au/posts/20090901_web-developer-at-solutions-outsourced/</loc>
@@ -229,91 +241,79 @@
     <lastmod>2024-06-30T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/</loc>
-    <lastmod>2024-06-30T12:10:05.734Z</lastmod>
+    <loc>https://murty.au/tags/</loc>
+    <lastmod>2024-07-03T11:25:18.600Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Basecamp/</loc>
-    <lastmod>2024-06-30T12:10:05.765Z</lastmod>
+    <loc>https://murty.au/tags/Basecamp/</loc>
+    <lastmod>2024-07-03T11:25:18.594Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/CSS/</loc>
-    <lastmod>2024-06-30T12:10:05.766Z</lastmod>
+    <loc>https://murty.au/tags/CSS/</loc>
+    <lastmod>2024-07-03T11:25:18.595Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Career/</loc>
-    <lastmod>2024-06-30T12:10:05.765Z</lastmod>
+    <loc>https://murty.au/tags/Career/</loc>
+    <lastmod>2024-07-03T11:25:18.594Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Chrome/</loc>
-    <lastmod>2024-06-30T12:10:05.766Z</lastmod>
+    <loc>https://murty.au/tags/Chrome/</loc>
+    <lastmod>2024-07-03T11:25:18.594Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Customisation/</loc>
-    <lastmod>2024-06-30T12:10:05.766Z</lastmod>
+    <loc>https://murty.au/tags/Customisation/</loc>
+    <lastmod>2024-07-03T11:25:18.595Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Debugging/</loc>
-    <lastmod>2024-06-30T12:10:05.767Z</lastmod>
+    <loc>https://murty.au/tags/Debugging/</loc>
+    <lastmod>2024-07-03T11:25:18.595Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Development/</loc>
-    <lastmod>2024-06-30T12:10:05.767Z</lastmod>
+    <loc>https://murty.au/tags/Development/</loc>
+    <lastmod>2024-07-03T11:25:18.596Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Family/</loc>
-    <lastmod>2024-06-30T12:10:05.768Z</lastmod>
+    <loc>https://murty.au/tags/Family/</loc>
+    <lastmod>2024-07-03T11:25:18.596Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/HTML/</loc>
-    <lastmod>2024-06-30T12:10:05.768Z</lastmod>
+    <loc>https://murty.au/tags/HTML/</loc>
+    <lastmod>2024-07-03T11:25:18.597Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Health/</loc>
-    <lastmod>2024-06-30T12:10:05.768Z</lastmod>
+    <loc>https://murty.au/tags/Health/</loc>
+    <lastmod>2024-07-03T11:25:18.597Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Management/</loc>
-    <lastmod>2024-06-30T12:10:05.772Z</lastmod>
+    <loc>https://murty.au/tags/Management/</loc>
+    <lastmod>2024-07-03T11:25:18.600Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Media/</loc>
-    <lastmod>2024-06-30T12:10:05.769Z</lastmod>
+    <loc>https://murty.au/tags/Media/</loc>
+    <lastmod>2024-07-03T11:25:18.597Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/PHP/</loc>
-    <lastmod>2024-06-30T12:10:05.770Z</lastmod>
+    <loc>https://murty.au/tags/PHP/</loc>
+    <lastmod>2024-07-03T11:25:18.598Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Performance/</loc>
-    <lastmod>2024-06-30T12:10:05.769Z</lastmod>
+    <loc>https://murty.au/tags/Performance/</loc>
+    <lastmod>2024-07-03T11:25:18.598Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Photo/</loc>
-    <lastmod>2024-06-30T12:10:05.770Z</lastmod>
+    <loc>https://murty.au/tags/Photo/</loc>
+    <lastmod>2024-07-03T11:25:18.598Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Social/</loc>
-    <lastmod>2024-06-30T12:10:05.770Z</lastmod>
+    <loc>https://murty.au/tags/Social/</loc>
+    <lastmod>2024-07-03T11:25:18.598Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/Travel/</loc>
-    <lastmod>2024-06-30T12:10:05.771Z</lastmod>
+    <loc>https://murty.au/tags/Travel/</loc>
+    <lastmod>2024-07-03T11:25:18.599Z</lastmod>
   </url>
   <url>
-    <loc>https://murty.au/brendan/tags/UpcomingTasks/</loc>
-    <lastmod>2024-06-30T12:10:05.771Z</lastmod>
-  </url>
-  <url>
-    <loc>https://murty.au/freya/</loc>
-    <lastmod>2024-06-30T12:10:05.773Z</lastmod>
-  </url>
-  <url>
-    <loc>https://murty.au/isla/</loc>
-    <lastmod>2024-06-30T12:10:05.775Z</lastmod>
-  </url>
-  <url>
-    <loc>https://murty.au/luca/</loc>
-    <lastmod>2024-06-30T12:10:05.776Z</lastmod>
+    <loc>https://murty.au/tags/UpcomingTasks/</loc>
+    <lastmod>2024-07-03T11:25:18.599Z</lastmod>
   </url>
 </urlset>
