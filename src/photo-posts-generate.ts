@@ -1,5 +1,5 @@
 import { format } from "std/datetime/mod.ts";
-import { posix } from "std/path/mod.ts";
+import { join } from "std/path/mod.ts";
 import { json2yaml } from "json2yaml/mod.ts";
 
 import { GetExifDataFromPhoto } from "./photo-data.ts";
@@ -10,9 +10,7 @@ export async function GeneratePhotoPosts(): Promise<void> {
   const imagesDirectory = "assets/images/brendan";
   const postsDirectory = "content/posts";
 
-  for await (const item of Deno.readDir(
-    posix.join(Deno.cwd(), inboxDirectory)
-  )) {
+  for await (const item of Deno.readDir(join(Deno.cwd(), inboxDirectory))) {
     if (
       item.isFile &&
       (item.name.toLowerCase().slice(-4) == ".jpg" ||
@@ -85,13 +83,13 @@ export async function GeneratePhotoPosts(): Promise<void> {
         "\r";
 
       Deno.writeTextFileSync(
-        posix.join(Deno.cwd(), postsDirectory, postFileName),
+        join(Deno.cwd(), postsDirectory, postFileName),
         markdownContent
       );
 
       Deno.renameSync(
-        posix.join(Deno.cwd(), inboxDirectory, item.name),
-        posix.join(Deno.cwd(), imagesDirectory, imageFileName)
+        join(Deno.cwd(), inboxDirectory, item.name),
+        join(Deno.cwd(), imagesDirectory, imageFileName)
       );
     }
   }

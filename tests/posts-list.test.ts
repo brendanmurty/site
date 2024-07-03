@@ -1,5 +1,5 @@
 import { assertEquals, assertNotEquals } from "std/assert/mod.ts";
-import { posix } from "std/path/mod.ts";
+import { join } from "std/path/mod.ts";
 import { load } from "std/dotenv/mod.ts";
 import { PostsList } from "../src/posts-list.ts";
 
@@ -35,7 +35,7 @@ Deno.test("src/posts-list.ts", async (test) => {
   await test.step({
     name: "output array contains the right number of items",
     fn: async () => {
-      const postsDirectoryAbsolute = posix.join(Deno.cwd(), postsDirectory);
+      const postsDirectoryAbsolute = join(Deno.cwd(), postsDirectory);
 
       const returnedItems = await PostsList(
         postsDirectoryAbsolute,

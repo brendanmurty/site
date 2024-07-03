@@ -1,7 +1,7 @@
 import { load } from "std/dotenv/mod.ts";
 import { assertEquals, assertNotEquals } from "std/assert/mod.ts";
 import { isJSON } from "is_json/mod.ts";
-import { posix } from "std/path/mod.ts";
+import { join } from "std/path/mod.ts";
 
 Deno.test("src/json-feed.ts", async (test) => {
   // Attempt to get the values of some variables from the ".env" file
@@ -70,7 +70,7 @@ Deno.test("src/json-feed.ts", async (test) => {
   await test.step({
     name: "post JSON contains the right number of items",
     fn: async () => {
-      const postsDirectoryAbsolute = posix.join(Deno.cwd(), postsDirectory);
+      const postsDirectoryAbsolute = join(Deno.cwd(), postsDirectory);
 
       const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
       const postsJsonObject = JSON.parse(postsJsonContent);

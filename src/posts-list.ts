@@ -1,4 +1,4 @@
-import { posix } from "std/path/mod.ts";
+import { join } from "std/path/mod.ts";
 import { parse } from "std/yaml/mod.ts";
 
 import { JsonFeedItem, YamlData } from "./types.ts";
@@ -35,7 +35,7 @@ export async function PostsList(
 
       // Attempt to extract the Post Title from the Markdown file's Frontmatter
       const postContent = Deno.readTextFileSync(
-        posix.join(postsDirectoryAbsolute, item.name)
+        join(postsDirectoryAbsolute, item.name)
       );
 
       if (postContent.startsWith("---") && postContent.charAt(3) !== "-") {

@@ -10,7 +10,7 @@
  */
 
 import { JsonFeedData, JsonFeedAuthor } from "./types.ts";
-import { posix } from "std/path/mod.ts";
+import { join } from "std/path/mod.ts";
 import { load } from "std/dotenv/mod.ts";
 import { PostsList } from "./posts-list.ts";
 
@@ -37,8 +37,8 @@ const jsonFeedAuthor: JsonFeedAuthor = {
 };
 
 // Set absolute paths for the required file-system related variables
-const postsDirectoryAbsolute = posix.join(Deno.cwd(), postsDirectory);
-const fileOutputAbsolute = posix.join(Deno.cwd(), fileOutput);
+const postsDirectoryAbsolute = join(Deno.cwd(), postsDirectory);
+const fileOutputAbsolute = join(Deno.cwd(), fileOutput);
 
 // Get an array of all of the valid Markdown files in the posts directory
 const jsonFeedItems = await PostsList(
