@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.022
+- Version 2024.023
+- [Docs: Update website preview image](https://github.com/brendanmurty/murty-website/commit/101d942)
+- [Version 2024.022](https://github.com/brendanmurty/murty-website/commit/1c42721)
 - [Tests: Remove obsolete test](https://github.com/brendanmurty/murty-website/commit/c3a3b49)
 - [Design: Simplify layout and remove obsolete CSS](https://github.com/brendanmurty/murty-website/commit/76f2fd3)
 - [Docs: Update website preview image](https://github.com/brendanmurty/murty-website/commit/1a68ead)
