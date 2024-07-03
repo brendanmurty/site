@@ -292,7 +292,9 @@ a:focus {
 }
 
 a:hover,
-a:focus {
+a:focus,
+.brendan ul.listing:not(.connect) .label,
+.murty ul.sites .list-name {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
