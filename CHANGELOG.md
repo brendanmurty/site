@@ -1,6 +1,10 @@
 # Change Log
 
-- Version 2024.020
+- Version 2024.021
+- [Design: Add underlines to other links to improve accessibility](https://github.com/brendanmurty/murty-website/commit/5ea2d83)
+- [Design: Improve tag lists styling](https://github.com/brendanmurty/murty-website/commit/fc2df76)
+- [Design: Add underlines to most links to improve accessibility](https://github.com/brendanmurty/murty-website/commit/bb90363)
+- [Version 2024.020](https://github.com/brendanmurty/murty-website/commit/f4ba483)
 - [Docs: Improve GitHub Pages setup section](https://github.com/brendanmurty/murty-website/commit/96eb335)
 - [Docs: Update website preview image](https://github.com/brendanmurty/murty-website/commit/c9f1cc6)
 - [Version 2024.019](https://github.com/brendanmurty/murty-website/commit/685ebc2)

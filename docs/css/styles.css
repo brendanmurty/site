@@ -287,12 +287,16 @@ a:visited,
 a:hover,
 a:focus {
   color: var(--highlight-colour);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 a:hover,
-a:focus {
+a:focus,
+.brendan ul.listing:not(.connect) .label,
+.murty ul.sites .list-name {
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 header h1 a,
@@ -300,6 +304,7 @@ header h1 a:visited,
 header h1 a:hover,
 header h1 a:focus {
   color: var(--foreground-colour);
+  text-decoration: none;
 }
 
 pre {
@@ -486,7 +491,8 @@ ul.brendan_posts .post-date,
 
 .brendan .tag-link .icon {
   width: 15px;
-  margin-right: 8px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .brendan ul.listing {
