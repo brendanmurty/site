@@ -133,7 +133,7 @@ ul.brendan_posts .post-date,
   width: 100%;
 }
 
-.brendan ul.listing li:not(.listing-header) a {
+.brendan ul.listing li:not(.listing-header) a:not(.post-link) {
   width: 100%;
   float: left;
 }
