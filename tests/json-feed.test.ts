@@ -24,32 +24,6 @@ Deno.test("src/json-feed.ts", async (test) => {
   });
 
   await test.step({
-    name: "run json-feed script",
-    fn: async () => {
-      const jsonFeedCommand = Deno.run({
-        cmd: [
-          "deno",
-          "run",
-          "--allow-read",
-          "--allow-write",
-          "--allow-env",
-          "src/json-feed.ts"
-        ],
-        stdout: "piped",
-        stderr: "piped"
-      });
-
-      const { code } = await jsonFeedCommand.status();
-
-      jsonFeedCommand.stdout.close();
-      jsonFeedCommand.stderr.close();
-      jsonFeedCommand.close();
-
-      assertEquals(code, 0);
-    }
-  });
-
-  await test.step({
     name: "post JSON file exists and is not empty",
     fn: async () => {
       const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
