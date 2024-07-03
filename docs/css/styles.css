@@ -293,7 +293,6 @@ a:focus {
 
 a:hover,
 a:focus,
-.brendan ul.listing:not(.connect) .label,
 .murty ul.sites .list-name {
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -348,33 +347,13 @@ pre {
 
 /* Common styles */
 
-.murty ul.sites {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.murty ul.sites>li {
-  margin: 30px 0 0;
-  padding: 30px 0 0;
-  text-align: left;
-  float: left;
-  clear: both;
-  width: 100%;
-}
-
-.murty ul.sites>li.first {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.murty ul.sites>li header,
-.murty ul.sites>li article {
+.murty header,
+.murty article {
   width: 100%;
   padding: 0;
 }
 
-.murty ul.sites .list-avatar {
+.murty .list-avatar {
   height: auto;
   width: 150px;
   border-radius: 150px;
@@ -382,7 +361,7 @@ pre {
   float: left;
 }
 
-.murty ul.sites .list-name {
+.murty .list-name {
   display: inline-block;
   line-height: 150px;
   margin: 0;
@@ -391,17 +370,15 @@ pre {
 /* Small sized screens */
 
 @media only screen and (max-width: 900px) {
-  .murty ul.sites .list-avatar {
+  .murty .list-avatar {
     width: 100px;
     border-radius: 100px;
   }
 
-  .murty ul.sites .list-name {
+  .murty .list-name {
     line-height: 100px;
   }
-}
-
-/* BRENDAN */
+}/* BRENDAN */
 
 .brendan header {
   padding: 25px 10px;
@@ -425,7 +402,7 @@ pre {
 }
 
 .brendan .intro {
-  margin: 25px 0 0;
+  margin: 0;
 }
 
 article>h2 {
@@ -448,7 +425,7 @@ ul.brendan_posts li,
 
 ul.brendan_posts .post-date,
 .brendan_post .post-date,
-.brendan ul.listing.posts .post-date,
+.brendan .posts .post-date,
 .brendan .photo-data .data-title {
   width: 125px;
   color: var(--secondary-colour);
@@ -513,19 +490,19 @@ ul.brendan_posts .post-date,
   box-sizing: border-box;
 }
 
-.brendan ul.listing.twothirds {
+.brendan .twothirds {
   width: 66.6%;
 }
 
-.brendan ul.listing.third {
+.brendan .third {
   width: 33.3%;
 }
 
-.brendan ul.listing.half {
+.brendan .half {
   width: 50%;
 }
 
-.brendan ul.listing.full {
+.brendan .full {
   width: 100%;
 }
 
@@ -536,7 +513,7 @@ ul.brendan_posts .post-date,
   width: 100%;
 }
 
-.brendan ul.listing li:not(.listing-header) a {
+.brendan ul.listing li:not(.listing-header) a:not(.post-link) {
   width: 100%;
   float: left;
 }
@@ -609,15 +586,6 @@ ul.brendan_gallery a:active {
 
 @media only screen and (max-width: 750px) {
 
-  .brendan header {
-    height: 145px;
-  }
-
-  .brendan_index header,
-  .murty_index header {
-    height: 100px;
-  }
-
   .brendan header h1 {
     line-height: 100px;
     font-size: 50px;
@@ -626,10 +594,6 @@ ul.brendan_gallery a:active {
   .brendan header .avatar {
     width: 100px;
     height: auto;
-  }
-
-  .brendan ul.listing.posts {
-    display: none;
   }
 
   .brendan ul.listing,
@@ -698,9 +662,7 @@ ul.brendan_gallery a:active {
     height: auto;
     border: 0 none;
   }
-}
-
-/* ISLA */
+}/* ISLA */
 
 .isla {
   text-align: center;
@@ -709,9 +671,7 @@ ul.brendan_gallery a:active {
 .isla .avatar-image {
   margin-bottom: 40px;
   border-radius: 150px;
-}
-
-/* FREYA */
+}/* FREYA */
 
 .freya {
   text-align: center;
@@ -720,9 +680,7 @@ ul.brendan_gallery a:active {
 .freya .avatar-image {
   margin-bottom: 40px;
   border-radius: 150px;
-}
-
-/* LUCA */
+}/* LUCA */
 
 .luca {
   text-align: center;

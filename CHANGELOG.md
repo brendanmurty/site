@@ -1,6 +1,17 @@
 # Change Log
 
-- Version 2024.021
+- Version 2024.022
+- [Tests: Remove obsolete test](https://github.com/brendanmurty/murty-website/commit/c3a3b49)
+- [Design: Simplify layout and remove obsolete CSS](https://github.com/brendanmurty/murty-website/commit/76f2fd3)
+- [Docs: Update website preview image](https://github.com/brendanmurty/murty-website/commit/1a68ead)
+- [Design: Reorder icon links on index page](https://github.com/brendanmurty/murty-website/commit/d89849c)
+- [Integrations: Remove Last.fm](https://github.com/brendanmurty/murty-website/commit/7de2967)
+- [Design: Layout updates](https://github.com/brendanmurty/murty-website/commit/56c44e8)
+- [Posts: Remove latest posts, show full list on home page](https://github.com/brendanmurty/murty-website/commit/279e975)
+- [Design: Layout updates](https://github.com/brendanmurty/murty-website/commit/3c7240b)
+- [Design: Make post list on home page the same as /posts](https://github.com/brendanmurty/murty-website/commit/a0cf1e2)
+- [Docs: Update website preview image](https://github.com/brendanmurty/murty-website/commit/4ef5579)
+- [Version 2024.021](https://github.com/brendanmurty/murty-website/commit/06824c6)
 - [Design: Add underlines to other links to improve accessibility](https://github.com/brendanmurty/murty-website/commit/5ea2d83)
 - [Design: Improve tag lists styling](https://github.com/brendanmurty/murty-website/commit/fc2df76)
 - [Design: Add underlines to most links to improve accessibility](https://github.com/brendanmurty/murty-website/commit/bb90363)
