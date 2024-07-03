@@ -51,12 +51,13 @@ rm -rf $PUBLIC_DIR/sitemap.xml-e
 echo -e "${yellow}Copying static files to '$PUBLIC_DIR' directory${end}"
 cp -r "assets/fonts" "$PUBLIC_DIR/fonts"
 cp -r "assets/images" "$PUBLIC_DIR/images"
+mkdir -p $PUBLIC_DIR/brendan
+mkdir -p $PUBLIC_DIR/css
 cp "CNAME" "$PUBLIC_DIR/CNAME"
 cp "assets/.nojekyll" "$PUBLIC_DIR/.nojekyll"
 cp "assets/favicon.ico" "$PUBLIC_DIR/favicon.ico"
 cp "assets/robots.txt" "$PUBLIC_DIR/robots.txt"
 cp "assets/Resume - Brendan Murty.pdf" "$PUBLIC_DIR/brendan/Resume - Brendan Murty.pdf"
-mkdir -p $PUBLIC_DIR/css
 cp -r assets/icons/fontawesome $PUBLIC_DIR/css
 cp "$BUILD_DIR/_assets/css/styles.css" "$PUBLIC_DIR/css/styles.css"
 

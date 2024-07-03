@@ -1,17 +1,17 @@
-{% set tag = url | replace("/brendan/tags/", "") | replace("/", "") %}
+{% set tag = url | replace("/tags/", "") | replace("/", "") %}
 {% set posts = search.pages(tag + " type=post", "date=desc") %}
-{% include "brendan/common/header.njk" %}
+{% include "common/header.njk" %}
 <body class="brendan brendan_tag">
   <section class="container">
     <header>
-      {% include "brendan/common/heading.njk" %}
+      {% include "common/heading.njk" %}
     </header>
 
     <article>
-      <h2><a href="/">Home</a> > <a href="/brendan/tags">Tags</a> > {{ tag }}</h2>
+      <h2><a href="/">Home</a> > <a href="/tags">Tags</a> > {{ tag }}</h2>
       <ul class="brendan_posts">
       {% for post in posts %}
-      {% if post.url != '/brendan/posts/' %}
+      {% if post.url != '/posts/' %}
         <li>
           <span class="post-date">
             {{ post.date | date('d LLL yyyy') }}
@@ -30,4 +30,4 @@
     </article>
   </section>
 </body>
-{% include "brendan/common/footer.njk" %}
+{% include "common/footer.njk" %}

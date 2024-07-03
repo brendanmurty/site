@@ -1,19 +1,19 @@
-{% include "brendan/common/header.njk" %}
+{% include "common/header.njk" %}
 <body class="brendan brendan_post">
   <section class="container">
     <header>
-      {% include "brendan/common/heading.njk" %}
+      {% include "common/heading.njk" %}
     </header>
 
     <article>
-      <h2><a href="/">Home</a> > <a href="/brendan/posts">Posts</a> > {{ title }}</h2>
+      <h2><a href="/">Home</a> > <a href="/posts">Posts</a> > {{ title }}</h2>
 
       <p class="post-date">{{ date | date('d LLL yyyy') }}</p>
 
       <ul class="tag-list">
         {% for tag in tags %}
         <li>
-          <a class="tag-link" href="/brendan/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
+          <a class="tag-link" href="/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
             <span class="icon fa-fw fa-solid fa-tag"></span>
             {{ tag }}
           </a>
@@ -23,8 +23,8 @@
 
       {{ content | safe }}
 
-      {% include "brendan/photos/photo-data.njk" %}
+      {% include "photos/photo-data.njk" %}
     </article>
   </section>
 </body>
-{% include "brendan/common/footer.njk" %}
+{% include "common/footer.njk" %}

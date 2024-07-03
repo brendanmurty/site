@@ -1,7 +1,7 @@
 {% set posts = search.pages("type=post", "date=desc") %}
 <ul class="brendan_posts">
 {% for post in posts %}
-{% if post.url != '/brendan/posts/' %}
+{% if post.url != '/posts/' %}
   <li>
     <span class="post-date">
       {{ post.date | date('d LLL yyyy') }}

@@ -9,11 +9,11 @@
 {% endfor %}
 {% endif %}
 {% endfor %}
-{% include "brendan/common/header.njk" %}
+{% include "common/header.njk" %}
 <body class="brendan brendan_tags">
   <section class="container">
     <header>
-      {% include "brendan/common/heading.njk" %}
+      {% include "common/heading.njk" %}
     </header>
 
     <article>
@@ -21,7 +21,7 @@
       <ul class="tag-list">
       {% for tag in tags|sort %}
         <li>
-          <a class="tag-link" href="/brendan/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
+          <a class="tag-link" href="/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
             <span class="icon fa-fw fa-solid fa-tag"></span>
             {{ tag }}
           </a>
@@ -31,4 +31,4 @@
     </article>
   </section>
 </body>
-{% include "brendan/common/footer.njk" %}
+{% include "common/footer.njk" %}

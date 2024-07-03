@@ -1,3 +1,0 @@
----
-layout: brendan/index.njk
----

@@ -8,7 +8,7 @@ import { GeneratePhotoThumbail } from "./photo-thumbnail-generate.ts";
 export async function GeneratePhotoPosts(): Promise<void> {
   const inboxDirectory = "inbox";
   const imagesDirectory = "assets/images/brendan";
-  const postsDirectory = "content/brendan/posts";
+  const postsDirectory = "content/posts";
 
   for await (const item of Deno.readDir(
     posix.join(Deno.cwd(), inboxDirectory)

@@ -1,0 +1,3 @@
+---
+layout: photos/gallery.njk
+---

@@ -25,7 +25,7 @@ As for the Engineering part of the role, I also keep in mind that:
 - Set clear high-level technical requirements
 - Let the assigned Engineer demonstrate their skills and stay out of their way
 - Encourage them to document as much as possible, to make it easy for any other team member to work on the area
-- Fixing software bugs [doesn't have to be stressful](/brendan/posts/20191116_fixing-software-bugs-without-losing-your-mind/)
+- Fixing software bugs [doesn't have to be stressful](/posts/20191116_fixing-software-bugs-without-losing-your-mind/)
 
 When hiring, I aim to always:
 

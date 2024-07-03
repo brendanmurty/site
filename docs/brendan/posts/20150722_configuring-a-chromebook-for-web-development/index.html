@@ -1,125 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-AU">
-<head>
-<meta charset="utf-8">
-<title>Brendan Murty - Configuring a Chromebook for web development</title>
-<meta name="author" content="Brendan Murty">
-<meta name="handheldfriendly" content="true">
-<meta name="mobileoptimized" content="480">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:locale" content="en_GB" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://murty.au/brendan/posts/20150722_configuring-a-chromebook-for-web-development/" />
-<link rel="canonical" href="https://murty.au/brendan/posts/20150722_configuring-a-chromebook-for-web-development/" />
-<link rel="preload" href="/fonts/MDNichrome-Regular.woff" as="font" crossorigin="anonymous">
-<link rel="preload" href="/fonts/MDSystem-Regular.woff" as="font" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/styles.css">
-<meta name="theme-color" content="#23c5b0">
-<meta name="description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer.">
-<meta property="og:title" content="Brendan Murty - Configuring a Chromebook for web development" />
-<meta property="og:description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer." />
+  <head>
+    <meta charset="utf-8" />
+    <title>Brendan Murty - Configuring a Chromebook for web development</title>
+    <meta
+      name="author"
+      content="Brendan Murty" />
+    <meta
+      name="handheldfriendly"
+      content="true" />
+    <meta
+      name="mobileoptimized"
+      content="480" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <meta
+      property="og:locale"
+      content="en_GB" />
+    <meta
+      property="og:type"
+      content="website" />
+    <meta
+      property="og:url"
+      content="https://murty.au/posts/20150722_configuring-a-chromebook-for-web-development/" />
+    <link
+      rel="canonical"
+      href="https://murty.au/posts/20150722_configuring-a-chromebook-for-web-development/" />
+    <link
+      rel="preload"
+      href="/fonts/MDNichrome-Regular.woff"
+      as="font"
+      crossorigin="anonymous" />
+    <link
+      rel="preload"
+      href="/fonts/MDSystem-Regular.woff"
+      as="font"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="/css/fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="/css/styles.css" />
+    <meta
+      name="theme-color"
+      content="#23c5b0" />
+    <meta
+      name="description"
+      content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer." />
+    <meta
+      property="og:title"
+      content="Brendan Murty - Configuring a Chromebook for web development" />
+    <meta
+      property="og:description"
+      content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer." />
 
-<meta property="og:image" content="https://murty.au/images/brendan/brendan-luca-2023_750.jpg" />
+    <meta
+      property="og:image"
+      content="https://murty.au/images/brendan/brendan-luca-2023_750.jpg" />
 
-<link rel="me" href="https://mastodon.social/@murty">
-<link rel="icon" sizes="192x192" href="/images/brendan/icon-192.png">
-<link rel="alternate" title="Posts by Brendan Murty" type="application/json" href="https://murty.au/brendan/posts.json">
+    <link
+      rel="me"
+      href="https://mastodon.social/@murty" />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="/images/brendan/icon-192.png" />
+    <link
+      rel="alternate"
+      title="Posts by Brendan Murty"
+      type="application/json"
+      href="https://murty.au/brendan/posts.json" />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ57BB9D59"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-TZ57BB9D59');
-</script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TZ57BB9D59"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-TZ57BB9D59");
+    </script>
+  </head>
+  <body class="brendan brendan_post">
+    <section class="container">
+      <header>
+        <h1>
+          <img
+            class="avatar"
+            alt=""
+            width="150"
+            height="150"
+            src="/images/brendan/brendan-luca-2023_200.jpg" />
+          <a href="/">Brendan Murty</a>
+        </h1>
+      </header>
 
-</head>
-<body class="brendan brendan_post">
-  <section class="container">
-    <header>
-      <h1>
-  <img class="avatar" alt="" width="150" height="150" src="/images/brendan/brendan-luca-2023_200.jpg">
-  <a href="/">Brendan Murty</a>
-</h1>
+      <article>
+        <h2>
+          <a href="/">Home</a> > <a href="/brendan/posts">Posts</a> >
+          Configuring a Chromebook for web development
+        </h2>
 
-    </header>
+        <p class="post-date">22 Jul 2015</p>
 
-    <article>
-      <h2><a href="/">Home</a> > <a href="/brendan/posts">Posts</a> > Configuring a Chromebook for web development</h2>
+        <ul class="tag-list">
+          <li>
+            <a
+              class="tag-link"
+              href="/brendan/tags/Development"
+              title="View posts tagged with Development">
+              <span class="icon fa-fw fa-solid fa-tag"></span>
+              Development
+            </a>
+          </li>
 
-      <p class="post-date">22 Jul 2015</p>
+          <li>
+            <a
+              class="tag-link"
+              href="/brendan/tags/Chrome"
+              title="View posts tagged with Chrome">
+              <span class="icon fa-fw fa-solid fa-tag"></span>
+              Chrome
+            </a>
+          </li>
+        </ul>
 
-      <ul class="tag-list">
-        
-        <li>
-          <a class="tag-link" href="/brendan/tags/Development" title="View posts tagged with Development">
-            <span class="icon fa-fw fa-solid fa-tag"></span>
-            Development
-          </a>
-        </li>
-        
-        <li>
-          <a class="tag-link" href="/brendan/tags/Chrome" title="View posts tagged with Chrome">
-            <span class="icon fa-fw fa-solid fa-tag"></span>
-            Chrome
-          </a>
-        </li>
-        
-      </ul>
-
-      <p>To fill the time commuting to work, I recently bought a <a href="http://www.acer.co.uk/ac/en/GB/content/professional-series/chromebook11c730">Chromebook</a> which is basically a cheap laptop designed to use <a href="https://chrome.google.com/webstore/category/apps">Chrome Apps</a> instead of traditional, installable desktop applications.</p>
-<p>Chromebook devices run <a href="https://en.wikipedia.org/wiki/Chrome_OS">Chrome OS</a> created by Google and based on the <a href="https://en.wikipedia.org/wiki/Linux_kernel">Linux kernel</a>. Access to the operating system and Linux shell is hidden by default but you can access it with a bit of effort to unlock it's full potential.</p>
-<h4>Setup a local development environment</h4>
-<ol>
-<li><a href="http://www.howtogeek.com/210817/how-to-enable-developer-mode-on-your-chromebook/">Enable Developer Mode</a></li>
-<li>When the <em>OS verification is OFF</em> screen is shown, press <em>Ctrl + D</em> to dismiss the warning and boot Chrome OS</li>
-<li>Login to your Google account</li>
-<li>Press <em>Ctrl + Alt + T</em> to open a terminal window</li>
-<li>Type <em>shell</em> and press <em>Enter</em> to enter the Linux shell</li>
-<li>Install the <a href="http://skycocker.github.io/chromebrew/">Chromebrew</a> package manager</li>
-<li>To allow for SSH connections to other servers, install <a href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo">Secure Shell</a></li>
-<li>To access the Linux Shell from it's own window and be able to <em>Pin it to the Chrome OS shelf</em>, install <a href="https://chrome.google.com/webstore/detail/crosh-window/nhbmpbdladcchdhkemlojfjdknjadhmh">Crosh Window</a></li>
-</ol>
-<p>After this process is completed, you'll have <em>Git</em> installed locally.</p>
-<h4>Git and Vim configuration</h4>
-<p>Open the <em>Crosh Window</em> app and open the Linux Shell:</p>
-<blockquote>
-<p>shell</p>
-</blockquote>
-<p>Install <a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim</a> so you can edit files and Git commit messages via the Terminal:</p>
-<blockquote>
-<p>crew install vim keep</p>
-</blockquote>
-<p>Commands to set basic Git settings and set Vim as the default Git editor:</p>
-<blockquote>
-<p>git config --global user.email &quot;your.email@sample.com&quot;
-git config --global user.name &quot;Your Name&quot;
-git config --global core.editor &quot;vim&quot;</p>
-</blockquote>
-<p>Configure Vim to work with the Chromebook device by editing the <em>~/.vimrc</em> file to include:</p>
-<blockquote>
-<p>set nocompatible</p>
-</blockquote>
-<p>You might also want to <a href="http://vim.wikia.com/wiki/Example_vimrc">add more Vim settings</a> to suit your needs. These will set the default settings for Vim when you edit files.</p>
-<p>You're now ready to <a href="http://git-scm.com/docs/git-clone">git clone</a> a code repository to a local folder, such as:</p>
-<blockquote>
-<p>~/Downloads/
-/media/removable/SD Card/</p>
-</blockquote>
-<h4>Improve productivity</h4>
-<p>To create a shortcut command called <em>cdgit</em> for getting to a <em>Git</em> folder on an <em>SD card</em>, add the following to the end of the <em>~/.bashrc</em> file:</p>
-<blockquote>
-<p>alias cdgit='cd /media/removable/SD\ Card/Git' # Change directory to the Git folder on the SD card</p>
-</blockquote>
-<p>To avoid the annoying system beep on startup while in <em>Developer Mode</em>, just press <em>Ctrl + D</em> when the <em>OS verification is OFF</em> screen is shown.</p>
-<p>If you'd prefer a more modern text editor, you can install one from the Web Store, such as <a href="https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml">Caret</a>.</p>
-<h4>Ready to go!</h4>
-<p>You now have a cheap, portable device to develop your next web app on!</p>
-
-
-      
-    </article>
-  </section>
-</body>
+        <p>
+          To fill the time commuting to work, I recently bought a
+          <a
+            href="http://www.acer.co.uk/ac/en/GB/content/professional-series/chromebook11c730"
+            >Chromebook</a
+          >
+          which is basically a cheap laptop designed to use
+          <a href="https://chrome.google.com/webstore/category/apps"
+            >Chrome Apps</a
+          >
+          instead of traditional, installable desktop applications.
+        </p>
+        <p>
+          Chromebook devices run
+          <a href="https://en.wikipedia.org/wiki/Chrome_OS">Chrome OS</a>
+          created by Google and based on the
+          <a href="https://en.wikipedia.org/wiki/Linux_kernel">Linux kernel</a>.
+          Access to the operating system and Linux shell is hidden by default
+          but you can access it with a bit of effort to unlock it's full
+          potential.
+        </p>
+        <h4>Setup a local development environment</h4>
+        <ol>
+          <li>
+            <a
+              href="http://www.howtogeek.com/210817/how-to-enable-developer-mode-on-your-chromebook/"
+              >Enable Developer Mode</a
+            >
+          </li>
+          <li>
+            When the <em>OS verification is OFF</em> screen is shown, press
+            <em>Ctrl + D</em> to dismiss the warning and boot Chrome OS
+          </li>
+          <li>Login to your Google account</li>
+          <li>Press <em>Ctrl + Alt + T</em> to open a terminal window</li>
+          <li>
+            Type <em>shell</em> and press <em>Enter</em> to enter the Linux
+            shell
+          </li>
+          <li>
+            Install the
+            <a href="http://skycocker.github.io/chromebrew/">Chromebrew</a>
+            package manager
+          </li>
+          <li>
+            To allow for SSH connections to other servers, install
+            <a
+              href="https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo"
+              >Secure Shell</a
+            >
+          </li>
+          <li>
+            To access the Linux Shell from it's own window and be able to
+            <em>Pin it to the Chrome OS shelf</em>, install
+            <a
+              href="https://chrome.google.com/webstore/detail/crosh-window/nhbmpbdladcchdhkemlojfjdknjadhmh"
+              >Crosh Window</a
+            >
+          </li>
+        </ol>
+        <p>
+          After this process is completed, you'll have <em>Git</em> installed
+          locally.
+        </p>
+        <h4>Git and Vim configuration</h4>
+        <p>Open the <em>Crosh Window</em> app and open the Linux Shell:</p>
+        <blockquote>
+          <p>shell</p>
+        </blockquote>
+        <p>
+          Install <a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim</a> so
+          you can edit files and Git commit messages via the Terminal:
+        </p>
+        <blockquote>
+          <p>crew install vim keep</p>
+        </blockquote>
+        <p>
+          Commands to set basic Git settings and set Vim as the default Git
+          editor:
+        </p>
+        <blockquote>
+          <p>
+            git config --global user.email &quot;your.email@sample.com&quot; git
+            config --global user.name &quot;Your Name&quot; git config --global
+            core.editor &quot;vim&quot;
+          </p>
+        </blockquote>
+        <p>
+          Configure Vim to work with the Chromebook device by editing the
+          <em>~/.vimrc</em> file to include:
+        </p>
+        <blockquote>
+          <p>set nocompatible</p>
+        </blockquote>
+        <p>
+          You might also want to
+          <a href="http://vim.wikia.com/wiki/Example_vimrc"
+            >add more Vim settings</a
+          >
+          to suit your needs. These will set the default settings for Vim when
+          you edit files.
+        </p>
+        <p>
+          You're now ready to
+          <a href="http://git-scm.com/docs/git-clone">git clone</a> a code
+          repository to a local folder, such as:
+        </p>
+        <blockquote>
+          <p>~/Downloads/ /media/removable/SD Card/</p>
+        </blockquote>
+        <h4>Improve productivity</h4>
+        <p>
+          To create a shortcut command called <em>cdgit</em> for getting to a
+          <em>Git</em> folder on an <em>SD card</em>, add the following to the
+          end of the <em>~/.bashrc</em> file:
+        </p>
+        <blockquote>
+          <p>
+            alias cdgit='cd /media/removable/SD\ Card/Git' # Change directory to
+            the Git folder on the SD card
+          </p>
+        </blockquote>
+        <p>
+          To avoid the annoying system beep on startup while in
+          <em>Developer Mode</em>, just press <em>Ctrl + D</em> when the
+          <em>OS verification is OFF</em> screen is shown.
+        </p>
+        <p>
+          If you'd prefer a more modern text editor, you can install one from
+          the Web Store, such as
+          <a
+            href="https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml"
+            >Caret</a
+          >.
+        </p>
+        <h4>Ready to go!</h4>
+        <p>
+          You now have a cheap, portable device to develop your next web app on!
+        </p>
+      </article>
+    </section>
+  </body>
 </html>

@@ -10,7 +10,7 @@
   "tasks": {
     "build": "bash ./bin/build.sh",
     "deploy": "bash ./bin/deploy.sh ",
-    "docker-build": "docker build --tag murty-website .",
+    "docker-build": "docker build --progress=plain --tag murty-website .",
     "docker-remove": "docker rm --force murty-website",
     "docker-run": "docker run --publish 8000:8000 --detach --name=murty-website murty-website",
     "docker-stop": "docker stop murty-website",
