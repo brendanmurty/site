@@ -287,12 +287,14 @@ a:visited,
 a:hover,
 a:focus {
   color: var(--highlight-colour);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 a:hover,
 a:focus {
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 header h1 a,
@@ -300,6 +302,7 @@ header h1 a:visited,
 header h1 a:hover,
 header h1 a:focus {
   color: var(--foreground-colour);
+  text-decoration: none;
 }
 
 pre {
