@@ -10,8 +10,6 @@ I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.
 
 ## Initial Setup
 
-To setup a new local development environment:
-
 1. Fork this repository
 2. Make a local clone of that forked repository
 3. Update some files in the forked repository:
@@ -24,8 +22,10 @@ To setup a new local development environment:
 4. Commit and push all of these changes to your forked repository
 5. Setup [GitHub Pages](https://pages.github.com/) for your forked repository:
 
-- Set to deploy on the `main` branch for the `/docs` directory
-- Add your own domain for this and update that in the `CNAME` file
+- Repository settings > Pages > Build and deployment > Branch: `main`
+- Repository settings > Pages > Build and deployment > Directory: `/docs`
+- Repository settings > Pages > Custom domain: _use your own domain_
+- Update the `CNAME` file to use this same domain
 
 6. Install [Deno](https://deno.land/)
 7. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
