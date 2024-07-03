@@ -1,5 +1,5 @@
 import { load } from "std/dotenv/mod.ts";
-import { assertEquals, assertNotEquals } from "std/testing/asserts.ts";
+import { assertEquals, assertNotEquals } from "std/assert/mod.ts";
 import { isJSON } from "is_json/mod.ts";
 import { posix } from "std/path/mod.ts";
 
