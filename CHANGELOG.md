@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.019
+- Version 2024.020
+- [Docs: Improve GitHub Pages setup section](https://github.com/brendanmurty/murty-website/commit/96eb335)
+- [Docs: Update website preview image](https://github.com/brendanmurty/murty-website/commit/c9f1cc6)
+- [Version 2024.019](https://github.com/brendanmurty/murty-website/commit/685ebc2)
 - [Core: Setup a custom 404 page for GitHub Pages](https://github.com/brendanmurty/murty-website/commit/35501a8)
 - [Version 2024.018](https://github.com/brendanmurty/murty-website/commit/f65f366)
 - [Core: Keep current RSS feed URL](https://github.com/brendanmurty/murty-website/commit/8588dd6)
