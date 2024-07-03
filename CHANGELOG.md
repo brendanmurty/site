@@ -1,6 +1,10 @@
 # Change Log
 
-- Version 2024.023
+- Version 2024.024
+- [Tests: Remove obsolete test](https://github.com/brendanmurty/murty-website/commit/d2377f4)
+- [Core: Fix deprecated Posix Join import warnings](https://github.com/brendanmurty/murty-website/commit/8d87f33)
+- [Tests: Fix deprecated import warnings](https://github.com/brendanmurty/murty-website/commit/4133b12)
+- [Version 2024.023](https://github.com/brendanmurty/murty-website/commit/bb3ec67)
 - [Docs: Update website preview image](https://github.com/brendanmurty/murty-website/commit/101d942)
 - [Version 2024.022](https://github.com/brendanmurty/murty-website/commit/1c42721)
 - [Tests: Remove obsolete test](https://github.com/brendanmurty/murty-website/commit/c3a3b49)
