@@ -33,7 +33,6 @@ I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.
 9. Update your `.env` file:
 
 - `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
-- `LASTFM_API_KEY`: Your [Last.fm API key](https://www.last.fm/api/account/create) to show your loved tracks on the site
 
 10. Install [exiftool](https://exiftool.org/) on your local machine
 11. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
