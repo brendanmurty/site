@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.018
+- Version 2024.019
+- [Core: Setup a custom 404 page for GitHub Pages](https://github.com/brendanmurty/murty-website/commit/35501a8)
+- [Version 2024.018](https://github.com/brendanmurty/murty-website/commit/f65f366)
 - [Core: Keep current RSS feed URL](https://github.com/brendanmurty/murty-website/commit/8588dd6)
 - [Core: Avoid broken links for previous post URLs](https://github.com/brendanmurty/murty-website/commit/2e4a287)
 - [Core: Fix a template include path](https://github.com/brendanmurty/murty-website/commit/2e3d15e)
