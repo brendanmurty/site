@@ -399,7 +399,9 @@ pre {
   .murty ul.sites .list-name {
     line-height: 100px;
   }
-}/* BRENDAN */
+}
+
+/* BRENDAN */
 
 .brendan header {
   padding: 25px 10px;
@@ -696,7 +698,9 @@ ul.brendan_gallery a:active {
     height: auto;
     border: 0 none;
   }
-}/* ISLA */
+}
+
+/* ISLA */
 
 .isla {
   text-align: center;
@@ -705,7 +709,9 @@ ul.brendan_gallery a:active {
 .isla .avatar-image {
   margin-bottom: 40px;
   border-radius: 150px;
-}/* FREYA */
+}
+
+/* FREYA */
 
 .freya {
   text-align: center;
@@ -714,7 +720,9 @@ ul.brendan_gallery a:active {
 .freya .avatar-image {
   margin-bottom: 40px;
   border-radius: 150px;
-}/* LUCA */
+}
+
+/* LUCA */
 
 .luca {
   text-align: center;

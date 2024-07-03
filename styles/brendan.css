@@ -225,10 +225,6 @@ ul.brendan_gallery a:active {
     height: auto;
   }
 
-  .brendan ul.listing.posts {
-    display: none;
-  }
-
   .brendan ul.listing,
   .brendan ul.listing.third,
   .brendan ul.listing.twothirds,
