@@ -42,7 +42,7 @@ echo -e "${yellow}Removing EXIF data from all files in the 'assets/images' direc
 exiftool -recurse -all= assets/images
 exiftool -recurse -delete_original assets/images
 
-echo -e "${yellow}Preparing page content files${end}"
+echo -e "${yellow}Copying over page content files to '$BUILD_DIR'${end}"
 
 cp -r content/* $BUILD_DIR
 
@@ -54,25 +54,32 @@ echo -e "${yellow}Building the front-end using Lume and '_config.ts'${end}"
 
 lume
 
+echo -e "${yellow}Generating redirect pages${end}"
+
+# TODO: Generate dynamic redirect pages from "assets/redirects.json" in "$PUBLIC_DIR/brendan/posts"
+# mkdir -p $PUBLIC_DIR/brendan/posts
+# deno run -A --allow-read --allow-write src/redirects.ts
+cp -r $PUBLIC_DIR/posts $PUBLIC_DIR/brendan/posts
+
 echo -e "${yellow}Updating '$PUBLIC_DIR/sitemap.xml' to use the production URL${end}"
 
 sed -i -e "s/http:\/\/localhost\//https:\/\/murty.au\//g" $PUBLIC_DIR/sitemap.xml
 rm -rf $PUBLIC_DIR/sitemap.xml-e
 
-echo -e "${yellow}Copying static files to '$PUBLIC_DIR' directory${end}"
 
-cp -r "assets/fonts" "$PUBLIC_DIR/fonts"
-cp -r "assets/images" "$PUBLIC_DIR/images"
+echo -e "${yellow}Configuring GitHub Pages in the '$PUBLIC_DIR' directory${end}"
 
-mkdir -p $PUBLIC_DIR/brendan
-
-# Avoid broken links for previous post URLs (/brendan/posts/xxx)
-cp -r $PUBLIC_DIR/posts $PUBLIC_DIR/brendan/posts
-
-# Copy over custom 404 page for GitHub Pages
+# Custom 404 page for GitHub Pages
 cp "assets/redirect.html" "$PUBLIC_DIR/404.html"
 
+# GitHub Pages domain name configuration
 cp "CNAME" "$PUBLIC_DIR/CNAME"
+
+echo -e "${yellow}Copying static files to the '$PUBLIC_DIR' directory${end}"
+
+# Static assets
+cp -r "assets/fonts" "$PUBLIC_DIR/fonts"
+cp -r "assets/images" "$PUBLIC_DIR/images"
 cp "assets/.nojekyll" "$PUBLIC_DIR/.nojekyll"
 cp "assets/favicon.ico" "$PUBLIC_DIR/favicon.ico"
 cp "assets/robots.txt" "$PUBLIC_DIR/robots.txt"
