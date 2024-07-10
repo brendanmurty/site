@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.024
+- Version 2024.025
+- [Core: Update 404 to redirect to home page](https://github.com/brendanmurty/murty-website/commit/6fd6a24)
+- [Version 2024.024](https://github.com/brendanmurty/murty-website/commit/7e6e90b)
 - [Tests: Remove obsolete test](https://github.com/brendanmurty/murty-website/commit/d2377f4)
 - [Core: Fix deprecated Posix Join import warnings](https://github.com/brendanmurty/murty-website/commit/8d87f33)
 - [Tests: Fix deprecated import warnings](https://github.com/brendanmurty/murty-website/commit/4133b12)
