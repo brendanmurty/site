@@ -70,7 +70,7 @@ mkdir -p $PUBLIC_DIR/brendan
 cp -r $PUBLIC_DIR/posts $PUBLIC_DIR/brendan/posts
 
 # Copy over custom 404 page for GitHub Pages
-cp "assets/redirects/404.html" "$PUBLIC_DIR/404.html"
+cp "assets/redirect.html" "$PUBLIC_DIR/404.html"
 
 cp "CNAME" "$PUBLIC_DIR/CNAME"
 cp "assets/.nojekyll" "$PUBLIC_DIR/.nojekyll"
