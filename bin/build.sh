@@ -56,8 +56,7 @@ lume
 
 echo -e "${yellow}Generating redirect pages${end}"
 
-# TODO: Generate dynamic redirect pages from "assets/redirects.json" in "$PUBLIC_DIR/brendan/posts"
-# mkdir -p $PUBLIC_DIR/brendan/posts
+# TODO: Generate dynamic redirect pages from "assets/redirects.json" in "$PUBLIC_DIR"
 # deno run -A --allow-read --allow-write src/redirects.ts
 cp -r $PUBLIC_DIR/posts $PUBLIC_DIR/brendan/posts
 
