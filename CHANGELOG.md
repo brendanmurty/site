@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.025
+- Version 2024.026
+- [Core: Initial work on dynamic redirect page generation](https://github.com/brendanmurty/murty-website/commit/74cc53f)
+- [Core: Update 404 file location](https://github.com/brendanmurty/murty-website/commit/6879f2f)
+- [Version 2024.025](https://github.com/brendanmurty/murty-website/commit/bf94437)
 - [Core: Update 404 to redirect to home page](https://github.com/brendanmurty/murty-website/commit/6fd6a24)
 - [Version 2024.024](https://github.com/brendanmurty/murty-website/commit/7e6e90b)
 - [Tests: Remove obsolete test](https://github.com/brendanmurty/murty-website/commit/d2377f4)
