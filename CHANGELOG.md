@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.029
+- Version 2024.030
+- [Content: Update resume](https://github.com/brendanmurty/murty-website/commit/d7247b4)
+- [Version 2024.029](https://github.com/brendanmurty/murty-website/commit/3b50215)
 - [Content: Update resume](https://github.com/brendanmurty/murty-website/commit/67ca379)
 - [Version 2024.028](https://github.com/brendanmurty/murty-website/commit/9f86ac6)
 - [Content: Fix code block formatting](https://github.com/brendanmurty/murty-website/commit/ab25b57)
