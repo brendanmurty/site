@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.028
+- Version 2024.029
+- [Content: Update resume](https://github.com/brendanmurty/murty-website/commit/67ca379)
+- [Version 2024.028](https://github.com/brendanmurty/murty-website/commit/9f86ac6)
 - [Content: Fix code block formatting](https://github.com/brendanmurty/murty-website/commit/ab25b57)
 - [Version 2024.027](https://github.com/brendanmurty/murty-website/commit/bba74ed)
 - [Core: Use Lume redirects instead of custom script, related content and internal link updates](https://github.com/brendanmurty/murty-website/commit/fd0e470)
