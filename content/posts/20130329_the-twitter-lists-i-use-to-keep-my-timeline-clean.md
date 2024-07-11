@@ -9,7 +9,7 @@ tags:
 
 When you've been using [Twitter](https://twitter.com/) for a while, you start to realise that if you follow every account that you're interested in, your timeline quickly becomes quite confusing and busy. I prefer to follow the people that I know personally or those who have very similar interests to my own.
 
-Luckily, Twitter has a [lists feature](https://support.twitter.com/entries/76460-how-to-use-twitter-lists) which allows you to view posts by accounts that you aren't following. Also, you can subscribe to lists created by other Twitter users by pressing the <i>Subscribe</i> button when viewing a list.
+Luckily, Twitter has a [lists feature](https://support.twitter.com/entries/76460-how-to-use-twitter-lists) which allows you to view posts by accounts that you aren't following. Also, you can subscribe to lists created by other Twitter users by pressing the _Subscribe_ button when viewing a list.
 
 Here are my current lists:
 

@@ -20,22 +20,24 @@ The image should be a 128px x 128px transparent PNG, named **128.png**.
 The JSON file is pretty simple, check out the example below and name it **manifest.json**.
 Customise this by updating the _name_, _description_, _urls_ and _web_url_ values as needed.
 
-    {
-    	"name": "Basecamp",
-    	"description": "Shortcut to Basecamp Launchpad",
-    	"manifest_version": 2,
-    	"version": "1.0.0.0",
-    	"icons": {
-    		"128": "128.png"
-    	},
-    	"app": {
-    		"urls": ["https://launchpad.37signals.com/"],
-    		"launch": {
-    			"web_url": "https://launchpad.37signals.com/"
-    		}
-    	},
-    	"permissions": ["unlimitedStorage","notifications"]
+```
+{
+  "name": "Basecamp",
+  "description": "Shortcut to Basecamp Launchpad",
+  "manifest_version": 2,
+  "version": "1.0.0.0",
+  "icons": {
+    "128": "128.png"
+  },
+  "app": {
+    "urls": ["https://launchpad.37signals.com/"],
+    "launch": {
+      "web_url": "https://launchpad.37signals.com/"
     }
+  },
+  "permissions": ["unlimitedStorage","notifications"]
+}
+```
 
 Now to add this shortcut app to Chrome. From the Chrome menu, select _Tools_ > _Extensions_, then click the _Load unpacked extension_ button. Browse to the folder in which these files are stored in and press OK/Confirm.
 

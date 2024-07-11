@@ -24,50 +24,54 @@ To ensure that [iOS](http://www.apple.com/ios/) doesn't apply the default shine 
 
 For Windows 8/RT devices, you'll just need to include the following in the _head_ section of your page:
 
-    <meta name="application-name" content="YourWebApp"/>
-    <meta name="msapplication-TileColor" content="#325ba0"/>
-    <meta name="msapplication-TileImage" content="/images/logo-144-clear.png"/>
-    <meta name="msapplication-starturl" content="/webapphome.php" />
+```
+<meta name="application-name" content="YourWebApp"/>
+<meta name="msapplication-TileColor" content="#325ba0"/>
+<meta name="msapplication-TileImage" content="/images/logo-144-clear.png"/>
+<meta name="msapplication-starturl" content="/webapphome.php" />
+```
 
 #### Windows Phone
 
 Unfortunately, [Windows Phone](http://www.windowsphone.com/) requires a little more setup. You'll have to form up a unique page for Windows Phone users, a sample _pin to start page_ is:
 
-    <!doctype html>
-    <html>
-    	<head>
-    		<title>YourWebApp</title>
-    		<meta charset="utf-8">
-    		<meta name="robots" content="noindex,nofollow">
-    		<meta name="viewport" content="maximum-scale=1,minimum-scale=1,width=device-width">
-    		<style>
-    			body{margin:0;position:relative;background-color:#325ba0;color:#fff;height:100%;width:100%;padding:0}
-    			#icon{font-size:160px;line-height:320px;text-align:center}
-    			#instructions{margin-top:60px;text-align:center;position:relative;color:#eee}
-    			#instructions strong{color:#fff}
-    		</style>
-    	</head>
-    	<body>
-    		<div id="icon">
-    			<p>
-    				<img src="/images/logo-160.png" alt="YourWebApp" />
-    			</p>
-    		</div>
-    		<div id="instructions">
-    			<p>
-    				Tap <strong>...</strong> and select <strong>pin to start</strong>
-    			</p>
-    		</div>
-    		<script>
-    			var url = 'https://yourwebapp.com/webapphome.php';
-    			if(localStorage.getItem(url)) {
-    				window.location.replace(url);
-    			}else{
-    				localStorage.setItem(url, true);
-    			}
-    		</script>
-    	</body>
-    </html>
+```
+<!doctype html>
+<html>
+  <head>
+    <title>YourWebApp</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="maximum-scale=1,minimum-scale=1,width=device-width">
+    <style>
+      body{margin:0;position:relative;background-color:#325ba0;color:#fff;height:100%;width:100%;padding:0}
+      #icon{font-size:160px;line-height:320px;text-align:center}
+      #instructions{margin-top:60px;text-align:center;position:relative;color:#eee}
+      #instructions strong{color:#fff}
+    </style>
+  </head>
+  <body>
+    <div id="icon">
+      <p>
+        <img src="/images/logo-160.png" alt="YourWebApp" />
+      </p>
+    </div>
+    <div id="instructions">
+      <p>
+        Tap <strong>...</strong> and select <strong>pin to start</strong>
+      </p>
+    </div>
+    <script>
+      var url = 'https://yourwebapp.com/webapphome.php';
+      if(localStorage.getItem(url)) {
+        window.location.replace(url);
+      }else{
+        localStorage.setItem(url, true);
+      }
+    </script>
+  </body>
+</html>
+```
 
 This will produce a screen similar to the image below:
 
