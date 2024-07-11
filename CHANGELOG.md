@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.030
+- Version 2024.031
+- [Content: Update profile image and home page summary content](https://github.com/brendanmurty/murty-website/commit/8106831)
+- [Docker: Fix warning about syntax](https://github.com/brendanmurty/murty-website/commit/f5ac8d4)
+- [Version 2024.030](https://github.com/brendanmurty/murty-website/commit/fa4f22a)
 - [Content: Update resume](https://github.com/brendanmurty/murty-website/commit/d7247b4)
 - [Version 2024.029](https://github.com/brendanmurty/murty-website/commit/3b50215)
 - [Content: Update resume](https://github.com/brendanmurty/murty-website/commit/67ca379)
