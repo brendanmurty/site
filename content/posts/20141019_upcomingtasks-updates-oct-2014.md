@@ -1,6 +1,8 @@
 ---
 title: UpcomingTasks Updates in October 2014
 date: 2014-10-19
+url: /posts/20141019_upcomingtasks-updates-oct-2014/
+oldUrl: /brendan/posts/20141019_upcomingtasks-updates-oct-2014/
 tags:
   - UpcomingTasks
 ---
@@ -9,7 +11,7 @@ I've made a few updates to UpcomingTasks over the last month, here's a quick run
 
 #### Improved support for small accounts
 
-If your account only has one project, UpcomingTasks will now tweak some features to improve the experience. A new *Project* link in the menu takes you directly to your project and the name of the project will no longer crowd up your task lists.
+If your account only has one project, UpcomingTasks will now tweak some features to improve the experience. A new _Project_ link in the menu takes you directly to your project and the name of the project will no longer crowd up your task lists.
 
 ![Task List](/images/brendan/upcomingtasks-oct2014-list.png)
 

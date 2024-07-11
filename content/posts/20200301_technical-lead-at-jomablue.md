@@ -1,6 +1,8 @@
 ---
 title: Technical Lead at Jomablue
 date: 2020-03-01
+url: /posts/20200301_technical-lead-at-jomablue/
+oldUrl: /brendan/posts/20200301_technical-lead-at-jomablue/
 tags:
   - Career
 ---

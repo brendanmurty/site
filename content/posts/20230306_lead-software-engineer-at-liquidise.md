@@ -1,6 +1,8 @@
 ---
 title: Lead Software Engineer at Liquidise
 date: 2023-03-06
+url: /posts/20230306_lead-software-engineer-at-liquidise/
+oldUrl: /brendan/posts/20230306_lead-software-engineer-at-liquidise/
 tags:
   - Career
 ---

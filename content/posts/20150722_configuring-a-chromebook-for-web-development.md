@@ -1,6 +1,8 @@
 ---
 title: Configuring a Chromebook for web development
 date: 2015-07-22
+url: /posts/20150722_configuring-a-chromebook-for-web-development/
+oldUrl: /brendan/posts/20150722_configuring-a-chromebook-for-web-development/
 tags:
   - Development
   - Chrome
@@ -13,19 +15,19 @@ Chromebook devices run [Chrome OS](https://en.wikipedia.org/wiki/Chrome_OS) crea
 #### Setup a local development environment
 
 1. [Enable Developer Mode](http://www.howtogeek.com/210817/how-to-enable-developer-mode-on-your-chromebook/)
-2. When the *OS verification is OFF* screen is shown, press *Ctrl + D* to dismiss the warning and boot Chrome OS
+2. When the _OS verification is OFF_ screen is shown, press _Ctrl + D_ to dismiss the warning and boot Chrome OS
 3. Login to your Google account
-4. Press *Ctrl + Alt + T* to open a terminal window
-5. Type *shell* and press *Enter* to enter the Linux shell
+4. Press _Ctrl + Alt + T_ to open a terminal window
+5. Type _shell_ and press _Enter_ to enter the Linux shell
 6. Install the [Chromebrew](http://skycocker.github.io/chromebrew/) package manager
 7. To allow for SSH connections to other servers, install [Secure Shell](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo)
-8. To access the Linux Shell from it's own window and be able to *Pin it to the Chrome OS shelf*, install [Crosh Window](https://chrome.google.com/webstore/detail/crosh-window/nhbmpbdladcchdhkemlojfjdknjadhmh)
+8. To access the Linux Shell from it's own window and be able to _Pin it to the Chrome OS shelf_, install [Crosh Window](https://chrome.google.com/webstore/detail/crosh-window/nhbmpbdladcchdhkemlojfjdknjadhmh)
 
-After this process is completed, you'll have *Git* installed locally.
+After this process is completed, you'll have _Git_ installed locally.
 
 #### Git and Vim configuration
 
-Open the *Crosh Window* app and open the Linux Shell:
+Open the _Crosh Window_ app and open the Linux Shell:
 
 > shell
 
@@ -39,7 +41,7 @@ Commands to set basic Git settings and set Vim as the default Git editor:
 > git config --global user.name "Your Name"
 > git config --global core.editor "vim"
 
-Configure Vim to work with the Chromebook device by editing the *~/.vimrc* file to include:
+Configure Vim to work with the Chromebook device by editing the _~/.vimrc_ file to include:
 
 > set nocompatible
 
@@ -52,11 +54,11 @@ You're now ready to [git clone](http://git-scm.com/docs/git-clone) a code reposi
 
 #### Improve productivity
 
-To create a shortcut command called *cdgit* for getting to a *Git* folder on an *SD card*, add the following to the end of the *~/.bashrc* file:
+To create a shortcut command called _cdgit_ for getting to a _Git_ folder on an _SD card_, add the following to the end of the _~/.bashrc_ file:
 
 > alias cdgit='cd /media/removable/SD\ Card/Git' # Change directory to the Git folder on the SD card
 
-To avoid the annoying system beep on startup while in *Developer Mode*, just press *Ctrl + D* when the *OS verification is OFF* screen is shown.
+To avoid the annoying system beep on startup while in _Developer Mode_, just press _Ctrl + D_ when the _OS verification is OFF_ screen is shown.
 
 If you'd prefer a more modern text editor, you can install one from the Web Store, such as [Caret](https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml).
 

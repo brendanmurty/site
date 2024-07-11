@@ -1,6 +1,8 @@
 ---
 title: Web Developer at Sentral
 date: 2015-01-01
+url: /posts/20150101_web-developer-at-sentral/
+oldUrl: /brendan/posts/20150101_web-developer-at-sentral/
 tags:
   - Career
 ---

@@ -1,6 +1,8 @@
 ---
 title: UpcomingTasks October Updates
 date: 2013-10-07
+url: /posts/20131007_upcomingtasks-october-updates/
+oldUrl: /brendan/posts/20131007_upcomingtasks-october-updates/
 tags:
   - UpcomingTasks
 ---

@@ -1,11 +1,13 @@
 ---
 title: UpcomingTasks progress view
 date: 2013-02-22
+url: /posts/20130222_upcomingtasks-progress-view/
+oldUrl: /brendan/posts/20130222_upcomingtasks-progress-view/
 tags:
   - UpcomingTasks
 ---
 
-Check out your recent Basecamp 2 updates with the new progress view in [UpcomingTasks](/posts/farewell-upcomingtasks). View recently edited or completed tasks and also view your comments. To begin, simply press the progress bar icon from the homepage.
+Check out your recent Basecamp 2 updates with the new progress view in [UpcomingTasks](/posts/20161014_farewell-upcomingtasks). View recently edited or completed tasks and also view your comments. To begin, simply press the progress bar icon from the homepage.
 
 ![Progress icon in navigation](/images/brendan/progress-nav.png)
 _The progress bar icon is your friend_

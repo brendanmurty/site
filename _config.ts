@@ -8,6 +8,7 @@
 
 import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
+import redirects from "lume/plugins/redirects.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 
@@ -20,6 +21,7 @@ const site = lume({
 
 site.use(nunjucks());
 site.use(date());
+site.use(redirects());
 site.use(sitemap());
 
 export default site;

@@ -1,6 +1,8 @@
 ---
 title: Announcing UpcomingTasks Pro
 date: 2015-10-07
+url: /posts/20151007_announcing-upcomingtasks-pro/
+oldUrl: /brendan/posts/20151007_announcing-upcomingtasks-pro/
 tags:
   - UpcomingTasks
 ---
@@ -38,4 +40,4 @@ You're free to downgrade to a free account at any time. There is no cancellation
 
 ## How do I subscribe?
 
-Simply login to UpcomingTasks using your Basecamp account, press the *Upgrade* button in the menu and then press the *Subscribe to UpcomingTasks Pro* button at the bottom of the page.
+Simply login to UpcomingTasks using your Basecamp account, press the _Upgrade_ button in the menu and then press the _Subscribe to UpcomingTasks Pro_ button at the bottom of the page.

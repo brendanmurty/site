@@ -1,6 +1,8 @@
 ---
 title: Engineering Team Lead at Trace
 date: 2022-08-02
+url: /posts/20220802_engineering-team-lead-at-trace/
+oldUrl: /brendan/posts/20220802_engineering-team-lead-at-trace/
 tags:
   - Career
 ---

@@ -1,13 +1,15 @@
 ---
 title: More Than Writing Code
 date: 2013-12-17
+url: /posts/20131217_more-than-writing-code/
+oldUrl: /brendan/posts/20131217_more-than-writing-code/
 tags:
   - Development
 ---
 
 Looking to further my knowledge in my web development career, I recently bought [Effective Programming: More Than Writing Code](http://www.amazon.com/Effective-Programming-More-Than-Writing-ebook/dp/B008HUMTO0) by [Jeff Atwood](https://twitter.com/codinghorror).
 
-Jeff has had a successful career as a developer and you probably know of him as the founder of [Stack Overflow](http://stackoverflow.com/), the *question and answer* site for programmers. He's been [blogging about technology](http://www.codinghorror.com/blog/) since 2004, so it's pretty obvious that he's knowledgable in his field.
+Jeff has had a successful career as a developer and you probably know of him as the founder of [Stack Overflow](http://stackoverflow.com/), the _question and answer_ site for programmers. He's been [blogging about technology](http://www.codinghorror.com/blog/) since 2004, so it's pretty obvious that he's knowledgable in his field.
 
 In short, I found this book insightful and refreshing, especially in a field filled with with overly technical books. Instead of concentrating on specific programming languages or techniques, this book outlines the related skills required in today's programming jobs.
 

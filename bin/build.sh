@@ -54,17 +54,10 @@ echo -e "${yellow}Building the front-end using Lume and '_config.ts'${end}"
 
 lume
 
-echo -e "${yellow}Generating redirect pages${end}"
-
-# TODO: Generate dynamic redirect pages from "assets/redirects.json" in "$PUBLIC_DIR"
-# deno run -A --allow-read --allow-write src/redirects.ts
-cp -r $PUBLIC_DIR/posts $PUBLIC_DIR/brendan/posts
-
 echo -e "${yellow}Updating '$PUBLIC_DIR/sitemap.xml' to use the production URL${end}"
 
 sed -i -e "s/http:\/\/localhost\//https:\/\/murty.au\//g" $PUBLIC_DIR/sitemap.xml
 rm -rf $PUBLIC_DIR/sitemap.xml-e
-
 
 echo -e "${yellow}Configuring GitHub Pages in the '$PUBLIC_DIR' directory${end}"
 
@@ -76,13 +69,14 @@ cp "CNAME" "$PUBLIC_DIR/CNAME"
 
 echo -e "${yellow}Copying static files to the '$PUBLIC_DIR' directory${end}"
 
-# Static assets
 cp -r "assets/fonts" "$PUBLIC_DIR/fonts"
 cp -r "assets/images" "$PUBLIC_DIR/images"
 cp "assets/.nojekyll" "$PUBLIC_DIR/.nojekyll"
 cp "assets/favicon.ico" "$PUBLIC_DIR/favicon.ico"
 cp "assets/robots.txt" "$PUBLIC_DIR/robots.txt"
 cp "assets/Resume - Brendan Murty.pdf" "$PUBLIC_DIR/brendan/Resume - Brendan Murty.pdf"
+
+echo -e "${yellow}Copying CSS files to the '$PUBLIC_DIR/css' directory${end}"
 
 mkdir -p $PUBLIC_DIR/css
 cp -r assets/icons/fontawesome $PUBLIC_DIR/css

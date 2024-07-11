@@ -1,6 +1,8 @@
 ---
 title: Happy Holidays from UpcomingTasks
 date: 2012-12-31
+url: /posts/20121231_happy-holidays-from-upcomingtasks/
+oldUrl: /brendan/posts/20121231_happy-holidays-from-upcomingtasks/
 tags:
   - UpcomingTasks
 ---
@@ -20,4 +22,4 @@ Spacing and fonts have been updated to improve readability. Larger sizes are uti
 For another view of your tasks, your Basecamp 2 projects can now be viewed via the folder icon in the navigation. From here you can navigate to existing tasks and quickly add a task to a list by pressing a plus icon.
 
 ![Project view](/images/brendan/project.png)
-*A sample project view*
+_A sample project view_

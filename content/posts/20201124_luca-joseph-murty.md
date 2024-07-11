@@ -1,6 +1,8 @@
 ---
 title: Luca Joseph Murty
 date: 2020-11-24
+url: /posts/20201124_luca-joseph-murty/
+oldUrl: /brendan/posts/20201124_luca-joseph-murty/
 tags:
   - Family
 ---
