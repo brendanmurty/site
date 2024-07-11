@@ -68,26 +68,27 @@ gtag('config', 'G-TZ57BB9D59');
 
       <p>After using <a href="http://basecamp.com/2">Basecamp 2</a> for some time on my <a href="http://windowsphone.com/">Windows Phone</a>, I decided to build a third-party web based mobile client to improve the system for mobile devices. This became <strong>UpcomingTasks</strong>.</p></p>
 <p>One of the most basic requirements of the web client was that it needed to query the <a href="https://github.com/37signals/bcx-api">Basecamp API</a> and return the results for display. Here's my <em>bc_results</em> PHP function that got the job done:</p>
-<p><?
-    // bc_results
-    // Purpose: Query the Basecamp API and return the result as an array
-    // Notes: More information about the Basecamp API can be found at https://github.com/37signals/bcx-api/
-    // Example: <?php print_r(bc_results('/people/me.json','99999999','dhjfksdhfjksdhfij32')); ?>
+<pre><code>&lt;?php
+// bc_results
+// Purpose: Query the Basecamp API and return the result as an array
+// Notes: More information about the Basecamp API can be found at https://github.com/37signals/bcx-api/
+// Example: &lt;?php print_r(bc_results('/people/me.json','99999999','dhjfksdhfjksdhfij32')); ?&gt;
 function bc_results($api_url,$bc_account_id,$bc_user_token){
-if($api_url){
-$api_url='https://basecamp.com/'.$bc_account_id.'/api/v1'.$api_url;
-$ch=curl_init();
-$options=array(
-CURLOPT_URL =&gt; $api_url,
-CURLOPT_RETURNTRANSFER =&gt; true,
-CURLOPT_HTTPHEADER =&gt; array('Content-type: application/json','Authorization: Bearer '.$bc_user_token),
-CURLOPT_USERAGENT =&gt; 'SampleAppName (test@testington.com)'
-);
-curl_setopt_array($ch,$options);
-return json_decode(curl_exec($ch),'true');
+  if($api_url){
+    $api_url='https://basecamp.com/'.$bc_account_id.'/api/v1'.$api_url;
+    $ch=curl_init();
+    $options=array(
+      CURLOPT_URL =&gt; $api_url,
+      CURLOPT_RETURNTRANSFER =&gt; true,
+      CURLOPT_HTTPHEADER =&gt; array('Content-type: application/json','Authorization: Bearer '.$bc_user_token),
+      CURLOPT_USERAGENT =&gt; 'SampleAppName (test@testington.com)'
+    );
+    curl_setopt_array($ch,$options);
+    return json_decode(curl_exec($ch),'true');
+  }
 }
-}
-?&gt;</p>
+?&gt;
+</code></pre>
 
 
       

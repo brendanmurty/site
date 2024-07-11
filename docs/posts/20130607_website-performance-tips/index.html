@@ -84,32 +84,36 @@ gtag('config', 'G-TZ57BB9D59');
 <h2>Reduce the length of CSS selectors</h2>
 <p>Don't be so specific! Longer selectors take longer for the browser to interpret, which affects page load times.</p>
 <p>Too specific:</p>
-<p>ul.post-list li div.author span.name{
-font-size:90%;
-}</p>
+<pre><code>ul.post-list li div.author span.name{
+  font-size:90%;
+}
+</code></pre>
 <p>Much better:</p>
-<p>.post-list .name{
-font-size:90%;
-}</p>
+<pre><code>.post-list .name{
+  font-size:90%;
+}
+</code></pre>
 <h2>Set caching rules for certain file types</h2>
 <p>Most of the assets included in a web page don't change very often, especially images.
 If you're using <a href="http://en.wikipedia.org/wiki/Apache_web_server">Apache</a> as your web server, you can tell the browser when it needs to check for a new version in a <a href="http://en.wikipedia.org/wiki/Htaccess">.htaccess file</a>:</p>
-<p>&lt;filesMatch &quot;.(ico|gif|jpg|png|eot|ttf|woff|svg)$&quot;&gt;
-ExpiresActive On
-ExpiresDefault &quot;access plus 11 month&quot;
-Header append Cache-Control &quot;public&quot;
-</filesMatch>
+<pre><code>&lt;filesMatch &quot;.(ico|gif|jpg|png|eot|ttf|woff|svg)$&quot;&gt;
+  ExpiresActive On
+  ExpiresDefault &quot;access plus 11 month&quot;
+  Header append Cache-Control &quot;public&quot;
+&lt;/filesMatch&gt;
 &lt;filesMatch &quot;.(css|js)$&quot;&gt;
-ExpiresActive On
-ExpiresDefault &quot;access plus 1 month&quot;
-Header append Cache-Control &quot;public&quot;
-</filesMatch></p>
+  ExpiresActive On
+  ExpiresDefault &quot;access plus 1 month&quot;
+  Header append Cache-Control &quot;public&quot;
+&lt;/filesMatch&gt;
+</code></pre>
 <p>This will tell the browser to keep a cached version of image files for up to a year, and CSS and JS files for a month.</p>
 <h2>Setup gzip compression</h2>
 <p><a href="https://developers.google.com/speed/articles/gzip">Gzip compression</a> is a technique to compress HTML at the web server level before it reaches the visitor's browser. To enable it, add the following to your <em>.htaccess file</em>:</p>
-<p><ifmodule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-</ifmodule></p>
+<pre><code>&lt;ifmodule mod_deflate.c&gt;
+  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+&lt;/ifmodule&gt;
+</code></pre>
 <p>Notice anything I've missed or have something to add? Great! Let's <a href="https://twitter.com/brendanmurty/status/342901968458612736">discuss further on Twitter</a>.</p>
 
 

@@ -74,47 +74,49 @@ gtag('config', 'G-TZ57BB9D59');
 <p><a href="http://www.android.com/">Android</a> browsers also support this method, sweet!</p>
 <h4>Windows 8</h4>
 <p>For Windows 8/RT devices, you'll just need to include the following in the <em>head</em> section of your page:</p>
-<p><meta name="application-name" content="YourWebApp"/>
-<meta name="msapplication-TileColor" content="#325ba0"/>
-<meta name="msapplication-TileImage" content="/images/logo-144-clear.png"/>
-<meta name="msapplication-starturl" content="/webapphome.php" /></p>
+<pre><code>&lt;meta name=&quot;application-name&quot; content=&quot;YourWebApp&quot;/&gt;
+&lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#325ba0&quot;/&gt;
+&lt;meta name=&quot;msapplication-TileImage&quot; content=&quot;/images/logo-144-clear.png&quot;/&gt;
+&lt;meta name=&quot;msapplication-starturl&quot; content=&quot;/webapphome.php&quot; /&gt;
+</code></pre>
 <h4>Windows Phone</h4>
 <p>Unfortunately, <a href="http://www.windowsphone.com/">Windows Phone</a> requires a little more setup. You'll have to form up a unique page for Windows Phone users, a sample <em>pin to start page</em> is:</p>
-<p><!doctype html>
-<html>
-<head>
-<title>YourWebApp</title>
-<meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow">
-<meta name="viewport" content="maximum-scale=1,minimum-scale=1,width=device-width">
-<style>
-body{margin:0;position:relative;background-color:#325ba0;color:#fff;height:100%;width:100%;padding:0}
-#icon{font-size:160px;line-height:320px;text-align:center}
-#instructions{margin-top:60px;text-align:center;position:relative;color:#eee}
-#instructions strong{color:#fff}
-</style>
-</head>
-<body>
-<div id="icon">
-<p>
-<img src="/images/logo-160.png" alt="YourWebApp" />
-</p>
-</div>
-<div id="instructions">
-<p>
-Tap <strong>...</strong> and select <strong>pin to start</strong>
-</p>
-</div>
-<script>
-var url = 'https://yourwebapp.com/webapphome.php';
-if(localStorage.getItem(url)) {
-window.location.replace(url);
-}else{
-localStorage.setItem(url, true);
-}
-</script>
-</body>
-</html></p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;YourWebApp&lt;/title&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;maximum-scale=1,minimum-scale=1,width=device-width&quot;&gt;
+    &lt;style&gt;
+      body{margin:0;position:relative;background-color:#325ba0;color:#fff;height:100%;width:100%;padding:0}
+      #icon{font-size:160px;line-height:320px;text-align:center}
+      #instructions{margin-top:60px;text-align:center;position:relative;color:#eee}
+      #instructions strong{color:#fff}
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;icon&quot;&gt;
+      &lt;p&gt;
+        &lt;img src=&quot;/images/logo-160.png&quot; alt=&quot;YourWebApp&quot; /&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;instructions&quot;&gt;
+      &lt;p&gt;
+        Tap &lt;strong&gt;...&lt;/strong&gt; and select &lt;strong&gt;pin to start&lt;/strong&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+      var url = 'https://yourwebapp.com/webapphome.php';
+      if(localStorage.getItem(url)) {
+        window.location.replace(url);
+      }else{
+        localStorage.setItem(url, true);
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 <p>This will produce a screen similar to the image below:</p>
 <p><img src="/images/brendan/addtohome-page.jpg" alt="Add to home page"></p>
 <p>And after following the directions on the page, it's now on the user's home screen:</p>

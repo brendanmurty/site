@@ -73,22 +73,23 @@ gtag('config', 'G-TZ57BB9D59');
 <p>The image should be a 128px x 128px transparent PNG, named <strong>128.png</strong>.</p>
 <p>The JSON file is pretty simple, check out the example below and name it <strong>manifest.json</strong>.
 Customise this by updating the <em>name</em>, <em>description</em>, <em>urls</em> and <em>web_url</em> values as needed.</p>
-<p>{
-&quot;name&quot;: &quot;Basecamp&quot;,
-&quot;description&quot;: &quot;Shortcut to Basecamp Launchpad&quot;,
-&quot;manifest_version&quot;: 2,
-&quot;version&quot;: &quot;1.0.0.0&quot;,
-&quot;icons&quot;: {
-&quot;128&quot;: &quot;128.png&quot;
-},
-&quot;app&quot;: {
-&quot;urls&quot;: [&quot;https://launchpad.37signals.com/&quot;],
-&quot;launch&quot;: {
-&quot;web_url&quot;: &quot;https://launchpad.37signals.com/&quot;
+<pre><code>{
+  &quot;name&quot;: &quot;Basecamp&quot;,
+  &quot;description&quot;: &quot;Shortcut to Basecamp Launchpad&quot;,
+  &quot;manifest_version&quot;: 2,
+  &quot;version&quot;: &quot;1.0.0.0&quot;,
+  &quot;icons&quot;: {
+    &quot;128&quot;: &quot;128.png&quot;
+  },
+  &quot;app&quot;: {
+    &quot;urls&quot;: [&quot;https://launchpad.37signals.com/&quot;],
+    &quot;launch&quot;: {
+      &quot;web_url&quot;: &quot;https://launchpad.37signals.com/&quot;
+    }
+  },
+  &quot;permissions&quot;: [&quot;unlimitedStorage&quot;,&quot;notifications&quot;]
 }
-},
-&quot;permissions&quot;: [&quot;unlimitedStorage&quot;,&quot;notifications&quot;]
-}</p>
+</code></pre>
 <p>Now to add this shortcut app to Chrome. From the Chrome menu, select <em>Tools</em> &gt; <em>Extensions</em>, then click the <em>Load unpacked extension</em> button. Browse to the folder in which these files are stored in and press OK/Confirm.</p>
 <p>Now when you open a new tab, you should see your new icon! Also, you can customise your shortcut app by right clicking on it.</p>
 <p><img src="/images/brendan/chrome-app-customise.png" alt="Customise shortcut app">

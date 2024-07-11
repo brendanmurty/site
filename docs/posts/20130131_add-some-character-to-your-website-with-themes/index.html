@@ -83,70 +83,78 @@ gtag('config', 'G-TZ57BB9D59');
 </ul>
 <p>For this example, the CSS files are placed in a top level folder named <em>styles</em>. Feel free to update this by changing the value of the <strong>$folder</strong> variables in the PHP functions.</p>
 <h4>theme-list.php</h4>
-<p>&lt;?php
+<pre><code>&lt;?php
 // theme_list - Return a list of the available themes
 function theme_list(){
-$folder='/styles/';// Path to the themes folder</p>
-<p>// Extract a list of files in the folder and sort them
-$dir=opendir($folder);
-$files=array();
-while($files[]=readdir($dir));
-sort($files);
-closedir($dir);</p>
-<p>// Create the theme selector list
-$return='';
-foreach($files as $file){
-$ext=pathinfo($file,PATHINFO_EXTENSION);
-if($file!='.' &amp;&amp; $file!='..' &amp;&amp; $ext=='css' &amp;&amp; $file!='common.css'){
-$theme_name=str_replace('.'.$ext,'',$file);
-$theme_title=str_replace(&quot;_&quot;,&quot; &quot;,str_replace(&quot;-&quot;,&quot; &quot;,ucwords(strtolower($theme_name))));
-$return.='<li><a href="/theme-set.php?theme='.$theme_name.'">'.$theme_title.'</a></li>';
+  $folder='/styles/';// Path to the themes folder
+
+  // Extract a list of files in the folder and sort them
+  $dir=opendir($folder);
+  $files=array();
+  while($files[]=readdir($dir));
+  sort($files);
+  closedir($dir);
+
+  // Create the theme selector list
+  $return='';
+  foreach($files as $file){
+    $ext=pathinfo($file,PATHINFO_EXTENSION);
+    if($file!='.' &amp;&amp; $file!='..' &amp;&amp; $ext=='css' &amp;&amp; $file!='common.css'){
+      $theme_name=str_replace('.'.$ext,'',$file);
+      $theme_title=str_replace(&quot;_&quot;,&quot; &quot;,str_replace(&quot;-&quot;,&quot; &quot;,ucwords(strtolower($theme_name))));
+      $return.='&lt;li&gt;&lt;a href=&quot;/theme-set.php?theme='.$theme_name.'&quot;&gt;'.$theme_title.'&lt;/a&gt;&lt;/li&gt;';
+    }
+  }
+  if($return!=''){ return '&lt;ul class=&quot;themes&quot;&gt;'.$return.'&lt;/ul&gt;'; }
 }
-}
-if($return!=''){ return '<ul class="themes">'.$return.'</ul>'; }
-}
-?&gt;</p>
+?&gt;
+</code></pre>
 <h4>theme-get.php</h4>
-<p>&lt;?php
+<pre><code>&lt;?php
 // theme_get - Return the currently selected theme name
 function theme_get(){
-$theme_selected='red';// Set the default theme
-$folder='/styles/';// Path to the themes folder
-session_start();
-if(isset($_COOKIE['theme']) &amp;&amp; $_COOKIE['theme']!=''){
-$theme_requested=$_COOKIE['theme'];
-if($folder.$theme_requested.'.css')){
-$theme_selected=$theme_requested;
+  $theme_selected='red';// Set the default theme
+  $folder='/styles/';// Path to the themes folder
+  session_start();
+  if(isset($_COOKIE['theme']) &amp;&amp; $_COOKIE['theme']!=''){
+    $theme_requested=$_COOKIE['theme'];
+    if($folder.$theme_requested.'.css')){
+      $theme_selected=$theme_requested;
+    }
+  }
+  return $theme_selected;
 }
-}
-return $theme_selected;
-}</p>
-<p>// Output the CSS includes to the page
+
+// Output the CSS includes to the page
 $theme_selected=theme_get();
-print '<link rel="stylesheet" href="/styles/common.css">';
-print '<link rel="stylesheet" href="/styles/'.$theme_selected.'.css">';
-?&gt;</p>
+print '&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/common.css&quot;&gt;';
+print '&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/'.$theme_selected.'.css&quot;&gt;';
+?&gt;
+</code></pre>
 <h4>theme-set.php</h4>
-<p>&lt;?php
+<pre><code>&lt;?php
 // theme_set - Update the theme in use
 function theme_set($theme){
-if($theme!=''){
-$folder='/styles/'
-if(file_exists($folder.$theme.'.css')){
-session_start();
-setcookie(&quot;theme&quot;,$theme,time()+60<em>60</em>24*14);
+  if($theme!=''){
+    $folder='/styles/'
+    if(file_exists($folder.$theme.'.css')){
+      session_start();
+      setcookie(&quot;theme&quot;,$theme,time()+60*60*24*14);
+    }
+  }
 }
-}
-}</p>
-<p>// Check the URL for a theme
+
+// Check the URL for a theme
 if(isset($_GET['theme']) &amp;&amp; $_GET['theme']!=''){
-// Clean this data! One method: http://stackoverflow.com/questions/4223980/the-ultimate-clean-secure-function
-$theme_clean=your_clean_function($_GET['theme']);</p>
-<p>// Set the theme then redirect to the home page
-theme_set($theme_clean);
-header('Location: /');
+  // Clean this data! One method: http://stackoverflow.com/questions/4223980/the-ultimate-clean-secure-function
+  $theme_clean=your_clean_function($_GET['theme']);
+
+  // Set the theme then redirect to the home page
+  theme_set($theme_clean);
+  header('Location: /');
 }
-?&gt;</p>
+?&gt;
+</code></pre>
 <h3>Notes</h3>
 <p>Themes aren't suitable for every website, so use them wisely to allow for customisations that suit your visitors' needs. Also, don't forget to ensure your default theme remains usable, including suitably sized text and clear link styling.</p>
 

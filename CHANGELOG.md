@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.027
+- Version 2024.028
+- [Content: Fix code block formatting](https://github.com/brendanmurty/murty-website/commit/ab25b57)
+- [Version 2024.027](https://github.com/brendanmurty/murty-website/commit/bba74ed)
 - [Core: Use Lume redirects instead of custom script, related content and internal link updates](https://github.com/brendanmurty/murty-website/commit/fd0e470)
 - [Core: Progress on dynamic redirect page generation](https://github.com/brendanmurty/murty-website/commit/8ac05d8)
 - [Core: Progress on dynamic redirect page generation](https://github.com/brendanmurty/murty-website/commit/0fb0b4c)
