@@ -1,5 +1,5 @@
-import { join } from "std/path/mod.ts";
-import { parse } from "std/yaml/mod.ts";
+import { join } from "@std/path";
+import { parse } from "@std/yaml";
 
 import { JsonFeedItem, YamlData } from "./types.ts";
 

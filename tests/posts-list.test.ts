@@ -1,6 +1,6 @@
-import { assertEquals, assertNotEquals } from "std/assert/mod.ts";
-import { join } from "std/path/mod.ts";
-import { load } from "std/dotenv/mod.ts";
+import { assertEquals, assertNotEquals } from "@std/assert";
+import { join } from "@std/path";
+import { load } from "@std/dotenv";
 import { PostsList } from "../src/posts-list.ts";
 
 Deno.test("src/posts-list.ts", async (test) => {

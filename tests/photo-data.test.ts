@@ -1,4 +1,4 @@
-import { assertEquals } from "std/assert/mod.ts";
+import { assertEquals } from "@std/assert";
 import { GetExifDataFromPhoto } from "../src/photo-data.ts";
 
 Deno.test("src/photo-data.ts", async (test) => {

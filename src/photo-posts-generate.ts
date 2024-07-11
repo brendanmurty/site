@@ -1,5 +1,5 @@
-import { format } from "std/datetime/mod.ts";
-import { join } from "std/path/mod.ts";
+import { format } from "@std/datetime";
+import { join } from "@std/path";
 import { json2yaml } from "json2yaml/mod.ts";
 
 import { GetExifDataFromPhoto } from "./photo-data.ts";

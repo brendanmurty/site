@@ -10,8 +10,8 @@
  */
 
 import { JsonFeedData, JsonFeedAuthor } from "./types.ts";
-import { join } from "std/path/mod.ts";
-import { load } from "std/dotenv/mod.ts";
+import { join } from "@std/path";
+import { load } from "@std/dotenv";
 import { PostsList } from "./posts-list.ts";
 
 // Set feed properties using variables from the ".env" file
