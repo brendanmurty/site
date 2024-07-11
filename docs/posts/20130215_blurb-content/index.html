@@ -62,15 +62,15 @@ gtag('config', 'G-TZ57BB9D59');
 
       <p>Need to shorten some content so it fits in a small area? My <em>blurb</em> function will shorten any content to the given number of characters.</p>
 <p><?php
-	function blurb($content,$length){
-		$content_length=strlen($content);
-		if($content_length>=$length){// Too long, return the shortened string
-			return mb_substr($content,0,$length-3).'...';
-		}else{// All good, return the string unchanged
-			return $content;
-		}
-	}
-	?></p>
+    function blurb($content,$length){
+    	$content_length=strlen($content);
+    	if($content_length>=$length){// Too long, return the shortened string
+    		return mb_substr($content,0,$length-3).'...';
+    	}else{// All good, return the string unchanged
+    		return $content;
+    	}
+    }
+    ?></p>
 
 
       

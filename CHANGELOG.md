@@ -1,6 +1,10 @@
 # Change Log
 
-- Version 2024.026
+- Version 2024.027
+- [Core: Use Lume redirects instead of custom script, related content and internal link updates](https://github.com/brendanmurty/murty-website/commit/fd0e470)
+- [Core: Progress on dynamic redirect page generation](https://github.com/brendanmurty/murty-website/commit/8ac05d8)
+- [Core: Progress on dynamic redirect page generation](https://github.com/brendanmurty/murty-website/commit/0fb0b4c)
+- [Version 2024.026](https://github.com/brendanmurty/murty-website/commit/b56c413)
 - [Core: Initial work on dynamic redirect page generation](https://github.com/brendanmurty/murty-website/commit/74cc53f)
 - [Core: Update 404 file location](https://github.com/brendanmurty/murty-website/commit/6879f2f)
 - [Version 2024.025](https://github.com/brendanmurty/murty-website/commit/bf94437)

@@ -1,94 +1,12 @@
-<!doctype html>
-<html lang="en-AU">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Brendan Murty - Custom error handler</title>
-<meta name="author" content="Brendan Murty">
-<meta name="handheldfriendly" content="true">
-<meta name="mobileoptimized" content="480">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:locale" content="en_GB" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://murty.au/posts/20130204_custom-error-handler/" />
-<link rel="canonical" href="https://murty.au/posts/20130204_custom-error-handler/" />
-<link rel="preload" href="/fonts/MDNichrome-Regular.woff" as="font" crossorigin="anonymous">
-<link rel="preload" href="/fonts/MDSystem-Regular.woff" as="font" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="/css/styles.css">
-<meta name="theme-color" content="#23c5b0">
-<meta name="description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer.">
-<meta property="og:title" content="Brendan Murty - Custom error handler" />
-<meta property="og:description" content="Brendan is a Lead Software Engineer, Father and Schnitzel Reviewer." />
-
-<meta property="og:image" content="https://murty.au/images/brendan/brendan-luca-2023_750.jpg" />
-
-<link rel="me" href="https://mastodon.social/@murty">
-<link rel="icon" sizes="192x192" href="/images/brendan/icon-192.png">
-<link rel="alternate" title="Posts by Brendan Murty" type="application/json" href="https://murty.au/brendan/posts.json">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ57BB9D59"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-TZ57BB9D59');
-</script>
-
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0; url=/posts/20130204_custom-error-handler/">
 </head>
-<body class="brendan brendan_post">
-  <section class="container">
-    <header>
-      <h1>
-  <img class="avatar" alt="" width="150" height="150" src="/images/brendan/brendan-luca-2023_200.jpg">
-  <a href="/">Brendan Murty</a>
-</h1>
-
-    </header>
-
-    <article>
-      <h2><a href="/">Home</a> > <a href="/posts">Posts</a> > Custom error handler</h2>
-
-      <p class="post-date">4 Feb 2013</p>
-
-      <ul class="tag-list">
-        
-        <li>
-          <a class="tag-link" href="/tags/PHP" title="View posts tagged with PHP">
-            <span class="icon fa-fw fa-solid fa-tag"></span>PHP
-          </a>
-        </li>
-        
-      </ul>
-
-      <p>When a website or web app is viewable publically, it's a good idea to modify how PHP errors are handled. The default is to show a, sometimes dangerously detailed, error to the visitor. A much better way of handling this is to send an email to the developer and hide the error details from the visitor.</p>
-<p><img src="/images/brendan/error-messages.jpg" alt="Sample error messages">
-<em>Showing error details to the visitor isn't good</em></p>
-<p>&lt;?
-set_error_handler('error_handle');</p>
-<p>function error_handle($errno, $errstr, $errfile, $errline){
-// The email address to send the email to
-$mail_to = 'developers@test.com';</p>
-<p>// The email address the email comes from
-$mail_from = 'errors@test.com';</p>
-<p>// Extract the visitor's browser information
-$browser = get_browser(null,true);</p>
-<p>// Setup the content of the email
-$mail_text  = 'Error '.$errno.' in '.$errfile.' (line '.$errline.'):'.&quot;\r\n&quot;.$errstr.&quot;\r\n&quot;.&quot;\r\n&quot;;
-$mail_text .= 'Current URL: '.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].&quot;\r\n&quot;;
-$mail_text .= 'Visitor IP: '.$_SERVER['REMOTE_ADDR'].&quot;\r\n&quot;;
-$mail_text .= 'Visitor Browser: '.$browser['browser'].' '.$browser['version'].' ('.$browser['platform'].')';</p>
-<p>// Configure the email headers
-$mail_headers = 'From: '.$mail_from.&quot;\r\n&quot;.'X-Mailer: PHP/'.phpversion();</p>
-<p>// The subject of the email
-$mail_subject = 'Error';</p>
-<p>// Send the email
-@mail($mail_to, $mail_subject, $mail_text, $mail_headers);
-}
-?&gt;</p>
-
-
-      
-    </article>
-  </section>
+<body>
+  <h1>Redirecting…</h1>
+  <a href="/posts/20130204_custom-error-handler/">Click here if you are not redirected.</a>
 </body>
 </html>
