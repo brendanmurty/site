@@ -317,7 +317,7 @@ pre {
   overflow-x: scroll;
 }
 
-/* Reset - Print styles */
+/* Print styles */
 
 @media print {
   html {
@@ -372,7 +372,7 @@ pre {
   margin: 0;
 }
 
-/* Small sized screens */
+/* Smaller screens */
 
 @media only screen and (max-width: 900px) {
   .murty .list-avatar {
