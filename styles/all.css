@@ -4,11 +4,13 @@
 
 /* Defaults and for those who prefer darker colour schemes */
 
-body {
+:root {
   --highlight-colour: #23c5b0;
   --background-colour: #000000;
   --foreground-colour: #FFFFFF;
   --secondary-colour: #888888;
+  --font-family-header: 'MDNichrome', serif;
+  --font-family-body: 'MDSystem', serif;
 }
 
 body.freya {
@@ -26,7 +28,7 @@ body.luca {
 /* Overrides for those who prefer lighter colour schemes */
 
 @media (prefers-color-scheme: light) {
-  body {
+  :root {
     --background-colour: #FFFFFF;
     --foreground-colour: #000000;
     --secondary-colour: #888888;
@@ -191,7 +193,10 @@ html {
 }
 
 body {
-  font: normal 400 20px/32px 'MDSystem', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: var(--font-family-body);
   padding: 0;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
@@ -228,7 +233,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'MDNichrome', serif;
+  font-family: var(--font-family-header);
   font-weight: 500;
   letter-spacing: 1.25px;
   margin: 5px 0 15px;
