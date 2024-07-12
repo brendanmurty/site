@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.033
+- Version 2024.034
+- [Core: Improve templates structure and output following Lighthouse recommendations, remove obsolete "page" template](https://github.com/brendanmurty/murty-website/commit/df0575c)
+- [Version 2024.033](https://github.com/brendanmurty/murty-website/commit/349422c)
 - [Deno: Upgrade packages](https://github.com/brendanmurty/murty-website/commit/3224fdc)
 - [Docker: Optimise commands and minimise build output by default](https://github.com/brendanmurty/murty-website/commit/fcc7f81)
 - [Version 2024.032](https://github.com/brendanmurty/murty-website/commit/71ff23d)
