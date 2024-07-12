@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.032
+- Version 2024.033
+- [Deno: Upgrade packages](https://github.com/brendanmurty/murty-website/commit/3224fdc)
+- [Docker: Optimise commands and minimise build output by default](https://github.com/brendanmurty/murty-website/commit/fcc7f81)
+- [Version 2024.032](https://github.com/brendanmurty/murty-website/commit/71ff23d)
 - [Content: Update profile images and page meta properties](https://github.com/brendanmurty/murty-website/commit/7136826)
 - [Version 2024.031](https://github.com/brendanmurty/murty-website/commit/6389477)
 - [Content: Update profile image and home page summary content](https://github.com/brendanmurty/murty-website/commit/8106831)
