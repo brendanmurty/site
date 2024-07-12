@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.037
+- Version 2024.038
+- [CSS: Cleanup](https://github.com/brendanmurty/murty-website/commit/bcf2966)
+- [CSS: Use more variables to make the design easier to tweak](https://github.com/brendanmurty/murty-website/commit/b18e2c0)
+- [Version 2024.037](https://github.com/brendanmurty/murty-website/commit/622a5d0)
 - [Tests: Fix CSS file check](https://github.com/brendanmurty/murty-website/commit/6e20cc0)
 - [Core: Use a Deno server script instead of Docker, reinstate CSS minifier](https://github.com/brendanmurty/murty-website/commit/e7dfc4f)
 - [Version 2024.036](https://github.com/brendanmurty/murty-website/commit/1bf2fb3)
