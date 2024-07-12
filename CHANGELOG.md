@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.035
+- Version 2024.036
+- [Docs: Update screenshot](https://github.com/brendanmurty/murty-website/commit/9d8af25)
+- [Version 2024.035](https://github.com/brendanmurty/murty-website/commit/b995767)
 - [Docs: Update screenshot](https://github.com/brendanmurty/murty-website/commit/00a0c32)
 - [Version 2024.034](https://github.com/brendanmurty/murty-website/commit/4ce923d)
 - [Core: Improve templates structure and output following Lighthouse recommendations, remove obsolete "page" template](https://github.com/brendanmurty/murty-website/commit/df0575c)
