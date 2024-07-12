@@ -6,7 +6,7 @@ This repository contains the website for the [Murty family](https://murty.au/), 
 
 I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
-![Screenshot of main index page](screenshot.png)
+![Screenshot of main index page](website-preview.png)
 
 ## Initial Setup
 
