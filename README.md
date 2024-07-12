@@ -2,7 +2,7 @@
 
 ## Summary
 
-This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/) and [Docker](https://www.docker.com/). The resulting static site is hosted by [GitHub Pages](https://pages.github.com/).
+This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/) and [Lume](https://lumeland.github.io/). The resulting static site is hosted by [GitHub Pages](https://pages.github.com/).
 
 I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
@@ -28,14 +28,13 @@ I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.
 - Update the `CNAME` file to use this same domain
 
 6. Install [Deno](https://deno.land/)
-7. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-8. Run [bin/setup.sh](bin/setup.sh) to complete the initial installation process: `deno task setup`
-9. Update your `.env` file:
+7. . Run [bin/setup.sh](bin/setup.sh) to complete the initial installation process: `deno task setup`
+8. Update your `.env` file:
 
 - `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
 
-10. Install [exiftool](https://exiftool.org/) on your local machine
-11. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
+9. Install [exiftool](https://exiftool.org/) on your local machine
+10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -44,15 +43,11 @@ I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.
 
 ### Run Tests
 
-Run [bin/test.sh](bin/test.sh):
-
 ```
 deno task test
 ```
 
 ### Build Site
-
-Run [bin/build.sh](bin/build.sh):
 
 ```
 deno task build
@@ -63,8 +58,6 @@ deno task build
 ```
 deno task serve
 ```
-
-Refer to the `tasks > serve` section in [deno.json](deno.json) for details on how this works via Docker.
 
 ### Deployment
 

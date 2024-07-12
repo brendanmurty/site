@@ -32,6 +32,7 @@ echo -e "${yellow}Combining the CSS files${end}"
 
 mkdir -p $BUILD_DIR/_assets/css
 cat $BUILD_DIR/_styles/all.css $BUILD_DIR/_styles/brendan.css $BUILD_DIR/_styles/isla.css $BUILD_DIR/_styles/freya.css $BUILD_DIR/_styles/luca.css > $BUILD_DIR/_assets/css/styles.css
+minifier $BUILD_DIR/_assets/css/styles.css $BUILD_DIR/_assets/css/styles.min.css
 
 echo -e "${yellow}Building photo posts for photos in 'inbox' directory${end}"
 
@@ -80,7 +81,7 @@ echo -e "${yellow}Copying CSS files to the '$PUBLIC_DIR/css' directory${end}"
 
 mkdir -p $PUBLIC_DIR/css
 cp -r assets/icons/fontawesome $PUBLIC_DIR/css
-cp "$BUILD_DIR/_assets/css/styles.css" "$PUBLIC_DIR/css/styles.css"
+cp "$BUILD_DIR/_assets/css/styles.min.css" "$PUBLIC_DIR/css/styles.min.css"
 
 echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"
 

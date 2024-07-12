@@ -15,18 +15,14 @@
     "imagescript/": "https://deno.land/x/imagescript@1.2.17/",
     "is_json/": "https://deno.land/x/is_json@v1.0.2/",
     "json2yaml/": "https://deno.land/x/json2yaml@v1.0.1/",
-    "lume/": "https://deno.land/x/lume@v2.2.3/"
+    "lume/": "https://deno.land/x/lume@v2.2.3/",
+    "oak/": "https://deno.land/x/oak@v12.1.0/"
   },
   "tasks": {
     "build": "bash ./bin/build.sh",
     "deploy": "bash ./bin/deploy.sh ",
-    "docker-build": "docker build --quiet --tag murty-website .",
-    "docker-build-debug": "docker build --progress=plain --tag murty-website .",
-    "docker-remove": "docker rm --force murty-website",
-    "docker-run": "docker run --publish 8000:8000 --detach --name=murty-website murty-website",
-    "docker-stop": "docker stop murty-website",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-    "serve": "deno task docker-build && deno task docker-stop && deno task docker-remove && deno task docker-run && echo 'Server started at http://localhost:8000'",
+    "serve": "deno task build && echo 'Server starting at http://localhost:8000/' && deno run --allow-net --allow-read src/server.ts",
     "setup": "bash ./bin/setup.sh",
     "test": "bash ./bin/test.sh"
   }
