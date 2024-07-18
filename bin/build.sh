@@ -70,7 +70,6 @@ cp "CNAME" "$PUBLIC_DIR/CNAME"
 
 echo -e "${yellow}Copying static files to the '$PUBLIC_DIR' directory${end}"
 
-cp -r "assets/fonts" "$PUBLIC_DIR/fonts"
 cp -r "assets/images" "$PUBLIC_DIR/images"
 cp "assets/.nojekyll" "$PUBLIC_DIR/.nojekyll"
 cp "assets/favicon.ico" "$PUBLIC_DIR/favicon.ico"

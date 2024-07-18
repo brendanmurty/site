@@ -4,9 +4,9 @@
 
 This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/) and [Lume](https://lumeland.github.io/). The resulting static site is hosted by [GitHub Pages](https://pages.github.com/).
 
-I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
+I've also the free icon pack from [Font Awesome](https://fontawesome.com/).
 
-![Screenshot of main index page](website-preview.png)
+![Preview of home page](website.png)
 
 ## Initial Setup
 
@@ -17,7 +17,6 @@ I've also used fonts that I've purchased from [Mass-Driver](https://mass-driver.
 - The `bin/deploy.sh` script must be updated to use your forked repository URLs when updating `CHANGELOG.md`
 - All files in the `content` directory should contain your own content instead
 - All files in the `assets` directory should contain your own static files instead
-- Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
 
 4. Commit and push all of these changes to your forked repository
 5. Setup [GitHub Pages](https://pages.github.com/) for your forked repository:
