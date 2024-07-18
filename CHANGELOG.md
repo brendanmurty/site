@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.041
+- Version 2024.042
+- [Content: Summary update](https://github.com/brendanmurty/murty-website/commit/35db40d)
+- [Version 2024.041](https://github.com/brendanmurty/murty-website/commit/d612f0b)
 - [Content: Summary update](https://github.com/brendanmurty/murty-website/commit/020bb48)
 - [Version 2024.040](https://github.com/brendanmurty/murty-website/commit/5cdface)
 - [Content: Summary update](https://github.com/brendanmurty/murty-website/commit/6e2d976)
