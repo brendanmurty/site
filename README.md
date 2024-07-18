@@ -6,11 +6,13 @@ This repository contains the website for the [Murty family](https://murty.au/), 
 
 Development, tests, build and deployment processes are handled locally and the resulting static site is hosted by [GitHub Pages](https://pages.github.com/) from the `docs` directory.
 
+### Preview of the home page
+
 ![Preview of the home page](website.png)
-**Preview of the home page**
+
+### Lighthouse performance results
 
 ![Lighthouse performance results](lighthouse.png)
-**Lighthouse performance results**
 
 ## Initial Setup
 
