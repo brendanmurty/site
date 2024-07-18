@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.039
+- Version 2024.040
+- [Content: Summary update](https://github.com/brendanmurty/murty-website/commit/6e2d976)
+- [Version 2024.039](https://github.com/brendanmurty/murty-website/commit/b112b92)
 - [Design, Performance: Remove custom text fonts](https://github.com/brendanmurty/murty-website/commit/fabfcf6)
 - [Content: Post update](https://github.com/brendanmurty/murty-website/commit/69940b6)
 - [Version 2024.038](https://github.com/brendanmurty/murty-website/commit/ef49ff0)
