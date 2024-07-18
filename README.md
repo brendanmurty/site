@@ -2,9 +2,9 @@
 
 ## Summary
 
-This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/) and [Lume](https://lumeland.github.io/). The resulting static site is hosted by [GitHub Pages](https://pages.github.com/).
+This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
-I've also the free icon pack from [Font Awesome](https://fontawesome.com/).
+Development, tests, build and deployment processes are handled locally and the resulting static site is hosted by [GitHub Pages](https://pages.github.com/) from the `docs` directory.
 
 ![Preview of home page](website.png)
 
