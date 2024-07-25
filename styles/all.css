@@ -287,10 +287,18 @@ header h1 a:focus {
   text-decoration: none;
 }
 
-pre {
+pre,
+blockquote {
   border: 1px solid var(--secondary-colour);
+  border-radius: 10px;
+  color: var(--secondary-colour);
   padding: 20px;
-  overflow-x: scroll;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
 }
 
 /* Print styles */
