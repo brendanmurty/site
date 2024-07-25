@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.042
+- Version 2024.043
+- [Design: Improve quote and code block styles](https://github.com/brendanmurty/murty-website/commit/c89ebbf)
+- [Design, Performance: Remove obsolete CSS and classes in templates](https://github.com/brendanmurty/murty-website/commit/80fb409)
+- [Version 2024.042](https://github.com/brendanmurty/murty-website/commit/8343fcc)
 - [Content: Summary update](https://github.com/brendanmurty/murty-website/commit/35db40d)
 - [Version 2024.041](https://github.com/brendanmurty/murty-website/commit/d612f0b)
 - [Content: Summary update](https://github.com/brendanmurty/murty-website/commit/020bb48)
