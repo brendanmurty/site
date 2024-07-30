@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.043
+- Version 2024.044
+- [Content: Add my location](https://github.com/brendanmurty/murty-website/commit/2e9d7f6)
+- [Version 2024.043](https://github.com/brendanmurty/murty-website/commit/40d3ca1)
 - [Design: Improve quote and code block styles](https://github.com/brendanmurty/murty-website/commit/c89ebbf)
 - [Design, Performance: Remove obsolete CSS and classes in templates](https://github.com/brendanmurty/murty-website/commit/80fb409)
 - [Version 2024.042](https://github.com/brendanmurty/murty-website/commit/8343fcc)
