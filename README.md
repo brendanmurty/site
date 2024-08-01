@@ -27,6 +27,7 @@ Development, tests, build and deployment processes are handled locally and the r
 4. Commit and push all of these changes to your forked repository
 5. Setup [GitHub Pages](https://pages.github.com/) for your forked repository:
 
+- Repository settings > Pages > Source: _GitHub Actions_
 - Repository settings > Pages > Custom domain: _use your own domain_
 - Update the `CNAME` file to use this same domain
 
