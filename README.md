@@ -1,10 +1,14 @@
 # murty.au
 
+[![Deployment](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml/badge.svg?branch=main)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
+
 ## Summary
 
 This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
-Development, tests, build and deployment processes are handled locally and the resulting static site is hosted by [GitHub Pages](https://pages.github.com/) from the `public` directory.
+Development, tests, build and deployment processes are triggered locally.
+
+Remote testing and [GitHub Pages](https://pages.github.com/) deployment is then handled by a GitHub Actions workflow in [.github/workflows/deployment.yml](.github/workflows/deployment.yml).
 
 ### Preview of the home page
 
