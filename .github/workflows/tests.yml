@@ -13,5 +13,7 @@ jobs:
         uses: "denoland/setup-deno@v1"
         with:
           deno-version: ^1.4
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Run tests
         run: deno task test
