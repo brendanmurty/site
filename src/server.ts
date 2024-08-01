@@ -6,7 +6,7 @@ app.use(async (context) => {
   try {
     // Serve remaining valid requests from the static site directory
     await context.send({
-      root: Deno.cwd() + "/docs",
+      root: Deno.cwd() + "/public",
       index: "index.html"
     });
   } catch (error) {

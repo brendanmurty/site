@@ -42,7 +42,6 @@ git log --oneline --format="- [%s](https://github.com/brendanmurty/murty-website
 
 echo -e "${blue}Committing the changes...${end}"
 
-git add docs/*
 git add CHANGELOG.md
 git commit -m "Version $1" --quiet
 git tag $1

@@ -4,7 +4,7 @@
 
 This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
-Development, tests, build and deployment processes are handled locally and the resulting static site is hosted by [GitHub Pages](https://pages.github.com/) from the `docs` directory.
+Development, tests, build and deployment processes are handled locally and the resulting static site is hosted by [GitHub Pages](https://pages.github.com/) from the `public` directory.
 
 ### Preview of the home page
 
@@ -27,8 +27,6 @@ Development, tests, build and deployment processes are handled locally and the r
 4. Commit and push all of these changes to your forked repository
 5. Setup [GitHub Pages](https://pages.github.com/) for your forked repository:
 
-- Repository settings > Pages > Build and deployment > Branch: `main`
-- Repository settings > Pages > Build and deployment > Directory: `/docs`
 - Repository settings > Pages > Custom domain: _use your own domain_
 - Update the `CNAME` file to use this same domain
 
@@ -66,7 +64,7 @@ deno task serve
 
 ### Deployment
 
-After testing locally, run [bin/deploy.sh](bin/deploy.sh) to make a new version, build it in the `docs` directory, and deploy it via [GitHub Pages](https://pages.github.com/):
+After testing locally, run [bin/deploy.sh](bin/deploy.sh) to make a new version, build it in the `public` directory, and deploy it via [GitHub Pages](https://pages.github.com/):
 
 ```
 deno task deploy YYYY.xxx

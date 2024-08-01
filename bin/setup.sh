@@ -3,7 +3,7 @@
 # Create some required untracked directories if they don't already exist
 
 mkdir -p build
-mkdir -p docs
+mkdir -p public
 mkdir -p inbox
 
 # Install Deno packages

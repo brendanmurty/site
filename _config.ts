@@ -15,7 +15,7 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 // Build the site using Lume
 const site = lume({
   src: "./build",
-  dest: "./docs",
+  dest: "./public",
   prettyUrls: true
 });
 

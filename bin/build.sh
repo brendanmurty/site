@@ -10,7 +10,7 @@ end="\033[0m"
 # Define the temporary build directory (BUILD_DIR) and public output directory (PUBLIC_DIR)
 
 BUILD_DIR="build"
-PUBLIC_DIR="docs"
+PUBLIC_DIR="public"
 
 # Start the build process
 
