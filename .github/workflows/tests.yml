@@ -12,12 +12,12 @@ jobs:
       - name: Setup Deno
         uses: "denoland/setup-deno@v1"
         with:
-          deno-version: ^1.4
+          deno-version: ^1.45
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup environment
         run: |
           deno task setup
-          sudo apt-get -y install exiftool coreutils
+          sudo apt-get -y install exiftool
       - name: Run tests
         run: deno task test
