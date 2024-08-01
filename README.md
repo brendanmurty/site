@@ -33,7 +33,7 @@ Development, tests, build and deployment processes are handled locally and the r
 - Update the `CNAME` file to use this same domain
 
 6. Install [Deno](https://deno.land/)
-7. . Run [bin/setup.sh](bin/setup.sh) to complete the initial installation process: `deno task setup`
+7. Run [bin/setup.sh](bin/setup.sh) to complete the initial installation process: `deno task setup`
 8. Update your `.env` file:
 
 - `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
