@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.047
+- Version 2024.048
+- [Docs: Update Deployment section](https://github.com/brendanmurty/murty-website/commit/95d80ab)
+- [Docs: Update Deployment section](https://github.com/brendanmurty/murty-website/commit/2dc5a8b)
+- [Version 2024.047](https://github.com/brendanmurty/murty-website/commit/4e5d143)
 - [CI/CD: Update deployment workflow](https://github.com/brendanmurty/murty-website/commit/144670c)
 - [CI/CD: Update deployment workflow](https://github.com/brendanmurty/murty-website/commit/bba1af6)
 - [Version 2024.046](https://github.com/brendanmurty/murty-website/commit/38c2c4f)
