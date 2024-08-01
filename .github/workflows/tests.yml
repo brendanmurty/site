@@ -15,5 +15,9 @@ jobs:
           deno-version: ^1.4
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Setup environment
+        run: |
+          deno task setup \
+          sed -i -e "s/GOOGLE_ANALYTICS_SITE_CODE=/GOOGLE_ANALYTICS_SITE_CODE=${{ secrets.GOOGLE_ANALYTICS_SITE_CODE }}/g" .env
       - name: Run tests
         run: deno task test
