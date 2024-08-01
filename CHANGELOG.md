@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.045
+- Version 2024.046
+- [Docs: Update GitHub Pages setup section](https://github.com/brendanmurty/murty-website/commit/1ebe87a)
+- [Core: Move GitHub Pages deployment to GitHub Actions, remove "docs" build directory](https://github.com/brendanmurty/murty-website/commit/71296a7)
+- [Version 2024.045](https://github.com/brendanmurty/murty-website/commit/a5a1f8c)
 - [CI/CD: Update test workflow](https://github.com/brendanmurty/murty-website/commit/81f20e1)
 - [Core: Remove problematic CSS minifier](https://github.com/brendanmurty/murty-website/commit/e0dd6b1)
 - [Core: Copy over public GA embed code, update test workflow](https://github.com/brendanmurty/murty-website/commit/6587a47)
