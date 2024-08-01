@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.048
+- Version 2024.049
+- [Core: Simplify deploy script](https://github.com/brendanmurty/murty-website/commit/f78a853)
+- [Version 2024.048](https://github.com/brendanmurty/murty-website/commit/a2e77a5)
 - [Docs: Update Deployment section](https://github.com/brendanmurty/murty-website/commit/95d80ab)
 - [Docs: Update Deployment section](https://github.com/brendanmurty/murty-website/commit/2dc5a8b)
 - [Version 2024.047](https://github.com/brendanmurty/murty-website/commit/4e5d143)
