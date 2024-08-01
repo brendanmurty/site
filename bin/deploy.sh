@@ -26,14 +26,12 @@ fi
 # Run tests and exit if any tests fail
 
 echo -e "${blue}Running tests${end}"
+
 deno task test
 if [ $? -ne 0 ]; then
   echo -e "${red}Tests failed, deploy aborted.${end}"
   exit 1
 fi
-
-echo -e "${blue}Building site...${end}"
-deno task build
 
 echo -e "${blue}Updating the changelog...${end}"
 
@@ -51,4 +49,4 @@ echo -e "${blue}Pushing the changes up...${end}"
 git push --quiet
 git push --tags --quiet
 
-echo -e "${green}Done. GitHub Pages should now deploy changes to the site.${end}"
+echo -e "${green}Done. A new GitHub Actions workflow should now remotely test and deploy these changes.${end}"
