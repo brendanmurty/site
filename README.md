@@ -6,9 +6,9 @@
 
 This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
-Development, tests, build and deployment processes are triggered locally.
+Tests, build and local server commands are available from local environments.
 
-Remote testing and [GitHub Pages](https://pages.github.com/) deployment is then handled by a GitHub Actions workflow in [.github/workflows/deployment.yml](.github/workflows/deployment.yml).
+Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a GitHub Actions workflow in [.github/workflows/deployment.yml](.github/workflows/deployment.yml).
 
 ### Preview of the home page
 
