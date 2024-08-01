@@ -7,7 +7,7 @@ on:
       - main
 jobs:
   tests:
-    runs-on: linux
+    runs-on: ubuntu-latest
     steps:
       - name: Setup Deno
         uses: "denoland/setup-deno@v1"
