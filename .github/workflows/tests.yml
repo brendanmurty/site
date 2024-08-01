@@ -18,6 +18,7 @@ jobs:
       - name: Setup environment
         run: |
           deno task setup \
+          apt-get -y install exiftool \
           sed -i -e "s/GOOGLE_ANALYTICS_SITE_CODE=/GOOGLE_ANALYTICS_SITE_CODE=${{ secrets.GOOGLE_ANALYTICS_SITE_CODE }}/g" .env \
           cat .env
       - name: Run tests
