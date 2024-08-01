@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.049
+- Version 2024.050
+- [Docs: Update summary section](https://github.com/brendanmurty/murty-website/commit/4faa585)
+- [Docs: Update summary and add GitHub Actions status badge](https://github.com/brendanmurty/murty-website/commit/491565b)
+- [Version 2024.049](https://github.com/brendanmurty/murty-website/commit/616df95)
 - [Core: Simplify deploy script](https://github.com/brendanmurty/murty-website/commit/f78a853)
 - [Version 2024.048](https://github.com/brendanmurty/murty-website/commit/a2e77a5)
 - [Docs: Update Deployment section](https://github.com/brendanmurty/murty-website/commit/95d80ab)
