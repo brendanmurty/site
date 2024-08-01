@@ -1,6 +1,6 @@
 # murty.au
 
-[![Deployment](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml/badge.svg?branch=main)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
+[![Deployment](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml/badge.svg)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
 
 ## Summary
 
