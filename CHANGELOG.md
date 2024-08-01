@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.050
+- Version 2024.051
+- [CI/CD: Disable manual workflow run](https://github.com/brendanmurty/murty-website/commit/8dcdd56)
+- [Docs: Update GitHub Actions status badge](https://github.com/brendanmurty/murty-website/commit/af2acd8)
+- [Version 2024.050](https://github.com/brendanmurty/murty-website/commit/4deac80)
 - [Docs: Update summary section](https://github.com/brendanmurty/murty-website/commit/4faa585)
 - [Docs: Update summary and add GitHub Actions status badge](https://github.com/brendanmurty/murty-website/commit/491565b)
 - [Version 2024.049](https://github.com/brendanmurty/murty-website/commit/616df95)
