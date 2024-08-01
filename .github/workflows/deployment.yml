@@ -27,6 +27,18 @@ jobs:
       id-token: write
       pages: write
     steps:
+      - name: Setup Deno
+        uses: "denoland/setup-deno@v1"
+        with:
+          deno-version: ^1.45
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup environment
+        run: |
+          deno task setup
+          sudo apt-get -y install exiftool
+      - name: Build site
+        run: deno task build
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload GitHub Pages artifact
