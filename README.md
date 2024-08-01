@@ -65,7 +65,7 @@ deno task serve
 
 ### Deployment
 
-After testing locally, run [bin/deploy.sh](bin/deploy.sh) to trigger the GitHub Actions workflow from [.github/workflows/deployment.yml](.github/workflows/deployment.yml):
+After testing locally, run [bin/deploy.sh](bin/deploy.sh):
 
 ```
 deno task deploy YYYY.xxx
@@ -73,10 +73,9 @@ deno task deploy YYYY.xxx
 
 Where `YYYY` is the current year, and `xxx` is the revision number for that year, such as `2024.036`.
 
-This script will:
+This process will:
 
 - Update the content in [CHANGELOG.md](CHANGELOG.md)
 - Create a new Git Tag (`YYYY.xxx` as detailed above)
 - Push changes up to the origin repository
-- Build the site
-- Trigger GitHub Pages to deploy a new version of the site
+- Trigger the GitHub Actions workflow from [.github/workflows/deployment.yml](.github/workflows/deployment.yml), which will test, build and deploy the site via GitHub Pages
