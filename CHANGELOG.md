@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.046
+- Version 2024.047
+- [CI/CD: Update deployment workflow](https://github.com/brendanmurty/murty-website/commit/144670c)
+- [CI/CD: Update deployment workflow](https://github.com/brendanmurty/murty-website/commit/bba1af6)
+- [Version 2024.046](https://github.com/brendanmurty/murty-website/commit/38c2c4f)
 - [Docs: Update GitHub Pages setup section](https://github.com/brendanmurty/murty-website/commit/1ebe87a)
 - [Core: Move GitHub Pages deployment to GitHub Actions, remove "docs" build directory](https://github.com/brendanmurty/murty-website/commit/71296a7)
 - [Version 2024.045](https://github.com/brendanmurty/murty-website/commit/a5a1f8c)
