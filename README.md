@@ -65,13 +65,13 @@ deno task serve
 
 ### Deployment
 
-After testing locally, run [bin/deploy.sh](bin/deploy.sh) to make a new version, build it in the `public` directory, and deploy it via [GitHub Pages](https://pages.github.com/):
+After testing locally, run [bin/deploy.sh](bin/deploy.sh) to trigger the GitHub Actions workflow from [.github/workflows/deployment.yml](.github/workflows/deployment.yml):
 
 ```
 deno task deploy YYYY.xxx
 ```
 
-Where `YYYY` is the current year, and `xxx` is the revision number for that year.
+Where `YYYY` is the current year, and `xxx` is the revision number for that year, such as `2024.036`.
 
 This script will:
 
