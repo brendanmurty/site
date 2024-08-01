@@ -1,6 +1,19 @@
 # Change Log
 
-- Version 2024.044
+- Version 2024.045
+- [CI/CD: Update test workflow](https://github.com/brendanmurty/murty-website/commit/81f20e1)
+- [Core: Remove problematic CSS minifier](https://github.com/brendanmurty/murty-website/commit/e0dd6b1)
+- [Core: Copy over public GA embed code, update test workflow](https://github.com/brendanmurty/murty-website/commit/6587a47)
+- [CI/CD: Update test workflow](https://github.com/brendanmurty/murty-website/commit/2504615)
+- [CI/CD: Update test workflow](https://github.com/brendanmurty/murty-website/commit/039c3a5)
+- [CI/CD: Update test workflow](https://github.com/brendanmurty/murty-website/commit/555d1f7)
+- [CI/CD: Update test workflow](https://github.com/brendanmurty/murty-website/commit/3e0d424)
+- [CI/CD: Update test workflow](https://github.com/brendanmurty/murty-website/commit/845d822)
+- [Core: Update JSON feed description to match similar meta tag values](https://github.com/brendanmurty/murty-website/commit/0cc7f4b)
+- [CI/CD: Update test workflow](https://github.com/brendanmurty/murty-website/commit/550feb9)
+- [CI/CD: Update test workflow](https://github.com/brendanmurty/murty-website/commit/57a6647)
+- [CI/CD: Add initial test workflow](https://github.com/brendanmurty/murty-website/commit/24e8122)
+- [Version 2024.044](https://github.com/brendanmurty/murty-website/commit/bb6c53f)
 - [Content: Add my location](https://github.com/brendanmurty/murty-website/commit/2e9d7f6)
 - [Version 2024.043](https://github.com/brendanmurty/murty-website/commit/40d3ca1)
 - [Design: Improve quote and code block styles](https://github.com/brendanmurty/murty-website/commit/c89ebbf)
