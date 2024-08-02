@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The most recent [tagged commit](https://github.com/brendanmurty/murty-website/tags) is being supported by security updates.
+The most recent [release](https://github.com/brendanmurty/murty-website/releases) is being supported by security updates.
 
 ## Reporting a Vulnerability
 
