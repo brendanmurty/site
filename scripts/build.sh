@@ -25,7 +25,7 @@ rm -r $BUILD_DIR
 mkdir -p $BUILD_DIR
 mkdir -p $BUILD_DIR/_data
 cp -r styles $BUILD_DIR/_styles
-cp -r templates $BUILD_DIR/_includes
+cp -r "src/templates" $BUILD_DIR/_includes
 
 echo -e "${yellow}Combining CSS files${end}"
 
