@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.052
+- Version 2024.053
+- [CI/CD: Update GitHub release step](https://github.com/brendanmurty/murty-website/commit/09979e9)
+- [Version 2024.052](https://github.com/brendanmurty/murty-website/commit/754641c)
 - [CI/CD: Add GitHub release step](https://github.com/brendanmurty/murty-website/commit/424c388)
 - [Version 2024.051](https://github.com/brendanmurty/murty-website/commit/dcd4de8)
 - [CI/CD: Disable manual workflow run](https://github.com/brendanmurty/murty-website/commit/8dcdd56)
