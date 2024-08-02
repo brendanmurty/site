@@ -24,7 +24,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 2. Make a local clone of that forked repository
 3. Update some files in the forked repository:
 
-- The `bin/deploy.sh` script must be updated to use your forked repository URLs when updating `CHANGELOG.md`
+- The `scripts/deploy.sh` script must be updated to use your forked repository URLs when updating `CHANGELOG.md`
 - All files in the `content` directory should contain your own content instead
 - All files in the `assets` directory should contain your own static files instead
 
@@ -36,7 +36,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 - Update the `CNAME` file to use this same domain
 
 6. Install [Deno](https://deno.land/)
-7. Run [bin/setup.sh](bin/setup.sh) to complete the initial installation process: `deno task setup`
+7. Run [scripts/setup.sh](scripts/setup.sh) to complete the initial installation process: `deno task setup`
 8. Update your `.env` file:
 
 - `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
@@ -69,7 +69,7 @@ deno task serve
 
 ### Deployment
 
-After testing locally, run [bin/deploy.sh](bin/deploy.sh):
+After testing locally, run [scripts/deploy.sh](scripts/deploy.sh):
 
 ```
 deno task deploy YYYY.xxx
