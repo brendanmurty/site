@@ -1,6 +1,11 @@
 # Change Log
 
-- Version 2024.053
+- Version 2024.054
+- [Core: Move tests directory](https://github.com/brendanmurty/murty-website/commit/382e593)
+- [Core: Move templates directory](https://github.com/brendanmurty/murty-website/commit/4ca749e)
+- [Core: Rename helper scripts directory](https://github.com/brendanmurty/murty-website/commit/144ee50)
+- [Build: Cleanup](https://github.com/brendanmurty/murty-website/commit/20f9531)
+- [Version 2024.053](https://github.com/brendanmurty/murty-website/commit/51082cb)
 - [CI/CD: Update GitHub release step](https://github.com/brendanmurty/murty-website/commit/09979e9)
 - [Version 2024.052](https://github.com/brendanmurty/murty-website/commit/754641c)
 - [CI/CD: Add GitHub release step](https://github.com/brendanmurty/murty-website/commit/424c388)
