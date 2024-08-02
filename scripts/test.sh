@@ -13,9 +13,9 @@ echo -e "${yellow}Building the site to prepare for tests${end}"
 
 deno task build
 
-# Run all of the tests in the "tests" directory, allow these test scripts to also
+# Run all of the tests, allow these test scripts to also
 # run other Deno scripts and ignore any console output from them
 
-echo -e "${yellow}Running all tests found in the 'tests' directory${end}"
+echo -e "${yellow}Running all tests${end}"
 
-deno test --allow-run --allow-env --allow-read --allow-net tests --quiet
+deno test --allow-run --allow-env --allow-read --allow-net src/tests --quiet
