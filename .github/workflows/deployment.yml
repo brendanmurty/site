@@ -60,8 +60,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref_name }}
-          release_name: Version ${{ github.ref_name }}
+          release_name: ${{ github.ref_name }}
           body: |
-            Refer to [the changelog](https://github.com/brendanmurty/murty-website/blob/main/CHANGELOG.md) section for this release.
+            Included changes are noted in [the changelog](https://github.com/brendanmurty/murty-website/blob/main/CHANGELOG.md).
           draft: false
           prerelease: false
