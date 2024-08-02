@@ -18,7 +18,6 @@ echo -e "${yellow}Clearing the '$PUBLIC_DIR' directory and recreating subdirecto
 
 rm -r $PUBLIC_DIR
 mkdir -p $PUBLIC_DIR
-mkdir -p $PUBLIC_DIR/brendan/posts
 
 echo -e "${yellow}Clearing the '$BUILD_DIR' directory and recreating subdirectories${end}"
 
@@ -28,7 +27,7 @@ mkdir -p $BUILD_DIR/_data
 cp -r styles $BUILD_DIR/_styles
 cp -r templates $BUILD_DIR/_includes
 
-echo -e "${yellow}Combining the CSS files${end}"
+echo -e "${yellow}Combining CSS files${end}"
 
 mkdir -p $BUILD_DIR/_assets/css
 cat $BUILD_DIR/_styles/all.css $BUILD_DIR/_styles/brendan.css $BUILD_DIR/_styles/isla.css $BUILD_DIR/_styles/freya.css $BUILD_DIR/_styles/luca.css > $BUILD_DIR/_assets/css/styles.css
