@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.058
+- Version 2024.059
+- [Build: Update Lume command](https://github.com/brendanmurty/murty-website/commit/fc42f65)
+- [Version 2024.058](https://github.com/brendanmurty/murty-website/commit/7fcaa3b)
 - [Test: Update key image file tests](https://github.com/brendanmurty/murty-website/commit/3d75d3d)
 - [Version 2024.057](https://github.com/brendanmurty/murty-website/commit/f9259b6)
 - [Core: Move styles directory](https://github.com/brendanmurty/murty-website/commit/e8920a6)
