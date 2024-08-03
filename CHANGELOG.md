@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.057
+- Version 2024.058
+- [Test: Update key image file tests](https://github.com/brendanmurty/murty-website/commit/3d75d3d)
+- [Version 2024.057](https://github.com/brendanmurty/murty-website/commit/f9259b6)
 - [Core: Move styles directory](https://github.com/brendanmurty/murty-website/commit/e8920a6)
 - [Core: Re-organise assets, update Lighthouse performance image](https://github.com/brendanmurty/murty-website/commit/13a817e)
 - [Version 2024.056](https://github.com/brendanmurty/murty-website/commit/0b797f1)
