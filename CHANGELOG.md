@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.055
+- Version 2024.056
+- [Core: Move tests in to same folder as related code](https://github.com/brendanmurty/murty-website/commit/fb02a11)
+- [Version 2024.055](https://github.com/brendanmurty/murty-website/commit/4c12dbd)
 - [CI/CD: Update GitHub release step to use an active action instead](https://github.com/brendanmurty/murty-website/commit/6ad4d61)
 - [Version 2024.054](https://github.com/brendanmurty/murty-website/commit/5d67af8)
 - [Core: Move tests directory](https://github.com/brendanmurty/murty-website/commit/382e593)
