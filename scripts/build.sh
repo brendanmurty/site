@@ -24,7 +24,7 @@ echo -e "${yellow}Clearing the '$BUILD_DIR' directory and recreating subdirector
 rm -r $BUILD_DIR
 mkdir -p $BUILD_DIR
 mkdir -p $BUILD_DIR/_data
-cp -r styles $BUILD_DIR/_styles
+cp -r "src/styles" $BUILD_DIR/_styles
 cp -r "src/templates" $BUILD_DIR/_includes
 
 echo -e "${yellow}Combining CSS files${end}"
