@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.056
+- Version 2024.057
+- [Core: Move styles directory](https://github.com/brendanmurty/murty-website/commit/e8920a6)
+- [Core: Re-organise assets, update Lighthouse performance image](https://github.com/brendanmurty/murty-website/commit/13a817e)
+- [Version 2024.056](https://github.com/brendanmurty/murty-website/commit/0b797f1)
 - [Core: Move tests in to same folder as related code](https://github.com/brendanmurty/murty-website/commit/fb02a11)
 - [Version 2024.055](https://github.com/brendanmurty/murty-website/commit/4c12dbd)
 - [CI/CD: Update GitHub release step to use an active action instead](https://github.com/brendanmurty/murty-website/commit/6ad4d61)
