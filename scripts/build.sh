@@ -32,6 +32,12 @@ echo -e "${yellow}Combining CSS files${end}"
 mkdir -p $BUILD_DIR/_assets/css
 cat $BUILD_DIR/_styles/all.css $BUILD_DIR/_styles/brendan.css $BUILD_DIR/_styles/isla.css $BUILD_DIR/_styles/freya.css $BUILD_DIR/_styles/luca.css > $BUILD_DIR/_assets/css/styles.css
 
+echo -e "${yellow}Minifying combined CSS file${end}"
+
+cat $BUILD_DIR/_assets/css/styles.css | \
+sed -r ':a; s%(.*)/\*.*\*/%\1%; ta; /\/\*/ !b; N; ba' \
+| tr -d '\t' | tr -d '\n' > $BUILD_DIR/_assets/css/styles.min.css
+
 echo -e "${yellow}Building photo posts for photos in 'inbox' directory${end}"
 
 deno run -A --allow-read --allow-write src/photo-posts-generate.ts
@@ -78,7 +84,7 @@ echo -e "${yellow}Copying CSS files to the '$PUBLIC_DIR/css' directory${end}"
 
 mkdir -p $PUBLIC_DIR/css
 cp -r assets/icons/fontawesome $PUBLIC_DIR/css
-cp "$BUILD_DIR/_assets/css/styles.css" "$PUBLIC_DIR/css/styles.css"
+cp "$BUILD_DIR/_assets/css/styles.min.css" "$PUBLIC_DIR/css/styles.min.css"
 
 echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"
 
