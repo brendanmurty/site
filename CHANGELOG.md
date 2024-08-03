@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2024.059
+- Version 2024.060
+- [Docs: Update Lighthouse image with new results after CSS minification](https://github.com/brendanmurty/murty-website/commit/b7bfb33)
+- [Core: Minify CSS](https://github.com/brendanmurty/murty-website/commit/ecaa45c)
+- [Version 2024.059](https://github.com/brendanmurty/murty-website/commit/40a73bc)
 - [Build: Update Lume command](https://github.com/brendanmurty/murty-website/commit/fc42f65)
 - [Version 2024.058](https://github.com/brendanmurty/murty-website/commit/7fcaa3b)
 - [Test: Update key image file tests](https://github.com/brendanmurty/murty-website/commit/3d75d3d)
