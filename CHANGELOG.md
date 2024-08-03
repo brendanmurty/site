@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.060
+- Version 2024.061
+- [Docs: Update Lighthouse image with new results after CSS minification](https://github.com/brendanmurty/murty-website/commit/3964fe2)
+- [Version 2024.060](https://github.com/brendanmurty/murty-website/commit/421471d)
 - [Docs: Update Lighthouse image with new results after CSS minification](https://github.com/brendanmurty/murty-website/commit/b7bfb33)
 - [Core: Minify CSS](https://github.com/brendanmurty/murty-website/commit/ecaa45c)
 - [Version 2024.059](https://github.com/brendanmurty/murty-website/commit/40a73bc)
