@@ -51,7 +51,7 @@ deno run -A --allow-read --allow-write src/site-data.ts
 
 echo -e "${yellow}Building the front-end using Lume and '_config.ts'${end}"
 
-lume
+deno task lume
 
 echo -e "${yellow}Updating '$PUBLIC_DIR/sitemap.xml' to use the production URL${end}"
 
