@@ -18,4 +18,4 @@ deno task build
 
 echo -e "${yellow}Running all tests${end}"
 
-deno test --allow-run --allow-env --allow-read --allow-net src/tests --quiet
+deno test --allow-run --allow-env --allow-read --allow-net src --quiet
