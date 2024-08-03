@@ -12,11 +12,11 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 ### Preview of the home page
 
-![Preview of the home page](website.png)
+![Preview of the home page](assets/docs/website.png)
 
 ### Lighthouse performance results
 
-![Lighthouse performance results](lighthouse.png)
+![Lighthouse performance results](assets/docs/performance.png)
 
 ## Initial Setup
 

@@ -6,7 +6,7 @@ Deno.test("src/photo-data.ts", async (test) => {
     name: "exif data is returned for a photo with data",
     fn: async () => {
       const exifData = await GetExifDataFromPhoto(
-        "./src/test-assets",
+        "./assets/tests",
         "test-photo.jpg"
       );
 
