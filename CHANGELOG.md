@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.054
+- Version 2024.055
+- [CI/CD: Update GitHub release step to use an active action instead](https://github.com/brendanmurty/murty-website/commit/6ad4d61)
+- [Version 2024.054](https://github.com/brendanmurty/murty-website/commit/5d67af8)
 - [Core: Move tests directory](https://github.com/brendanmurty/murty-website/commit/382e593)
 - [Core: Move templates directory](https://github.com/brendanmurty/murty-website/commit/4ca749e)
 - [Core: Rename helper scripts directory](https://github.com/brendanmurty/murty-website/commit/144ee50)
