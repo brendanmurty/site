@@ -16,7 +16,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 ### Lighthouse performance results
 
-![Lighthouse performance results](assets/docs/lighthouse.png)
+![Lighthouse performance results](assets/docs/lighthouse-results.png)
 
 ## Initial Setup
 
