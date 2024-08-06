@@ -18,7 +18,17 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 ![Lighthouse performance results](assets/docs/lighthouse-results.png)
 
-## Initial Setup
+## Folder structure and key files
+
+- [.github/workflows/deployment.yml](.github/workflows/deployment.yml) - Triggers when a release tag is pushed, runs tests, deploys to [GitHub Pages](https://pages.github.com/) and publishes a new [release](https://github.com/brendanmurty/murty-website/releases)
+- [.vscode](.vscode/) - Customised [VS Code](https://code.visualstudio.com/) configuration for this repository
+- [assets](assets/) - Static files like images and PDFs
+- [content](content/) - Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files
+- [scripts](scripts/) - Helper scripts, refer to the `Commands` section below for more details
+- [src](src/) - Source code, templates and CSS files
+- [deno.json](deno.json) - [Deno](https://deno.land/) imports, tasks and configuration for this repository
+
+## Initial setup
 
 1. Fork this repository
 2. Make a local clone of that forked repository
@@ -49,19 +59,19 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 ## Commands
 
-### Run Tests
+### Run all tests
 
 ```
 deno task test
 ```
 
-### Build Site
+### Build the site
 
 ```
 deno task build
 ```
 
-### Local Web Server
+### Local web server
 
 ```
 deno task serve
