@@ -78,7 +78,7 @@ cp -r "assets/images" "$PUBLIC_DIR/images"
 cp "assets/.nojekyll" "$PUBLIC_DIR/.nojekyll"
 cp "assets/favicon.ico" "$PUBLIC_DIR/favicon.ico"
 cp "assets/robots.txt" "$PUBLIC_DIR/robots.txt"
-cp "assets/Resume - Brendan Murty.pdf" "$PUBLIC_DIR/brendan/Resume - Brendan Murty.pdf"
+cp "assets/resume.pdf" "$PUBLIC_DIR/Brendan Murty - Resume.pdf"
 
 echo -e "${yellow}Copying CSS files to the '$PUBLIC_DIR/css' directory${end}"
 
