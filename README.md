@@ -1,6 +1,7 @@
-# murty.au
+# Murty Website
 
-[![Deployment](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml/badge.svg)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
+[![Deployment](https://img.shields.io/github/actions/workflow/status/brendanmurty/murty-website/deployment.yml?logo=github&label=Deployment&style=flat-square)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
+[![Released](https://img.shields.io/github/release-date/brendanmurty/murty-website?logo=github&label=Released&style=flat-square)](https://github.com/brendanmurty/murty-website/releases)
 
 ## Summary
 
