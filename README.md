@@ -1,7 +1,6 @@
 # Murty Website
 
 [![Deployment](https://img.shields.io/github/actions/workflow/status/brendanmurty/murty-website/deployment.yml?logo=github&label=Deployment&style=for-the-badge&color=%2323c5b0)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
-
 [![Released](https://img.shields.io/github/release-date/brendanmurty/murty-website?logo=github&label=Released&style=for-the-badge&color=%2323c5b0)](https://github.com/brendanmurty/murty-website/releases)
 
 ## Summary
