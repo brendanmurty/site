@@ -1,6 +1,16 @@
 # Change Log
 
-- Version 2024.063
+- Version 2024.064
+- [Tests: Check for resume instead of older page path](https://github.com/brendanmurty/murty-website/commit/a726cf1)
+- [Docs: Update badges](https://github.com/brendanmurty/murty-website/commit/3ab5354)
+- [Docs: Update badges](https://github.com/brendanmurty/murty-website/commit/1c69bd5)
+- [Docs: Update badges](https://github.com/brendanmurty/murty-website/commit/abfe24f)
+- [Docs: Update badges](https://github.com/brendanmurty/murty-website/commit/8ef7557)
+- [Docs: Update badges](https://github.com/brendanmurty/murty-website/commit/c7851de)
+- [Docs: Update badges](https://github.com/brendanmurty/murty-website/commit/cd72bc9)
+- [Docs: Update badges](https://github.com/brendanmurty/murty-website/commit/81e849b)
+- [Docs: Update badges, improve main title](https://github.com/brendanmurty/murty-website/commit/5cfb4fa)
+- [Version 2024.063](https://github.com/brendanmurty/murty-website/commit/b678fed)
 - [Content: Update resume](https://github.com/brendanmurty/murty-website/commit/4dc77e0)
 - [Version 2024.062](https://github.com/brendanmurty/murty-website/commit/00d8f2d)
 - [Docs: Add new "Folder structure and key files" section, cleanup](https://github.com/brendanmurty/murty-website/commit/16a0ba9)
