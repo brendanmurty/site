@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.062
+- Version 2024.063
+- [Content: Update resume](https://github.com/brendanmurty/murty-website/commit/4dc77e0)
+- [Version 2024.062](https://github.com/brendanmurty/murty-website/commit/00d8f2d)
 - [Docs: Add new "Folder structure and key files" section, cleanup](https://github.com/brendanmurty/murty-website/commit/16a0ba9)
 - [Version 2024.061](https://github.com/brendanmurty/murty-website/commit/942e3ec)
 - [Docs: Update Lighthouse image with new results after CSS minification](https://github.com/brendanmurty/murty-website/commit/3964fe2)
