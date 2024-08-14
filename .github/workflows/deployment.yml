@@ -58,10 +58,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 50
-          fetch-tags: true
+          fetch-depth: 0
       - name: Generate release notes
         run: |
+          git fetch --tags
           TAG_PREV=$(git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`)
           git log $TAG_PREV..HEAD --oneline --format="- [%s](https://github.com/brendanmurty/murty-website/commit/%h)" --no-merges > release-notes.txt
       - name: Create GitHub release
