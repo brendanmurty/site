@@ -18,7 +18,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 ### Lighthouse performance results
 
-![Lighthouse performance results](assets/docs/lighthouse-results.png)
+![Lighthouse performance results](assets/docs/lighthouse-performance.png)
 
 ## Folder structure and key files
 
