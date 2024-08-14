@@ -1,6 +1,8 @@
 # Change Log
 
-- Version 2024.065
+- Version 2024.066
+- [Design: Restore custom text fonts](https://github.com/brendanmurty/murty-website/commit/98766ff)
+- [Version 2024.065](https://github.com/brendanmurty/murty-website/commit/b1598ec)
 - [Core: Update dependencies](https://github.com/brendanmurty/murty-website/commit/912ddd2)
 - [Content: Add link around tech roles, update related post tags](https://github.com/brendanmurty/murty-website/commit/5ac4041)
 - [Version 2024.064](https://github.com/brendanmurty/murty-website/commit/03191dd)
