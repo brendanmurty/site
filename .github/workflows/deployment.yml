@@ -58,7 +58,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 20
+          fetch-depth: 50
+          fetch-tags: true
       - name: Generate release notes
         run: |
           TAG_PREV=$(git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`)
