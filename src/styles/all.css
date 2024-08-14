@@ -9,8 +9,8 @@
   --background-colour: #000000;
   --foreground-colour: #FFFFFF;
   --secondary-colour: #888888;
-  --font-family-header: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
-  --font-family-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  --font-family-header: 'MDNichrome', serif;
+  --font-family-body: 'MDSystem', serif;
 }
 
 body.freya {
@@ -155,6 +155,24 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: 'MDNichrome';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('MDNichrome'), local('MDNichrome-Regular'), url('/fonts/MDNichrome-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MDSystem';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('MDSystem'), local('MDSystem-Regular'), url('/fonts/MDSystem-Regular.woff') format('woff');
+}
+
 /* Icons */
 
 .icon {
@@ -212,7 +230,8 @@ h2,
 h3,
 h4 {
   font-family: var(--font-family-header);
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 1.25px;
   margin: 5px 0 15px;
   padding: 0;
   clear: both;

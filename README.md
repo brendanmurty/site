@@ -6,7 +6,7 @@
 
 ## Summary
 
-This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
+This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), fonts that I've purchased from [Mass-Driver](https://mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
 Tests, build and local server commands are available from local environments.
 
@@ -14,7 +14,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 ### Preview of the home page
 
-![Preview of the home page](assets/docs/website.png)
+![Preview of the home page](assets/docs/website-preview.png)
 
 ### Lighthouse performance results
 
@@ -39,6 +39,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 - The `scripts/deploy.sh` script must be updated to use your forked repository URLs when updating `CHANGELOG.md`
 - All files in the `content` directory should contain your own content instead
 - All files in the `assets` directory should contain your own static files instead
+- Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
 
 4. Commit and push all of these changes to your forked repository
 5. Setup [GitHub Pages](https://pages.github.com/) for your forked repository:
