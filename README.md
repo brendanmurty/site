@@ -36,7 +36,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 2. Make a local clone of that forked repository
 3. Update some files in the forked repository:
 
-- The `scripts/deploy.sh` script must be updated to use your forked repository URLs when updating `CHANGELOG.md`
+- Update `.github/workflows/deployment.yml` to use your forked repository URL when updating generating release notes
 - All files in the `content` directory should contain your own content instead
 - All files in the `assets` directory should contain your own static files instead
 - Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
@@ -92,7 +92,6 @@ Where `YYYY` is the current year, and `xxx` is the revision number for that year
 
 This process will:
 
-- Update the content in [CHANGELOG.md](CHANGELOG.md)
 - Create a new Git Tag (`YYYY.xxx` as detailed above)
 - Push changes up to the origin repository
 - Trigger the GitHub Actions workflow from [.github/workflows/deployment.yml](.github/workflows/deployment.yml), which will test, build and deploy the site via GitHub Pages

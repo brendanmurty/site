@@ -57,12 +57,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+      - name: Generate release notes
+        run: |
+          TAG_PREV=$(git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`)
+          git log $TAG_PREV..HEAD --oneline --format="- [%s](https://github.com/brendanmurty/murty-website/commit/%h)" --no-merges > release-notes.txt
       - name: Create GitHub release
         uses: ncipollo/release-action@v1
         with:
           name: ${{ github.ref_name }}
           tag: ${{ github.ref_name }}
-          body: Included changes are noted in [the changelog](https://github.com/brendanmurty/murty-website/blob/main/CHANGELOG.md).
+          bodyFile: release-notes.txt
           makeLatest: true
-          prerelease: false
-          draft: false
+      - name: Cleanup
+        run: |
+          rm release-notes.txt

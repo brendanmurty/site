@@ -33,19 +33,9 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-echo -e "${blue}Updating the changelog...${end}"
+echo -e "${blue}Tagging commit and pushing changes...${end}"
 
-printf "# Change Log\n\n- Version $1\n" > CHANGELOG.md
-git log --oneline --format="- [%s](https://github.com/brendanmurty/murty-website/commit/%h)" --no-merges >> CHANGELOG.md
-
-echo -e "${blue}Committing the changes...${end}"
-
-git add CHANGELOG.md
-git commit -m "Version $1" --quiet
 git tag $1
-
-echo -e "${blue}Pushing the changes up...${end}"
-
 git push --quiet
 git push --tags --quiet
 
