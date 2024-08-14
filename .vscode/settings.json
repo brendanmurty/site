@@ -6,5 +6,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "workbench.editor.customLabels.patterns": {
+    "*/src/**/index.*": "/src/${dirname}"
+  }
 }
