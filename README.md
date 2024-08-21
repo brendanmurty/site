@@ -12,6 +12,8 @@ Tests, build and local server commands are available from local environments.
 
 Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a GitHub Actions workflow in [.github/workflows/deployment.yml](.github/workflows/deployment.yml).
 
+The GitHub Actions workflow also pushes a new version of the built site to the [murty-website](https://hub.docker.com/repository/docker/brendanmurty/murty-website/general) repository on Docker Hub.
+
 ### Preview of the home page
 
 ![Preview of the home page](assets/docs/website-preview.png)
@@ -37,26 +39,29 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 2. Make a local clone of that forked repository
 3. Update some files in the forked repository:
 
-- Update `.github/workflows/deployment.yml` to use your forked repository URL when updating generating release notes
+- Update `.github/workflows/deployment.yml` to use your forked GitHub repository URL
+- Update `.github/workflows/deployment.yml` to use your own Docker Hub repository URL
 - All files in the `content` directory should contain your own content instead
 - All files in the `assets` directory should contain your own static files instead
 - Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
 
 4. Commit and push all of these changes to your forked repository
-5. Setup [GitHub Pages](https://pages.github.com/) for your forked repository:
+5. Update the Settings for your forked repository via GitHub:
 
-- Repository settings > Pages > Source: _GitHub Actions_
-- Repository settings > Pages > Custom domain: _use your own domain_
-- Update the `CNAME` file to use this same domain
+- Pages > Source: _GitHub Actions_
+- Pages > Custom domain: _use your own domain_
+- Secrets and variables > Actions > new secret > Name: `DOCKERHUB_USERNAME`, Secret: _your Docker username_
+- Secrets and variables > Actions > new secret > Name: `DOCKERHUB_TOKEN`, Secret: _[generate new token](https://app.docker.com/settings/personal-access-tokens), read and write permissions, save the generated token here_
 
-6. Install [Deno](https://deno.land/)
-7. Run [scripts/setup.sh](scripts/setup.sh) to complete the initial installation process: `deno task setup`
-8. Update your `.env` file:
+6. Update the `CNAME` file in the repository to use the same domain as you configured above
+7. Install [Deno](https://deno.land/)
+8. Run `deno task setup` to complete the initial installation process: `deno task setup`
+9. Update your `.env` file:
 
 - `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
 
-9. Install [exiftool](https://exiftool.org/) on your local machine
-10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
+10. Install [exiftool](https://exiftool.org/) on your local machine
+11. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
