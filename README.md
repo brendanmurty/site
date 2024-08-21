@@ -12,7 +12,7 @@ Tests, build and local server commands are available from local environments.
 
 Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a GitHub Actions workflow in [.github/workflows/deployment.yml](.github/workflows/deployment.yml).
 
-The GitHub Actions workflow also pushes a new version of the built site to the [murty-website](https://hub.docker.com/repository/docker/brendanmurty/murty-website/general) repository on Docker Hub.
+The GitHub Actions workflow also pushes a new version of the built site to the [murty-website](https://hub.docker.com/r/brendanmurty/murty-website) repository on Docker Hub.
 
 ### Preview of the home page
 
