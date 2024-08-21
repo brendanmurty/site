@@ -24,14 +24,16 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 
 ## Folder structure and key files
 
-- [.github/workflows/deployment.yml](.github/workflows/deployment.yml) - Triggers when a release tag is pushed, runs tests, deploys to [GitHub Pages](https://pages.github.com/) and publishes a new [release](https://github.com/brendanmurty/murty-website/releases)
-- [.vscode](.vscode/) - Customised [VS Code](https://code.visualstudio.com/) configuration for this repository
-- [assets](assets/) - Static files like images and PDFs
-- [content](content/) - Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files
-- [scripts](scripts/) - Helper scripts, refer to the `Commands` section below for more details
-- [src](src/) - Source code, templates and CSS files
-- [deno.json](deno.json) - [Deno](https://deno.land/) imports, tasks and configuration for this repository
-- [Dockerfile](Dockerfile) - [Docker](https://www.docker.com/) configuration file to allow the site to build and serve inside a minimal Linux container
+| Folder / File | Description |
+| ---- | ---- |
+| [.github/workflows/deployment.yml](.github/workflows/deployment.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/), publishes a new [GitHub release](https://github.com/brendanmurty/murty-website/releases) and pushes a new version to the [repository on Docker Hub](https://hub.docker.com/r/brendanmurty/murty-website). |
+| [.vscode](.vscode/) | Customised [VS Code](https://code.visualstudio.com/) configuration for this repository. |
+| [assets](assets/) | Static files like images and PDFs. |
+| [content](content/) | Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files. |
+| [scripts](scripts/) | Helper scripts, refer to the `Commands` section below for more details. |
+| [src](src/) | Source code, templates and CSS files. |
+| [deno.json](deno.json) | [Deno](https://deno.land/) imports, tasks and configuration for this repository. |
+| [Dockerfile](Dockerfile) | [Docker](https://www.docker.com/) configuration file to allow the site to build and serve inside a minimal Linux container. |
 
 ## Initial setup
 
