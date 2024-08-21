@@ -21,4 +21,4 @@ WORKDIR /app
 COPY --from=builder /app/public .
 
 # Serve the site at http://localhost:8000
-CMD static-web-server -p 8000 -d /app
+CMD ["static-web-server", "-p 8000", "-d /app"]
