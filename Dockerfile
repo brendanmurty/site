@@ -7,6 +7,7 @@ RUN apk add --no-cache bash exiftool
 WORKDIR /app
 COPY . .
 
+# Build the site
 RUN deno task setup
 RUN deno task build
 
@@ -16,6 +17,8 @@ EXPOSE 8000
 
 WORKDIR /app
 
+# Copy over only the built website from the builder image
 COPY --from=builder /app/public .
 
+# Serve the site at http://localhost:8000
 CMD static-web-server -p 8000 -d /app
