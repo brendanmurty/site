@@ -20,9 +20,16 @@
   },
   "tasks": {
     "build": "bash ./scripts/build.sh",
+    "deno-serve": "deno task build && echo 'Server starting at http://localhost:8000/' && deno run --allow-net --allow-read src/server.ts",
     "deploy": "bash ./scripts/deploy.sh ",
+    "docker-build": "docker build --quiet --tag murty-website .",
+    "docker-build-debug": "docker build --progress=plain --tag murty-website .",
+    "docker-remove": "docker rm --force murty-website || true",
+    "docker-run": "docker run --publish 8000:8000 --detach --name=murty-website murty-website",
+    "docker-serve": "deno task docker-build && deno task docker-stop && deno task docker-remove && deno task docker-run && echo 'Server started at http://localhost:8000'",
+    "docker-stop": "docker stop murty-website || true",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-    "serve": "deno task build && echo 'Server starting at http://localhost:8000/' && deno run --allow-net --allow-read src/server.ts",
+    "serve": "deno task docker-serve",
     "setup": "bash ./scripts/setup.sh",
     "test": "bash ./scripts/test.sh"
   }

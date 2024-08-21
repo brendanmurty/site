@@ -29,6 +29,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 - [scripts](scripts/) - Helper scripts, refer to the `Commands` section below for more details
 - [src](src/) - Source code, templates and CSS files
 - [deno.json](deno.json) - [Deno](https://deno.land/) imports, tasks and configuration for this repository
+- [Dockerfile](Dockerfile) - [Docker](https://www.docker.com/) configuration file to allow the site to build and serve inside a minimal Linux container
 
 ## Initial setup
 
