@@ -8,16 +8,13 @@ yellow="\033[0;33m"
 red="\033[0;31m"
 end="\033[0m"
 
-# Exit if the version is not specified as a parameter
+# Figure out the next version number
 
-if [ $# -eq 0 ]; then
-  echo -e "${red}Please specify a version in a format like: 2020.123${end}"
-  exit 1
-fi
+NEXT_VERSION="release-"$(date +%Y%m%e.%H%M)
 
 # Ask for confirmation from the user before continuing
 
-read -p "$(echo -e $blue"Are you sure you want to create a new version ("$1")? (y/n) "$end)" ANSWER
+read -p "$(echo -e $blue"Are you sure you want to create a new version ("$NEXT_VERSION")? (y/n) "$end)" ANSWER
 if [ "$ANSWER" != "y" ]; then
   echo -e "${red}User cancelled, deploy aborted.${end}"
   exit 1
@@ -35,7 +32,7 @@ fi
 
 echo -e "${blue}Tagging commit and pushing changes...${end}"
 
-git tag $1
+git tag $NEXT_VERSION
 git push --quiet
 git push --tags --quiet
 

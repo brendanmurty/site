@@ -22,7 +22,7 @@
     "build": "bash ./scripts/build.sh",
     "deno-serve": "deno task build && echo 'Server starting at http://localhost:8000/' && deno run --allow-net --allow-read src/server.ts",
     "deno-test": "bash ./scripts/test.sh",
-    "deploy": "bash ./scripts/deploy.sh ",
+    "deploy": "bash ./scripts/deploy.sh",
     "docker-build": "docker build --quiet --tag murty-website .",
     "docker-build-debug": "docker build --progress=plain --tag murty-website .",
     "docker-remove": "docker rm --force murty-website || true",
