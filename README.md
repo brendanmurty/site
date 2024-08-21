@@ -10,7 +10,7 @@ This repository contains the website for the [Murty family](https://murty.au/), 
 
 Tests, build and local server commands are available from local environments.
 
-Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a GitHub Actions workflow in [.github/workflows/deployment.yml](.github/workflows/deployment.yml).
+Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a [GitHub Actions workflow](.github/workflows/deployment.yml).
 
 The GitHub Actions workflow also pushes a new version of the built site to the [murty-website](https://hub.docker.com/r/brendanmurty/murty-website) repository on Docker Hub.
 
@@ -41,8 +41,8 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 
 - Update `.github/workflows/deployment.yml` to use your forked GitHub repository URL
 - Update `.github/workflows/deployment.yml` to use your own Docker Hub repository URL
-- All files in the `content` directory should contain your own content instead
-- All files in the `assets` directory should contain your own static files instead
+- All files in the `content` directory **must** contain your own content instead
+- All files in the `assets` directory **must** contain your own static files instead
 - Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
 
 4. Commit and push all of these changes to your forked repository
