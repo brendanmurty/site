@@ -67,11 +67,10 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 
 ## Commands
 
-| Command | Description | Notes |
-| ---- | ---- | ---- |
-| `deno task test` | Run all tests | |
-| `deno task build` | Build the site | |
-| `deno task serve` | Local web server | |
-| `deno task deploy YYYY.xxx` | Deploy via GitHub Actions | Where `YYYY` is the current year, and `xxx` is the revision number for that year, such as `2024.036`. This will create and push a new Git Tag and trigger the [GitHub Actions workflow](.github/workflows/deployment.yml) in the remote repository. |
+| Command | Description |
+| ---- | ---- |
+| `deno task test` | Run all tests |
+| `deno task serve` | Start a local web server. Builds the site and starts a local web server at `http://localhost:8000/` |
+| `deno task deploy YYYY.xxx` | Deploy via GitHub Actions. Where `YYYY` is the current year, and `xxx` is the revision number for that year, such as `2024.036`. This will create and push a new Git Tag and trigger the [GitHub Actions workflow](.github/workflows/deployment.yml) in the remote repository. |
 
 _For more details here, refer to the `tasks` section in [deno.json](deno.json)._
