@@ -54,50 +54,22 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 - Secrets and variables > Actions > new secret > Name: `DOCKERHUB_TOKEN`, Secret: _[generate new token](https://app.docker.com/settings/personal-access-tokens), read and write permissions, save the generated token here_
 
 6. Update the `CNAME` file in the repository to use the same domain as you configured above
-7. Install [Deno](https://deno.land/)
-8. Run `deno task setup` to complete the initial installation process: `deno task setup`
+7. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+8. Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation/)
 9. Update your `.env` file:
 
 - `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
 
-10. Install [exiftool](https://exiftool.org/) on your local machine
-11. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
+10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ## Commands
 
-### Run all tests
-
-```
-deno task test
-```
-
-### Build the site
-
-```
-deno task build
-```
-
-### Local web server
-
-```
-deno task serve
-```
-
-### Deployment
-
-After testing locally, run [scripts/deploy.sh](scripts/deploy.sh):
-
-```
-deno task deploy YYYY.xxx
-```
-
-Where `YYYY` is the current year, and `xxx` is the revision number for that year, such as `2024.036`.
-
-This process will:
-
-- Create a new Git Tag (`YYYY.xxx` as detailed above)
-- Push changes up to the origin repository
-- Trigger the GitHub Actions workflow from [.github/workflows/deployment.yml](.github/workflows/deployment.yml), which will test, build and deploy the site via GitHub Pages
+| Command | Description | Notes |
+| ---- | ---- | ---- |
+| `deno task test` | Run all tests | |
+| `deno task build` | Build the site | |
+| `deno task serve` | Local web server | |
+| `deno task deploy YYYY.xxx` | Deploy via GitHub Actions | Where `YYYY` is the current year, and `xxx` is the revision number for that year, such as `2024.036`. This will create and push a new Git Tag and trigger the [GitHub Actions workflow](.github/workflows/deployment.yml) in the remote repository. |

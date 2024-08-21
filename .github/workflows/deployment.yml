@@ -18,7 +18,7 @@ jobs:
           deno task setup
           sudo apt-get -y install exiftool
       - name: Run tests
-        run: deno task test
+        run: deno task deno-test
   deploy-github-pages:
     needs: test
     runs-on: ubuntu-latest
