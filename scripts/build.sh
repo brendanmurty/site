@@ -16,12 +16,12 @@ PUBLIC_DIR="public"
 
 echo -e "${yellow}Clearing the '$PUBLIC_DIR' directory and recreating subdirectories${end}"
 
-rm -r $PUBLIC_DIR
+rm -rf $PUBLIC_DIR
 mkdir -p $PUBLIC_DIR
 
 echo -e "${yellow}Clearing the '$BUILD_DIR' directory and recreating subdirectories${end}"
 
-rm -r $BUILD_DIR
+rm -rf $BUILD_DIR
 mkdir -p $BUILD_DIR
 mkdir -p $BUILD_DIR/_data
 cp -r "src/styles" $BUILD_DIR/_styles
