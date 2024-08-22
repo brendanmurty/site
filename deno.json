@@ -22,7 +22,6 @@
     "build": "bash ./scripts/build.sh",
     "deno-serve": "deno task build && echo 'Server starting at http://localhost:8000/' && deno run --allow-net --allow-read src/server.ts",
     "deno-test": "bash ./scripts/test.sh",
-    "deploy": "bash ./scripts/deploy.sh",
     "docker-build": "docker build --quiet --tag murty-website .",
     "docker-build-debug": "docker build --progress=plain --tag murty-website .",
     "docker-remove": "docker rm --force murty-website || true",
@@ -32,6 +31,7 @@
     "docker-stop": "docker stop murty-website || true",
     "docker-test": "deno task docker-restart && docker exec murty-website bash /murty-website/scripts/test.sh",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "release": "bash ./scripts/release.sh",
     "serve": "deno task docker-serve",
     "setup": "bash ./scripts/setup.sh",
     "test": "deno task docker-test"

@@ -14,7 +14,7 @@ NEXT_VERSION=$(date +%Y%m%e.%H%M)
 
 # Ask for confirmation from the user before continuing
 
-read -p "$(echo -e $blue"Are you sure you want to create a new version ("$NEXT_VERSION")? (y/n) "$end)" ANSWER
+read -p "$(echo -e $blue"Are you sure you want to create a new release ("$NEXT_VERSION")? (y/n) "$end)" ANSWER
 if [ "$ANSWER" != "y" ]; then
   echo -e "${red}User cancelled, deploy aborted.${end}"
   exit 1

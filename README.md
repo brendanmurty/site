@@ -1,6 +1,6 @@
 # Murty Website
 
-[ ![Deployment Status](https://img.shields.io/github/actions/workflow/status/brendanmurty/murty-website/deployment.yml?label=Deployment%20Status&style=flat-square&color=%2323c5b0&labelColor=%23222222)](https://github.com/brendanmurty/murty-website/actions/workflows/deployment.yml)
+[ ![Deployment Status](https://img.shields.io/github/actions/workflow/status/brendanmurty/murty-website/release.yml?label=Deployment%20Status&style=flat-square&color=%2323c5b0&labelColor=%23222222)](https://github.com/brendanmurty/murty-website/actions/workflows/release.yml)
 [ ![Latest Release](https://img.shields.io/github/v/release/brendanmurty/murty-website?label=Latest%20Release&style=flat-square&color=%2323c5b0&labelColor=%23222222)](https://github.com/brendanmurty/murty-website/releases)
 [ ![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fmurty.au&up_message=online&down_message=offline&style=flat-square&logo=globe&label=Website%20Status&labelColor=%23222222)](https://murty.au)
 
@@ -10,7 +10,7 @@ This repository contains the website for the [Murty family](https://murty.au/), 
 
 Tests, build and local server commands are available from local environments.
 
-Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a [GitHub Actions workflow](.github/workflows/deployment.yml).
+Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a [GitHub Actions workflow](.github/workflows/release.yml).
 
 The GitHub Actions workflow also pushes a new version of the built site to the [murty-website](https://hub.docker.com/r/brendanmurty/murty-website) repository on Docker Hub.
 
@@ -26,7 +26,7 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 
 | Folder / File | Description |
 | ---- | ---- |
-| [.github/workflows/deployment.yml](.github/workflows/deployment.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/), publishes a new [GitHub release](https://github.com/brendanmurty/murty-website/releases) and pushes a new version to the [repository on Docker Hub](https://hub.docker.com/r/brendanmurty/murty-website). |
+| [.github/workflows/release.yml](.github/workflows/release.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/), publishes a new [GitHub release](https://github.com/brendanmurty/murty-website/releases) and pushes a new version to the [repository on Docker Hub](https://hub.docker.com/r/brendanmurty/murty-website). |
 | [.vscode](.vscode/) | Customised [VS Code](https://code.visualstudio.com/) configuration for this repository. |
 | [assets](assets/) | Static files like images and PDFs. |
 | [content](content/) | Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files. |
@@ -41,8 +41,8 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 2. Make a local clone of that forked repository
 3. Update some files in the forked repository:
 
-- Update `.github/workflows/deployment.yml` to use your forked GitHub repository URL
-- Update `.github/workflows/deployment.yml` to use your own Docker Hub repository URL
+- Update `.github/workflows/release.yml` to use your forked GitHub repository URL
+- Update `.github/workflows/release.yml` to use your own Docker Hub repository URL
 - All files in the `content` directory **must** contain your own content instead
 - All files in the `assets` directory **must** contain your own static files instead
 - Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
@@ -73,6 +73,6 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 | ---- | ---- |
 | `deno task test` &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Run all tests |
 | `deno task serve` | Start a local web server. Builds the site and starts a local web server at `http://localhost:8000/` |
-| `deno task deploy` | Deploy via GitHub Actions. This will generate and push a new Git Tag, which will then trigger the [GitHub Actions workflow](.github/workflows/deployment.yml) in the remote repository. |
+| `deno task release` | Generate and push a new Git Tag, which will then trigger the [GitHub Actions workflow](.github/workflows/release.yml) in the remote repository. |
 
 _For more details here, refer to the `tasks` section in [deno.json](deno.json)._
