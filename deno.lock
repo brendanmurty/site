@@ -18,7 +18,7 @@
       "jsr:@std/crypto@0.223": "jsr:@std/crypto@0.223.0",
       "jsr:@std/crypto@0.224": "jsr:@std/crypto@0.224.0",
       "jsr:@std/crypto@1.0.1": "jsr:@std/crypto@1.0.1",
-      "jsr:@std/datetime@0.224.5": "jsr:@std/datetime@0.224.5",
+      "jsr:@std/datetime@0.225.0": "jsr:@std/datetime@0.225.0",
       "jsr:@std/dotenv@0.225.0": "jsr:@std/dotenv@0.225.0",
       "jsr:@std/encoding@1.0.0-rc.2": "jsr:@std/encoding@1.0.0-rc.2",
       "jsr:@std/encoding@1.0.1": "jsr:@std/encoding@1.0.1",
@@ -52,8 +52,8 @@
       "jsr:@std/toml@1.0.0": "jsr:@std/toml@1.0.0",
       "jsr:@std/toml@^1.0.0-rc.3": "jsr:@std/toml@1.0.0",
       "jsr:@std/yaml@0.224.3": "jsr:@std/yaml@0.224.3",
-      "jsr:@std/yaml@1.0.2": "jsr:@std/yaml@1.0.2",
-      "jsr:@std/yaml@^1.0.0-rc.1": "jsr:@std/yaml@1.0.2",
+      "jsr:@std/yaml@1.0.3": "jsr:@std/yaml@1.0.3",
+      "jsr:@std/yaml@^1.0.0-rc.1": "jsr:@std/yaml@1.0.3",
       "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",
       "npm:@types/estree@1.0.5": "npm:@types/estree@1.0.5",
       "npm:@types/node": "npm:@types/node@18.16.19",
@@ -124,8 +124,8 @@
       "@std/crypto@1.0.1": {
         "integrity": "5d60e6412b2ce61193e2bb622cba02d34890b3d8c4eef3312e499a77329a6f94"
       },
-      "@std/datetime@0.224.5": {
-        "integrity": "363fca6e2e46c1e85139c10ba77745d25c0936abd112b8bfdc9b8fc3615added"
+      "@std/datetime@0.225.0": {
+        "integrity": "73ee4457218e06f50d3680fb0c430ba94006305e4104c84e783b3f5c0ec78900"
       },
       "@std/dotenv@0.225.0": {
         "integrity": "44db32932c67df82790a3e6847d7007befb6cc22d71f2f3ee7b7d00e1f0d6c94"
@@ -256,6 +256,9 @@
       },
       "@std/yaml@1.0.2": {
         "integrity": "b343ae4da47c8f22a04bcab687cf36fc2926b7fb2de8f8ef06fc59499e55b632"
+      },
+      "@std/yaml@1.0.3": {
+        "integrity": "456e4646968efe4b3c8eedf27535f2db5827fa8aa3bce28779953c0397dee40b"
       }
     },
     "npm": {
@@ -667,11 +670,11 @@
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1.0.2",
-      "jsr:@std/datetime@0.224.5",
+      "jsr:@std/datetime@0.225.0",
       "jsr:@std/dotenv@0.225.0",
       "jsr:@std/fs@1.0.1",
       "jsr:@std/path@1.0.2",
-      "jsr:@std/yaml@1.0.2"
+      "jsr:@std/yaml@1.0.3"
     ]
   }
 }
