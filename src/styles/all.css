@@ -2,7 +2,7 @@
 
 /* Variables */
 
-/* Defaults and for those who prefer darker colour schemes */
+/* Defaults, darker colour scheme */
 
 :root {
   --highlight-colour: #23c5b0;
@@ -29,6 +29,7 @@ body.luca {
 
 @media (prefers-color-scheme: light) {
   :root {
+    --highlight-colour: #0B6053;
     --background-colour: #FFFFFF;
     --foreground-colour: #000000;
     --secondary-colour: #888888;
