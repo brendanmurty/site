@@ -29,10 +29,6 @@ article>h2 {
   margin: 0 0 15px;
 }
 
-.brendan .icon-threads {
-  padding-left: 5px;
-}
-
 ul.brendan_posts {
   list-style: none;
   margin-left: 0;
@@ -58,14 +54,9 @@ ul.brendan_posts .post-date,
   width: 100%;
 }
 
-.brendan_post article img:not(.data-icon) {
+.brendan_post article img:not(.icon-data) {
   clear: both;
   display: block;
-}
-
-.brendan_post .data-icon {
-  vertical-align: middle;
-  margin-right: 4px;
 }
 
 .brendan .tag-list {
@@ -145,13 +136,6 @@ ul.brendan_posts .post-date,
 .brendan ul.listing.connect li {
   width: 33.3%;
   margin: 25px 0 0;
-}
-
-.brendan ul.listing .icon {
-  height: 30px;
-  font-size: 30px;
-  margin-right: 10px;
-  float: left;
 }
 
 .brendan ul.listing:not(.connect) .label {

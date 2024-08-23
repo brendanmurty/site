@@ -176,8 +176,28 @@ html {
 
 /* Icons */
 
-.icon {
+.icon,
+.icon svg {
   color: var(--foreground-colour) !important;
+}
+
+.icon svg {
+  fill: currentColor;
+}
+
+.icon-listing {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  margin-right: 10px;
+  float: left;
+}
+
+.icon-data {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 
 /* General */
