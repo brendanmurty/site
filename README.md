@@ -60,7 +60,7 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 8. Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation/)
 9. Update your `.env` file:
 
-- `GOOGLE_ANALYTICS_SITE_CODE`: The related site code from your [Google Analytics](https://analytics.google.com/) account
+- `FATHOM_ANALYTICS_SITE_ID`: The related Site ID from your [Fathom Analytics](https://usefathom.com/) account
 
 10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 

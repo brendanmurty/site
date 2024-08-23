@@ -1,9 +1,3 @@
-{% if site.GOOGLE_ANALYTICS_SITE_CODE %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.GOOGLE_ANALYTICS_SITE_CODE }}"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '{{ site.GOOGLE_ANALYTICS_SITE_CODE }}');
-</script>
+{% if site.FATHOM_ANALYTICS_SITE_ID %}
+<script src="https://cdn.usefathom.com/script.js" data-site="{{ site.FATHOM_ANALYTICS_SITE_ID }}" defer></script>
 {% endif %}
