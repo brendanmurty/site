@@ -36,8 +36,7 @@ cat $BUILD_DIR/_styles/reset.css $BUILD_DIR/_styles/all.css $BUILD_DIR/_styles/b
 echo -e "${yellow}Minifying combined CSS file${end}"
 
 cat $BUILD_DIR/_assets/css/styles.css | \
-sed -r ':a; s%(.*)/\*.*\*/%\1%; ta; /\/\*/ !b; N; ba' \
-| tr -d '\t' | tr -d '\n' > $BUILD_DIR/_assets/css/styles.min.css
+sed -e 's/^[ \t]*//g; s/[ \t]*$//g; s/\([:{;,]\) /\1/g; s/ {/{/g; s/\/\*.*\*\///g; /^$/d' | sed -e :a -e '$!N; s/\n\(.\)/\1/; ta' | tr '\n' ' ' > $BUILD_DIR/_assets/css/styles.min.css
 
 echo -e "${yellow}Building photo posts for photos in 'inbox' directory${end}"
 
