@@ -54,18 +54,12 @@ ul.brendan_posts .post-date,
 
 .brendan_post .post-date {
   float: left;
-  clear: both;
-  width: 100%;
+  width: 175px;
 }
 
-.brendan_post article img:not(.data-icon) {
+.brendan_post article img:not(.icon-data) {
   clear: both;
   display: block;
-}
-
-.brendan_post .data-icon {
-  vertical-align: middle;
-  margin-right: 4px;
 }
 
 .brendan .tag-list {
@@ -80,18 +74,12 @@ ul.brendan_posts .post-date,
 .brendan .tag-list li {
   float: left;
   list-style: none outside none;
-  margin: 0 25px 0 0;
+  margin: 0 20px 0 0;
 }
 
 .brendan_tags .tag-list li {
   float: none;
   margin: 0 0 20px;
-}
-
-.brendan .tag-link .icon {
-  width: 15px;
-  margin-right: 10px;
-  vertical-align: middle;
 }
 
 .brendan ul.listing {
@@ -230,6 +218,7 @@ ul.brendan_gallery a:active {
   }
 
   ul.brendan_posts .post-date,
+  .brendan_post .post-date,
   .brendan ul.listing.posts .post-date,
   .brendan .photo-data .data-title {
     display: block;

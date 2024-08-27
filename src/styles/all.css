@@ -10,7 +10,9 @@
   --foreground-colour: #FFFFFF;
   --secondary-colour: #888888;
   --font-family-header: 'MDNichrome', serif;
-  --font-family-body: 'MDSystem', serif;
+  --font-family-body: 'MDSystem', system-ui, -apple-system, sans-serif;
+  --font-family-code: monospace;
+  --font-family-quote: var(--font-family-body);
 }
 
 body.freya {
@@ -57,7 +59,27 @@ body.luca {
 /* Icons */
 
 .icon {
-  color: var(--foreground-colour) !important;
+  color: var(--foreground-colour);
+}
+
+.icon-data {
+  vertical-align: baseline;
+  margin-right: 5px;
+}
+
+.icon-post {
+  color: var(--secondary-colour);
+  vertical-align: baseline;
+  margin-right: 5px;
+}
+
+.icon-tag {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.brendan_post .icon-tag {
+  color: var(--secondary-colour);
 }
 
 /* General */
@@ -187,10 +209,18 @@ header h1 a:focus {
   text-decoration: none;
 }
 
+code {
+  font-family: var(--font-family-code);
+}
+
+pre,
+blockquote {
+  font-family: var(--font-family-quote);
+}
+
 pre,
 blockquote {
   border: 1px solid var(--secondary-colour);
-  border-radius: 10px;
   color: var(--secondary-colour);
   padding: 20px;
   margin: 20px 0;

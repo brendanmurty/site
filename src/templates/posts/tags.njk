@@ -21,8 +21,8 @@
       <ul class="tag-list">
       {% for tag in tags|sort %}
         <li>
-          <a class="tag-link" href="/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
-            <span class="icon fa-fw fa-solid fa-tag"></span>{{ tag }}
+          <a href="/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
+            <span class="icon icon-tag fa-fw fa-solid fa-tag"></span>{{ tag }}
           </a>
         </li>
       {% endfor %}
