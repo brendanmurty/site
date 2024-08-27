@@ -1,9 +1,5 @@
 /* BRENDAN */
 
-.brendan header {
-  padding: 25px 10px;
-}
-
 .brendan article {
   padding: 0 10px 25px;
 }
@@ -82,9 +78,18 @@ ul.brendan_posts .post-date,
   margin: 0 0 20px;
 }
 
+.brendan header,
+.brendan ul.listing,
+.brendan .intro {
+  margin: 0 0 25px;
+}
+
+.brendan ul.listing.posts {
+  margin: 25px 0 0;
+}
+
 .brendan ul.listing {
   list-style: none;
-  margin: 35px 0 0;
   float: left;
 }
 
@@ -114,20 +119,16 @@ ul.brendan_posts .post-date,
   width: 100%;
 }
 
-.brendan ul.listing li:not(.listing-header) {
+.brendan ul.listing li {
   margin: 0 0 25px;
   line-height: 30px;
   float: left;
   width: 100%;
 }
 
-.brendan ul.listing li:not(.listing-header) a:not(.post-link) {
+.brendan ul.listing li a:not(.post-link) {
   width: 100%;
   float: left;
-}
-
-.brendan ul.listing.connect {
-  margin-top: 10px;
 }
 
 .brendan ul.listing.connect li {

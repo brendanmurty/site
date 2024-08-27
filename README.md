@@ -14,9 +14,11 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 The GitHub Actions workflow also pushes a new version of the built site to the [murty-website](https://hub.docker.com/r/brendanmurty/murty-website) repository on Docker Hub.
 
-### Preview of the home page
+### Previews of the home page
 
-![Preview of the home page](assets/docs/website-preview.png)
+![Preview of the home page in dark mode](assets/docs/website-preview-dark.png)
+
+![Preview of the home page in light mode](assets/docs/website-preview-light.png)
 
 ### Lighthouse performance results
 
