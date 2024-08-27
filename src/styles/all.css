@@ -62,6 +62,13 @@ body.luca {
   color: var(--foreground-colour);
 }
 
+.icon-breadcrumb {
+  color: var(--secondary-colour);
+  vertical-align: baseline;
+  font-size: 80%;
+  margin: 0 3px;
+}
+
 .icon-data {
   vertical-align: baseline;
   margin-right: 5px;

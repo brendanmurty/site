@@ -6,7 +6,7 @@
     </header>
 
     <article>
-      <h2><a href="/">Home</a> > <a href="/posts">Posts</a> > {{ title }}</h2>
+      <h2><a href="/">Home</a><span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span><a href="/posts">Posts</a><span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span>{{ title }}</h2>
 
       <p class="post-date">
         <span class="icon-post icon fa-fw fa-solid fa-calendar-days"></span>{{ date | date('d LLL yyyy') }}
