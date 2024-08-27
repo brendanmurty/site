@@ -1,7 +1,12 @@
 /* LUCA */
 
-.luca {
+body.luca {
+  --highlight-colour: #e94e0f;
   text-align: center;
+}
+
+.luca header h1 {
+  float: none;
 }
 
 .luca .avatar-image {

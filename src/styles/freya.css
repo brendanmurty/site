@@ -1,7 +1,12 @@
 /* FREYA */
 
-.freya {
+body.freya {
+  --highlight-colour: #981ceb;
   text-align: center;
+}
+
+.freya header h1 {
+  float: none;
 }
 
 .freya .avatar-image {

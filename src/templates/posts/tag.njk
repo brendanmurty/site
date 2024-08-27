@@ -1,7 +1,7 @@
 {% set tag = url | replace("/tags/", "") | replace("/", "") %}
 {% set posts = search.pages(tag + " type=post", "date=desc") %}
 {% include "common/header.njk" %}
-<body class="brendan brendan_tag">
+<body class="page_tag">
   <section class="container">
     <header>
       {% include "common/heading.njk" %}
@@ -9,7 +9,7 @@
 
     <article>
       <h2><a href="/">Home</a><span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span><a href="/tags">Tags</a><span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span>{{ tag }}</h2>
-      <ul class="brendan_posts">
+      <ul class="page_posts_list">
       {% for post in posts %}
       {% if post.url != '/posts/' %}
         <li>

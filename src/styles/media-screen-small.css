@@ -1,0 +1,35 @@
+/* SCREEN - SMALL */
+
+@media only screen and (max-width: 550px) {
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  header .avatar {
+    width: 100px;
+    height: auto;
+  }
+
+  ul.listing.connect li {
+    width: 100%;
+    margin: 30px 0 0;
+  }
+
+  ul.page_gallery {
+    gap: 0;
+  }
+
+  ul.page_gallery li {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  header h1 {
+    font-size: 30px;
+  }
+
+}

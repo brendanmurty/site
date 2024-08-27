@@ -30,7 +30,7 @@ cp -r "src/templates" $BUILD_DIR/_includes
 echo -e "${yellow}Combining CSS files${end}"
 
 mkdir -p $BUILD_DIR/_assets/css
-cat $BUILD_DIR/_styles/reset.css $BUILD_DIR/_styles/all.css $BUILD_DIR/_styles/brendan.css $BUILD_DIR/_styles/isla.css $BUILD_DIR/_styles/freya.css $BUILD_DIR/_styles/luca.css > $BUILD_DIR/_assets/css/styles.css
+cat $BUILD_DIR/_styles/reset.css $BUILD_DIR/_styles/site.css $BUILD_DIR/_styles/isla.css $BUILD_DIR/_styles/freya.css $BUILD_DIR/_styles/luca.css $BUILD_DIR/_styles/media-screen-medium.css $BUILD_DIR/_styles/media-screen-small.css $BUILD_DIR/_styles/media-print.css > $BUILD_DIR/_assets/css/styles.css
 
 echo -e "${yellow}Minifying combined CSS file${end}"
 

@@ -1,7 +1,12 @@
 /* ISLA */
 
-.isla {
+body.isla {
+  --highlight-colour: #14b3fb;
   text-align: center;
+}
+
+.isla header h1 {
+  float: none;
 }
 
 .isla .avatar-image {
