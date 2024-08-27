@@ -29,6 +29,7 @@ if [ $? -ne 0 ]; then
   echo -e "${red}Tests failed, deploy aborted.${end}"
   exit 1
 fi
+deno task docker-stop
 
 echo -e "${blue}Tagging commit and pushing changes...${end}"
 
