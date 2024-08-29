@@ -26,6 +26,21 @@
   }
 }
 
+/* Child page overrides */
+
+body.page_freya {
+  --highlight-colour: #981ceb;
+}
+
+body.page_isla {
+  --highlight-colour: #14b3fb;
+}
+
+body.page_luca {
+  --highlight-colour: #e94e0f;
+}
+
+
 /* Fonts */
 
 @font-face {
@@ -222,6 +237,21 @@ header h1 a:hover,
 header h1 a:focus {
   color: var(--foreground-colour);
   text-decoration: none;
+}
+
+/* Child pages */
+
+.page_type_child {
+  text-align: center;
+}
+
+.page_type_child header h1 {
+  float: none;
+}
+
+.page_type_child .avatar-image {
+  margin-bottom: 40px;
+  border-radius: 150px;
 }
 
 /* Content */
