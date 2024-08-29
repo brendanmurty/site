@@ -8,6 +8,6 @@
   "editor.formatOnPaste": true,
   "editor.tabSize": 2,
   "workbench.editor.customLabels.patterns": {
-    "*/src/**/index.*": "/src/${dirname}"
+    "*/src/**/index.*": "${dirname}"
   }
 }
