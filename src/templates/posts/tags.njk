@@ -1,14 +1,3 @@
-{% set posts = search.pages("type=post") %}
-{% set tags = [] %}
-{% for post in posts %}
-{% if post.tags %}
-{% for tag in post.tags %}
-{% if tag not in tags %}
-{% set tags = (tags.push(tag), tags) %}
-{% endif %}
-{% endfor %}
-{% endif %}
-{% endfor %}
 {% include "common/header.njk" %}
 <body class="page_tags_list">
   <section class="container">
@@ -18,15 +7,7 @@
 
     <article>
       <h2><a href="/">Home</a><span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span>Tags</h2>
-      <ul class="tag-list">
-      {% for tag in tags|sort %}
-        <li>
-          <a href="/tags/{{ tag }}" title="View posts tagged with {{ tag }}">
-            <span class="icon icon-tag fa-fw fa-solid fa-tag"></span>{{ tag }}
-          </a>
-        </li>
-      {% endfor %}
-      </ul>
+      {% include "posts/tag-list.njk" %}
     </article>
   </section>
 </body>

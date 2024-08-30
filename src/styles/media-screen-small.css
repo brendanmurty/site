@@ -1,6 +1,6 @@
 /* SCREEN - SMALL */
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
 
   header h1 {
     font-size: 35px;
@@ -11,7 +11,8 @@
     height: auto;
   }
 
-  ul.listing.connect li {
+  ul.listing.connect li,
+  .page_home .tag-list li {
     width: 100%;
     margin: 30px 0 0;
   }
