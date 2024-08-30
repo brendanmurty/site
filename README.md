@@ -22,7 +22,7 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 
 ### Lighthouse performance results
 
-[![Lighthouse performance results](assets/docs/lighthouse-performance-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/24dp4hr636?form_factor=desktop)
+[![Lighthouse performance results](assets/docs/lighthouse-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/34tt6cttmx?form_factor=desktop)
 
 ## Folder structure and key files
 
