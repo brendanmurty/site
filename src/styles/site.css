@@ -28,15 +28,15 @@
 
 /* Child page overrides */
 
-body.page_freya {
+body.page-freya {
   --highlight-colour: #981ceb;
 }
 
-body.page_isla {
+body.page-isla {
   --highlight-colour: #14b3fb;
 }
 
-body.page_luca {
+body.page-luca {
   --highlight-colour: #e94e0f;
 }
 
@@ -92,7 +92,7 @@ body.page_luca {
   padding-left: 5px;
 }
 
-.page_post .icon-tag {
+.page-post .icon-tag {
   color: var(--secondary-colour);
 }
 
@@ -237,15 +237,15 @@ header h1 a:focus {
 
 /* Child pages */
 
-.page_type_child {
+.page-type-child {
   text-align: center;
 }
 
-.page_type_child header h1 {
+.page-type-child header h1 {
   float: none;
 }
 
-.page_type_child .avatar-image {
+.page-type-child .avatar-image {
   margin-bottom: 40px;
   border-radius: 150px;
 }
@@ -318,18 +318,18 @@ ul.listing li>a {
 }
 
 ul.listing li,
-.page_home .tag-list li {
+.page-home .tag-list li {
   margin: 0 0 25px;
   line-height: 30px;
   float: left;
   width: 100%;
 }
 
-.page_home .tag-list {
+.page-home .tag-list {
   margin: 0;
 }
 
-.page_home .tag-list li {
+.page-home .tag-list li {
   width: 33%;
 }
 
@@ -360,18 +360,18 @@ ul.listing:not(.connect) .label {
 
 /* Posts */
 
-ul.page_posts_list {
+ul.page-posts-list {
   list-style: none;
   margin-left: 0;
 }
 
-ul.page_posts_list li,
+ul.page-posts-list li,
 .photo-data li {
   margin-bottom: 20px;
 }
 
-ul.page_posts_list .post-date,
-.page_post .post-date,
+ul.page-posts-list .post-date,
+.page-post .post-date,
 .posts .post-date,
 .photo-data .data-title {
   width: 125px;
@@ -379,12 +379,12 @@ ul.page_posts_list .post-date,
   display: inline-block;
 }
 
-.page_post .post-date {
+.page-post .post-date {
   float: left;
   width: 175px;
 }
 
-.page_post article img:not(.icon-data) {
+.page-post article img:not(.icon-data) {
   clear: both;
   display: block;
 }
@@ -394,7 +394,7 @@ ul.page_posts_list .post-date,
   float: left;
 }
 
-.page_tags_list .tag-list {
+.page-tags_list .tag-list {
   float: none;
 }
 
@@ -404,7 +404,7 @@ ul.page_posts_list .post-date,
   margin: 0 20px 0 0;
 }
 
-.page_tags_list .tag-list li {
+.page-tags_list .tag-list li {
   float: none;
   margin: 0 0 20px;
 }
@@ -416,7 +416,7 @@ ul.page_posts_list .post-date,
   margin: 20px 0;
 }
 
-ul.page_gallery {
+ul.page-gallery {
   list-style: none outside none;
   margin: 40px 0;
   display: flex;
@@ -424,7 +424,7 @@ ul.page_gallery {
   gap: 40px;
 }
 
-ul.page_gallery li {
+ul.page-gallery li {
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -434,17 +434,17 @@ ul.page_gallery li {
   min-width: 270px;
 }
 
-ul.page_gallery img {
+ul.page-gallery img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-ul.page_gallery a {
+ul.page-gallery a {
   display: inline-grid;
 }
 
-ul.page_gallery a:hover,
-ul.page_gallery a:active {
+ul.page-gallery a:hover,
+ul.page-gallery a:active {
   opacity: 0.5;
 }
