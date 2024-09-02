@@ -16,9 +16,9 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 
 ### Previews of the home page
 
-![Preview of the home page in dark mode](assets/docs/preview-dark.png)
+![Preview of the home page in dark mode](assets/docs/home-dark.png)
 
-![Preview of the home page in light mode](assets/docs/preview-light.png)
+![Preview of the home page in light mode](assets/docs/home-light.png)
 
 ### Lighthouse performance results
 
