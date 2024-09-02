@@ -9,10 +9,10 @@
   --background-colour: #000000;
   --foreground-colour: #ffffff;
   --secondary-colour: #888888;
-  --font-family-header: 'MDNichrome', serif;
-  --font-family-body: 'MDSystem', system-ui, -apple-system, sans-serif;
-  --font-family-code: monospace;
-  --font-family-quote: var(--font-family-body);
+  --font-family-header: 'MDIO-Black', var(--font-family-code);
+  --font-family-body: var(--font-family-code);
+  --font-family-code: 'MDIO-Regular', monospace;
+  --font-family-quote: var(--font-family-code);
 }
 
 /* Light colour scheme overrides */
@@ -40,23 +40,22 @@ body.page-luca {
   --highlight-colour: #e94e0f;
 }
 
-
 /* Fonts */
 
 @font-face {
-  font-family: 'MDNichrome';
+  font-family: 'MDIO-Black';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('MDNichrome'), local('MDNichrome-Regular'), url('/fonts/MDNichrome-Regular.woff') format('woff');
+  src: local('MDIO-Black'), url('/fonts/MDIO-Black.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'MDSystem';
+  font-family: 'MDIO-Regular';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('MDSystem'), local('MDSystem-Regular'), url('/fonts/MDSystem-Regular.woff') format('woff');
+  src: local('MDIO'), local('MDIO-Regular'), url('/fonts/MDIO-Regular.woff') format('woff');
 }
 
 /* Icons */
@@ -69,7 +68,6 @@ body.page-luca {
   color: var(--secondary-colour);
   vertical-align: baseline;
   font-size: 80%;
-  margin: 0 3px;
 }
 
 .icon-data {
@@ -166,7 +164,6 @@ h3,
 h4 {
   font-family: var(--font-family-header);
   font-weight: 500;
-  letter-spacing: 1.25px;
   margin: 5px 0 15px;
   padding: 0;
   clear: both;
@@ -370,14 +367,14 @@ ul.page-posts-list .post-date,
 .page-post .post-date,
 .posts .post-date,
 .photo-data .data-title {
-  width: 125px;
+  width: 150px;
   color: var(--secondary-colour);
   display: inline-block;
 }
 
 .page-post .post-date {
   float: left;
-  width: 175px;
+  width: 200px;
 }
 
 .page-post article img:not(.icon-data) {

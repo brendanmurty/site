@@ -6,7 +6,7 @@
 
 ## Summary
 
-This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), fonts that I've purchased from [Mass-Driver](https://mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
+This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), a commercially licensed version of the [IO font by Mass-Driver](https://io.mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
 
 Tests, build and local server commands are available from local environments.
 
@@ -47,7 +47,7 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 - Update `.github/workflows/release.yml` to use your own Docker Hub repository URL
 - All files in the `content` directory **must** contain your own content instead
 - All files in the `assets` directory **must** contain your own static files instead
-- Purchase your own license to use [Mass-Driver](https://mass-driver.com/) fonts or use other fonts
+- Purchase your own license to use the [Mass-Driver IO font](https://io.mass-driver.com/) or update the CSS to use other fonts
 
 4. Commit and push all of these changes to your forked repository
 5. Update the Settings for your forked repository via GitHub:

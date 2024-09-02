@@ -8,7 +8,12 @@
     </header>
 
     <article>
-      <h2><a href="/">Home</a><span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span><a href="/tags">Tags</a><span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span>{{ tag }}</h2>
+      <h2>
+        <a class="breadcrumb-previous" href="/tags">Tags</a>
+        <span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span>
+        <span class="breadcrumb-current">{{ tag }}</span>
+      </h2>
+
       <ul class="page-posts-list">
       {% for post in posts %}
       {% if post.url != '/posts/' %}
