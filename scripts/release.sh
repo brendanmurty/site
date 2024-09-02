@@ -10,7 +10,7 @@ end="\033[0m"
 
 # Figure out the next version number
 
-NEXT_VERSION=$(date +%Y%m%e.%H%M)
+NEXT_VERSION=$(date +%Y%m%d.%H%M)
 
 # Ask for confirmation from the user before continuing
 
