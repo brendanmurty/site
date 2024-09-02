@@ -17,6 +17,14 @@
     margin: 30px 0 0;
   }
 
+  .page-home .tag-list li:first-child {
+    margin-top: 0;
+  }
+
+  .page-home .tag-list {
+    margin-bottom: 30px;
+  }
+
   ul.page-gallery {
     gap: 0;
   }
