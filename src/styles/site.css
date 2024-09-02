@@ -200,10 +200,6 @@ article h1 {
   line-height: 42px;
 }
 
-article>h2 {
-  margin: 0 0 15px;
-}
-
 header .avatar {
   float: left;
   margin-right: 30px;
