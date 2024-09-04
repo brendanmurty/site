@@ -13,6 +13,8 @@
   --font-family-body: var(--font-family-code);
   --font-family-code: 'MDIO-Regular', monospace;
   --font-family-quote: var(--font-family-code);
+  --font-size-body: 20px;
+  --line-height-body: 32px;
 }
 
 /* Light colour scheme overrides */
@@ -105,8 +107,8 @@ html {
 
 body {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
   font-family: var(--font-family-body);
   padding: 0;
   overflow-x: hidden;
@@ -270,22 +272,26 @@ li {
   margin: 0 0 6px;
 }
 
-code {
-  font-family: var(--font-family-code);
-}
-
 pre,
 blockquote {
   font-family: var(--font-family-quote);
-}
-
-pre,
-blockquote {
   border: 1px solid var(--secondary-colour);
   color: var(--secondary-colour);
   padding: 20px;
   margin: 20px 0;
   overflow-x: auto;
+}
+
+code,
+.gist .blob-code-inner,
+.gist .blob-num {
+  font-family: var(--font-family-code) !important;
+  font-size: var(--font-size-body) !important;
+  line-height: var(--line-height-body) !important;
+}
+
+.gist-meta {
+  display: none !important;
 }
 
 blockquote p:last-child {

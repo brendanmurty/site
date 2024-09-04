@@ -22,92 +22,12 @@ There are a few requirements of a theming system:
 This method is designed around the idea of placing common styles in a file named *common.css *and placing theme specific styling in other CSS files. The filename of these files will become the theme name, like so:
 
 - _red.css_ is displayed as _Red_
-- *dark-blue.css *is displayed as _Dark Blue_
+- _dark-blue.css_ is displayed as _Dark Blue_
 - _salmon.css_ is displayed as _Salmon_
 
 For this example, the CSS files are placed in a top level folder named _styles_. Feel free to update this by changing the value of the **$folder** variables in the PHP functions.
 
-#### theme-list.php
-
-```
-<?php
-// theme_list - Return a list of the available themes
-function theme_list(){
-  $folder='/styles/';// Path to the themes folder
-
-  // Extract a list of files in the folder and sort them
-  $dir=opendir($folder);
-  $files=array();
-  while($files[]=readdir($dir));
-  sort($files);
-  closedir($dir);
-
-  // Create the theme selector list
-  $return='';
-  foreach($files as $file){
-    $ext=pathinfo($file,PATHINFO_EXTENSION);
-    if($file!='.' && $file!='..' && $ext=='css' && $file!='common.css'){
-      $theme_name=str_replace('.'.$ext,'',$file);
-      $theme_title=str_replace("_"," ",str_replace("-"," ",ucwords(strtolower($theme_name))));
-      $return.='<li><a href="/theme-set.php?theme='.$theme_name.'">'.$theme_title.'</a></li>';
-    }
-  }
-  if($return!=''){ return '<ul class="themes">'.$return.'</ul>'; }
-}
-?>
-```
-
-#### theme-get.php
-
-```
-<?php
-// theme_get - Return the currently selected theme name
-function theme_get(){
-  $theme_selected='red';// Set the default theme
-  $folder='/styles/';// Path to the themes folder
-  session_start();
-  if(isset($_COOKIE['theme']) && $_COOKIE['theme']!=''){
-    $theme_requested=$_COOKIE['theme'];
-    if($folder.$theme_requested.'.css')){
-      $theme_selected=$theme_requested;
-    }
-  }
-  return $theme_selected;
-}
-
-// Output the CSS includes to the page
-$theme_selected=theme_get();
-print '<link rel="stylesheet" href="/styles/common.css">';
-print '<link rel="stylesheet" href="/styles/'.$theme_selected.'.css">';
-?>
-```
-
-#### theme-set.php
-
-```
-<?php
-// theme_set - Update the theme in use
-function theme_set($theme){
-  if($theme!=''){
-    $folder='/styles/'
-    if(file_exists($folder.$theme.'.css')){
-      session_start();
-      setcookie("theme",$theme,time()+60*60*24*14);
-    }
-  }
-}
-
-// Check the URL for a theme
-if(isset($_GET['theme']) && $_GET['theme']!=''){
-  // Clean this data! One method: http://stackoverflow.com/questions/4223980/the-ultimate-clean-secure-function
-  $theme_clean=your_clean_function($_GET['theme']);
-
-  // Set the theme then redirect to the home page
-  theme_set($theme_clean);
-  header('Location: /');
-}
-?>
-```
+<script src="https://gist.github.com/brendanmurty/24650665daf4fd0b37a740f642a46ce7.js"></script>
 
 ### Notes
 

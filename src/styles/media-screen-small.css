@@ -2,6 +2,11 @@
 
 @media only screen and (max-width: 600px) {
 
+  body {
+    --font-size-body: 18px;
+    --line-height-body: 26px;
+  }
+
   header .avatar {
     width: 100px;
     height: auto;
@@ -35,10 +40,6 @@
   h4,
   header h1 {
     font-size: 22px;
-  }
-
-  body {
-    font-size: 18px;
   }
 
 }

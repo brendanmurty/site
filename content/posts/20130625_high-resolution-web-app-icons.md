@@ -16,7 +16,9 @@ There are a few things to remember when implementing this feature in your web ap
 
 To ensure that [iOS](http://www.apple.com/ios/) doesn't apply the default shine to your icon, you'll need to use the correct tag in the _head_ section of your page:
 
-    <link rel="apple-touch-icon-precomposed" href="/images/logo-114.png">
+```
+<link rel="apple-touch-icon-precomposed" href="/images/logo-114.png">
+```
 
 [Android](http://www.android.com/) browsers also support this method, sweet!
 
