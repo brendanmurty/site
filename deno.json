@@ -26,7 +26,7 @@
     "docker-build-debug": "docker build --progress=plain --tag murty-website .",
     "docker-remove": "docker rm --force murty-website || true",
     "docker-restart": "deno task docker-build && deno task docker-stop && deno task docker-remove && deno task docker-run",
-    "docker-run": "docker run --publish 8000:8000 --detach --name=murty-website murty-website",
+    "docker-run": "docker run --publish 8000:8000 --detach --name=murty-website murty-website:latest",
     "docker-serve": "deno task docker-restart && echo 'Server started at http://localhost:8000'",
     "docker-stop": "docker stop murty-website || true",
     "docker-test": "deno task docker-restart && docker exec murty-website bash /murty-website/tools/test.sh",
