@@ -553,6 +553,7 @@
     "https://deno.land/x/lume@v2.2.4/core/server.ts": "1d8b465bd9ee345cf7332450727709c5ef5babe305cabda3a15efe3f1c73f4b6",
     "https://deno.land/x/lume@v2.2.4/core/site.ts": "b88d6b68f92534dd01baa98b4baaf9dcc228f41bdd53e9337b40539126356007",
     "https://deno.land/x/lume@v2.2.4/core/source.ts": "5b866c68c7275e9fd195c0461b2f7c8907bf3772b4bd4bbe332b21613623a8ae",
+    "https://deno.land/x/lume@v2.2.4/core/tools.ts": "286969b120d2290ba57a7fdd9b37e587aacf4e4162d92f51f1f1e9e18c864f30",
     "https://deno.land/x/lume@v2.2.4/core/utils/cli_options.ts": "0e48094ef8b89502c53fa597e01238c2ca972f65d2b9b219cca42a3988cba3c6",
     "https://deno.land/x/lume@v2.2.4/core/utils/concurrent.ts": "cb0775b3d95f3faa356aa3a3e489dccef8807ed93cc4f84fcf5bc81e87c29504",
     "https://deno.land/x/lume@v2.2.4/core/utils/date.ts": "b989369496b9a6fba04cf1dee7f58f157911ae273aa3ca16abf9a047e4e091c2",

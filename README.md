@@ -32,8 +32,8 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 | [.vscode](.vscode/) | Customised [VS Code](https://code.visualstudio.com/) configuration for this repository. |
 | [assets](assets/) | Static files like images and PDFs. |
 | [content](content/) | Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files. |
-| [scripts](scripts/) | Helper scripts, refer to the `Commands` section below for more details. |
 | [src](src/) | Source code, templates and CSS files. |
+| [tools](tools/) | Helper scripts, refer to the `Commands` section below for more details. |
 | [deno.json](deno.json) | [Deno](https://deno.land/) imports, tasks and configuration for this repository. |
 | [Dockerfile](Dockerfile) | [Docker](https://www.docker.com/) configuration file to allow the site to build and serve inside a minimal Linux container. |
 

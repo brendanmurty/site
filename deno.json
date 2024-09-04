@@ -19,9 +19,9 @@
     "oak/": "https://deno.land/x/oak@v16.1.0/"
   },
   "tasks": {
-    "build": "bash ./scripts/build.sh",
+    "build": "bash ./tools/build.sh",
     "deno-serve": "deno task build && echo 'Server starting at http://localhost:8000/' && deno run --allow-net --allow-read src/server.ts",
-    "deno-test": "bash ./scripts/test.sh",
+    "deno-test": "bash ./tools/test.sh",
     "docker-build": "docker build --quiet --tag murty-website .",
     "docker-build-debug": "docker build --progress=plain --tag murty-website .",
     "docker-remove": "docker rm --force murty-website || true",
@@ -29,11 +29,11 @@
     "docker-run": "docker run --publish 8000:8000 --detach --name=murty-website murty-website",
     "docker-serve": "deno task docker-restart && echo 'Server started at http://localhost:8000'",
     "docker-stop": "docker stop murty-website || true",
-    "docker-test": "deno task docker-restart && docker exec murty-website bash /murty-website/scripts/test.sh",
+    "docker-test": "deno task docker-restart && docker exec murty-website bash /murty-website/tools/test.sh",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-    "release": "bash ./scripts/release.sh",
+    "release": "bash ./tools/release.sh",
     "serve": "deno task docker-serve",
-    "setup": "bash ./scripts/setup.sh",
+    "setup": "bash ./tools/setup.sh",
     "test": "deno task docker-test"
   }
 }
