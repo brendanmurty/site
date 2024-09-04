@@ -10,5 +10,11 @@ RUN apk add --no-cache bash exiftool
 RUN deno task setup
 RUN deno task build
 
+# Change to a new non-root user
+RUN adduser --disabled-password --no-create-home murty
+RUN chown -R murty:murty /murty-website
+RUN chown -R murty:murty /deno-dir
+USER murty
+
 # Serve the site at http://localhost:8000
 CMD ["deno", "task", "deno-serve"]
