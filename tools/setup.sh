@@ -8,7 +8,7 @@ mkdir -p inbox
 
 # Install Deno packages
 
-deno install --global --allow-run --allow-env --allow-read --name lume --force --reload https://deno.land/x/lume_cli/mod.ts
+deno install --global --allow-run --allow-env --allow-read --name lume --force --reload https://deno.land/x/lume_cli@v2.1.1/mod.ts
 
 # Setup an initial ENV file if it doesn't already exist
 

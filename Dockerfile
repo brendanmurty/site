@@ -1,4 +1,4 @@
-FROM denoland/deno:alpine-1.46.1 AS site
+FROM denoland/deno:alpine-1.46.2 AS site
 EXPOSE 8000
 WORKDIR /murty-website
 COPY . .
