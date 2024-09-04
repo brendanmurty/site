@@ -11,6 +11,7 @@ jobs:
         uses: "denoland/setup-deno@v1"
         with:
           deno-version: 1.46.2
+
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup environment
@@ -91,4 +92,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: brendanmurty/site:latest, brendanmurty/site:${{ github.ref_name }}
+          tags: brendanmurty/murty-website:latest, brendanmurty/murty-website:${{ github.ref_name }}
