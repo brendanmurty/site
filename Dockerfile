@@ -11,7 +11,8 @@ RUN deno task setup
 RUN deno task build
 
 # Change to a new non-root user
-RUN adduser --disabled-password --no-create-home murty
+RUN addgroup murty
+RUN adduser --disabled-password --no-create-home --ingroup murty murty
 RUN chown -R murty:murty /murty-website
 RUN chown -R murty:murty /deno-dir
 USER murty
