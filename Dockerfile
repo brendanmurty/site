@@ -4,7 +4,7 @@ WORKDIR /murty-website
 COPY . .
 
 # Install system-level packages
-RUN apk add --no-cache bash exiftool
+RUN apk add --no-cache bash exiftool openssl
 
 # Configure and build the site
 RUN deno task setup
