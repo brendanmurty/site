@@ -1,3 +1,3 @@
 ---
-title: Photo
+title: Tag - Photo
 ---
