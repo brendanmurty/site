@@ -3,9 +3,7 @@
     "jsx": "react-jsx",
     "jsxImportSource": "npm:react",
     "jsxImportSourceTypes": "npm:@types/react",
-    "types": [
-      "lume/types.ts"
-    ]
+    "types": ["lume/types.ts"]
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1.0.3",
@@ -24,7 +22,7 @@
   "lint": {
     "rules": {
       "exclude": [
-        "no-unused-vars"
+        "no-unused-vars" // Mostly to handle the "helpers" variable in layout files
       ]
     }
   },
