@@ -1,4 +1,3 @@
 ---
-title: Murty
-layout: index.njk
+layout: home.njk
 ---

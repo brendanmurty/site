@@ -1,3 +1,3 @@
 ---
-layout: index.njk
+layout: home.njk
 ---
