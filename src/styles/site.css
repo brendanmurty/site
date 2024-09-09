@@ -359,17 +359,17 @@ ul.listing:not(.connect) .label {
 
 /* Posts */
 
-ul.page-posts-list {
+ul.posts-list {
   list-style: none;
   margin-left: 0;
 }
 
-ul.page-posts-list li,
+ul.posts-list li,
 .photo-data li {
   margin-bottom: 20px;
 }
 
-ul.page-posts-list .post-date,
+ul.posts-list .post-date,
 .page-post .post-date,
 .posts .post-date,
 .photo-data .data-title {
