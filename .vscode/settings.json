@@ -7,6 +7,12 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.tabSize": 2,
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
   "workbench.editor.customLabels.patterns": {
     "*/src/**/index.*": "${dirname}"
   }

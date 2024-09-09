@@ -11,6 +11,7 @@ import date from "lume/plugins/date.ts";
 import redirects from "lume/plugins/redirects.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
+import jsx from "lume/plugins/jsx.ts";
 
 // Build the site using Lume
 const site = lume({
@@ -23,5 +24,6 @@ site.use(nunjucks());
 site.use(date());
 site.use(redirects());
 site.use(sitemap());
+site.use(jsx());
 
 export default site;

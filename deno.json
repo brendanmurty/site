@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:react",
+    "jsxImportSourceTypes": "npm:@types/react",
     "types": [
       "lume/types.ts"
     ]
@@ -17,6 +20,13 @@
     "json2yaml/": "https://deno.land/x/json2yaml@v1.0.1/",
     "lume/": "https://deno.land/x/lume@v2.3.0/",
     "oak/": "https://deno.land/x/oak@v16.1.0/"
+  },
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-unused-vars"
+      ]
+    }
   },
   "tasks": {
     "build": "bash ./tools/build.sh",
