@@ -63,9 +63,10 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 6. Update the `CNAME` file in the repository to use the same domain as you configured above
 7. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 8. Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation/)
-9. Update your `.env` file:
+9. Setup [Fathom Analytics](https://usefathom.com/):
 
-- `FATHOM_ANALYTICS_SITE_ID`: The related Site ID from your [Fathom Analytics](https://usefathom.com/) account
+- Update your `.env` file's `FATHOM_ANALYTICS_SITE_ID` value to be the `Site ID` from your account
+- Update the `usefathom.com` script blocks in the files inside of [src/layouts](src/layouts) to fallback to your `Site ID` instead
 
 10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 
