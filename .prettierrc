@@ -8,5 +8,6 @@
   "bracketSpacing": true,
   "bracketSameLine": true,
   "arrowParens": "always",
-  "singleAttributePerLine": true
+  "singleAttributePerLine": false,
+  "printWidth": 175
 }
