@@ -26,6 +26,7 @@ mkdir -p $BUILD_DIR
 mkdir -p $BUILD_DIR/_data
 cp -r "src/styles" $BUILD_DIR/_styles
 cp -r "src/templates" $BUILD_DIR/_includes
+cp -r "src/layouts" $BUILD_DIR/_includes/layouts
 
 echo -e "${yellow}Combining CSS files${end}"
 
