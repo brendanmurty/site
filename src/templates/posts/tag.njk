@@ -1,38 +1,34 @@
+---
+title: Tag
+layout: layouts/main.tsx
+properties:
+  body_class: page-tag
+---
+
 {% set tag = url | replace("/tags/", "") | replace("/", "") %}
 {% set posts = search.pages(tag + " type=post", "date=desc") %}
-{% include "common/header.njk" %}
-<body class="page-tag">
-  <section class="container">
-    <header>
-      {% include "common/heading.njk" %}
-    </header>
 
-    <article>
-      <h2>
-        <a class="breadcrumb-previous" href="/tags">Tags</a>
-        <span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span>
-        <span class="breadcrumb-current">{{ tag }}</span>
-      </h2>
+<h2>
+  <a class="breadcrumb-previous" href="/tags">Tags</a>
+  <span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span>
+  <span class="breadcrumb-current">{{ tag }}</span>
+</h2>
 
-      <ul class="page-posts-list">
-      {% for post in posts %}
-      {% if post.url != '/posts/' %}
-        <li>
-          <span class="post-date">
-            {{ post.date | date('d LLL yyyy') }}
-          </span>
-          <a class="post-link" href="{{ post.url }}">
-            {% if post.title %}
-            {{ post.title }}
-            {% else %}
-            {{ post.url }}
-            {% endif %}
-          </a>
-        </li>
+<ul class="page-posts-list">
+{% for post in posts %}
+{% if post.url != '/posts/' %}
+  <li>
+    <span class="post-date">
+      {{ post.date | date('d LLL yyyy') }}
+    </span>
+    <a class="post-link" href="{{ post.url }}">
+      {% if post.title %}
+      {{ post.title }}
+      {% else %}
+      {{ post.url }}
       {% endif %}
-      {% endfor %}
-      </ul>
-    </article>
-  </section>
-</body>
-</html>
+    </a>
+  </li>
+{% endif %}
+{% endfor %}
+</ul>

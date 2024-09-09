@@ -1,15 +1,10 @@
-{% include "common/header.njk" %}
-<body class="page-tags_list">
-  <section class="container">
-    <header>
-      {% include "common/heading.njk" %}
-    </header>
+---
+title: Tags
+layout: layouts/main.tsx
+properties:
+  body_class: page-tags-list
+---
 
-    <article>
-      <h2>Tags</h2>
+<h2>Tags</h2>
 
-      {% include "posts/tag-list.njk" %}
-    </article>
-  </section>
-</body>
-</html>
+{% include "posts/tag-list.njk" %}

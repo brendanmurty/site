@@ -393,7 +393,7 @@ ul.page-posts-list .post-date,
   float: left;
 }
 
-.page-tags_list .tag-list {
+.page-tags-list .tag-list {
   float: none;
 }
 
@@ -403,7 +403,7 @@ ul.page-posts-list .post-date,
   margin: 0 20px 0 0;
 }
 
-.page-tags_list .tag-list li {
+.page-tags-list .tag-list li {
   float: none;
   margin: 0 0 20px;
 }

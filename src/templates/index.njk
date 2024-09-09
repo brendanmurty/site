@@ -1,15 +1,8 @@
-<!doctype html>
-<html lang="en-AU">
-<head>
-<meta charset="utf-8">
-<title>Brendan Murty</title>
-{% include "common/meta.njk" %}
-{% include "common/meta-brendan.njk" %}
-{% include "common/analytics.njk" %}
-</head>
-<body class="page-home">
-  <section class="container">
-    {% include "home.njk" %}
-  </section>
-</body>
-</html>
+---
+title: Posts
+layout: layouts/main.tsx
+properties:
+  body_class: page-home
+---
+
+{% include "home.njk" %}

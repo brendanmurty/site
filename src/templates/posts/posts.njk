@@ -1,17 +1,12 @@
-{% include "common/header.njk" %}
-<body class="page-posts-list">
-  <section class="container">
-    <header>
-      {% include "common/heading.njk" %}
-    </header>
+---
+title: Posts
+layout: layouts/main.tsx
+properties:
+  body_class: page-posts-list
+---
 
-    <article>
-      <h2>Posts</h2>
+<h2>Posts</h2>
 
-      <ul class="page-posts-list">
-        {% include "posts/post-list.njk" %}
-      </ul>
-    </article>
-  </section>
-</body>
-</html>
+<ul class="page-posts-list">
+  {% include "posts/post-list.njk" %}
+</ul>

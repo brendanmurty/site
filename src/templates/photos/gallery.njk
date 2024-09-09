@@ -1,17 +1,12 @@
-{% include "common/header.njk" %}
-<body class="page-gallery">
-  <section class="container">
-    <header>
-      {% include "common/heading.njk" %}
-    </header>
+---
+title: Gallery
+layout: layouts/main.tsx
+properties:
+  body_class: page-gallery
+---
 
-    <article>
-      <h2><a href="/">Home</a><span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span>Gallery</h2>
-      
-      <ul class="page-gallery">
-        {% include "photos/gallery-list-items.njk" %}
-      </ul>
-    </article>
-  </section>
-</body>
-</html>
+<h2><a href="/">Home</a><span class="icon icon-breadcrumb fa-fw fa-solid fa-caret-right"></span>Gallery</h2>
+
+<ul class="page-gallery">
+  {% include "photos/gallery-list-items.njk" %}
+</ul>
