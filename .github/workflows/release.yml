@@ -19,7 +19,7 @@ jobs:
           sudo apt-get -y install exiftool
       - name: Run tests
         run: deno task deno-test
-  deploy-github-pages:
+  deploy:
     needs: test
     runs-on: ubuntu-latest
     permissions:
@@ -47,7 +47,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-  release-github:
+  release:
     needs: test
     runs-on: ubuntu-latest
     permissions:
