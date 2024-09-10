@@ -12,7 +12,7 @@ Tests, build and local server commands are available from local environments.
 
 Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a [GitHub Actions workflow](.github/workflows/release.yml).
 
-The GitHub Actions workflow also pushes a new version of the built site to the [murty-website](https://hub.docker.com/r/brendanmurty/murty-website) repository on Docker Hub.
+Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) via [VS Code](https://code.visualstudio.com/) to run a the whole development environment inside a dedicated container.
 
 ### Previews of the home page
 
@@ -61,17 +61,22 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 - Secrets and variables > Actions > new secret > Name: `DOCKERHUB_TOKEN`, Secret: _[generate new token](https://app.docker.com/settings/personal-access-tokens), read and write permissions, save the generated token here_
 
 6. Update the `CNAME` file in the repository to use the same domain as you configured above
-7. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-8. Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation/)
-9. Setup [Fathom Analytics](https://usefathom.com/):
+7. Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation/)
+8. Setup [Fathom Analytics](https://usefathom.com/):
 
 - Create your own account and setup a new site
 - Update your `.env` file's `FATHOM_ANALYTICS_SITE_ID` value to use your new `Site ID`
 
-10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
+9. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+10. **Optional:** Use a Dev Container to run the system locally:
+
+- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- Install the VS Code [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- Start the Dev Container via the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette): `Dev Containers: Rebuild Container`
 
 ## Commands
 

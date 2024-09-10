@@ -1,0 +1,30 @@
+{
+  "name": "site",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": ["--name", "site"],
+  "forwardPorts": [8000],
+  "postStartCommand": {
+    "deno-setup": "deno task setup",
+    "deno-build": "deno task build",
+    "deno-serve": "deno task deno-serve"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["denoland.vscode-deno", "esbenp.prettier-vscode"],
+      "settings": {
+        "deno.enable": true,
+        "deno.lint": true,
+        "deno.config": "./deno.jsonc",
+        "deno.importMap": "./deno.jsonc",
+        "deno.codeLens.references": true,
+        "prettier.requireConfig": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.tabSize": 2
+      }
+    }
+  }
+}
