@@ -12,7 +12,7 @@ Tests, build and local server commands are available from local environments.
 
 Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a [GitHub Actions workflow](.github/workflows/release.yml).
 
-Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) via [VS Code](https://code.visualstudio.com/) to run a the whole development environment inside a dedicated container.
+Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) via [VS Code](https://code.visualstudio.com/) to run the development environment inside a dedicated [Docker](https://www.docker.com/) container.
 
 ### Previews of the home page
 
