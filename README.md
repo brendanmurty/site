@@ -65,8 +65,8 @@ The GitHub Actions workflow also pushes a new version of the built site to the [
 8. Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation/)
 9. Setup [Fathom Analytics](https://usefathom.com/):
 
-- Update your `.env` file's `FATHOM_ANALYTICS_SITE_ID` value to be the `Site ID` from your account
-- Update the `usefathom.com` script blocks in the files inside of [src/layouts](src/layouts) to fallback to your `Site ID` instead
+- Create your own account and setup a new site
+- Update your `.env` file's `FATHOM_ANALYTICS_SITE_ID` value to use your new `Site ID`
 
 10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 

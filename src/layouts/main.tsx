@@ -1,4 +1,4 @@
-export default ({ title, children, properties, url, photo_thumb_url, photo_url, site }: Lume.Data, helpers: Lume.Helpers) => (
+export default ({ title, children, properties, url, photo_thumb_url, photo_url, fathom_analytics_site_id }: Lume.Data) => (
   <html lang="en-AU">
     <head>
       <title>{title ? "Brendan Murty - " + title : "Brendan Murty"}</title>
@@ -49,7 +49,7 @@ export default ({ title, children, properties, url, photo_thumb_url, photo_url, 
 
       <link rel="alternate" title="Posts by Brendan Murty" type="application/json" href="https://murty.au/brendan/posts.json"></link>
 
-      <script defer src="https://cdn.usefathom.com/script.js" data-site={properties.analytics ? properties.analytics : "CMUIENKH"}></script>
+      <script defer src="https://cdn.usefathom.com/script.js" data-site={fathom_analytics_site_id}></script>
     </head>
     <body className={properties.body_class}>
       <section className="container">

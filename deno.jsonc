@@ -19,13 +19,6 @@
     "lume/": "https://deno.land/x/lume@v2.3.0/",
     "oak/": "https://deno.land/x/oak@v16.1.0/"
   },
-  "lint": {
-    "rules": {
-      "exclude": [
-        "no-unused-vars" // Mostly to handle the "helpers" variable in layout files
-      ]
-    }
-  },
   "tasks": {
     "build": "bash ./tools/build.sh",
     "deno-serve": "deno task build && echo 'Server starting at http://localhost:8000/' && deno run --allow-net --allow-read src/server.ts",

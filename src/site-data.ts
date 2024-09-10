@@ -1,5 +1,6 @@
 // Convert the contents of ".env" in to YAML format and save it as "build/_data/site.yml".
-// This allows for the Nunjucks templates to access these variables like this: {{ site.FATHOM_ANALYTICS_SITE_ID }}
+//  - Adds support to Nunjucks templates to access these variables like this: {{ site.FATHOM_ANALYTICS_SITE_ID }}
+//  - To access these in TSX templates, a "site.data" call is needed in "_config.ts"
 const EnvFileContent = Deno.readTextFileSync("./.env");
 const YmlFileContent = EnvFileContent.replaceAll("=", ": ");
 
