@@ -5,10 +5,11 @@
   },
   "runArgs": ["--name", "site"],
   "forwardPorts": [8000],
+  "mounts": ["source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/node/.ssh,readonly,type=bind"],
   "postStartCommand": {
     "deno-setup": "deno task setup",
     "deno-build": "deno task build",
-    "deno-serve": "deno task deno-serve"
+    "deno-serve": "deno task serve"
   },
   "customizations": {
     "vscode": {
