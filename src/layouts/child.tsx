@@ -1,4 +1,4 @@
-export default ({ title, children, properties, fathom_analytics_site_id }: Lume.Data) => (
+export default ({ title, children, properties, FATHOM_ANALYTICS_SITE_ID }: Lume.Data) => (
   <html lang="en-AU">
     <head>
       <meta charSet="utf-8" />
@@ -14,7 +14,7 @@ export default ({ title, children, properties, fathom_analytics_site_id }: Lume.
       <meta property="og:locale" content="en_GB" />
       <link rel="icon" sizes="192x192" href={properties.icon_192} />
       <link rel="stylesheet" href="/css/styles.min.css" />
-      <script src="https://cdn.usefathom.com/script.js" data-site={fathom_analytics_site_id} defer></script>
+      <script src="https://cdn.usefathom.com/script.js" data-site={FATHOM_ANALYTICS_SITE_ID} defer></script>
     </head>
     <body className={properties.body_class}>
       <section className="container">

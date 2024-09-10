@@ -28,7 +28,18 @@ site.use(redirects());
 site.use(sitemap());
 site.use(jsx());
 
-// Allow access to some site config values in TSX files
-site.data("fathom_analytics_site_id", Deno.env.get("FATHOM_ANALYTICS_SITE_ID"));
+// Load site config values from ".env"
+site.data("FATHOM_ANALYTICS_SITE_ID", Deno.env.get("FATHOM_ANALYTICS_SITE_ID"));
+site.data("BLOG_POSTS_DIR", Deno.env.get("BLOG_POSTS_DIR"));
+site.data("BLOG_POSTS_URL", Deno.env.get("BLOG_POSTS_URL"));
+site.data("JSON_FEED_VERSION_URL", Deno.env.get("JSON_FEED_VERSION_URL"));
+site.data("JSON_FEED_TITLE", Deno.env.get("JSON_FEED_TITLE"));
+site.data("JSON_FEED_DESCRIPTION", Deno.env.get("JSON_FEED_DESCRIPTION"));
+site.data("JSON_FEED_DEFAULT_POST_TITLE", Deno.env.get("JSON_FEED_DEFAULT_POST_TITLE"));
+site.data("JSON_FEED_LANGUAGE", Deno.env.get("JSON_FEED_LANGUAGE"));
+site.data("JSON_FEED_AUTHOR_NAME", Deno.env.get("JSON_FEED_AUTHOR_NAME"));
+site.data("JSON_FEED_AUTHOR_URL", Deno.env.get("JSON_FEED_AUTHOR_URL"));
+site.data("JSON_FEED_FILE_OUTPUT", Deno.env.get("JSON_FEED_FILE_OUTPUT"));
+site.data("JSON_FEED_URL_FEED", Deno.env.get("JSON_FEED_URL_FEED"));
 
 export default site;

@@ -51,10 +51,6 @@ echo -e "${yellow}Copying over page content files to '$BUILD_DIR'${end}"
 
 cp -r content/* $BUILD_DIR
 
-echo -e "${yellow}Preparing site data for Lume${end}"
-
-deno run -A --allow-read --allow-write src/site-data.ts
-
 echo -e "${yellow}Building the front-end using Lume and '_config.ts'${end}"
 
 deno task lume
