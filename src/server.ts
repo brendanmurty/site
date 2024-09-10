@@ -1,4 +1,4 @@
-import { Application, isHttpError } from "oak/mod.ts";
+import { Application } from "@oak/oak/application";
 
 const app = new Application();
 
@@ -11,10 +11,8 @@ app.use(async (context) => {
     });
   } catch (error) {
     // Catch any errors and simplify the log message for them
-    if (isHttpError(error)) {
-      console.log(
-        "Error: " + error.message + " (" + context.request.url.href + ")"
-      );
+    if (context.request?.url.href) {
+      console.log("Error: " + error.message + " (" + context.request.url.href + ")");
     } else {
       console.log("Error: " + error.message);
     }
