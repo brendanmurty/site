@@ -1,6 +1,6 @@
 ---
 title: Isla Murty
-layout: layouts/child.tsx
+layout: layouts/page-simple.tsx
 properties:
   body_class: page-isla page-type-child
   description: Loves salt and vinegar chips and plain crackers with Philadelphia

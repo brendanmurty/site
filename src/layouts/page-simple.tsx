@@ -1,4 +1,4 @@
-export default ({ title, children, properties, FATHOM_ANALYTICS_SITE_ID }: Lume.Data) => (
+export default ({ children, FATHOM_ANALYTICS_SITE_ID, properties, title }: Lume.Data) => (
   <html lang="en-AU">
     <head>
       <meta charSet="utf-8" />

@@ -1,6 +1,6 @@
 ---
 title: Luca Murty
-layout: layouts/child.tsx
+layout: layouts/page-simple.tsx
 properties:
   body_class: page-luca page-type-child
   description: A keen bird admirer

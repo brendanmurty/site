@@ -1,6 +1,6 @@
 ---
 title: Freya Murty
-layout: layouts/child.tsx
+layout: layouts/page-simple.tsx
 properties:
   body_class: page-freya page-type-child
   description: A keen Classic Wiggles and blueberries fan
