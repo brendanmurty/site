@@ -1,4 +1,4 @@
-export default ({ title, children, properties, url, photo_thumb_url, photo_url, FATHOM_ANALYTICS_SITE_ID }: Lume.Data) => (
+export default ({ children, date, FATHOM_ANALYTICS_SITE_ID, properties, photo_thumb_url, photo_url, title, url }: Lume.Data) => (
   <html lang="en-AU">
     <head>
       <title>{title ? "Brendan Murty - " + title : "Brendan Murty"}</title>
@@ -12,6 +12,8 @@ export default ({ title, children, properties, url, photo_thumb_url, photo_url, 
         name="description"
         content={properties.description ? properties.description : "Brendan is a Father, Schnitzel Reviewer, Software Engineering Manager and Technical Lead."}
       />
+
+      {date && <meta property="article:published_time" content={date.toISOString()} />}
 
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_GB" />
