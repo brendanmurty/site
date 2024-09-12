@@ -6,7 +6,7 @@
 
 ## Summary
 
-This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), a commercially licensed version of the [IO font by Mass-Driver](https://io.mass-driver.com/), and the free icon pack from [Font Awesome](https://fontawesome.com/).
+This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), a commercially licensed version of the [IO font by Mass-Driver](https://io.mass-driver.com/), and a licensed icon pack from [Font Awesome](https://fontawesome.com/).
 
 Tests, build and local server commands are available from local environments.
 
@@ -52,6 +52,7 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 - All files in the `content` directory **must** contain your own content instead
 - All files in the `assets` directory **must** contain your own static files instead
 - Purchase your own license to use the [Mass-Driver IO font](https://io.mass-driver.com/) or update the CSS to use other fonts
+- Purchase [Font Awesome Pro](https://fontawesome.com/), setup your own kit, and update the `kit.fontawesome.com` script path in the source code. Alternatively, you can use a free icon pack and update the code in your fork to use that instead.
 
 4. Commit and push all of these changes to your forked repository
 5. Update the Settings for your forked repository via GitHub:

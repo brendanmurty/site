@@ -80,7 +80,6 @@ cp "assets/resume.pdf" "$PUBLIC_DIR/Brendan Murty - Resume.pdf"
 echo -e "${yellow}Copying CSS files to the '$PUBLIC_DIR/css' directory${end}"
 
 mkdir -p $PUBLIC_DIR/css
-cp -r assets/icons/fontawesome $PUBLIC_DIR/css
 cp "$BUILD_DIR/_assets/css/styles.min.css" "$PUBLIC_DIR/css/styles.min.css"
 
 echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"

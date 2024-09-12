@@ -13,7 +13,9 @@ export default ({ children, FATHOM_ANALYTICS_SITE_ID, properties, title }: Lume.
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_GB" />
       <link rel="icon" sizes="192x192" href={properties.icon_192} />
+      <link rel="preload" href="/css/styles.min.css" as="style" />
       <link rel="stylesheet" href="/css/styles.min.css" />
+      <script defer src="https://kit.fontawesome.com/e084936c24.js" crossOrigin="anonymous"></script>
       <script src="https://cdn.usefathom.com/script.js" data-site={FATHOM_ANALYTICS_SITE_ID} defer></script>
     </head>
     <body className={properties.body_class}>
