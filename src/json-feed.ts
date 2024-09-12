@@ -16,15 +16,13 @@ import { PostsList } from "./posts-list.ts";
 
 // Set feed properties using variables from the ".env" file
 await load({ export: true });
-const jsonFeedVersion: string =
-  Deno.env.get("JSON_FEED_VERSION_URL") || "https://jsonfeed.org/version/1.1";
+const jsonFeedVersion: string = Deno.env.get("JSON_FEED_VERSION_URL") || "https://jsonfeed.org/version/1.1";
 const jsonFeedTitle: string = Deno.env.get("JSON_FEED_TITLE") || "";
 const jsonFeedDescription: string = Deno.env.get("JSON_FEED_DESCRIPTION") || "";
 const jsonFeedLanguage: string = Deno.env.get("JSON_FEED_LANGUAGE") || "en-GB";
 const jsonFeedAuthorName: string = Deno.env.get("JSON_FEED_AUTHOR_NAME") || "";
 const jsonFeedAuthorUrl: string = Deno.env.get("JSON_FEED_AUTHOR_URL") || "";
-const jsonFeedDefaultPostTitle: string =
-  Deno.env.get("JSON_FEED_DEFAULT_POST_TITLE") || "";
+const jsonFeedDefaultPostTitle: string = Deno.env.get("JSON_FEED_DEFAULT_POST_TITLE") || "";
 const postsDirectory: string = Deno.env.get("BLOG_POSTS_DIR") || "";
 const urlPosts: string = Deno.env.get("BLOG_POSTS_URL") || "";
 const urlFeed: string = Deno.env.get("JSON_FEED_URL_FEED") || "";
@@ -41,11 +39,7 @@ const postsDirectoryAbsolute = join(Deno.cwd(), postsDirectory);
 const fileOutputAbsolute = join(Deno.cwd(), fileOutput);
 
 // Get an array of all of the valid Markdown files in the posts directory
-const jsonFeedItems = await PostsList(
-  postsDirectoryAbsolute,
-  urlPosts,
-  jsonFeedDefaultPostTitle
-);
+const jsonFeedItems = await PostsList(postsDirectoryAbsolute, urlPosts, jsonFeedDefaultPostTitle);
 
 // Construct the JSON Feed contents
 const dataJsonFeed: JsonFeedData = {

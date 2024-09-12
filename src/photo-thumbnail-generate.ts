@@ -1,9 +1,6 @@
 import { Image } from "imagescript/mod.ts";
 
-export async function GeneratePhotoThumbail(
-  photoDirectory: string,
-  photoFile: string
-): Promise<string> {
+export async function GeneratePhotoThumbail(photoDirectory: string, photoFile: string): Promise<string> {
   const thumbnailDirectory = "assets/images/brendan/thumbnails";
 
   const photoBinary = Deno.readFileSync(photoDirectory + "/" + photoFile);
@@ -13,11 +10,7 @@ export async function GeneratePhotoThumbail(
 
   const thumbnailImageEncoded = await photoDecoded.encode();
 
-  const thumbnailImagePath =
-    thumbnailDirectory +
-    "/500_" +
-    photoFile.slice(0, -4).replaceAll(".", "") +
-    ".png";
+  const thumbnailImagePath = thumbnailDirectory + "/500_" + photoFile.slice(0, -4).replaceAll(".", "") + ".png";
 
   Deno.writeFileSync(thumbnailImagePath, thumbnailImageEncoded);
 

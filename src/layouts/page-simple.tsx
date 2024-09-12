@@ -16,7 +16,7 @@ export default ({ children, FATHOM_ANALYTICS_SITE_ID, properties, title }: Lume.
       <link rel="preload" href="/css/styles.min.css" as="style" />
       <link rel="stylesheet" href="/css/styles.min.css" />
       <script defer src="https://kit.fontawesome.com/e084936c24.js" crossOrigin="anonymous"></script>
-      <script src="https://cdn.usefathom.com/script.js" data-site={FATHOM_ANALYTICS_SITE_ID} defer></script>
+      <script defer src="https://cdn.usefathom.com/script.js" data-site={FATHOM_ANALYTICS_SITE_ID}></script>
     </head>
     <body className={properties.body_class}>
       <section className="container">
