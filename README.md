@@ -22,7 +22,7 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 
 ### Lighthouse performance results
 
-[![Lighthouse performance results](assets/docs/performance-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/xjhcnvcnlr?form_factor=desktop)
+[![Lighthouse performance results](assets/docs/page-speed-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/wg542m8oqq?form_factor=desktop)
 
 ## Folder structure and key files
 
