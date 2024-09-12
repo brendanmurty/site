@@ -6,9 +6,7 @@
   "runArgs": ["--name", "site"],
   "forwardPorts": [8000],
   "mounts": ["source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/node/.ssh,readonly,type=bind"],
-  "postStartCommand": {
-    "deno-setup": "deno task setup"
-  },
+  "postStartCommand": "deno task setup",
   "customizations": {
     "vscode": {
       "extensions": ["denoland.vscode-deno", "esbenp.prettier-vscode"],
