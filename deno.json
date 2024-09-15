@@ -25,7 +25,7 @@
     "build": "bash ./tools/build.sh",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "release": "bash ./tools/release.sh",
-    "serve": "deno task build && echo 'Server starting at http://localhost:8000/' && deno run --allow-net --allow-read src/server.ts",
+    "serve": "deno task build && deno run --allow-net --allow-read src/server.ts",
     "setup": "bash ./tools/setup.sh",
     "test": "bash ./tools/test.sh"
   }
