@@ -2,9 +2,12 @@
 
 # Create some required untracked directories if they don't already exist
 
+rm -rf build
+rm -rf inbox
+rm -rf public
 mkdir -p build
-mkdir -p public
 mkdir -p inbox
+mkdir -p public
 
 # Install Deno packages
 
