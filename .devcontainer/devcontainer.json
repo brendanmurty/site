@@ -13,8 +13,8 @@
       "settings": {
         "deno.enable": true,
         "deno.lint": true,
-        "deno.config": "./deno.jsonc",
-        "deno.importMap": "./deno.jsonc",
+        "deno.config": "./deno.json",
+        "deno.importMap": "./deno.json",
         "deno.codeLens.references": true,
         "prettier.requireConfig": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",

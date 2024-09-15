@@ -38,7 +38,7 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 | [src/styles](src/styles) | CSS styles. |
 | [src/templates](src/templates) | Nunjucks page templates. |
 | [tools](tools/) | Helper scripts, refer to the `Commands` section below for more details. |
-| [deno.jsonc](deno.jsonc) | [Deno](https://deno.land/) imports, tasks and configuration for this repository. |
+| [deno.json](deno.json) | [Deno](https://deno.land/) imports, tasks and configuration for this repository. |
 | [Dockerfile](Dockerfile) | [Docker](https://www.docker.com/) configuration file to allow the site to build and serve inside a minimal Linux container. |
 
 ## Initial setup
@@ -88,4 +88,4 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 | `deno task serve` | Start a local web server. Builds the site and starts a local web server at `http://localhost:8000/` |
 | `deno task release` | Generate and push a new Git Tag, which will then trigger the [GitHub Actions workflow](.github/workflows/release.yml) in the remote repository. |
 
-_For more details here, refer to the `tasks` section in [deno.jsonc](deno.jsonc)._
+_For more details here, refer to the `tasks` section in [deno.json](deno.json)._
