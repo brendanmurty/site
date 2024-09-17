@@ -4,7 +4,7 @@ on:
     tags:
       - "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].[0-9][0-9][0-9][0-9]"
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Deno
@@ -19,6 +19,10 @@ jobs:
           sudo apt-get -y install exiftool
       - name: Build
         run: deno task build
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: Run tests
         run: deno task test-run
   deploy:
