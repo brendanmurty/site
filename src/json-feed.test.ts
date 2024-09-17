@@ -52,11 +52,7 @@ Deno.test("src/json-feed.ts", async (test) => {
 
       let countValidPostFiles = 0;
       for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
-        if (
-          item.isFile &&
-          item.name != "index.md" &&
-          item.name.slice(-3) == ".md"
-        ) {
+        if (item.isFile && item.name != "index.md" && item.name.slice(-3) == ".md") {
           countValidPostFiles++;
         }
       }
