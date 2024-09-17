@@ -19,10 +19,32 @@ jobs:
           sudo apt-get -y install exiftool
       - name: Build
         run: deno task build
+      - name: Save built files
+        uses: actions/upload-artifact@master
+        with:
+          name: site-build
+          path: |
+            build/
+            public/
+            .env
   test:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Deno
+        uses: "denoland/setup-deno@v1"
+        with:
+          deno-version: 1.46.3
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Get built files
+        uses: actions/download-artifact@master
+        with:
+          name: site-build
+          path: |
+            build/
+            public/
+            .env
       - name: Run tests
         run: deno task test-run
   deploy:
@@ -38,12 +60,14 @@ jobs:
           deno-version: 1.46.3
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Setup environment
-        run: |
-          deno task setup
-          sudo apt-get -y install exiftool
-      - name: Build site
-        run: deno task build
+      - name: Get built files
+        uses: actions/download-artifact@master
+        with:
+          name: site-build
+          path: |
+            build/
+            public/
+            .env
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload GitHub Pages artifact
