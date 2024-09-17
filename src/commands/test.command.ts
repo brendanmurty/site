@@ -1,18 +1,19 @@
 // Test command - Run via "deno task test"
 
-// Run tests
-
 console.log("%cRunning all tests", "color: yellow");
 
 const commandTest = new Deno.Command(Deno.execPath(), {
   args: ["run", "test-run"]
 });
 
-const { code, stdout, stderr } = commandTest.outputSync();
-console.log("code", code);
-console.log("stdout", new TextDecoder().decode(stdout));
-console.log("stderr", new TextDecoder().decode(stderr));
+const { code, stdout } = commandTest.outputSync();
 
-// Done, show final output line
+if (code === 0) {
+  console.log("%cTests passed.", "color: green");
+} else {
+  console.log("%cTests failed, check output below.", "color: red");
 
-console.log("%Done.", "color: green");
+  console.log(new TextDecoder().decode(stdout));
+
+  Deno.exit(1);
+}
