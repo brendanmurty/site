@@ -32,11 +32,11 @@ Deno.test("build", async (test) => {
   });
 
   await test.step({
-    name: "non-empty file 'public/Brendan Murty - Resume.pdf' was found",
+    name: "non-empty file 'public/brendan/resume_public.pdf' was found",
     fn: async () => {
       try {
         const publicIndexFileContents: string = await Deno.readTextFile(
-          "public/Brendan Murty - Resume.pdf"
+          "public/brendan/resume_public.pdf"
         );
 
         assertNotEquals(publicIndexFileContents, "");

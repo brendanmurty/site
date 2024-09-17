@@ -47,7 +47,7 @@ exec("cp", "-r assets/fonts " + PUBLIC_DIR + "/fonts");
 exec("cp", "-r assets/images " + PUBLIC_DIR + "/images");
 exec("cp", "assets/favicon.ico " + PUBLIC_DIR + "/favicon.ico");
 exec("cp", "config/robots.txt " + PUBLIC_DIR + "/robots.txt");
-exec("cp", "assets/resume_public.pdf " + PUBLIC_DIR + "/Brendan Murty - Resume.pdf");
+exec("cp", "assets/resume_public.pdf " + PUBLIC_DIR + "/brendan/resume_public.pdf");
 
 console.log("%cJoining CSS files", "color: yellow");
 
