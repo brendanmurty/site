@@ -38,6 +38,5 @@ console.log("%cTagging commit and pushing changes...", "color: blue");
 new exec("git", "tag " + nextVersion);
 new exec("git", "push --quiet");
 new exec("git", "push --tags --quiet");
-new exec("git", "tag " + nextVersion);
 
 console.log("%cDone. A new GitHub Actions workflow should now remotely test and deploy these changes.", "color: green");
