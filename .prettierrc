@@ -9,5 +9,5 @@
   "bracketSameLine": true,
   "arrowParens": "always",
   "singleAttributePerLine": false,
-  "printWidth": 175
+  "printWidth": 90
 }
