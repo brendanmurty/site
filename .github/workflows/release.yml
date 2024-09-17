@@ -4,7 +4,7 @@ on:
     tags:
       - "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].[0-9][0-9][0-9][0-9]"
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Deno
@@ -19,6 +19,39 @@ jobs:
           sudo apt-get -y install exiftool
       - name: Build site
         run: deno task build
+      - name: Save build files
+        uses: actions/upload-artifact@master
+        with:
+          name: site-build
+          overwrite: true
+          include-hidden-files: true
+          retention-days: 1
+          compression-level: 9
+          path: |
+            build/
+            public/
+            .env
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Deno
+        uses: "denoland/setup-deno@v1"
+        with:
+          deno-version: 1.46.3
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup environment
+        run: |
+          deno task setup
+          sudo apt-get -y install exiftool
+      - name: Get built files
+        uses: actions/download-artifact@master
+        with:
+          name: site-build
+          path: |
+            build/
+            public/
       - name: Run tests
         run: deno task test
   deploy:
@@ -34,12 +67,13 @@ jobs:
           deno-version: 1.46.3
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Setup environment
-        run: |
-          deno task setup
-          sudo apt-get -y install exiftool
-      - name: Build site
-        run: deno task build
+      - name: Get built files
+        uses: actions/download-artifact@master
+        with:
+          name: site-build
+          path: |
+            build/
+            public/
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload GitHub Pages artifact
