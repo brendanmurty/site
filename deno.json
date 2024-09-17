@@ -24,9 +24,11 @@
   "tasks": {
     "build": "bash ./tools/build.sh",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "lume-install": "deno install --global --allow-run --allow-env --allow-read --name lume --force --reload https://deno.land/x/lume_cli@v2.1.1/mod.ts",
     "release": "bash ./tools/release.sh",
     "serve": "deno task build && deno run --allow-net --allow-read src/commands/server.command.ts",
-    "setup": "bash ./tools/setup.sh",
-    "test": "deno task build && deno run --allow-run --allow-read --allow-write=./test.log,./build --allow-env --allow-net src/commands/test.command.ts"
+    "setup": "deno run --allow-run --allow-read --allow-write=./ src/commands/setup.command.ts",
+    "test": "deno task build && deno run --allow-run --allow-read --allow-write=./test.log,./build --allow-env --allow-net src/commands/test.command.ts",
+    "test-run": "deno test --allow-run --allow-env --allow-read --allow-net src --quiet"
   }
 }

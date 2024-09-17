@@ -40,6 +40,7 @@ sed -e 's/^[ \t]*//g; s/[ \t]*$//g; s/\([:{;,]\) /\1/g; s/ {/{/g; s/\/\*.*\*\///
 
 echo -e "${yellow}Building photo posts for photos in 'inbox' directory${end}"
 
+mkdir -p inbox
 deno run -A --allow-read --allow-write src/photo-posts-generate.ts
 
 echo -e "${yellow}Removing EXIF data from all files in the 'assets/images' directory${end}"
