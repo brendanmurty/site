@@ -1,6 +1,6 @@
 # Murty Website
 
-[ ![Deployment Status](https://img.shields.io/github/actions/workflow/status/brendanmurty/site/release.yml?label=Deployment%20Status&style=flat-square&color=%2323c5b0&labelColor=%23222222)](https://github.com/brendanmurty/site/actions/workflows/release.yml)
+[ ![Deployment Status](https://img.shields.io/github/actions/workflow/status/brendanmurty/site/release.yml?label=Deployment%20Status&style=flat-square&labelColor=%23222222)](https://github.com/brendanmurty/site/actions/workflows/release.yml)
 [ ![Latest Release](https://img.shields.io/github/v/release/brendanmurty/site?label=Latest%20Release&style=flat-square&color=%2323c5b0&labelColor=%23222222)](https://github.com/brendanmurty/site/releases)
 [ ![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fmurty.au&up_message=online&down_message=offline&style=flat-square&logo=globe&label=Website%20Status&labelColor=%23222222)](https://murty.au)
 
