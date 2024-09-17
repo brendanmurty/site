@@ -46,7 +46,9 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 
 1. Fork this repository
 2. Make a local clone of that forked repository
-3. Update some files in the forked repository:
+3. Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation/)
+4. Run the setup script: `deno task setup`
+5. Update some files in the forked repository
 
 - Update `.github/workflows/release.yml` to use your forked GitHub repository URL
 - Update `.github/workflows/release.yml` to use your own Docker Hub repository URL
@@ -55,27 +57,26 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 - Purchase your own license to use the [Mass-Driver IO font](https://io.mass-driver.com/) or update the CSS to use other fonts
 - Purchase [Font Awesome Pro](https://fontawesome.com/), setup your own kit, and update the `kit.fontawesome.com` script path in the source code. Alternatively, you can use a free icon pack and update the code in your fork to use that instead.
 
-4. Commit and push all of these changes to your forked repository
-5. Update the Settings for your forked repository via GitHub:
+6. Commit and push all of these changes to your forked repository
+7. Update the Settings for your forked repository via GitHub:
 
 - Pages > Source: _GitHub Actions_
 - Pages > Custom domain: _use your own domain_
 - Secrets and variables > Actions > new secret > Name: `DOCKERHUB_USERNAME`, Secret: _your Docker username_
 - Secrets and variables > Actions > new secret > Name: `DOCKERHUB_TOKEN`, Secret: _[generate new token](https://app.docker.com/settings/personal-access-tokens), read and write permissions, save the generated token here_
 
-6. Update the `CNAME` file in the repository to use the same domain as you configured above
-7. Install [Deno](https://docs.deno.com/runtime/manual/getting_started/installation/)
-8. Setup [Fathom Analytics](https://usefathom.com/):
+8. Update the `CNAME` file in the repository to use the same domain as you configured above
+9. Setup [Fathom Analytics](https://usefathom.com/):
 
 - Create your own account and setup a new site
 - Update your `.env` file's `FATHOM_ANALYTICS_SITE_ID` value to use your new `Site ID`
 
-9. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
+10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-10. **Optional:** Use a Dev Container to run the system locally:
+11. **Optional:** Use a Dev Container to run the system locally:
 
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Install the VS Code [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
