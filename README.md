@@ -12,8 +12,6 @@ Tests, build and local server commands are available from local environments.
 
 Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a [GitHub Actions workflow](.github/workflows/release.yml).
 
-Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) via [VS Code](https://code.visualstudio.com/) to run the development environment inside a dedicated [Docker](https://www.docker.com/) container.
-
 ### Previews of the home page
 
 ![Preview of the home page in dark mode](assets/docs/home-dark.png)
@@ -57,12 +55,6 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 
 - [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-11. **Optional:** Use a Dev Container to run the system locally:
-
-- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- Install the VS Code [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-- Start the Dev Container via the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette): `Dev Containers: Rebuild Container`
 
 ## Commands
 
