@@ -35,16 +35,18 @@ exec("cp", "-r src/styles " + BUILD_DIR + "/_styles");
 exec("cp", "-r src/templates " + BUILD_DIR + "/_includes");
 exec("cp", "-r src/layouts " + BUILD_DIR + "/_includes/layouts");
 
-console.log("%cBuilding the front-end using Lume and '_config.ts'", "color: yellow");
+console.log("%cBuilding the front-end using Lume", "color: yellow");
 
+exec("cp", "config/lume.config.ts ./_config.ts");
 exec("deno", "task lume");
+exec("rm", "./_config.ts");
 
 console.log("%cCopying over static files", "color: yellow");
 
 exec("cp", "-r assets/fonts " + PUBLIC_DIR + "/fonts");
 exec("cp", "-r assets/images " + PUBLIC_DIR + "/images");
 exec("cp", "assets/favicon.ico " + PUBLIC_DIR + "/favicon.ico");
-exec("cp", "assets/config/robots.txt " + PUBLIC_DIR + "/robots.txt");
+exec("cp", "config/robots.txt " + PUBLIC_DIR + "/robots.txt");
 exec("cp", "assets/resume_public.pdf " + PUBLIC_DIR + "/Brendan Murty - Resume.pdf");
 
 console.log("%cJoining CSS files", "color: yellow");
@@ -91,7 +93,7 @@ console.log("%cConfiguring GitHub Pages", "color: yellow");
 
 copySync("assets/redirect.html", PUBLIC_DIR + "/404.html");
 copySync("assets/.nojekyll", PUBLIC_DIR + "/.nojekyll");
-copySync("assets/config/CNAME", PUBLIC_DIR + "/CNAME");
+copySync("config/CNAME", PUBLIC_DIR + "/CNAME");
 
 console.log("%cBuilding the JSON Feed for Brendan's posts", "color: yellow");
 
