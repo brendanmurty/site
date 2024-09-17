@@ -14,7 +14,7 @@ buildDirectories.forEach((buildDirectory) => {
 // Setup an initial ENV file if it doesn't already exist
 
 try {
-  copySync(".env.example", ".env", { overwrite: false });
+  copySync("./assets/config/.env.example", ".env", { overwrite: false });
 } catch (error) {
   if (error.name === "AlreadyExists") {
     console.log("%cSkipping ENV file setup, .env file already exists", "color: yellow");

@@ -57,3 +57,5 @@ Disallow: /
 
 User-agent: YouBot
 Disallow: /
+
+Sitemap: https://murty.au/sitemap.xml

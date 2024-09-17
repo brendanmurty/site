@@ -44,7 +44,7 @@ console.log("%cCopying over static files", "color: yellow");
 exec("cp", "-r assets/fonts " + PUBLIC_DIR + "/fonts");
 exec("cp", "-r assets/images " + PUBLIC_DIR + "/images");
 exec("cp", "assets/favicon.ico " + PUBLIC_DIR + "/favicon.ico");
-exec("cp", "assets/robots.txt " + PUBLIC_DIR + "/robots.txt");
+exec("cp", "assets/config/robots.txt " + PUBLIC_DIR + "/robots.txt");
 exec("cp", "assets/resume_public.pdf " + PUBLIC_DIR + "/Brendan Murty - Resume.pdf");
 
 console.log("%cJoining CSS files", "color: yellow");
@@ -91,7 +91,7 @@ console.log("%cConfiguring GitHub Pages", "color: yellow");
 
 copySync("assets/redirect.html", PUBLIC_DIR + "/404.html");
 copySync("assets/.nojekyll", PUBLIC_DIR + "/.nojekyll");
-copySync("CNAME", PUBLIC_DIR + "/CNAME");
+copySync("assets/config/CNAME", PUBLIC_DIR + "/CNAME");
 
 console.log("%cBuilding the JSON Feed for Brendan's posts", "color: yellow");
 

@@ -47,7 +47,7 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 - Secrets and variables > Actions > new secret > Name: `DOCKERHUB_USERNAME`, Secret: _your Docker username_
 - Secrets and variables > Actions > new secret > Name: `DOCKERHUB_TOKEN`, Secret: _[generate new token](https://app.docker.com/settings/personal-access-tokens), read and write permissions, save the generated token here_
 
-8. Update the `CNAME` file in the repository to use the same domain as you configured above
+8. Update `assets/config/CNAME` to use the same domain as you configured above
 9. Setup [Fathom Analytics](https://usefathom.com/):
 
 - Create your own account and setup a new site
@@ -82,6 +82,7 @@ _For more details here, refer to the `tasks` section in [deno.json](deno.json)._
 | [.github/workflows/release.yml](.github/workflows/release.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/), publishes a new [GitHub release](https://github.com/brendanmurty/site/releases) and pushes a new version to the [repository on Docker Hub](https://hub.docker.com/r/brendanmurty/site). |
 | [.vscode](.vscode/) | Customised [VS Code](https://code.visualstudio.com/) configuration for this repository. |
 | [assets](assets/) | Static files like images and PDFs. |
+| [assets/config](assets/config) | Front-end config files and `robots.txt` |
 | [content](content/) | Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files. |
 | [src](src/) | Source code and related unit tests. |
 | [src/commands](src/commands) | Deno CLI helper scripts, refer to the `Commands` section above for more details. |
