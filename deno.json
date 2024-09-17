@@ -25,8 +25,8 @@
     "build": "bash ./tools/build.sh",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "release": "bash ./tools/release.sh",
-    "serve": "deno task build && deno run --allow-net --allow-read src/server.ts",
+    "serve": "deno task build && deno run --allow-net --allow-read src/commands/server.command.ts",
     "setup": "bash ./tools/setup.sh",
-    "test": "bash ./tools/test.sh"
+    "test": "deno task build && deno run --allow-run --allow-read --allow-write=./test.log,./build --allow-env --allow-net src/commands/test.command.ts"
   }
 }

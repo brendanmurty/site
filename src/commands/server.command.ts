@@ -1,3 +1,5 @@
+// Server command - Run via "deno task serve"
+
 import { serveDir } from "@std/http/file-server";
 
 console.log('%cServing "public" directory at %chttp://localhost:8000', "color: green", "color: blue");
