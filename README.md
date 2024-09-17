@@ -77,7 +77,7 @@ _For more details here, refer to the `tasks` section in [deno.json](deno.json)._
 | [config](config) | Supporting configuration files. |
 | [content](content/) | Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files. |
 | [src](src/) | Source code and related unit tests. |
-| [src/commands](src/commands) | Deno CLI helper scripts, refer to the `Commands` section above for more details. |
+| [src/commands](src/commands) | Helper scripts, refer to the `Commands` section above for more details. |
 | [src/layouts](src/layouts) | React TSX page layouts. |
 | [src/styles](src/styles) | CSS styles. |
 | [src/templates](src/templates) | Nunjucks page templates. |
