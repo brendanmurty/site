@@ -23,6 +23,10 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: site-build
+          overwrite: true
+          include-hidden-files: true
+          retention-days: 1
+          compression-level: 9
           path: |
             build/
             public/
