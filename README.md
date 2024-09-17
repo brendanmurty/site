@@ -34,6 +34,7 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 | [assets](assets/) | Static files like images and PDFs. |
 | [content](content/) | Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files. |
 | [src](src/) | Source code and related unit tests. |
+| [src/commands](src/commands) | Deno CLI scripts, triggered by `deno task xxx` commands. |
 | [src/layouts](src/layouts) | React TSX page layouts. |
 | [src/styles](src/styles) | CSS styles. |
 | [src/templates](src/templates) | Nunjucks page templates. |
