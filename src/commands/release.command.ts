@@ -1,7 +1,7 @@
 // Release command - Run via "deno task release"
 
 import { format } from "@std/datetime/format";
-import { cmd } from "@gnome/exec";
+import { Command as exec } from "@gnome/exec";
 
 // Setup
 
@@ -35,9 +35,9 @@ if (code !== 0) {
 
 console.log("%cTagging commit and pushing changes...", "color: blue");
 
-cmd("git", "tag " + nextVersion);
-cmd("git", "push --quiet");
-cmd("git", "push --tags --quiet");
-cmd("git", "tag " + nextVersion);
+new exec("git", "tag " + nextVersion);
+new exec("git", "push --quiet");
+new exec("git", "push --tags --quiet");
+new exec("git", "tag " + nextVersion);
 
 console.log("%cDone. A new GitHub Actions workflow should now remotely test and deploy these changes.", "color: green");
