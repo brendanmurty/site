@@ -18,9 +18,9 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 ![Preview of the home page in light mode](assets/docs/home-light.png)
 
-### Lighthouse performance results
+### Lighthouse test results
 
-[![Lighthouse performance results](assets/docs/page-speed-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/wg542m8oqq?form_factor=desktop)
+[![Lighthouse test results](assets/docs/lighthouse-test-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/zlapa2j1go?form_factor=desktop)
 
 ## Initial setup
 
