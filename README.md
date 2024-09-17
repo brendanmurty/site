@@ -24,24 +24,6 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 
 [![Lighthouse performance results](assets/docs/page-speed-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/wg542m8oqq?form_factor=desktop)
 
-## Folder structure and key files
-
-| Folder / File | Description |
-| ---- | ---- |
-| [.devcontainer](.devcontainer) | [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) configuration files. |
-| [.github/workflows/release.yml](.github/workflows/release.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/), publishes a new [GitHub release](https://github.com/brendanmurty/site/releases) and pushes a new version to the [repository on Docker Hub](https://hub.docker.com/r/brendanmurty/site). |
-| [.vscode](.vscode/) | Customised [VS Code](https://code.visualstudio.com/) configuration for this repository. |
-| [assets](assets/) | Static files like images and PDFs. |
-| [content](content/) | Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files. |
-| [src](src/) | Source code and related unit tests. |
-| [src/commands](src/commands) | Deno CLI scripts, triggered by `deno task xxx` commands. |
-| [src/layouts](src/layouts) | React TSX page layouts. |
-| [src/styles](src/styles) | CSS styles. |
-| [src/templates](src/templates) | Nunjucks page templates. |
-| [tools](tools/) | Helper scripts, refer to the `Commands` section below for more details. |
-| [deno.json](deno.json) | [Deno](https://deno.land/) imports, tasks and configuration for this repository. |
-| [Dockerfile](Dockerfile) | [Docker](https://www.docker.com/) configuration file to allow the site to build and serve inside a minimal Linux container. |
-
 ## Initial setup
 
 1. Fork this repository
@@ -91,3 +73,19 @@ Optionally, you can use a [Dev Container](https://code.visualstudio.com/docs/dev
 | `deno task release` | Generate and push a new Git Tag, which will then trigger the [GitHub Actions workflow](.github/workflows/release.yml) in the remote repository. |
 
 _For more details here, refer to the `tasks` section in [deno.json](deno.json)._
+
+## Folder structure and key files
+
+| Folder / File | Description |
+| ---- | ---- |
+| [.devcontainer](.devcontainer) | [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) configuration files. |
+| [.github/workflows/release.yml](.github/workflows/release.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/), publishes a new [GitHub release](https://github.com/brendanmurty/site/releases) and pushes a new version to the [repository on Docker Hub](https://hub.docker.com/r/brendanmurty/site). |
+| [.vscode](.vscode/) | Customised [VS Code](https://code.visualstudio.com/) configuration for this repository. |
+| [assets](assets/) | Static files like images and PDFs. |
+| [content](content/) | Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files. |
+| [src](src/) | Source code and related unit tests. |
+| [src/commands](src/commands) | Deno CLI helper scripts, refer to the `Commands` section above for more details. |
+| [src/layouts](src/layouts) | React TSX page layouts. |
+| [src/styles](src/styles) | CSS styles. |
+| [src/templates](src/templates) | Nunjucks page templates. |
+| [deno.json](deno.json) | [Deno](https://deno.land/) imports, tasks and configuration for this repository. |

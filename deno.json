@@ -20,10 +20,11 @@
     "imagescript/": "https://deno.land/x/imagescript@1.3.0/",
     "is_json/": "https://deno.land/x/is_json@v1.0.2/",
     "json2yaml/": "https://deno.land/x/json2yaml@v1.0.0/",
-    "lume/": "https://deno.land/x/lume@v2.3.1/"
+    "lume/": "https://deno.land/x/lume@v2.3.1/",
+    "minify": "npm:minify"
   },
   "tasks": {
-    "build": "bash ./tools/build.sh",
+    "build": "deno run --allow-env --allow-run --allow-read --allow-write=./ src/commands/build.command.ts",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "lume-install": "deno install --global --allow-run --allow-env --allow-read --name lume --force --reload https://deno.land/x/lume_cli@v2.1.1/mod.ts",
     "release": "deno run --allow-run --allow-read --allow-env --allow-write=./ src/commands/release.command.ts",
