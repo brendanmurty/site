@@ -52,10 +52,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 - Create your own account and setup a new site
 - Update your `.env` file's `FATHOM_ANALYTICS_SITE_ID` value to use your new `Site ID`
 
-11 **Optional:** Install [VS Code](https://code.visualstudio.com/) and the recommended plugins:
-
-- [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+11 **Optional:** Install [VS Code](https://code.visualstudio.com/) and add the [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno) plugin
 
 ## Commands
 

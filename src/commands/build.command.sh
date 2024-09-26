@@ -12,6 +12,12 @@ end="\033[0m"
 BUILD_DIR="build"
 PUBLIC_DIR="public"
 
+# Format code
+
+echo -e "${yellow}Running Deno fmt${end}"
+
+deno task format
+
 # Start the build process
 
 echo -e "${yellow}Clearing the '$PUBLIC_DIR' directory and recreating subdirectories${end}"
