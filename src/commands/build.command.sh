@@ -65,11 +65,11 @@ rm -rf $PUBLIC_DIR/sitemap.xml-e
 
 echo -e "${yellow}Configuring GitHub Pages in the '$PUBLIC_DIR' directory${end}"
 
-# Custom 404 page for GitHub Pages
-cp "assets/redirect.html" "$PUBLIC_DIR/404.html"
+# Domain name configuration
+cp "config/CNAME" "$PUBLIC_DIR/CNAME"
 
-# GitHub Pages domain name configuration
-cp "CNAME" "$PUBLIC_DIR/CNAME"
+# Custom 404 page
+cp "assets/redirect.html" "$PUBLIC_DIR/404.html"
 
 echo -e "${yellow}Copying static files to the '$PUBLIC_DIR' directory${end}"
 
@@ -78,7 +78,6 @@ cp -r "assets/images" "$PUBLIC_DIR/images"
 cp "assets/.nojekyll" "$PUBLIC_DIR/.nojekyll"
 cp "assets/favicon.ico" "$PUBLIC_DIR/favicon.ico"
 cp "config/robots.txt" "$PUBLIC_DIR/robots.txt"
-cp "config/CNAME" "$PUBLIC_DIR/CNAME"
 cp "assets/resume_public.pdf" "$PUBLIC_DIR/brendan/resume_public.pdf"
 
 echo -e "${yellow}Copying CSS files to the '$PUBLIC_DIR/css' directory${end}"
