@@ -9,6 +9,7 @@
   "editor.formatOnPaste": true,
   "editor.tabSize": 2,
   "[markdown]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
   }
 }
