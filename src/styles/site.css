@@ -9,9 +9,9 @@
   --background-colour: #000000;
   --foreground-colour: #ffffff;
   --secondary-colour: #888888;
-  --font-family-header: 'MDIO-Black', var(--font-family-code);
+  --font-family-header: "MDIO-Black", var(--font-family-code);
   --font-family-body: var(--font-family-code);
-  --font-family-code: 'MDIO-Regular', monospace;
+  --font-family-code: "MDIO-Regular", monospace;
   --font-family-quote: var(--font-family-code);
   --font-size-body: 20px;
   --line-height-body: 32px;
@@ -21,7 +21,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --highlight-colour: #0B6053;
+    --highlight-colour: #0b6053;
     --background-colour: #ffffff;
     --foreground-colour: #000000;
     --secondary-colour: #575757;
@@ -45,19 +45,24 @@ body.page-luca {
 /* Fonts */
 
 @font-face {
-  font-family: 'MDIO-Black';
+  font-family: "MDIO-Black";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('MDIO-Black'), url('/fonts/MDIO-Black.woff') format('woff');
+  src:
+    local("MDIO-Black"),
+    url("/fonts/MDIO-Black.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'MDIO-Regular';
+  font-family: "MDIO-Regular";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('MDIO'), local('MDIO-Regular'), url('/fonts/MDIO-Regular.woff') format('woff');
+  src:
+    local("MDIO"),
+     local("MDIO-Regular"),
+    url("/fonts/MDIO-Regular.woff") format("woff");
 }
 
 /* Icons */
@@ -312,7 +317,7 @@ ul.listing {
 
 ul.listing,
 ul.listing li,
-ul.listing li>a {
+ul.listing li > a {
   box-sizing: border-box;
 }
 

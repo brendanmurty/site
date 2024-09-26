@@ -3,7 +3,7 @@
 console.log("%cRunning all tests", "color: yellow");
 
 const commandTest = new Deno.Command(Deno.execPath(), {
-  args: ["run", "test-run"]
+  args: ["run", "test-run"],
 });
 
 const { code, stdout } = commandTest.outputSync();

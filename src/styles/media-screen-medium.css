@@ -1,7 +1,6 @@
 /* SCREEN - MEDIUM */
 
 @media only screen and (max-width: 800px) {
-
   header h1 {
     line-height: 100px;
     font-size: 50px;
@@ -41,5 +40,4 @@
   ul.page-gallery li {
     width: calc(50% - 40px);
   }
-
 }

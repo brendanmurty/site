@@ -9,14 +9,15 @@
  *    deno task build
  */
 
-import { JsonFeedData, JsonFeedAuthor } from "./types.ts";
+import { JsonFeedAuthor, JsonFeedData } from "./types.ts";
 import { join } from "@std/path";
 import { load } from "@std/dotenv";
 import { PostsList } from "./posts-list.ts";
 
 // Set feed properties using variables from the ".env" file
 await load({ export: true });
-const jsonFeedVersion: string = Deno.env.get("JSON_FEED_VERSION_URL") || "https://jsonfeed.org/version/1.1";
+const jsonFeedVersion: string = Deno.env.get("JSON_FEED_VERSION_URL") ||
+  "https://jsonfeed.org/version/1.1";
 const jsonFeedTitle: string = Deno.env.get("JSON_FEED_TITLE") || "";
 const jsonFeedDescription: string = Deno.env.get("JSON_FEED_DESCRIPTION") || "";
 const jsonFeedLanguage: string = Deno.env.get("JSON_FEED_LANGUAGE") || "en-GB";
@@ -31,7 +32,7 @@ const fileOutput: string = Deno.env.get("JSON_FEED_FILE_OUTPUT") || "";
 // Construct the Feed Author object
 const jsonFeedAuthor: JsonFeedAuthor = {
   name: jsonFeedAuthorName,
-  url: jsonFeedAuthorUrl
+  url: jsonFeedAuthorUrl,
 };
 
 // Set absolute paths for the required file-system related variables
@@ -39,7 +40,11 @@ const postsDirectoryAbsolute = join(Deno.cwd(), postsDirectory);
 const fileOutputAbsolute = join(Deno.cwd(), fileOutput);
 
 // Get an array of all of the valid Markdown files in the posts directory
-const jsonFeedItems = await PostsList(postsDirectoryAbsolute, urlPosts, jsonFeedDefaultPostTitle);
+const jsonFeedItems = await PostsList(
+  postsDirectoryAbsolute,
+  urlPosts,
+  jsonFeedDefaultPostTitle,
+);
 
 // Construct the JSON Feed contents
 const dataJsonFeed: JsonFeedData = {
@@ -50,7 +55,7 @@ const dataJsonFeed: JsonFeedData = {
   description: jsonFeedDescription,
   author: jsonFeedAuthor,
   language: jsonFeedLanguage,
-  items: jsonFeedItems
+  items: jsonFeedItems,
 };
 
 // Save the JSON Feed content to the required file

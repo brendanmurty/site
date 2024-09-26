@@ -6,14 +6,14 @@ Deno.test("build", async (test) => {
     fn: async () => {
       try {
         const publicIndexFileContents: string = await Deno.readTextFile(
-          "public/index.html"
+          "public/index.html",
         );
 
         assertNotEquals(publicIndexFileContents, "");
       } catch (_) {
         assertEquals("File not found", "");
       }
-    }
+    },
   });
 
   await test.step({
@@ -21,14 +21,14 @@ Deno.test("build", async (test) => {
     fn: async () => {
       try {
         const publicIndexFileContents: string = await Deno.readTextFile(
-          "public/css/styles.min.css"
+          "public/css/styles.min.css",
         );
 
         assertNotEquals(publicIndexFileContents, "");
       } catch (_) {
         assertEquals("File not found", "");
       }
-    }
+    },
   });
 
   await test.step({
@@ -36,14 +36,14 @@ Deno.test("build", async (test) => {
     fn: async () => {
       try {
         const publicIndexFileContents: string = await Deno.readTextFile(
-          "public/brendan/resume_public.pdf"
+          "public/brendan/resume_public.pdf",
         );
 
         assertNotEquals(publicIndexFileContents, "");
       } catch (_) {
         assertEquals("File not found", "");
       }
-    }
+    },
   });
 
   await test.step({
@@ -51,14 +51,14 @@ Deno.test("build", async (test) => {
     fn: async () => {
       try {
         const publicIndexFileContents: string = await Deno.readTextFile(
-          "public/brendan/posts.json"
+          "public/brendan/posts.json",
         );
 
         assertNotEquals(publicIndexFileContents, "");
       } catch (_) {
         assertEquals("File not found", "");
       }
-    }
+    },
   });
 
   await test.step({
@@ -66,14 +66,14 @@ Deno.test("build", async (test) => {
     fn: async () => {
       try {
         const publicIndexFileContents: string = await Deno.readTextFile(
-          "public/images/brendan/brendan-2024_750.png"
+          "public/images/brendan/brendan-2024_750.png",
         );
 
         assertNotEquals(publicIndexFileContents, "");
       } catch (_) {
         assertEquals("File not found", "");
       }
-    }
+    },
   });
 
   await test.step({
@@ -81,13 +81,13 @@ Deno.test("build", async (test) => {
     fn: async () => {
       try {
         const publicIndexFileContents: string = await Deno.readTextFile(
-          "public/images/brendan/brendan-2024_150.webp"
+          "public/images/brendan/brendan-2024_150.webp",
         );
 
         assertNotEquals(publicIndexFileContents, "");
       } catch (_) {
         assertEquals("File not found", "");
       }
-    }
+    },
   });
 });

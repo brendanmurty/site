@@ -13,14 +13,14 @@ Deno.test("src/json-feed.ts", async (test) => {
     name: "required var in env file is set (JSON_FEED_FILE_OUTPUT)",
     fn: () => {
       assertNotEquals(postsJsonFile, "");
-    }
+    },
   });
 
   await test.step({
     name: "required var in env file is set (BLOG_POSTS_DIR)",
     fn: () => {
       assertNotEquals(postsDirectory, "");
-    }
+    },
   });
 
   await test.step({
@@ -29,7 +29,7 @@ Deno.test("src/json-feed.ts", async (test) => {
       const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
 
       assertNotEquals(postsJsonContent, "");
-    }
+    },
   });
 
   await test.step({
@@ -38,7 +38,7 @@ Deno.test("src/json-feed.ts", async (test) => {
       const postsJsonContent: string = await Deno.readTextFile(postsJsonFile);
 
       assertEquals(isJSON(postsJsonContent), true);
-    }
+    },
   });
 
   await test.step({
@@ -52,12 +52,14 @@ Deno.test("src/json-feed.ts", async (test) => {
 
       let countValidPostFiles = 0;
       for await (const item of Deno.readDir(postsDirectoryAbsolute)) {
-        if (item.isFile && item.name != "index.md" && item.name.slice(-3) == ".md") {
+        if (
+          item.isFile && item.name != "index.md" && item.name.slice(-3) == ".md"
+        ) {
           countValidPostFiles++;
         }
       }
 
       assertEquals(countValidPostFiles, countItemsInJSONFile);
-    }
+    },
   });
 });

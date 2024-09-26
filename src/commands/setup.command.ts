@@ -18,7 +18,10 @@ try {
   // deno-lint-ignore no-explicit-any
 } catch (error: any) {
   if (error.name === "AlreadyExists") {
-    console.log("%cSkipping ENV file setup, .env file already exists", "color: yellow");
+    console.log(
+      "%cSkipping ENV file setup, .env file already exists",
+      "color: yellow",
+    );
   }
 }
 

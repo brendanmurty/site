@@ -10,7 +10,9 @@ const nextVersion = format(dateNow, "yyyyMMdd.hhmm");
 
 // Prompt for confirmation
 
-const userConfirmed = confirm("Are you sure you want to create a new release (" + nextVersion + ")?");
+const userConfirmed = confirm(
+  "Are you sure you want to create a new release (" + nextVersion + ")?",
+);
 
 if (!userConfirmed) {
   console.log("%cUser cancelled, release aborted.", "color: red");
@@ -22,7 +24,7 @@ if (!userConfirmed) {
 console.log("%cRunning tests", "color: blue");
 
 const commandTest = new Deno.Command(Deno.execPath(), {
-  args: ["run", "test"]
+  args: ["run", "test"],
 });
 
 const { code } = commandTest.outputSync();
@@ -39,4 +41,7 @@ exec("git", "tag " + nextVersion);
 exec("git", "push --quiet");
 exec("git", "push --tags --quiet");
 
-console.log("%cDone. A new GitHub Actions workflow should now remotely test and deploy these changes.", "color: green");
+console.log(
+  "%cDone. A new GitHub Actions workflow should now remotely test and deploy these changes.",
+  "color: green",
+);
