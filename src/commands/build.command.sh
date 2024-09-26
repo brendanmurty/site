@@ -88,6 +88,7 @@ cp "assets/resume_public.pdf" "$PUBLIC_DIR/brendan/resume_public.pdf"
 
 mkdir -p "$PUBLIC_DIR/.well-known"
 cp "config/keybase.txt" "$PUBLIC_DIR/.well-known/keybase.txt"
+cp "config/security.txt" "$PUBLIC_DIR/.well-known/security.txt"
 
 echo -e "${yellow}Copying CSS files to the '$PUBLIC_DIR/css' directory${end}"
 
