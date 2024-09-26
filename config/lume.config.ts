@@ -12,7 +12,7 @@ import "@std/dotenv/load";
 const site = lume({
   src: "./build",
   dest: "./public",
-  prettyUrls: true
+  prettyUrls: true,
 });
 
 // Enable plugins
@@ -29,7 +29,10 @@ site.data("BLOG_POSTS_URL", Deno.env.get("BLOG_POSTS_URL"));
 site.data("JSON_FEED_VERSION_URL", Deno.env.get("JSON_FEED_VERSION_URL"));
 site.data("JSON_FEED_TITLE", Deno.env.get("JSON_FEED_TITLE"));
 site.data("JSON_FEED_DESCRIPTION", Deno.env.get("JSON_FEED_DESCRIPTION"));
-site.data("JSON_FEED_DEFAULT_POST_TITLE", Deno.env.get("JSON_FEED_DEFAULT_POST_TITLE"));
+site.data(
+  "JSON_FEED_DEFAULT_POST_TITLE",
+  Deno.env.get("JSON_FEED_DEFAULT_POST_TITLE"),
+);
 site.data("JSON_FEED_LANGUAGE", Deno.env.get("JSON_FEED_LANGUAGE"));
 site.data("JSON_FEED_AUTHOR_NAME", Deno.env.get("JSON_FEED_AUTHOR_NAME"));
 site.data("JSON_FEED_AUTHOR_URL", Deno.env.get("JSON_FEED_AUTHOR_URL"));

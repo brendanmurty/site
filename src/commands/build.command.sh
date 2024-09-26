@@ -14,8 +14,9 @@ PUBLIC_DIR="public"
 
 # Format code
 
-echo -e "${yellow}Running Deno fmt${end}"
+echo -e "${yellow}Running Deno Lint and Deno Format${end}"
 
+deno task lint
 deno task format
 
 # Start the build process

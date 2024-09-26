@@ -25,7 +25,8 @@
   },
   "tasks": {
     "build": "bash ./src/commands/build.command.sh",
-    "format": "deno fmt --options-indent-width=2 --options-use-tabs=false --options-line-width=120 ./src/*",
+    "format": "deno fmt --options-indent-width=2 --options-use-tabs=false --options-line-width=120 src/ config/lume.config.ts",
+    "lint": "deno lint src/ config/lume.config.ts",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "lume-install": "deno install --global --allow-run --allow-env --allow-read --name lume --force --reload https://deno.land/x/lume_cli@v2.1.1/mod.ts",
     "release": "deno run --allow-run --allow-read --allow-env --allow-write=./ src/commands/release.command.ts",
