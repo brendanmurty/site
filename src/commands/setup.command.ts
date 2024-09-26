@@ -15,14 +15,14 @@ buildDirectories.forEach((buildDirectory) => {
 
 try {
   copySync("./config/.env.example", ".env", { overwrite: false });
-} catch (error) {
+  // deno-lint-ignore no-explicit-any
+} catch (error: any) {
   if (error.name === "AlreadyExists") {
     console.log("%cSkipping ENV file setup, .env file already exists", "color: yellow");
   }
 }
 
 // Install Deno packages
-
 new Deno.Command(Deno.execPath(), { args: ["run", "lume-install"] });
 
 // Done, detail next steps
