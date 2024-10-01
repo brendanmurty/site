@@ -1,7 +1,7 @@
 // Release command - Run via "deno task release"
 
 import { format } from "@std/datetime/format";
-import { runSync as exec } from "@gnome/exec";
+import { Command as cmd, runSync as exec } from "@gnome/exec";
 
 // Setup
 
@@ -29,13 +29,7 @@ exec("deno", ["task", "build"]);
 
 console.log("%cRunning tests", "color: blue");
 
-const execCommand = exec("deno", ["run", "test"]);
-
-if (execCommand.code !== 0) {
-  console.log("%cTests failed, release aborted.", "color: red");
-
-  Deno.exit(1);
-}
+exec("deno", ["task", "test"]);
 
 console.log("%cTagging commit and pushing changes...", "color: blue");
 
