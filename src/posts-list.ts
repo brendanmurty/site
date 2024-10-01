@@ -46,15 +46,8 @@ export async function PostsList(
         }
       }
 
-      // Construct this post's item array and ensure it meets the requirements
-      // of the JsonFeedItem type so it can also be used in the JSON feed
-      postItems.push({
-        id: postUrl,
-        url: postUrl,
-        title: postTitle,
-        date_published: postDate,
-        content_text: `Post by Brendan Murty, read more at ${postUrl}`,
-      });
+      // Add a new post item to the output array
+      postItems.push(createPostItem(postUrl, postTitle, postDate));
     }
   }
 
@@ -62,4 +55,16 @@ export async function PostsList(
   postItems.sort((a, b) => b.date_published.localeCompare(a.date_published));
 
   return postItems;
+}
+
+// Construct this post's item array and ensure it meets the requirements
+// of the JsonFeedItem type so it can also be used in the JSON feed
+function createPostItem(postUrl: string, postTitle: string, postDate: string): JsonFeedItem {
+  return {
+    id: postUrl,
+    url: postUrl,
+    title: postTitle,
+    date_published: postDate,
+    content_text: `Post by Brendan Murty, read more at ${postUrl}`,
+  };
 }
