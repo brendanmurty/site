@@ -68,7 +68,6 @@ _For more details here, refer to the `tasks` section in [deno.json](deno.json)._
 
 | Folder / File | Description |
 | ---- | ---- |
-| [.devcontainer](.devcontainer) | [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) configuration files. |
 | [.github/workflows/release.yml](.github/workflows/release.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/), publishes a new [GitHub release](https://github.com/brendanmurty/site/releases) and pushes a new version to the [repository on Docker Hub](https://hub.docker.com/r/brendanmurty/site). |
 | [.vscode](.vscode/) | Customised [VS Code](https://code.visualstudio.com/) configuration for this repository. |
 | [assets](assets/) | Static files like images and PDFs. |
