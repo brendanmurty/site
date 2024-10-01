@@ -48,7 +48,7 @@ sed -e 's/^[ \t]*//g; s/[ \t]*$//g; s/\([:{;,]\) /\1/g; s/ {/{/g; s/\/\*.*\*\///
 echo -e "${yellow}Building photo posts for photos in 'inbox' directory${end}"
 
 mkdir -p inbox
-deno run -A --allow-read --allow-write src/photo-posts-generate.ts
+deno run --allow-read --allow-write --allow-net src/photo-posts-generate.ts
 
 echo -e "${yellow}Removing EXIF data from all files in the 'assets/images' directory${end}"
 
@@ -99,4 +99,4 @@ cp "$BUILD_DIR/_assets/css/styles.min.css" "$PUBLIC_DIR/css/styles.min.css"
 echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"
 
 mkdir -p $PUBLIC_DIR/brendan
-deno run -A --allow-read --allow-write --allow-env src/json-feed.ts
+deno run --allow-read --allow-write --allow-env src/json-feed.ts
