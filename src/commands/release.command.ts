@@ -19,6 +19,12 @@ if (!userConfirmed) {
   Deno.exit(0);
 }
 
+// Build site
+
+console.log("%cBuilding site", "color: blue");
+
+exec("deno", ["task", "build"]);
+
 // Run tests
 
 console.log("%cRunning tests", "color: blue");
