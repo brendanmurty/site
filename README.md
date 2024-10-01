@@ -58,11 +58,12 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 | Command | Description |
 | ---- | ---- |
-| `deno task test` &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Run all tests |
+| `deno task build` &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Run build processes |
+| `deno task test`  | Run all tests |
 | `deno task serve` | Start a local web server. Builds the site and starts a local web server at `http://localhost:8000/` |
 | `deno task release` | Generate and push a new Git Tag, which will then trigger the [GitHub Actions workflow](.github/workflows/release.yml) in the remote repository. |
 
-_For more details here, refer to the `tasks` section in [deno.json](deno.json)._
+_Refer to the `tasks` section in [deno.json](deno.json) for the full list of commands._
 
 ## Folder structure and key files
 
