@@ -1,7 +1,7 @@
 // Release command - Run via "deno task release"
 
 import { format } from "@std/datetime/format";
-import { Command as cmd, runSync as exec } from "@gnome/exec";
+import { runSync as exec } from "@gnome/exec";
 
 // Setup
 
