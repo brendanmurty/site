@@ -23,13 +23,9 @@ if (!userConfirmed) {
 
 console.log("%cRunning tests", "color: blue");
 
-const commandTest = new Deno.Command(Deno.execPath(), {
-  args: ["run", "test"],
-});
+const execCommand = exec("deno", ["run", "test"]);
 
-const { code } = commandTest.outputSync();
-
-if (code !== 0) {
+if (execCommand.code !== 0) {
   console.log("%cTests failed, release aborted.", "color: red");
 
   Deno.exit(1);

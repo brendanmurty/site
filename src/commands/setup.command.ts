@@ -2,6 +2,7 @@
 
 import { emptyDirSync } from "@std/fs/empty-dir";
 import { copySync } from "@std/fs/copy";
+import { runSync as exec } from "@gnome/exec";
 
 // Recreate some required untracked directories
 
@@ -26,7 +27,7 @@ try {
 }
 
 // Install Deno packages
-new Deno.Command(Deno.execPath(), { args: ["run", "lume-install"] });
+exec("deno", ["run", "lume-install"]);
 
 // Done, detail next steps
 
