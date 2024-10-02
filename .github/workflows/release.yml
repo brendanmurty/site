@@ -10,7 +10,7 @@ jobs:
       - name: Setup Deno
         uses: "denoland/setup-deno@v1"
         with:
-          deno-version: 2.0.0-rc.8
+          deno-version: 2.0.0-rc.9
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup environment
@@ -38,7 +38,7 @@ jobs:
       - name: Setup Deno
         uses: "denoland/setup-deno@v1"
         with:
-          deno-version: 2.0.0-rc.8
+          deno-version: 2.0.0-rc.9
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup environment
@@ -61,7 +61,7 @@ jobs:
       - name: Setup Deno
         uses: "denoland/setup-deno@v1"
         with:
-          deno-version: 2.0.0-rc.8
+          deno-version: 2.0.0-rc.9
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Get built files
