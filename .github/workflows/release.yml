@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Deno
-        uses: "denoland/setup-deno@v1"
+        uses: "denoland/setup-deno@v2"
         with:
-          deno-version: 2.0.0-rc.10
+          deno-version: 2.0.0
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup environment
@@ -36,9 +36,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Deno
-        uses: "denoland/setup-deno@v1"
+        uses: "denoland/setup-deno@v2"
         with:
-          deno-version: 2.0.0-rc.10
+          deno-version: 2.0.0
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup environment
@@ -59,9 +59,9 @@ jobs:
       pages: write
     steps:
       - name: Setup Deno
-        uses: "denoland/setup-deno@v1"
+        uses: "denoland/setup-deno@v2"
         with:
-          deno-version: 2.0.0-rc.10
+          deno-version: 2.0.0
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Get built files
