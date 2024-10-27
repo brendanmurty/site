@@ -61,7 +61,7 @@ body.page-luca {
   font-display: swap;
   src:
     local("MDIO"),
-     local("MDIO-Regular"),
+    local("MDIO-Regular"),
     url("/fonts/MDIO-Regular.woff") format("woff");
 }
 
