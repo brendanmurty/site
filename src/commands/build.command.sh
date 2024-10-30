@@ -12,7 +12,13 @@ end="\033[0m"
 BUILD_DIR="build"
 PUBLIC_DIR="public"
 
-# Format code
+# Upgrade Deno
+
+echo -e "${yellow}Attempting to upgrade Deno to latest stable version${end}"
+
+deno upgrade stable || true
+
+# Format and lint code
 
 echo -e "${yellow}Running Deno Lint and Deno Format${end}"
 
