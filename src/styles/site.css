@@ -15,6 +15,10 @@
   --font-family-quote: var(--font-family-code);
   --font-size-body: 20px;
   --line-height-body: 32px;
+  --code-function-colour: var(--highlight-colour);
+  --code-string-colour: var(--foreground-colour);
+  --code-background-colour: var(--background-colour);
+  --code-other-colour: var(--secondary-colour);
 }
 
 /* Light colour scheme overrides */
@@ -25,6 +29,10 @@
     --background-colour: #ffffff;
     --foreground-colour: #000000;
     --secondary-colour: #575757;
+    --code-function-colour: var(--highlight-colour);
+    --code-string-colour: var(--foreground-colour);
+    --code-background-colour: var(--background-colour);
+    --code-other-colour: var(--secondary-colour);
   }
 }
 
@@ -293,6 +301,38 @@ code,
   font-family: var(--font-family-code) !important;
   font-size: var(--font-size-body) !important;
   line-height: var(--line-height-body) !important;
+}
+
+.gist .highlight {
+  background-color: var(--code-background-colour) !important;
+}
+
+.gist .blob-code-inner {
+  color: var(--code-string-colour) !important;
+}
+
+.gist .pl-s,
+.gist .pl-pds,
+.gist .pl-s .pl-pse .pl-s1,
+.gist .pl-sr,
+.gist .pl-sr .pl-cce,
+.gist .pl-sr .pl-sre,
+.gist .pl-sr .pl-sra {
+  color: var(--code-string-colour) !important;
+}
+
+.gist .pl-ent,
+.gist .pl-e,
+.gist .pl-en,
+.gist .pl-k,
+.gist .pl-s1,
+.gist .pl-c1 {
+  color: var(--code-function-colour) !important;
+}
+
+.gist .blob-num,
+.gist .pl-c {
+  color: var(--code-other-colour) !important;
 }
 
 .gist-meta {
