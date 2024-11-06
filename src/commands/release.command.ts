@@ -6,7 +6,7 @@ import { runSync as exec } from "@gnome/exec";
 // Setup
 
 const dateNow = new Date();
-const nextVersion = format(dateNow, "yyyyMMdd.hhmm");
+const nextVersion = format(dateNow, "yyyyMMdd.HHmm");
 
 // Prompt for confirmation
 
