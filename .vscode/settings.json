@@ -11,6 +11,5 @@
   "[markdown]": {
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false
-  },
-  "deno.future": true
+  }
 }
