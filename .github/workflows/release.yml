@@ -5,7 +5,7 @@ on:
       - "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].[0-9][0-9][0-9][0-9]"
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Setup Deno
         uses: "denoland/setup-deno@v2"
@@ -33,7 +33,7 @@ jobs:
             .env
   test:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Setup Deno
         uses: "denoland/setup-deno@v2"
@@ -53,7 +53,7 @@ jobs:
         run: deno task test
   deploy:
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       id-token: write
       pages: write
@@ -79,7 +79,7 @@ jobs:
         uses: actions/deploy-pages@v4
   release:
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     env:
