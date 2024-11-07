@@ -26,8 +26,10 @@ try {
   }
 }
 
-// Install Deno packages
-exec("deno", ["run", "lume-install"]);
+// Install Lume packages
+
+exec("deno", ["task", "lume-install"]);
+exec("deno", ["task", "lume-cli-upgrade"]);
 
 // Done, detail next steps
 

@@ -14,9 +14,15 @@ PUBLIC_DIR="public"
 
 # Upgrade Deno
 
-echo -e "${yellow}Attempting to upgrade Deno to latest stable version${end}"
+echo -e "${yellow}Attempting Deno stable version upgrade${end}"
 
 deno upgrade stable || true
+
+# Upgrade Lume
+
+echo -e "${yellow}Attempting Lume CLI version upgrade${end}"
+
+deno task lume-cli-upgrade || true
 
 # Format and lint code
 
