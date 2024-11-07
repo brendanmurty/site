@@ -36,7 +36,7 @@
     "imagescript/": "https://deno.land/x/imagescript@1.3.0/",
     "is_json/": "https://deno.land/x/is_json@v1.0.2/",
     "json2yaml/": "https://deno.land/x/json2yaml@v1.0.1/",
-    "lume/": "https://deno.land/x/lume@v2.4.0/",
+    "lume/": "https://deno.land/x/lume@v2.4.1/",
     "minify": "npm:minify"
   },
   "nodeModulesDir": "auto",
@@ -44,6 +44,7 @@
     "build": "bash ./src/commands/build.command.sh",
     "lint": "deno lint && deno fmt",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "lume-cli-upgrade": "lume upgrade-cli",
     "lume-install": "deno install --global --allow-run --allow-env --allow-read --name lume --force --reload https://deno.land/x/lume_cli@v2.1.1/mod.ts",
     "release": "deno run --allow-run=deno,git --allow-read --allow-env --allow-write=./ src/commands/release.command.ts",
     "serve": "deno task build && deno run --allow-net --allow-read src/commands/server.command.ts",
