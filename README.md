@@ -20,7 +20,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 ### Lighthouse test results
 
-[![Lighthouse test results](assets/docs/lighthouse-test-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/zlapa2j1go?form_factor=desktop)
+[![Lighthouse test results](assets/docs/lighthouse-performance-test-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/463mvuyx3j?form_factor=desktop)
 
 ## Initial setup
 
