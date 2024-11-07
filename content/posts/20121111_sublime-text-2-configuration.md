@@ -18,8 +18,6 @@ However, I'm a big fan of customising a tool to meet my specific needs, so I tho
 - [Customised preferences](https://github.com/brendanmurty/dotfiles/tree/main/sublime-text) - My customisations including disabling autocomplete and code folding
 </ul>
 
-Any thoughts on this? I'd love to hear them! [Send me a Tweet](https://twitter.com/brendanmurty) to start the discussion.
-
 ### Update (6 Feb 2013)
 
 I'm now using the [Revelation](https://github.com/daylerees/colour-schemes#revelation) colour scheme by [Dayle Rees](https://github.com/daylerees) and changed the font to Consolas (18, gray_antialias, no_bold).

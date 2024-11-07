@@ -13,4 +13,3 @@ You'll now be able to change the location of the task and remove the due date.
 
 ![Task options](/images/brendan/interface-task-options.png)
 
-Got any ideas for new **UpcomingTasks** features or found a bug? Let [@upcomingtasks](http://twitter.com/upcomingtasks) know!

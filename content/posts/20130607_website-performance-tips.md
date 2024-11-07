@@ -89,4 +89,3 @@ This will tell the browser to keep a cached version of image files for up to a y
 </ifmodule>
 ```
 
-Notice anything I've missed or have something to add? Great! Let's [discuss further on Twitter](https://twitter.com/brendanmurty/status/342901968458612736).
