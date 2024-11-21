@@ -1418,7 +1418,9 @@
       "jsr:@std/http@^1.0.9",
       "jsr:@std/path@^1.0.8",
       "jsr:@std/yaml@^1.0.5",
-      "npm:minify@^11.4.1"
+      "npm:@types/react@*",
+      "npm:minify@^11.4.1",
+      "npm:react@*"
     ]
   }
 }
