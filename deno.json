@@ -46,6 +46,7 @@
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "lume-cli-upgrade": "lume upgrade-cli",
     "lume-install": "deno install --global --allow-run --allow-env --allow-read --name lume --force --reload https://deno.land/x/lume_cli@v2.1.1/mod.ts",
+    "new-post": "deno run --allow-read --allow-env --allow-write=./ src/commands/new-post.command.ts",
     "release": "deno run --allow-run=deno,git --allow-read --allow-env --allow-write=./ src/commands/release.command.ts",
     "serve": "deno task build && deno run --allow-net --allow-read src/commands/server.command.ts",
     "setup": "deno run --allow-run=deno --allow-read --allow-write=./ --allow-env src/commands/setup.command.ts",
