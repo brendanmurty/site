@@ -16,13 +16,13 @@ PUBLIC_DIR="public"
 
 echo -e "${yellow}Attempting Deno stable version upgrade${end}"
 
-deno upgrade stable || true
+deno task deno-upgrade
 
 # Upgrade Lume
 
 echo -e "${yellow}Attempting Lume CLI version upgrade${end}"
 
-deno task lume-cli-upgrade || true
+deno task lume-cli-upgrade
 
 # Format and lint code
 
