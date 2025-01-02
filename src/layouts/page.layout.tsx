@@ -2,7 +2,7 @@ export default (
   {
     children,
     date,
-    FATHOM_ANALYTICS_SITE_ID,
+    GOOGLE_ANALYTICS_SITE_CODE,
     properties,
     photo_thumb_url,
     photo_url,
@@ -98,11 +98,14 @@ export default (
         crossOrigin="anonymous"
       >
       </script>
-      <script
-        defer
-        src="https://cdn.usefathom.com/script.js"
-        data-site={FATHOM_ANALYTICS_SITE_ID}
-      >
+      <script async src="https://www.googletagmanager.com/gtag/js?id={GOOGLE_ANALYTICS_SITE_CODE}"></script>
+      <script>
+      interface Window { dataLayer: any; }
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{GOOGLE_ANALYTICS_SITE_CODE}');
       </script>
     </head>
     <body className={properties.body_class}>

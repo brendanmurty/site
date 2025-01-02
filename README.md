@@ -46,10 +46,10 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 - Secrets and variables > Actions > new secret > Name: `DOCKERHUB_TOKEN`, Secret: _[generate new token](https://app.docker.com/settings/personal-access-tokens), read and write permissions, save the generated token here_
 
 8. Update `config/CNAME` to use the same domain as you configured above
-9. Setup [Fathom Analytics](https://usefathom.com/):
+9. Setup [Google Analytics](https://analytics.google.com/):
 
-- Create your own account and setup a new site
-- Update your `.env` file's `FATHOM_ANALYTICS_SITE_ID` value to use your new `Site ID`
+- Create a new site in your own account
+- Update your `.env` file's `GOOGLE_ANALYTICS_SITE_CODE` value to use your new `Measurement ID`
 
 10. **Optional:** Install [VS Code](https://code.visualstudio.com/) and add the [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno) plugin
 

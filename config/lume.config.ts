@@ -23,7 +23,7 @@ site.use(sitemap());
 site.use(jsx());
 
 // Load site config values from ".env"
-site.data("FATHOM_ANALYTICS_SITE_ID", Deno.env.get("FATHOM_ANALYTICS_SITE_ID"));
+site.data("GOOGLE_ANALYTICS_SITE_CODE", Deno.env.get("GOOGLE_ANALYTICS_SITE_CODE"));
 site.data("BLOG_POSTS_DIR", Deno.env.get("BLOG_POSTS_DIR"));
 site.data("BLOG_POSTS_URL", Deno.env.get("BLOG_POSTS_URL"));
 site.data("JSON_FEED_VERSION_URL", Deno.env.get("JSON_FEED_VERSION_URL"));

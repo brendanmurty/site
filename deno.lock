@@ -73,9 +73,10 @@
     "npm:@types/nunjucks@3.2.6": "3.2.6",
     "npm:@types/react-dom@18.3.0": "18.3.0",
     "npm:@types/react-dom@18.3.1": "18.3.1",
-    "npm:@types/react@*": "18.3.7",
+    "npm:@types/react@*": "18.3.12",
     "npm:@types/react@18.3.11": "18.3.11",
     "npm:@types/react@18.3.12": "18.3.12",
+    "npm:@types/react@^18.3.0": "18.3.12",
     "npm:date-fns@4.1.0": "4.1.0",
     "npm:estree-walker@3.0.3": "3.0.3",
     "npm:exif-parser@*": "0.1.12",
@@ -90,7 +91,8 @@
     "npm:nunjucks@3.2.4": "3.2.4",
     "npm:react-dom@18.3.1": "18.3.1_react@18.3.1",
     "npm:react@*": "18.3.1",
-    "npm:react@18.3.1": "18.3.1"
+    "npm:react@18.3.1": "18.3.1",
+    "npm:react@^18.3.0": "18.3.1"
   },
   "jsr": {
     "@davidbonnet/astring@1.8.6": {
@@ -549,13 +551,6 @@
     },
     "@types/react@18.3.12": {
       "integrity": "sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==",
-      "dependencies": [
-        "@types/prop-types",
-        "csstype"
-      ]
-    },
-    "@types/react@18.3.7": {
-      "integrity": "sha512-KUnDCJF5+AiZd8owLIeVHqmW9yM4sqmDVf2JRJiBMFkGvkoZ4/WyV2lL4zVsoinmRS/W3FeEdZLEWFRofnT2FQ==",
       "dependencies": [
         "@types/prop-types",
         "csstype"
@@ -1614,9 +1609,9 @@
       "jsr:@std/http@^1.0.12",
       "jsr:@std/path@^1.0.8",
       "jsr:@std/yaml@^1.0.5",
-      "npm:@types/react@*",
+      "npm:@types/react@^18.3.0",
       "npm:minify@12",
-      "npm:react@*"
+      "npm:react@^18.3.0"
     ]
   }
 }
