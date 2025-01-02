@@ -18,16 +18,16 @@
     />
 
     {% if date %}
-    <meta property="article:published_time" content={{ date | date('yyyy-MM-dd') }} />
+    <meta property="article:published_time" content="{{ date | date('yyyy-MM-dd') }}" />
     {% endif %}
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_GB" />
     <meta
       property="og:title"
-      content={% if title %}Brendan Murty - {{ title }}{% else %}Brendan Murty{% endif %}
+      content={% if title %}"Brendan Murty - {{ title }}"{% else %}"Brendan Murty"{% endif %}
     />
-    <meta property="og:url" content="https://murty.au"{{ url }} />
+    <meta property="og:url" content="https://murty.au{{ url }}" />
     <meta
       name="og:description"
       content={% if description %}"{{ description }}"{% else %}"Brendan is a Father, Schnitzel Reviewer, Software Engineering Manager and Technical Lead."{% endif %}
