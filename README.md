@@ -79,7 +79,7 @@ _Refer to the `tasks` section in [deno.json](deno.json) for the full list of com
 | [content](content/) | Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files. |
 | [src](src/) | Source code and related unit tests. |
 | [src/commands](src/commands) | Helper scripts, refer to the `Commands` section above for more details. |
-| [src/layouts](src/layouts) | React TSX page layouts. |
+| [src/layouts](src/layouts) | Nunjucks page layouts. |
 | [src/styles](src/styles) | CSS styles. |
 | [src/templates](src/templates) | Nunjucks page templates. |
 | [deno.json](deno.json) | [Deno](https://deno.land/) imports, tasks and configuration for this repository. |

@@ -5,7 +5,6 @@ import date from "lume/plugins/date.ts";
 import redirects from "lume/plugins/redirects.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
-import jsx from "lume/plugins/jsx.ts";
 import "@std/dotenv/load";
 
 // Build the site using Lume
@@ -20,7 +19,6 @@ site.use(nunjucks());
 site.use(date());
 site.use(redirects());
 site.use(sitemap());
-site.use(jsx());
 
 // Load site config values from ".env"
 site.data("GOOGLE_ANALYTICS_SITE_CODE", Deno.env.get("GOOGLE_ANALYTICS_SITE_CODE"));
