@@ -26,7 +26,7 @@
     "@std/datetime": "jsr:@std/datetime@^0.225.3",
     "@std/dotenv": "jsr:@std/dotenv@^0.225.3",
     "@std/http/file-server": "jsr:@std/http@^1.0.13/file-server",
-    "@std/fs": "jsr:@std/fs@^1.0.13",
+    "@std/fs": "jsr:@std/fs@^1.0.14",
     "@std/path": "jsr:@std/path@^1.0.8",
     "@std/yaml": "jsr:@std/yaml@^1.0.5",
     "deno-exif/": "https://deno.land/x/deno_exif@0.0.4/",
