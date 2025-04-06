@@ -31,7 +31,6 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 5. Update some files in the forked repository
 
 - Update `.github/workflows/release.yml` to use your forked GitHub repository URL
-- Update `.github/workflows/release.yml` to use your own Docker Hub repository URL
 - All files in the `content` directory **must** contain your own content instead
 - All files in the `assets` directory **must** contain your own static files instead
 - Purchase your own license to use the [Mass-Driver IO font](https://io.mass-driver.com/) or update the CSS to use other fonts
@@ -42,8 +41,6 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 - Pages > Source: _GitHub Actions_
 - Pages > Custom domain: _use your own domain_
-- Secrets and variables > Actions > new secret > Name: `DOCKERHUB_USERNAME`, Secret: _your Docker username_
-- Secrets and variables > Actions > new secret > Name: `DOCKERHUB_TOKEN`, Secret: _[generate new token](https://app.docker.com/settings/personal-access-tokens), read and write permissions, save the generated token here_
 
 8. Update `config/CNAME` to use the same domain as you configured above
 9. Setup [Google Analytics](https://analytics.google.com/):
@@ -72,7 +69,7 @@ _Refer to the `tasks` section in [deno.json](deno.json) for the full list of com
 
 | Folder / File | Description |
 | ---- | ---- |
-| [.github/workflows/release.yml](.github/workflows/release.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/), publishes a new [GitHub release](https://github.com/brendanmurty/site/releases) and pushes a new version to the [repository on Docker Hub](https://hub.docker.com/r/brendanmurty/site). |
+| [.github/workflows/release.yml](.github/workflows/release.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/) and publishes a new [GitHub release](https://github.com/brendanmurty/site/releases). |
 | [.vscode](.vscode/) | Customised [VS Code](https://code.visualstudio.com/) configuration for this repository. |
 | [assets](assets/) | Static files like images and PDFs. |
 | [config](config) | Supporting configuration files. |
