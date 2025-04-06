@@ -26,7 +26,7 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 1. Fork this repository
 2. Make a local clone of that forked repository
-3. Install the latest stable version of [Deno](https://deno.com/)
+3. Install the [latest stable release of Deno](https://deno.com/)
 4. Run the setup script: `deno task setup`
 5. Update some files in the forked repository
 
