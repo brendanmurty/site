@@ -2,7 +2,22 @@
   "version": "5",
   "specifiers": {
     "jsr:@davidbonnet/astring@1.8.6": "1.8.6",
+    "jsr:@gnome/chars@0.2": "0.2.0",
+    "jsr:@gnome/debug@^0.0.0": "0.0.0",
+    "jsr:@gnome/env@0.4": "0.4.0",
+    "jsr:@gnome/errors@0.3": "0.3.0",
+    "jsr:@gnome/errors@^0.0.0": "0.0.0",
+    "jsr:@gnome/exec@0.6": "0.6.0",
+    "jsr:@gnome/fmt@^0.0.0": "0.0.0",
+    "jsr:@gnome/fs@0.3": "0.3.0",
+    "jsr:@gnome/os-constants@0.2": "0.2.0",
+    "jsr:@gnome/process@^0.0.0": "0.0.0",
+    "jsr:@gnome/runtime-constants@0.2": "0.2.0",
+    "jsr:@gnome/runtime-info@0.1": "0.1.0",
+    "jsr:@gnome/slices@^0.0.0": "0.0.0",
+    "jsr:@gnome/strings@0.3": "0.3.0",
     "jsr:@luca/esbuild-deno-loader@0.11.1": "0.11.1",
+    "jsr:@std/assert@0.226": "0.226.0",
     "jsr:@std/assert@^1.0.13": "1.0.13",
     "jsr:@std/bytes@^1.0.2": "1.0.5",
     "jsr:@std/cli@1.0.17": "1.0.17",
@@ -14,10 +29,12 @@
     "jsr:@std/encoding@1.0.10": "1.0.10",
     "jsr:@std/encoding@^1.0.10": "1.0.10",
     "jsr:@std/encoding@^1.0.5": "1.0.10",
+    "jsr:@std/encoding@~0.224.3": "0.224.3",
     "jsr:@std/fmt@1.0.7": "1.0.7",
     "jsr:@std/fmt@^1.0.7": "1.0.7",
     "jsr:@std/front-matter@1.0.9": "1.0.9",
     "jsr:@std/fs@1.0.17": "1.0.17",
+    "jsr:@std/fs@^1.0.17": "1.0.17",
     "jsr:@std/html@1.0.3": "1.0.3",
     "jsr:@std/html@^1.0.3": "1.0.3",
     "jsr:@std/http@1.0.15": "1.0.15",
@@ -31,6 +48,7 @@
     "jsr:@std/path@1.0.9": "1.0.9",
     "jsr:@std/path@^1.0.6": "1.0.9",
     "jsr:@std/path@^1.0.9": "1.0.9",
+    "jsr:@std/path@~0.225.2": "0.225.2",
     "jsr:@std/streams@^1.0.9": "1.0.9",
     "jsr:@std/toml@1.0.5": "1.0.5",
     "jsr:@std/toml@^1.0.3": "1.0.5",
@@ -42,6 +60,7 @@
     "npm:date-fns@4.1.0": "4.1.0",
     "npm:estree-walker@3.0.3": "3.0.3",
     "npm:exif-parser@*": "0.1.12",
+    "npm:fs-ext@2.0.0": "2.0.0",
     "npm:lightningcss-wasm@1.29.3": "1.29.3",
     "npm:markdown-it-attrs@4.3.1": "4.3.1_markdown-it@14.1.0",
     "npm:markdown-it-deflist@3.0.0": "3.0.0",
@@ -55,6 +74,88 @@
     "@davidbonnet/astring@1.8.6": {
       "integrity": "98b4914c8863cdf8c0ff83bb5c528caa67a8dca6020ad6234113499f00583e3a"
     },
+    "@gnome/chars@0.2.0": {
+      "integrity": "3ec89a3ac96d79c5d562bd711c70e1eb25036e097c28934ba3c674f847111c56"
+    },
+    "@gnome/debug@0.0.0": {
+      "integrity": "ae8d365c05b2d1c9f69abbe501d31628d4b3172043c00179a0bc9af4f49cafe7",
+      "dependencies": [
+        "jsr:@gnome/fmt"
+      ]
+    },
+    "@gnome/env@0.4.0": {
+      "integrity": "8fb1272cdeaafa42b82456c8c70cbe2c0e63e174af3afc2befd5877caccd95ae",
+      "dependencies": [
+        "jsr:@gnome/chars",
+        "jsr:@gnome/runtime-info",
+        "jsr:@gnome/strings",
+        "jsr:@std/encoding@~0.224.3"
+      ]
+    },
+    "@gnome/errors@0.0.0": {
+      "integrity": "d288a695ea6f368082435382245d69366a26ebae707a78fc573eb6996c55185e"
+    },
+    "@gnome/errors@0.3.0": {
+      "integrity": "89741eac97cd1c70e37eefcfc08a0e650d9c09db03fc86bc1cb7a517a1cb6871"
+    },
+    "@gnome/exec@0.6.0": {
+      "integrity": "bcdab5c5e1c73323fbfdb9725c551916e885c07f4a097341e49d0726925c89fb",
+      "dependencies": [
+        "jsr:@gnome/env",
+        "jsr:@gnome/errors@0.3",
+        "jsr:@gnome/fs",
+        "jsr:@gnome/os-constants",
+        "jsr:@gnome/strings",
+        "jsr:@std/path@~0.225.2"
+      ]
+    },
+    "@gnome/fmt@0.0.0": {
+      "integrity": "e8b05f23945c09919a92156453b5007a28b4b3ad0982dd862179d4fd1450c740",
+      "dependencies": [
+        "jsr:@gnome/process"
+      ]
+    },
+    "@gnome/fs@0.3.0": {
+      "integrity": "e80831ad42ff467d2727b71f601ae1d10b0f6f8b077e7c656c640d87296c2572",
+      "dependencies": [
+        "jsr:@gnome/debug",
+        "jsr:@gnome/errors@^0.0.0",
+        "jsr:@gnome/runtime-info",
+        "jsr:@std/path@~0.225.2",
+        "npm:fs-ext"
+      ]
+    },
+    "@gnome/os-constants@0.2.0": {
+      "integrity": "98ac8b1399efa973d4cc4de35bfcfb3f53e39ed82ceed31134878bc2c28ecc5b",
+      "dependencies": [
+        "jsr:@gnome/runtime-constants"
+      ]
+    },
+    "@gnome/process@0.0.0": {
+      "integrity": "25e061bae420a60ded858982f2e568f8d5c9298514bd9bccb0a58aa41e0dbf8b"
+    },
+    "@gnome/runtime-constants@0.2.0": {
+      "integrity": "f49208fffa8fa4eae04f1381cfc8e5e536b60eba37f2ec00dd4499b7a221aabd"
+    },
+    "@gnome/runtime-info@0.1.0": {
+      "integrity": "d27fcbde87a9ac1769f3a3b79d27d970e8788f8d0cbb5fdc99bd81826060c987"
+    },
+    "@gnome/slices@0.0.0": {
+      "integrity": "b34d87b04a2bd096a28dd68a24772fd3870513a80fc0d9f083c95c1130b74a23",
+      "dependencies": [
+        "jsr:@gnome/chars",
+        "jsr:@gnome/errors@0.3",
+        "jsr:@gnome/fmt",
+        "jsr:@gnome/runtime-info"
+      ]
+    },
+    "@gnome/strings@0.3.0": {
+      "integrity": "4e495093dd4b992d1ff67e319cf6f6ab536b8adb61261bd64014d1c5ffa4a897",
+      "dependencies": [
+        "jsr:@gnome/chars",
+        "jsr:@gnome/slices"
+      ]
+    },
     "@luca/esbuild-deno-loader@0.11.1": {
       "integrity": "dc020d16d75b591f679f6b9288b10f38bdb4f24345edb2f5732affa1d9885267",
       "dependencies": [
@@ -62,6 +163,9 @@
         "jsr:@std/encoding@^1.0.5",
         "jsr:@std/path@^1.0.6"
       ]
+    },
+    "@std/assert@0.226.0": {
+      "integrity": "0dfb5f7c7723c18cec118e080fec76ce15b4c31154b15ad2bd74822603ef75b3"
     },
     "@std/assert@1.0.13": {
       "integrity": "ae0d31e41919b12c656c742b22522c32fb26ed0cba32975cb0de2a273cb68b29",
@@ -86,6 +190,9 @@
     },
     "@std/dotenv@0.225.3": {
       "integrity": "a95e5b812c27b0854c52acbae215856d9cce9d4bbf774d938c51d212711e8d4a"
+    },
+    "@std/encoding@0.224.3": {
+      "integrity": "5e861b6d81be5359fad4155e591acf17c0207b595112d1840998bb9f476dbdaf"
     },
     "@std/encoding@1.0.10": {
       "integrity": "8783c6384a2d13abd5e9e87a7ae0520a30e9f56aeeaa3bdf910a3eaaf5c811a1"
@@ -139,6 +246,12 @@
     },
     "@std/net@1.0.4": {
       "integrity": "2f403b455ebbccf83d8a027d29c5a9e3a2452fea39bb2da7f2c04af09c8bc852"
+    },
+    "@std/path@0.225.2": {
+      "integrity": "0f2db41d36b50ef048dcb0399aac720a5348638dd3cb5bf80685bf2a745aa506",
+      "dependencies": [
+        "jsr:@std/assert@0.226"
+      ]
     },
     "@std/path@1.0.8": {
       "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
@@ -523,6 +636,13 @@
         "unicorn-magic"
       ]
     },
+    "fs-ext@2.0.0": {
+      "integrity": "sha512-aK8NlpSO5LUdSoWeshpnkgtptbua1rGo58Wc+mHQ2+JnoBlubMTsnV56Swl4bA0msrgAhG8TDu1aGS8deJwzBQ==",
+      "dependencies": [
+        "nan"
+      ],
+      "scripts": true
+    },
     "html-minifier-terser@7.2.0": {
       "integrity": "sha512-tXgn3QfqPIpGl9o+K5tpcj3/MN4SfLtsx2GWwBC3SSd0tXQGyF3gsSqad8loJgKZGM3ZxbYDd5yhiBIdWpmvLA==",
       "dependencies": [
@@ -684,6 +804,9 @@
     },
     "ms@2.1.3": {
       "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="
+    },
+    "nan@2.22.2": {
+      "integrity": "sha512-DANghxFkS1plDdRsX0X9pm0Z6SJNN6gBdtXfanwoZ8hooC5gosGFSBGRYHUVPz1asKA/kMRqDRdHrluZ61SpBQ=="
     },
     "napi-wasm@1.1.3": {
       "integrity": "sha512-h/4nMGsHjZDCYmQVNODIrYACVJ+I9KItbG+0si6W/jSjdA9JbWDoU4LLeMXVcEQGHjttI2tuXqDrbGF7qkUHHg=="
