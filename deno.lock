@@ -22,7 +22,7 @@
     "jsr:@std/bytes@^1.0.2": "1.0.5",
     "jsr:@std/cli@1.0.17": "1.0.17",
     "jsr:@std/cli@^1.0.17": "1.0.17",
-    "jsr:@std/cli@^1.0.18": "1.0.18",
+    "jsr:@std/cli@^1.0.20": "1.0.20",
     "jsr:@std/collections@^1.0.11": "1.0.11",
     "jsr:@std/crypto@1.0.4": "1.0.4",
     "jsr:@std/datetime@~0.225.5": "0.225.5",
@@ -36,12 +36,12 @@
     "jsr:@std/fmt@^1.0.8": "1.0.8",
     "jsr:@std/front-matter@1.0.9": "1.0.9",
     "jsr:@std/fs@1.0.17": "1.0.17",
-    "jsr:@std/fs@^1.0.17": "1.0.17",
+    "jsr:@std/fs@^1.0.18": "1.0.18",
     "jsr:@std/html@1.0.3": "1.0.3",
     "jsr:@std/html@^1.0.3": "1.0.4",
     "jsr:@std/html@^1.0.4": "1.0.4",
     "jsr:@std/http@1.0.15": "1.0.15",
-    "jsr:@std/http@^1.0.17": "1.0.17",
+    "jsr:@std/http@^1.0.18": "1.0.18",
     "jsr:@std/internal@^1.0.6": "1.0.8",
     "jsr:@std/json@^1.0.2": "1.0.2",
     "jsr:@std/jsonc@1.0.2": "1.0.2",
@@ -53,13 +53,14 @@
     "jsr:@std/path@^1.0.9": "1.1.0",
     "jsr:@std/path@^1.1.0": "1.1.0",
     "jsr:@std/path@~0.225.2": "0.225.2",
+    "jsr:@std/streams@^1.0.10": "1.0.10",
     "jsr:@std/streams@^1.0.9": "1.0.9",
     "jsr:@std/toml@1.0.5": "1.0.5",
     "jsr:@std/toml@^1.0.3": "1.0.5",
     "jsr:@std/yaml@1.0.6": "1.0.6",
     "jsr:@std/yaml@^1.0.5": "1.0.6",
     "jsr:@std/yaml@^1.0.6": "1.0.6",
-    "jsr:@std/yaml@^1.0.7": "1.0.7",
+    "jsr:@std/yaml@^1.0.8": "1.0.8",
     "npm:@types/estree@1.0.6": "1.0.6",
     "npm:@types/node@*": "22.12.0",
     "npm:date-fns@4.1.0": "4.1.0",
@@ -184,8 +185,8 @@
     "@std/cli@1.0.17": {
       "integrity": "e15b9abe629e17be90cc6216327f03a29eae613365f1353837fa749aad29ce7b"
     },
-    "@std/cli@1.0.18": {
-      "integrity": "33846eab6a7cac52156cc105a798451df06965693606e4668adfe0436a155fd7"
+    "@std/cli@1.0.20": {
+      "integrity": "a8c384a2c98cec6ec6a2055c273a916e2772485eb784af0db004c5ab8ba52333"
     },
     "@std/collections@1.0.11": {
       "integrity": "2f62cf9587484b1fff364f6c3e1f83478eea53dbb6faed6ffeda92ddb6b172f0"
@@ -224,6 +225,12 @@
         "jsr:@std/path@^1.0.9"
       ]
     },
+    "@std/fs@1.0.18": {
+      "integrity": "24bcad99eab1af4fde75e05da6e9ed0e0dce5edb71b7e34baacf86ffe3969f3a",
+      "dependencies": [
+        "jsr:@std/path@^1.1.0"
+      ]
+    },
     "@std/html@1.0.3": {
       "integrity": "7a0ac35e050431fb49d44e61c8b8aac1ebd55937e0dc9ec6409aa4bab39a7988"
     },
@@ -240,20 +247,21 @@
         "jsr:@std/media-types",
         "jsr:@std/net",
         "jsr:@std/path@^1.0.9",
-        "jsr:@std/streams"
+        "jsr:@std/streams@^1.0.9"
       ]
     },
-    "@std/http@1.0.17": {
-      "integrity": "98aec8ab4080d95c21f731e3008f69c29c5012d12f1b4e553f85935db601569f",
+    "@std/http@1.0.18": {
+      "integrity": "8d9546aa532c52a0cf318c74616db0638b4c1073405355d1b14f9e1591dccf20",
       "dependencies": [
-        "jsr:@std/cli@^1.0.18",
+        "jsr:@std/cli@^1.0.20",
         "jsr:@std/encoding@^1.0.10",
         "jsr:@std/fmt@^1.0.8",
+        "jsr:@std/fs@^1.0.18",
         "jsr:@std/html@^1.0.4",
         "jsr:@std/media-types",
         "jsr:@std/net",
         "jsr:@std/path@^1.1.0",
-        "jsr:@std/streams"
+        "jsr:@std/streams@^1.0.10"
       ]
     },
     "@std/internal@1.0.6": {
@@ -298,6 +306,9 @@
     "@std/streams@1.0.9": {
       "integrity": "a9d26b1988cdd7aa7b1f4b51e1c36c1557f3f252880fa6cc5b9f37078b1a5035"
     },
+    "@std/streams@1.0.10": {
+      "integrity": "75c0b1431873cd0d8b3d679015220204d36d3c7420d93b60acfc379eb0dc30af"
+    },
     "@std/toml@1.0.5": {
       "integrity": "08061156e9c5716443a144b6e40a8668738b8b424ad99ab0b6fdf1b6ea4da806",
       "dependencies": [
@@ -307,8 +318,8 @@
     "@std/yaml@1.0.6": {
       "integrity": "c9a5a914e1d51c46756cb10e356710035cfa905e713c90d3b711413fd3aead27"
     },
-    "@std/yaml@1.0.7": {
-      "integrity": "b4b9f6a625a6827ca2b75a3d240558b5ffd8b9a29945ec7614871be7b711a10a"
+    "@std/yaml@1.0.8": {
+      "integrity": "90b8aab62995e929fa0ea5f4151c287275b63e321ac375c35ff7406ca60c169d"
     }
   },
   "npm": {
@@ -1239,10 +1250,10 @@
       "jsr:@std/assert@^1.0.13",
       "jsr:@std/datetime@~0.225.5",
       "jsr:@std/dotenv@~0.225.5",
-      "jsr:@std/fs@^1.0.17",
-      "jsr:@std/http@^1.0.17",
+      "jsr:@std/fs@^1.0.18",
+      "jsr:@std/http@^1.0.18",
       "jsr:@std/path@^1.1.0",
-      "jsr:@std/yaml@^1.0.7",
+      "jsr:@std/yaml@^1.0.8",
       "npm:minify@14"
     ]
   }
