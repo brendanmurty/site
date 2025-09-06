@@ -18,10 +18,6 @@ Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be t
 
 ![Preview of the home page in light mode](assets/docs/home-light.png)
 
-### Lighthouse test results
-
-[![Lighthouse test results](assets/docs/lighthouse-performance-test-results.png)](https://pagespeed.web.dev/analysis/https-murty-au/463mvuyx3j?form_factor=desktop)
-
 ## Initial setup
 
 1. Fork this repository
