@@ -106,6 +106,7 @@ echo -e "${yellow}Copying CSS files to the '$PUBLIC_DIR/css' directory${end}"
 
 mkdir -p $PUBLIC_DIR/css
 cp "$BUILD_DIR/_assets/css/styles.min.css" "$PUBLIC_DIR/css/styles.min.css"
+cp -r "src/styles/fontawesome" $PUBLIC_DIR/css
 
 echo -e "${yellow}Building the JSON Feed for Brendan's posts${end}"
 
