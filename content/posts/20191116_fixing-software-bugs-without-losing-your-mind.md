@@ -10,8 +10,6 @@ tags:
   - Health
 ---
 
-No matter what we do to avoid them, [all software has bugs](https://m.signalvnoise.com/software-has-bugs-this-is-normal/).
-
 Software is created by humans, who all make mistakes, get distracted, misunderstand things and lose focus. This is unavoidable.
 
 Every new line of code is likely to introduce new bugs in a system. We have testing processes, but these can never guarantee a bug-free system.
