@@ -21,14 +21,14 @@ I aim to stick to a set of general goals as a manager:
 - Consider outside factors that could affect moods
 - Create tasks that result in a sense of achievement
 
-As for the Engineering part of the role, I also keep in mind that:
+As for the engineering part of the role, I also keep in mind that:
 
 - Code reviews should not be personal, only the code is under review
 - Removing information silos should be the aim for any large project
-- Set clear high-level technical requirements
-- Let the assigned Engineer demonstrate their skills and stay out of their way
-- Encourage them to document as much as possible, to make it easy for any other team member to work on the area
-- Fixing software bugs [doesn't have to be stressful](/posts/20191116_fixing-software-bugs-without-losing-your-mind/)
+- Clear and concise high-level technical requirements must be included in each task
+- Let the assigned Software Engineer demonstrate their skills and stay out of their way
+- Encourage each team member to document as much as possible, making it easy for any other team member to work on the area
+- That fixing software bugs [doesn't have to be stressful](/posts/20191116_fixing-software-bugs-without-losing-your-mind/)
 
 When hiring, I aim to always:
 
