@@ -6,5 +6,5 @@ tags:
   - Career
 ---
 
-As part of a new initiative for [Officeworks](https://www.officeworks.com.au/), I took up the new role of Dedicated Technology Team Member, where I focus on finding the right hardware and software solution for each customer in a store in Sydney.
+As part of a new initiative for [Officeworks](https://www.officeworks.com.au/), I took up the new role of Dedicated Technology Team Member, where I focussed on finding the right hardware and software solution for each customer at the Five Dock store.
 
