@@ -1,0 +1,27 @@
+name: "Copilot Setup"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Setup Deno
+        uses: "denoland/setup-deno@v2"
+        with:
+          deno-version: v2.x
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup environment
+        run: |
+          deno task setup
+          sudo apt-get -y install exiftool
+      - name: Build site
+        run: deno task build
