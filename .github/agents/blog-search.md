@@ -64,7 +64,7 @@ grep -l "title:.*keyword" content/posts/*.md
 grep -rl "search term" content/posts/
 
 # Find posts by tag
-grep -l "tags:" content/posts/*.md -A 10 | grep -B 10 "- TagName"
+grep -l "- TagName" content/posts/*.md
 
 # Find posts from a specific year
 ls content/posts/2024*.md
