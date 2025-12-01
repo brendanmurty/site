@@ -104,8 +104,8 @@
 
       <footer>
         <a
-          href="https://github.com/brendanmurty/site"
-          title="View this website's code via the public GitHub repository">
+          href="https://github.com/brendanmurty/site{% if page.src %}/blob/main/content{{ page.src.path }}{{ page.src.ext }}{% endif %}"
+          title="View the source code for this page on GitHub">
           View source
         </a>
       </footer>
