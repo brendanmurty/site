@@ -57,14 +57,14 @@ Use these approaches to find posts:
 # List all blog posts
 ls content/posts/*.md
 
-# Search post titles in frontmatter
+# Search post titles in frontmatter (titles are unquoted in this repo)
 grep -l "title:.*keyword" content/posts/*.md
 
 # Search post content for a term
 grep -rl "search term" content/posts/
 
-# Find posts by tag
-grep -l "- TagName" content/posts/*.md
+# Find posts by tag (tags use YAML list format: "  - TagName")
+grep -l "  - TagName" content/posts/*.md
 
 # Find posts from a specific year
 ls content/posts/2024*.md
