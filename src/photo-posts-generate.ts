@@ -5,6 +5,40 @@ import { json2yaml } from "json2yaml/mod.ts";
 import { GetExifDataFromPhoto } from "./photo-data.ts";
 import { GeneratePhotoThumbail } from "./photo-thumbnail-generate.ts";
 
+// Line ending used in generated markdown files (Unix-style LF)
+const LINE_ENDING = "\n";
+
+// Build photo post markdown content with frontmatter and image embed
+function buildPhotoPostMarkdown(
+  dateFile: string,
+  dateMeta: string,
+  exifData: Record<string, string | number>,
+  imageFileName: string,
+  photoUrl: string,
+  thumbnailImageUrl: string,
+): string {
+  // json2yaml includes its own trailing line ending
+  const exifYaml = json2yaml(JSON.stringify(exifData));
+  const frontmatterLines = [
+    "---",
+    `title: Photo - ${dateFile}`,
+    `date: ${dateMeta}`,
+    "tags: ",
+    "  - Photo",
+  ].join(LINE_ENDING) + LINE_ENDING;
+  const remainingLines = [
+    `photo_file: ${imageFileName}`,
+    `photo_url: ${photoUrl}`,
+    `photo_thumb_url: ${thumbnailImageUrl}`,
+    "---",
+    "",
+    `![](/images/brendan/${imageFileName})`,
+    "",
+  ].join(LINE_ENDING);
+  // Concatenate: frontmatter start + exif yaml (has own newline) + remaining lines
+  return frontmatterLines + exifYaml + remainingLines;
+}
+
 export async function GeneratePhotoPosts(): Promise<void> {
   const inboxDirectory = "inbox";
   const imagesDirectory = "assets/images/brendan";
@@ -37,24 +71,15 @@ export async function GeneratePhotoPosts(): Promise<void> {
         item.name,
       );
 
-      // Build markdown content using array join for better readability
-      // json2yaml adds trailing newline, so we use it directly without array for that section
-      const exifYaml = json2yaml(JSON.stringify(exifData));
-      const markdownContent = [
-        "---",
-        `title: Photo - ${dateFile}`,
-        `date: ${dateMeta}`,
-        "tags: ",
-        "  - Photo",
-      ].join("\r") + "\r" + exifYaml + [
-        `photo_file: ${imageFileName}`,
-        `photo_url: ${photoUrl}`,
-        `photo_thumb_url: ${thumbnailImageUrl}`,
-        "---",
-        "",
-        `![](/images/brendan/${imageFileName})`,
-        "",
-      ].join("\r");
+      // Build markdown content using helper function
+      const markdownContent = buildPhotoPostMarkdown(
+        dateFile,
+        dateMeta,
+        exifData,
+        imageFileName,
+        photoUrl,
+        thumbnailImageUrl,
+      );
 
       // Use async file operations to avoid blocking the event loop
       await Deno.writeTextFile(
