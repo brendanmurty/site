@@ -72,20 +72,24 @@ export async function searchPosts(
   return results;
 }
 
+// Excerpt configuration constants
+const EXCERPT_CONTEXT_BEFORE = 50;
+const EXCERPT_CONTEXT_AFTER = 100;
+const EXCERPT_MAX_LENGTH = 150;
+
 // Generate an excerpt around the matched query
 function generateExcerpt(content: string, query: string): string {
-  const maxLength = 150;
   const normalizedContent = content.toLowerCase();
   const queryIndex = normalizedContent.indexOf(query);
 
   if (queryIndex === -1) {
     // Query not found in content, return start of content
-    return content.slice(0, maxLength).trim() + (content.length > maxLength ? "..." : "");
+    return content.slice(0, EXCERPT_MAX_LENGTH).trim() + (content.length > EXCERPT_MAX_LENGTH ? "..." : "");
   }
 
   // Calculate excerpt window around the match
-  const start = Math.max(0, queryIndex - 50);
-  const end = Math.min(content.length, queryIndex + query.length + 100);
+  const start = Math.max(0, queryIndex - EXCERPT_CONTEXT_BEFORE);
+  const end = Math.min(content.length, queryIndex + query.length + EXCERPT_CONTEXT_AFTER);
 
   let excerpt = content.slice(start, end).trim();
 
