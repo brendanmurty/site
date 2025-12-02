@@ -58,6 +58,6 @@ const dataJsonFeed: JsonFeedData = {
   items: jsonFeedItems,
 };
 
-// Save the JSON Feed content to the required file
+// Save the JSON Feed content to the required file using async to avoid blocking
 const strJsonFeed: string = JSON.stringify(dataJsonFeed) || "";
-Deno.writeTextFileSync(fileOutputAbsolute, strJsonFeed);
+await Deno.writeTextFile(fileOutputAbsolute, strJsonFeed);

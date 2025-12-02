@@ -6,17 +6,19 @@ export async function GeneratePhotoThumbail(
 ): Promise<string> {
   const thumbnailDirectory = "assets/images/brendan/thumbnails";
 
-  const photoBinary = Deno.readFileSync(photoDirectory + "/" + photoFile);
+  // Use async file read to avoid blocking the event loop
+  const photoBinary = await Deno.readFile(`${photoDirectory}/${photoFile}`);
   const photoDecoded = await Image.decode(photoBinary);
 
   photoDecoded.resize(500, Image.RESIZE_AUTO);
 
   const thumbnailImageEncoded = await photoDecoded.encode();
 
-  const thumbnailImagePath = thumbnailDirectory + "/500_" +
-    photoFile.slice(0, -4).replaceAll(".", "") + ".png";
+  const cleanedFileName = photoFile.slice(0, -4).replaceAll(".", "");
+  const thumbnailImagePath = `${thumbnailDirectory}/500_${cleanedFileName}.png`;
 
-  Deno.writeFileSync(thumbnailImagePath, thumbnailImageEncoded);
+  // Use async file write to avoid blocking the event loop
+  await Deno.writeFile(thumbnailImagePath, thumbnailImageEncoded);
 
   return thumbnailImagePath.replace("assets/", "/");
 }

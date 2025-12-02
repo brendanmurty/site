@@ -1,11 +1,12 @@
 import { create } from "deno-exif/mod.ts";
 
-export function GetExifDataFromPhoto(
+export async function GetExifDataFromPhoto(
   photoDirectory: string,
   photoFile: string,
-): Record<string, string | number> {
-  // Get the EXIF data from the image
-  const parser = create(Deno.readFileSync(photoDirectory + "/" + photoFile));
+): Promise<Record<string, string | number>> {
+  // Get the EXIF data from the image using async file read to avoid blocking
+  const photoBinary = await Deno.readFile(`${photoDirectory}/${photoFile}`);
+  const parser = create(photoBinary);
   const result = parser.parse();
 
   // Format the data in to human-friendly content assuming photos may not have values for these properties

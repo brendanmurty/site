@@ -26,6 +26,7 @@ if (!postTitle || !postSlug) {
     "",
   ].join("\n");
 
-  Deno.writeTextFileSync(postFile, postContents);
-  console.log("%cNew post file created at " + postFile, "color: green");
+  // Use async file write to avoid blocking
+  await Deno.writeTextFile(postFile, postContents);
+  console.log(`%cNew post file created at ${postFile}`, "color: green");
 }
