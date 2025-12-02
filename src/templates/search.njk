@@ -31,15 +31,26 @@ body_class: page-search
   const searchResults = document.getElementById('search-results');
   const searchForm = document.getElementById('search-form');
   let posts = [];
+  let postsLoaded = false;
+  let pendingQuery = null;
 
   // Fetch posts data from JSON feed
   fetch('/brendan/posts.json')
     .then(response => response.json())
     .then(data => {
       posts = data.items || [];
+      postsLoaded = true;
+      // If there was a pending query, execute it now
+      if (pendingQuery !== null) {
+        const results = searchPosts(pendingQuery);
+        displayResults(results, pendingQuery);
+        pendingQuery = null;
+      }
     })
     .catch(error => {
       console.error('Error loading posts:', error);
+      postsLoaded = true;
+      searchResults.innerHTML = '<p class="search-error">Unable to load posts. Please try refreshing the page.</p>';
     });
 
   // Search function
@@ -98,12 +109,21 @@ body_class: page-search
     return div.innerHTML;
   }
 
+  // Execute search (handles loading state)
+  function executeSearch(query) {
+    if (postsLoaded) {
+      const results = searchPosts(query);
+      displayResults(results, query);
+    } else {
+      pendingQuery = query;
+      searchResults.innerHTML = '<p class="search-prompt">Loading posts...</p>';
+    }
+  }
+
   // Handle form submission
   searchForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    const query = searchInput.value;
-    const results = searchPosts(query);
-    displayResults(results, query);
+    executeSearch(searchInput.value);
   });
 
   // Handle input changes (search as you type)
@@ -111,9 +131,7 @@ body_class: page-search
   searchInput.addEventListener('input', function() {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(function() {
-      const query = searchInput.value;
-      const results = searchPosts(query);
-      displayResults(results, query);
+      executeSearch(searchInput.value);
     }, 300);
   });
 
@@ -122,11 +140,7 @@ body_class: page-search
   const initialQuery = urlParams.get('q');
   if (initialQuery) {
     searchInput.value = initialQuery;
-    // Wait for posts to load, then search
-    setTimeout(function() {
-      const results = searchPosts(initialQuery);
-      displayResults(results, initialQuery);
-    }, 500);
+    executeSearch(initialQuery);
   }
 })();
 </script>

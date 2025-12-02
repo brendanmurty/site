@@ -552,6 +552,11 @@ ul.page-gallery a:active {
   margin-bottom: 20px;
 }
 
+.search-error {
+  color: #cc0000;
+  margin-bottom: 20px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
