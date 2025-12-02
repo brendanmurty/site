@@ -1,0 +1,132 @@
+---
+title: Search
+layout: layouts/page.layout.njk
+body_class: page-search
+---
+
+<h2>Search Posts</h2>
+
+<form id="search-form" class="search-form" role="search">
+  <label for="search-input" class="visually-hidden">Search posts</label>
+  <input
+    type="search"
+    id="search-input"
+    class="search-input"
+    placeholder="Search posts..."
+    autocomplete="off"
+  />
+  <button type="submit" class="search-button">
+    <span class="icon fa-fw fa-solid fa-magnifying-glass"></span>
+    <span class="visually-hidden">Search</span>
+  </button>
+</form>
+
+<div id="search-results" class="search-results">
+  <p class="search-prompt">Enter a search term to find posts.</p>
+</div>
+
+<script>
+(function() {
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const searchForm = document.getElementById('search-form');
+  let posts = [];
+
+  // Fetch posts data from JSON feed
+  fetch('/brendan/posts.json')
+    .then(response => response.json())
+    .then(data => {
+      posts = data.items || [];
+    })
+    .catch(error => {
+      console.error('Error loading posts:', error);
+    });
+
+  // Search function
+  function searchPosts(query) {
+    const normalizedQuery = query.toLowerCase().trim();
+    if (!normalizedQuery) {
+      return [];
+    }
+
+    return posts.filter(post => {
+      const titleMatch = post.title && post.title.toLowerCase().includes(normalizedQuery);
+      const contentMatch = post.content_text && post.content_text.toLowerCase().includes(normalizedQuery);
+      return titleMatch || contentMatch;
+    });
+  }
+
+  // Format date for display
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    const options = { day: 'numeric', month: 'short', year: 'numeric' };
+    return date.toLocaleDateString('en-AU', options);
+  }
+
+  // Display results
+  function displayResults(results, query) {
+    if (!query.trim()) {
+      searchResults.innerHTML = '<p class="search-prompt">Enter a search term to find posts.</p>';
+      return;
+    }
+
+    if (results.length === 0) {
+      searchResults.innerHTML = '<p class="search-no-results">No posts found matching "' + escapeHtml(query) + '".</p>';
+      return;
+    }
+
+    const resultsHtml = results.map(post => {
+      const date = formatDate(post.date_published);
+      return `
+        <li>
+          <span class="post-date">${date}</span>
+          <a class="post-link" href="${post.url}">${escapeHtml(post.title)}</a>
+        </li>
+      `;
+    }).join('');
+
+    searchResults.innerHTML = `
+      <p class="search-count">Found ${results.length} post${results.length === 1 ? '' : 's'} matching "${escapeHtml(query)}".</p>
+      <ul class="posts-list">${resultsHtml}</ul>
+    `;
+  }
+
+  // Escape HTML to prevent XSS
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  // Handle form submission
+  searchForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const query = searchInput.value;
+    const results = searchPosts(query);
+    displayResults(results, query);
+  });
+
+  // Handle input changes (search as you type)
+  let debounceTimer;
+  searchInput.addEventListener('input', function() {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(function() {
+      const query = searchInput.value;
+      const results = searchPosts(query);
+      displayResults(results, query);
+    }, 300);
+  });
+
+  // Check for query parameter on page load
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialQuery = urlParams.get('q');
+  if (initialQuery) {
+    searchInput.value = initialQuery;
+    // Wait for posts to load, then search
+    setTimeout(function() {
+      const results = searchPosts(initialQuery);
+      displayResults(results, initialQuery);
+    }, 500);
+  }
+})();
+</script>
