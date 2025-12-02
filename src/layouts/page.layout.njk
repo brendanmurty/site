@@ -103,11 +103,19 @@
       <article>{{ content | safe }}</article>
 
       <footer>
+        {% if 'posts/' in page.src.path %}
+        <a
+          href="https://github.com/brendanmurty/site{% if page.src %}/blob/main/content{{ page.src.path }}{{ page.src.ext }}{% endif %}"
+        >
+          View post content on GitHub
+        </a>
+        {% else %}
         <a
           href="https://github.com/brendanmurty/site"
-          title="View this website's code via the public GitHub repository">
-          View source
+        >
+          View source code on GitHub
         </a>
+        {% endif %}
       </footer>
     </section>
   </body>
