@@ -72,7 +72,7 @@ Deno.test("src/search.ts", async (test) => {
         assertNotEquals(result.url, "");
         assertNotEquals(result.date, "");
         // title might be empty if not set in frontmatter
-        assertEquals(typeof result.excerpt, "string");
+        assertEquals(typeof result.title, "string");
       }
     },
   });
