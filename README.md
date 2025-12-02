@@ -12,12 +12,6 @@ Tests, build and local server commands are available from local environments.
 
 Remote testing and [GitHub Pages](https://pages.github.com/) deployment can be triggered locally and is then handled remotely by a [GitHub Actions workflow](.github/workflows/release.yml).
 
-### Previews of the home page
-
-![Preview of the home page in dark mode](assets/docs/home-dark.png)
-
-![Preview of the home page in light mode](assets/docs/home-light.png)
-
 ## Initial setup
 
 1. Fork this repository
