@@ -96,7 +96,6 @@ cp -r "assets/images" "$PUBLIC_DIR/images"
 cp "assets/.nojekyll" "$PUBLIC_DIR/.nojekyll"
 cp "assets/favicon.ico" "$PUBLIC_DIR/favicon.ico"
 cp "config/robots.txt" "$PUBLIC_DIR/robots.txt"
-cp "assets/resume_public.pdf" "$PUBLIC_DIR/brendan/resume_public.pdf"
 
 mkdir -p "$PUBLIC_DIR/.well-known"
 cp "config/keybase.txt" "$PUBLIC_DIR/.well-known/keybase.txt"
