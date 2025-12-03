@@ -3,8 +3,6 @@ layout: layouts/page.layout.njk
 body_class: page-home
 ---
 
-<h2>About Me</h2>
-
 <p class="about-me">
   I help people solve technical problems with better processes, relevant hardware and supporting software.
 </p>
@@ -20,6 +18,12 @@ body_class: page-home
     <a href="/posts" title="View my posts">
       <span class="icon fa-fw fa-solid fa-file-lines"></span>
       <span class="label">Posts</span>
+    </a>
+  </li>
+  <li>
+    <a href="/tags" title="View my post tags">
+      <span class="icon fa-fw fa-solid fa-tags"></span>
+      <span class="label">Tags</span>
     </a>
   </li>
   <li>
@@ -59,14 +63,6 @@ body_class: page-home
     </a>
   </li>
 </ul>
-
-<h2>Tags</h2>
-
-<ul class="tag-list">
-{% include "posts/tag-list.njk" %}
-</ul>
-
-<h2>Posts</h2>
 
 <ul class="listing full posts">
   {% include "posts/post-list.njk" %}

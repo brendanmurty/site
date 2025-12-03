@@ -349,7 +349,7 @@ blockquote p:last-child {
 }
 
 .about-me {
-  margin: 0;
+  margin: 5px 0 0;
 }
 
 /* Listings */
@@ -385,6 +385,10 @@ ul.listing li,
 ul.listing li a:not(.post-link) {
   width: 100%;
   float: left;
+}
+
+ul.listing.connect {
+  margin: 5px 0 45px;
 }
 
 ul.listing.connect li {
