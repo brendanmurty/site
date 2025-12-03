@@ -413,9 +413,10 @@ ul.listing:not(.connect) .label {
 
 /* Posts */
 
-ul.posts-list {
+ul.posts-list,
+ul.listing.posts {
   list-style: none;
-  margin-left: 0;
+  margin: 0;
 }
 
 ul.posts-list li,
@@ -449,6 +450,7 @@ ul.posts-list .post-date,
 
 .page-tags-list .tag-list {
   float: none;
+  margin: 0;
 }
 
 .tag-list li {
