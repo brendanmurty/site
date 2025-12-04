@@ -25,11 +25,17 @@
   }
 
   ul.posts-list .post-date,
-  .page-post .post-date,
   ul.listing.posts .post-date,
   .photo-data .data-title {
     display: block;
     width: auto;
+  }
+
+  .page-post .post-date,
+  .page-post .tag-list {
+    display: block;
+    float: left;
+    clear: both;
   }
 
   ul.page-gallery {
