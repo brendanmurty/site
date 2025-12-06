@@ -11,5 +11,8 @@
   "[markdown]": {
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   }
 }
