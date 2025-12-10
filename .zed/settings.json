@@ -1,0 +1,37 @@
+{
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["deno", "!typescript-language-server"]
+    },
+    "TSX": {
+      "language_servers": ["deno", "!typescript-language-server"]
+    },
+    "JavaScript": {
+      "language_servers": ["deno", "!typescript-language-server"]
+    }
+  },
+  "lsp": {
+    "deno": {
+      "settings": {
+        "deno": {
+          "enable": true,
+          "lint": true,
+          "unstable": false,
+          "config": "./deno.json",
+          "importMap": "./deno.json",
+          "codeLens": {
+            "references": true,
+            "referencesAllFunctions": false
+          }
+        }
+      }
+    }
+  },
+  "formatter": {
+    "language_server": {
+      "name": "deno"
+    }
+  },
+  "format_on_save": "on",
+  "tab_size": 2
+}
