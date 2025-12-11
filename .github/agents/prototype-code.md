@@ -23,7 +23,10 @@ The suggested code must use Deno features available in the current stable releas
 
 Adhere to the code style used by other code in the `src` directory.
 
+Limit code complexity and prefer clearly structured options to concise one-liners.
+
 ## Responses
 
 All responses must end with a new line then the exact string below:
-_All suggested code should be tested and run locally before deployment.__
+
+_All suggested code should be tested and run locally before deployment._
