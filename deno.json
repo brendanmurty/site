@@ -50,6 +50,5 @@
     "serve": "deno task build && deno run --allow-net --allow-read src/commands/server.command.ts",
     "setup": "deno run --allow-run=deno --allow-read --allow-write=./ --allow-env src/commands/setup.command.ts",
     "test": "deno test --allow-run=deno --allow-env --allow-read --allow-net src"
-  },
-  "allowScripts": ["npm:@swc/core@1.13.4", "npm:esbuild@0.25.9", "npm:fs-ext@2.0.0"]
+  }
 }
