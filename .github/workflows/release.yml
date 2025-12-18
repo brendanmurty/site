@@ -98,7 +98,7 @@ jobs:
         run: |
           git fetch --tags
           PREV_TAG=$(git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1`)
-          git log $PREV_TAG..HEAD --oneline --format="- [%s](https://github.com/brendanmurty/site/commit/%h)" --no-merges > release-notes.txt
+          git log $PREV_TAG..HEAD --oneline --format="- [%s](https://github.com/bmurty/site/commit/%h)" --no-merges > release-notes.txt
       - name: Create GitHub release
         uses: ncipollo/release-action@v1
         with:

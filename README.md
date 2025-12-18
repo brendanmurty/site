@@ -1,7 +1,7 @@
 # Murty Website
 
-[ ![Deployment Status](https://img.shields.io/github/actions/workflow/status/brendanmurty/site/release.yml?label=Deployment%20Status&style=flat-square&labelColor=%23222222)](https://github.com/brendanmurty/site/actions/workflows/release.yml)
-[ ![Latest Release](https://img.shields.io/github/v/release/brendanmurty/site?label=Latest%20Release&style=flat-square&color=%2323c5b0&labelColor=%23222222)](https://github.com/brendanmurty/site/releases)
+[ ![Deployment Status](https://img.shields.io/github/actions/workflow/status/brendanmurty/site/release.yml?label=Deployment%20Status&style=flat-square&labelColor=%23222222)](https://github.com/bmurty/site/actions/workflows/release.yml)
+[ ![Latest Release](https://img.shields.io/github/v/release/brendanmurty/site?label=Latest%20Release&style=flat-square&color=%2323c5b0&labelColor=%23222222)](https://github.com/bmurty/site/releases)
 [ ![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fmurty.au&up_message=online&down_message=offline&style=flat-square&logo=globe&label=Website%20Status&labelColor=%23222222)](https://murty.au)
 
 ## Summary
@@ -59,7 +59,7 @@ _Refer to the `tasks` section in [deno.json](deno.json) for the full list of com
 
 | Folder / File | Description |
 | ---- | ---- |
-| [.github/workflows/release.yml](.github/workflows/release.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/) and publishes a new [GitHub release](https://github.com/brendanmurty/site/releases). |
+| [.github/workflows/release.yml](.github/workflows/release.yml) | Triggers when a release tag is pushed. Runs tests, deploys to [GitHub Pages](https://pages.github.com/) and publishes a new [GitHub release](https://github.com/bmurty/site/releases). |
 | [.github/agents/](.github/agents/) | GitHub [AI Agents](https://github.com/resources/articles/what-are-ai-agents) to help minimise the time spent on regular actions. |
 | [.vscode](.vscode/) | Customised [VS Code](https://code.visualstudio.com/) configuration for this repository. |
 | [assets](assets/) | Static files like images and PDFs. |
