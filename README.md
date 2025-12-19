@@ -6,7 +6,7 @@
 
 ## Summary
 
-This repository contains the website for the [Murty family](https://murty.au/), which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), a commercially licensed version of the [IO font by Mass-Driver](https://io.mass-driver.com/), and the [Font Awesome free icon pack](https://fontawesome.com/).
+This repository contains the [murty.au](https://murty.au/) website, which has been built with [Deno](https://deno.land/), [Lume](https://lumeland.github.io/), a commercially licensed version of the [IO font by Mass-Driver](https://io.mass-driver.com/), and the [Font Awesome free icon pack](https://fontawesome.com/).
 
 Tests, build and local server commands are available from local environments.
 
