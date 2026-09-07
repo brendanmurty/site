@@ -38,14 +38,26 @@
     "bash": {
       "*": "ask",
       "cat": "allow",
+      "cat *": "allow",
       "ls": "allow",
+      "ls *": "allow",
       "tail": "allow",
-      "go test": "allow",
-      "GOCACHE=/tmp/gocache go test": "allow",
+      "tail *": "allow",
+      "deno task *": "allow",
+      "eslint": "allow",
+      "eslint *": "allow",
+      "npx eslint": "allow",
+      "npx eslint *": "allow",
+      "git show": "allow",
+      "git show *": "allow",
       "git status": "allow",
+      "git status *": "allow",
       "git log": "allow",
+      "git log *": "allow",
       "git commit": "deny",
+      "git commit *": "deny",
       "git push": "deny",
+      "git push *": "deny"
     }
   }
 }
