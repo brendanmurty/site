@@ -65,7 +65,7 @@ To list all of the available tasks:
 ./task list
 ```
 
-## Deployment
+## Infrastructure and Deployment
 
 First setup [GitHub Actions](https://github.com/features/actions) secrets by following the steps in [.env.github](.env.github).
 
