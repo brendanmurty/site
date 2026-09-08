@@ -10,7 +10,7 @@ set -euo pipefail
 REPO="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$REPO"
 
-DOCKERFILE="$REPO/.prototypes/docker/Site.Dockerfile"
+DOCKERFILE="$REPO/src/docker/Site.Dockerfile"
 
 ENVFILE="$REPO/.env"
 TEMP_ENVFILE=""

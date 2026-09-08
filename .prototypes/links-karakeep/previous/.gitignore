@@ -1,5 +1,0 @@
-.env
-.links.env
-.env.*
-!.env.sample
-!.links.sample.env
