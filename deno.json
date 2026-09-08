@@ -7,7 +7,7 @@
     "$be/": "./src/backend/",
     "$fe/": "./src/frontend/",
     "@hongminhee/deno-task-hooks": "jsr:@hongminhee/deno-task-hooks@^0.1.2",
-    "@inquirer/prompts": "npm:@inquirer/prompts@^8.7.1",
+    "@inquirer/prompts": "npm:@inquirer/prompts@^8.7.2",
     "@octokit/graphql": "npm:@octokit/graphql@^9.0.5",
     "@std/assert": "jsr:@std/assert@^1.0.19",
     "@std/datetime": "jsr:@std/datetime@^0.225.7",
@@ -23,7 +23,7 @@
     "is_json/": "https://deno.land/x/is_json@v1.0.2/",
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.3.1/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.15/jsx-runtime.ts",
-    "posthog": "npm:posthog-node@^5.51.6"
+    "posthog": "npm:posthog-node@^5.51.7"
   },
   "tasks": {
     "setup": {
