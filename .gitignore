@@ -4,11 +4,11 @@ node_modules
 **/node_modules
 cache
 temp
+src/cli/temp/
 
 build/
 public/
 dist/
-.trash/
 
 .env
 .env.*
@@ -18,13 +18,14 @@ dist/
 !.env.sample
 !.envrc
 
+
+# Logs and Tests
+
 *.log
-
-# Tests
-
-coverage/
-coverage.lcov
-src/cli/temp/
+.logs/*
+!/.logs/.gitkeep
+.coverage/
+coverage.*
 
 # AI tools
 

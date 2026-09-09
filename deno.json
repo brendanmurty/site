@@ -23,7 +23,7 @@
     "is_json/": "https://deno.land/x/is_json@v1.0.2/",
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.3.1/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.15/jsx-runtime.ts",
-    "posthog": "npm:posthog-node@^5.51.7"
+    "posthog": "npm:posthog-node@^5.51.8"
   },
   "tasks": {
     "setup": {
@@ -56,7 +56,7 @@
     },
     "test": {
       "description": "Run the Deno test suite.",
-      "command": "deno test --allow-all --clean --coverage=coverage --coverage-threshold=85 src"
+      "command": "deno test --allow-all --clean --coverage=.coverage --coverage-threshold=85 src"
     },
     "lume": {
       "description": "Run the Lume site build process.",
@@ -76,7 +76,7 @@
     },
     "hooks:pre-push": {
       "description": "Git Hook - Pre push.",
-      "command": "deno task test > git-hook-pre-push.log"
+      "command": "deno task test > .logs/git-pre-push.log"
     }
   },
   "compilerOptions": {
