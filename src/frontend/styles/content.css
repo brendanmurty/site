@@ -1,34 +1,3 @@
-/* LINKS */
-
-a,
-a:visited {
-  color: var(--colour-highlight);
-  text-decoration: var(--link-decoration-default);
-  text-underline-offset: var(--link-decoration-underline-offset);
-}
-
-a:hover,
-a:focus {
-  color: var(--colour-highlight);
-  text-decoration: var(--link-decoration-active);
-  text-underline-offset: var(--link-decoration-underline-offset);
-}
-
-/* ICONS */
-
-.icon {
-  color: var(--colour-muted);
-}
-
-.social-links-container .icon,
-#github-info .github-user .icon {
-  color: var(--colour-highlight);
-}
-
-.post-info .icon {
-  color: var(--colour-muted);
-}
-
 /* HEADER */
 
 header .site-link {

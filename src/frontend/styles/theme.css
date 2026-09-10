@@ -5,7 +5,7 @@
   --base-font-size: 20px;
   --base-line-height: 1.5;
   --base-min-height: 100vh;
-  --base-min-width: 480px;
+  --base-min-width: 400px;
   --base-scrollbar-colour: var(--colour-gray) var(--colour-black);
   --base-scrollbar-width: thin;
 
