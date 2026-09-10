@@ -1,7 +1,8 @@
 ---
-title: UpcomingTasks October Updates
+title: UpcomingTasks Updates
 date: 2013-10-07
-url: /posts/20131007_upcomingtasks-october-updates/
+url: /posts/20131007_upcomingtasks-updates/
+oldUrl: /posts/20131007_upcomingtasks-october-updates/
 tags:
   - Post
   - UpcomingTasks
