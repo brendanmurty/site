@@ -44,8 +44,6 @@ cmd(`cat "${cssDir}/reset.css" \
   "${cssDir}/base.css" \
   "${cssDir}/layout.css" \
   "${cssDir}/content.css" \
-  "${cssDir}/emphasis.css" \
-  "${cssDir}/tags.css" \
   "${cssDir}/social-links.css" \
   "${cssDir}/github-info.css" \
   "${cssDir}/code.css" \
