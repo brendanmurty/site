@@ -18,6 +18,7 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 - [docs/adrs](docs/adrs/) - Architecture decision records in [Markdown](https://daringfireball.net/projects/markdown/syntax) files.
 - [docs/AI-USE.md](docs/AI-USE.md) - Policy for use of AI Code Generation tools.
 - [docs/DESIGN.md](docs/DESIGN.md) - Frontend website design and CSS theming rules.
+- [docs/INFRA.md](docs/INFRA.md) - Infrastructure and deployment documentation.
 - [src/backend](src/backend/) - Backend [Deno](https://deno.land/) file server, API and utilities.
 - [src/cli](src/cli/) - CLI tool written in [Go](https://go.dev/).
 - [src/docker](src/docker/) - Project config and scripts for [Docker](https://www.docker.com/).
@@ -68,8 +69,4 @@ To list all of the available tasks:
 
 ## Infrastructure and Deployment
 
-First setup [GitHub Actions](https://github.com/features/actions) secrets by following the steps in [.env.github](.env.github).
-
-Then setup a new [Deno Deploy](https://deno.com/deploy) project, following the steps in [.env.deno-deploy](.env.deno-deploy).
-
-Following this, new releases will be automatically triggered from [Deno Deploy](https://deno.com/deploy) when new commits are pushed to the `main` branch.
+Refer to [docs/INFRA.md](docs/INFRA.md).
