@@ -44,6 +44,7 @@ header .site-link {
 
 .site-name {
   color: var(--colour-foreground);
+  margin: 0;
 }
 
 header nav a,
@@ -61,6 +62,7 @@ header nav a:focus {
 
 header nav li.active a {
   color: var(--colour-foreground);
+  font-weight: 600;
 }
 
 /* POSTS */
@@ -69,8 +71,7 @@ header nav li.active a {
   border-top: 1px solid var(--colour-border);
 }
 
-ul.posts-list > li:first-child,
-ul.posts-list-cards > li:first-child {
+ul.posts-list > li:first-child {
   border-top: none;
 }
 

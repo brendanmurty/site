@@ -4,8 +4,10 @@ layout: layouts/page.njk
 body_class: page-posts-list
 ---
 
+<h2>Posts</h2>
+
 {% import "components/post-card.njk" as card %}
-<ul class="posts-list posts-list-cards">
+<ul class="posts-list">
   {% set posts = search.pages("type=post", "date=desc") %}
   {% for post in posts %}
   {% if post.url != '/posts/' %}

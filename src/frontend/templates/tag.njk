@@ -10,23 +10,11 @@ body_class: page-tag
 
 <h2>{{ tag }}</h2>
 
+{% import "components/post-card.njk" as card %}
 <ul class="posts-list">
   {% for post in posts %}
-    {% if post.url != '/posts/' %}
-    <li>
-      <div class="post-name">
-        <a href="{{ post.url }}">
-        {% if post.title %}
-          {{ post.title }}
-        {% else %}
-          {{ post.url }}
-        {% endif %}
-        </a>
-      </div>
-      <div class="post-details">
-        {{ info.post(post.date, post.readingInfo.words) }}
-      </div>
-    </li>
-    {% endif %}
+  {% if post.url != '/posts/' %}
+  {{ card.card(post) }}
+  {% endif %}
   {% endfor %}
 </ul>

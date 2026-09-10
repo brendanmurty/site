@@ -43,7 +43,7 @@ header nav ul {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px 20px;
+  gap: 8px 30px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -80,8 +80,7 @@ main {
   margin: 40px 0 8px;
 }
 
-ul.posts-list,
-ul.posts-list-cards {
+ul.posts-list {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -89,15 +88,14 @@ ul.posts-list-cards {
   list-style: none;
 }
 
-ul.posts-list > li,
-ul.posts-list-cards > li {
+ul.posts-list > li {
   margin: 0;
   padding: 16px 0;
 }
 
 ul.post-info {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 4px 12px;
   margin: 0;
   padding: 0;
@@ -106,6 +104,10 @@ ul.post-info {
 
 ul.post-info li {
   margin: 0;
+}
+
+ul.post-info li:first-child {
+  margin-right: auto;
 }
 
 .post-card {
