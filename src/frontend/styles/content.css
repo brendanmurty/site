@@ -1,42 +1,5 @@
 /* CONTENT */
 
-.content-body .print-header,
-.hidden,
-.page-hidden {
-  display: none !important;
-  height: 0 !important;
-}
-
-.height-auto {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-p {
-  margin: 0 0 20px;
-  clear: both;
-}
-
-img {
-  height: auto;
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-ul {
-  list-style: disc inside none;
-  margin: 0 0 12px;
-}
-
-ol {
-  list-style: decimal inside none;
-  margin: 0 0 12px;
-}
-
-li {
-  margin: 0 0 6px;
-}
-
 /* HEADINGS */
 
 h2 {
