@@ -24,6 +24,11 @@ body {
   scrollbar-width: var(--base-scrollbar-width);
 }
 
+::selection {
+  color: var(--colour-black);
+  background-color: var(--colour-highlight);
+}
+
 /* HELPERS */
 
 .content-body .print-header,
