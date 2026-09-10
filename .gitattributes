@@ -15,7 +15,6 @@ deno.lock linguist-generated
 **/go.sum linguist-generated
 
 content/** linguist-documentation
-design/** linguist-documentation
 docs/** linguist-documentation
 
 *.js linguist-language=javascript

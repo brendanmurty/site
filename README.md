@@ -12,7 +12,6 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 - [.prototypes](.prototypes/) - Ideas and half-built prototypes.
 - [.zed](.zed/) - Customised [Zed Editor](https://zed.dev/) project configuration.
 - [content](content/) - Website page content in [Markdown](https://daringfireball.net/projects/markdown/syntax) files.
-- [design](design/) - Page layout and icon design files.
 - [docs](docs/) - Documentation and contextual information.
 - [docs/adrs](docs/adrs/) - Architecture decision records in [Markdown](https://daringfireball.net/projects/markdown/syntax) files.
 - [docs/AI-USE.md](docs/AI-USE.md) - Policy for use of AI Code Generation tools.
@@ -38,6 +37,7 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 - [Lume](https://lume.land/) - Static site generator for Deno.
 - [Fonts by Mass-Driver](https://mass-driver.com/) - I have purchased licenses for use here.
 - [Font Awesome free icon pack](https://fontawesome.com/) - Used for icons on various pages and layouts.
+- [Emblem](https://flathub.org/apps/details/org.gnome.design.Emblem) - Used to create the site logo and favicon images.
 
 ## Required Tools
 
