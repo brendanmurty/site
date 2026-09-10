@@ -13,11 +13,7 @@ dist/
 .env
 .env.*
 *.env
-!.env.github
-!.env.deno-deploy
 !.env.sample
-!.envrc
-
 
 # Logs and Tests
 

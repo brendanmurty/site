@@ -20,12 +20,12 @@ jobs:
       pull-requests: read
       issues: read
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v7
         with:
           persist-credentials: false
 
-      - name: Run opencode
+      - name: Run OpenCode
         uses: anomalyco/opencode/github@latest
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}

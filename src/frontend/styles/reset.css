@@ -131,3 +131,28 @@
     outline-offset: 0.2rem;
   }
 }
+
+img {
+  height: auto;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  list-style-image: none;
+  margin: 0 0 12px;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  list-style-image: none;
+  margin: 0 0 12px;
+}
+
+li {
+  display: list-item;
+  margin: 0 0 6px;
+}

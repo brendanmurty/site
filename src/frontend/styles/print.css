@@ -27,8 +27,7 @@
 
   .hidden,
   .print-hidden,
-  header,
-  footer {
+  header {
     display: none !important;
     height: 0 !important;
   }

@@ -1,7 +1,8 @@
 ---
 title: Create website shortcut apps in Chrome
 date: 2013-05-11
-url: /posts/20130511_chrome-website-shortcut-apps/
+url: /posts/20130511_chrome-website-shortcuts/
+oldUrl: /posts/20130511_chrome-website-shortcut-apps/
 tags:
   - Post
   - Customisation

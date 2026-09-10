@@ -1,0 +1,25 @@
+{% macro item(post) %}
+{% set summary = post.content | md | striptags | truncate(140) %}
+<li class="post-item">
+  <a class="post-item-link" href="{{ post.url }}">
+    <span class="post-item-title">{{ post.title }}</span>
+    {% if summary %}<span class="post-item-summary">{{ summary | safe }}</span>{% endif %}
+  </a>
+  <div class="post-details">
+    {{ info(post.date, post.readingInfo.words) }}
+  </div>
+</li>
+{% endmacro %}
+
+{% macro info(postDate, postReadingWords) %}
+<ul class="post-info print-gray">
+  <li class="post-date">
+    <span class="icon fa-fw fa-solid fa-calendar-days"></span>
+    <span class="value">{{ postDate | date('d LLL yyyy') }}</span>
+  </li>
+  <li class="post-words">
+    <span class="icon fa-fw fa-solid fa-file-lines"></span>
+    <span class="value">{{ postReadingWords }} words</span>
+  </li>
+</ul>
+{% endmacro %}

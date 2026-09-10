@@ -4,7 +4,7 @@ body_class: page-home
 ---
 
 {% import "components/github.njk" as github %}
-{% import "components/post-card.njk" as card %}
+{% import "components/post.njk" as post %}
 {% import "components/social.njk" as social %}
 
 <div class="intro">
@@ -17,21 +17,23 @@ body_class: page-home
   {{ social.links() }}
 </div>
 
-<h2>GitHub</h2>
+<div class="section-head">
+  <h2>GitHub</h2>
+  <a href="https://github.com/bcm-works" title="View my profile on GitHub">View profile</a>
+</div>
 
 {{ github.info('bcm-works', SITE_BUILD_ID) }}
 
-<h2>Recent Posts</h2>
+<div class="section-head">
+  <h2>Recent Posts</h2>
+  <a href="/posts/" title="Show a list of all posts">View all posts</a>
+</div>
 
-<ul class="posts-list posts-list-cards">
+<ul class="posts-list">
   {% set posts = search.pages("type=post", "date=desc") %}
-  {% for post in posts.slice(0, 7) %}
-  {% if post.url != '/posts/' %}
-  {{ card.card(post) }}
+  {% for p in posts.slice(0, 6) %}
+  {% if p.url != '/posts/' %}
+  {{ post.item(p) }}
   {% endif %}
   {% endfor %}
 </ul>
-
-<div class="posts-view-all">
-  <a href="/posts/">View all posts</a>
-</div>

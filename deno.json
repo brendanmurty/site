@@ -129,7 +129,6 @@
     "deny": [
       "npm:esbuild@0.28.2",
       "npm:chalk@6.0.0",
-      "npm:purgecss@8.0.0",
       "npm:lightningcss-cli@1.32.0",
       "npm:date-fns@4.4.0"
     ]

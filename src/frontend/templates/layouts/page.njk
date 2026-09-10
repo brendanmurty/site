@@ -85,30 +85,28 @@ posthog.init('{{ SITE_POSTHOG_ID }}', {
 </head>
 <body class="{% if body_class %}{{ body_class }} {% endif %}env-{{ SITE_ENV }} build-{{ SITE_BUILD_ID }}">
   <div class="layout-container">
-    <div class="header-container">
-      <header>
-        <aside>
-          <a href="/" class="site-link" title="Go to the home page">
-            <img class="site-avatar" alt="" width="150" height="150" src="/images/brendan/profile/brendan_150.webp"/>
-            <span class="site-name">{{ SITE_AUTHOR }}</span>
-          </a>
-        </aside>
+    <header>
+      <aside>
+        <a href="/" class="site-link" title="Go to the home page">
+          <img class="site-avatar" alt="" width="100" height="100" src="/images/brendan/profile/brendan_150.webp"/>
+          <span class="site-name">{{ SITE_AUTHOR }}</span>
+        </a>
+      </aside>
 
-        <nav>
-          <ul>
-            <li{% if url == '/' %} class="active"{% endif %}>
-              <a href="/" title="Go to the home page">Home</a>
-            </li>
-            <li{% if '/posts/' in url %} class="active"{% endif %}>
-              <a href="/posts/" title="View all posts">Posts</a>
-            </li>
-            <li{% if '/tags/' in url %} class="active"{% endif %}>
-              <a href="/tags/" title="View all tags">Tags</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+      <nav>
+        <ul>
+          <li{% if url == '/' %} class="active"{% endif %}>
+            <a href="/" title="Go to the home page">Home</a>
+          </li>
+          <li{% if '/posts/' in url %} class="active"{% endif %}>
+            <a href="/posts/" title="View all posts">Posts</a>
+          </li>
+          <li{% if '/tags/' in url %} class="active"{% endif %}>
+            <a href="/tags/" title="View all tags">Tags</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <article class="content-body">
@@ -119,19 +117,6 @@ posthog.init('{{ SITE_POSTHOG_ID }}', {
         <div class="content-container">{{ content | safe }}</div>
       </article>
     </main>
-
-    <div class="footer-container">
-      <footer>
-        <aside>
-          <a href="/" class="site-link" title="Go to the home page">Brendan Murty</a>
-        </aside>
-
-        {% import "components/social.njk" as social %}
-        <nav>
-          {{ social.links() }}
-        </nav>
-      </footer>
-    </div>
   </div>
 </body>
 </html>

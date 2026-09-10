@@ -1,0 +1,30 @@
+/* TAGS */
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 15px 0 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  margin: 0;
+}
+
+.tag-list li a {
+  color: var(--colour-gray);
+  background-color: var(--colour-gray-dark);
+  border-radius: 6px;
+  padding: 2px 12px;
+  align-items: center;
+  height: 35px;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.tag-list li a:hover {
+  color: var(--colour-highlight);
+  text-decoration: none;
+}

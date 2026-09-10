@@ -7,6 +7,9 @@ updates:
     open-pull-requests-limit: 1
     assignees:
       - "bcm-works"
+    labels:
+      - "deps"
+      - "ai-generated"
     groups:
       deps-ghactions:
         patterns:
@@ -25,6 +28,9 @@ updates:
     open-pull-requests-limit: 1
     assignees:
       - "bcm-works"
+    labels:
+      - "deps"
+      - "ai-generated"
     groups:
       deps-deno:
         patterns:
@@ -47,6 +53,9 @@ updates:
     open-pull-requests-limit: 1
     assignees:
       - "bcm-works"
+    labels:
+      - "deps"
+      - "ai-generated"
     groups:
       deps-gomod:
         patterns:

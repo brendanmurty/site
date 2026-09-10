@@ -4,29 +4,16 @@ layout: layouts/page.njk
 body_class: page-tag
 ---
 
-{% import "components/info.njk" as info %}
+{% import "components/post.njk" as post %}
 {% set tag = url | replace("/tags/", "") | replace("/", "") %}
 {% set posts = search.pages(tag + " type=post", "date=desc") %}
 
 <h2>{{ tag }}</h2>
 
 <ul class="posts-list">
-  {% for post in posts %}
-    {% if post.url != '/posts/' %}
-    <li>
-      <div class="post-name">
-        <a href="{{ post.url }}">
-        {% if post.title %}
-          {{ post.title }}
-        {% else %}
-          {{ post.url }}
-        {% endif %}
-        </a>
-      </div>
-      <div class="post-details">
-        {{ info.post(post.date, post.readingInfo.words) }}
-      </div>
-    </li>
-    {% endif %}
+  {% for p in posts %}
+  {% if p.url != '/posts/' %}
+  {{ post.item(p) }}
+  {% endif %}
   {% endfor %}
 </ul>

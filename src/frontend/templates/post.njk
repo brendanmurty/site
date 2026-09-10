@@ -4,11 +4,11 @@ layout: layouts/page.njk
 body_class: page-post
 ---
 
-{% import "components/info.njk" as info %}
+{% import "components/post.njk" as post %}
 {% import "components/link.njk" as link %}
 <h2>{{ link.post(title, url) }}</h2>
 
-{{ info.post(date, readingInfo.words) }}
+{{ post.info(date, readingInfo.words) }}
 
 <ul class="tag-list print-hidden">
   {% for tag in tags|sort %}
