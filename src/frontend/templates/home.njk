@@ -8,6 +8,7 @@ body_class: page-home
 {% import "components/social.njk" as social %}
 
 <div class="intro">
+  <h1>{{ SITE_AUTHOR }}</h1>
   <p>
     I specialise in actively leading software teams to build scalable, well-defined technical solutions.
   </p>
@@ -17,11 +18,10 @@ body_class: page-home
   {{ social.links() }}
 </div>
 
-<h2>GitHub</h2>
-
-{{ github.info('bcm-works', SITE_BUILD_ID) }}
-
-<h2>Recent Posts</h2>
+<div class="section-head">
+  <h2>Recent Posts</h2>
+  <a href="/posts/">View all</a>
+</div>
 
 <ul class="posts-list posts-list-cards">
   {% set posts = search.pages("type=post", "date=desc") %}
@@ -32,6 +32,8 @@ body_class: page-home
   {% endfor %}
 </ul>
 
-<div class="posts-view-all">
-  <a href="/posts/">View all posts</a>
+<div class="section-head">
+  <h2>GitHub</h2>
 </div>
+
+{{ github.info('bcm-works', SITE_BUILD_ID) }}

@@ -1,8 +1,4 @@
-article {
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+/* LAYOUT - structure and spacing only, no colours, fonts or decoration */
 
 .layout-container {
   display: flex;
@@ -11,31 +7,33 @@ article {
   width: 100%;
 }
 
-main {
-  flex-grow: 1;
+header,
+main,
+footer {
   width: 100%;
   max-width: var(--content-max-width);
-  min-height: var(--content-min-height);
   margin: 0 auto;
-  padding: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
-}
-
-.content-body {
-  width: 100%;
-  max-width: 100%;
 }
 
 header {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 16px 24px;
-  width: 100%;
-  max-width: var(--content-max-width);
-  margin: 0 auto;
-  padding: 32px;
-  box-sizing: border-box;
+  gap: 12px 20px;
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+header aside {
+  margin: 0;
+}
+
+header .site-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 header nav {
@@ -47,7 +45,7 @@ header nav ul {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 32px;
+  gap: 8px 20px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -57,16 +55,94 @@ header nav li {
   margin: 0;
 }
 
-footer {
-  width: 100%;
-  max-width: var(--content-max-width);
-  margin: 0 auto;
-  padding: 32px;
-  box-sizing: border-box;
+main {
+  flex: 1;
+  min-height: var(--content-min-height);
+  padding-top: 24px;
+  padding-bottom: 48px;
 }
 
-footer nav ul {
-  margin: 20px 0 0;
+.content-body {
+  width: 100%;
+}
+
+.intro {
+  margin: 8px 0 16px;
+}
+
+.social-links-container {
+  margin: 0 0 16px;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin: 40px 0 8px;
+}
+
+ul.posts-list,
+ul.posts-list-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   padding: 0;
   list-style: none;
+}
+
+ul.posts-list > li,
+ul.posts-list-cards > li {
+  margin: 0;
+  padding: 16px 0;
+}
+
+ul.post-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.post-info li {
+  margin: 0;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.post-card-link {
+  display: block;
+}
+
+.post-details {
+  margin: 0;
+}
+
+.posts-view-all {
+  margin: 16px 0 0;
+}
+
+#github-info {
+  margin: 0 0 16px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+footer aside,
+footer nav {
+  margin: 0;
 }

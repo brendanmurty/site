@@ -2,9 +2,10 @@
 
 :root {
   /* LAYOUT */
-  --content-max-width: 950px;
-  --content-min-height: 500px;
-  --post-card-min-width: 320px;
+  --content-max-width: 680px;
+  --content-min-height: 400px;
+  --radius-small: 6px;
+  --space-section: 48px;
 
   /* COLOUR SCHEME */
   --colour-black: #000000;
@@ -16,18 +17,19 @@
   --colour-foreground: var(--colour-white);
   --colour-secondary: #0A675B;
   --colour-tertiary: #115F55;
+  --colour-border: #2A2A2A;
+  --colour-muted: var(--colour-gray);
 
-  /* DIVIDERS AND LINES */
+  /* DIVIDERS AND LINES - kept for frozen emphasis.css */
   --bg-image-hatch: repeating-linear-gradient(-45deg, transparent 0 2px, var(--colour-black) 4px 8px);
 
   /* LINKS */
   --link-decoration-default: underline solid var(--colour-tertiary) 1px;
   --link-decoration-active: underline solid var(--colour-highlight) 1px;
-  --link-decoration-nav-header: underline solid var(--colour-secondary) 1px;
-  --link-decoration-footer: underline solid var(--colour-white) 1px;
-  --link-decoration-underline-offset: 7px;
+  --link-decoration-nav: none;
+  --link-decoration-underline-offset: 4px;
 
-  /* CODE BLOCKS */
+  /* CODE BLOCKS - used by frozen code.css */
   --colour-code-method: var(--colour-highlight);
   --colour-code-keyword: var(--colour-white);
   --colour-code-comment: var(--colour-gray);
@@ -37,13 +39,11 @@
   --font-family-body: var(--font-family-code);
   --font-family-code: "MDIO-Regular", monospace;
   --font-family-quote: var(--font-family-code);
-  --font-size-body: 20px;
-  --font-size-meta: 16px;
-  --line-height-body: 32px;
-  --font-site-name: normal 500 34px/44px var(--font-family-header);
-  --font-site-name-small: normal 500 28px/34px var(--font-family-header);
-  --font-footer: normal 500 26px/32px var(--font-family-header);
-  --font-footer-small: normal 500 24px/32px var(--font-family-header);
+  --font-size-body: 17px;
+  --font-size-meta: 14px;
+  --line-height-body: 28px;
+  --font-site-name: normal 500 18px/26px var(--font-family-header);
+  --font-footer: normal 400 14px/22px var(--font-family-body);
 }
 
 /* CUSTOM FONTS */

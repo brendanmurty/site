@@ -1,8 +1,7 @@
 {% import "components/info.njk" as info %}
-{% import "components/link.njk" as link %}
 
 {% macro card(post) %}
-{% set summary = post.content | md | striptags | truncate(160) %}
+{% set summary = post.content | md | striptags | truncate(120) %}
 <li class="post-card">
   <a class="post-card-link" href="{{ post.url }}">
     <span class="post-card-title">{{ post.title }}</span>
@@ -11,12 +10,5 @@
   <div class="post-details">
     {{ info.post(post.date, post.readingInfo.words) }}
   </div>
-  <ul class="post-card-tags">
-    {% for tag in post.tags | sort %}
-      {% if tag != "Post" %}
-      <li>{{ link.tag(tag) }}</li>
-      {% endif %}
-    {% endfor %}
-  </ul>
 </li>
 {% endmacro %}
