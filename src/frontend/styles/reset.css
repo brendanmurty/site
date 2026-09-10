@@ -132,7 +132,7 @@
   }
 }
 
-img {
+.content-container img {
   height: auto;
   overflow-x: hidden;
   max-width: 100%;

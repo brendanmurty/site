@@ -65,7 +65,59 @@ header nav li.active a {
   font-weight: 600;
 }
 
+.intro {
+  margin: 8px 0 16px;
+}
+
 /* POSTS */
+
+ul.posts-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.posts-list > li {
+  margin: 0;
+  padding: 16px 0;
+}
+
+ul.post-info {
+  display: flex;
+  align-items: center;
+  gap: 4px 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.post-info li {
+  margin: 0;
+}
+
+ul.post-info li:first-child {
+  margin-right: auto;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.post-item-link {
+  display: block;
+}
+
+.post-details {
+  margin: 0;
+}
+
+.posts-view-all {
+  margin: 16px 0 0;
+}
 
 ul.posts-list > li:first-child {
   border-top: none;

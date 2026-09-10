@@ -1,0 +1,28 @@
+@media only screen and (max-width: 850px) {
+  .layout-container header {
+    display: block;
+  }
+
+  .layout-container header nav {
+    margin-left: 0;
+    padding: 16px 0 0;
+  }
+
+  .layout-container header .site-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .layout-container main .posts-list-cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .social-links li {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  #github-info li {
+    width: 100%;
+  }
+}
