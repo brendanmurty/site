@@ -25,7 +25,6 @@
 }
 
 .social-links-container .social-links a .label {
-  font-size: 18px;
   text-decoration: var(--link-decoration-nav);
   text-underline-offset: var(--link-decoration-underline-offset);
 }

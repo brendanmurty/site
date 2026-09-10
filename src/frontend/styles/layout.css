@@ -8,8 +8,7 @@
 }
 
 header,
-main,
-footer {
+main {
   width: 100%;
   max-width: var(--content-max-width);
   margin: 0 auto;
@@ -22,8 +21,7 @@ header {
   display: flex;
   align-items: center;
   gap: 12px 20px;
-  padding-top: 20px;
-  padding-bottom: 8px;
+  padding: 20px 0;
 }
 
 header aside {
@@ -58,8 +56,7 @@ header nav li {
 main {
   flex: 1;
   min-height: var(--content-min-height);
-  padding-top: 24px;
-  padding-bottom: 48px;
+  padding: 24px 0;
 }
 
 .content-body {
@@ -131,19 +128,4 @@ ul.post-info li {
 
 #github-info {
   margin: 0 0 16px;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px 20px;
-  padding-top: 24px;
-  padding-bottom: 40px;
-}
-
-footer aside,
-footer nav {
-  margin: 0;
 }

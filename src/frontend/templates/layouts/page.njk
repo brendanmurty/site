@@ -88,7 +88,7 @@ posthog.init('{{ SITE_POSTHOG_ID }}', {
     <header>
       <aside>
         <a href="/" class="site-link" title="Go to the home page">
-          <img class="site-avatar" alt="" width="40" height="40" src="/images/brendan/profile/brendan_150.webp"/>
+          <img class="site-avatar" alt="" width="100" height="100" src="/images/brendan/profile/brendan_150.webp"/>
           <span class="site-name">{{ SITE_AUTHOR }}</span>
         </a>
       </aside>
@@ -117,17 +117,6 @@ posthog.init('{{ SITE_POSTHOG_ID }}', {
         <div class="content-container">{{ content | safe }}</div>
       </article>
     </main>
-
-    <footer>
-      <aside>
-        <span>{{ SITE_AUTHOR }}</span>
-      </aside>
-
-      {% import "components/social.njk" as social %}
-      <nav>
-        {{ social.links() }}
-      </nav>
-    </footer>
   </div>
 </body>
 </html>

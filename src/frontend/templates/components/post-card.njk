@@ -1,7 +1,7 @@
 {% import "components/info.njk" as info %}
 
 {% macro card(post) %}
-{% set summary = post.content | md | striptags | truncate(120) %}
+{% set summary = post.content | md | striptags | truncate(140) %}
 <li class="post-card">
   <a class="post-card-link" href="{{ post.url }}">
     <span class="post-card-title">{{ post.title }}</span>
