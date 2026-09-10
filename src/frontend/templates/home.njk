@@ -8,7 +8,6 @@ body_class: page-home
 {% import "components/social.njk" as social %}
 
 <div class="intro">
-  <h1>{{ SITE_AUTHOR }}</h1>
   <p>
     I specialise in actively leading software teams to build scalable, well-defined technical solutions.
   </p>
@@ -17,6 +16,12 @@ body_class: page-home
 <div class="social-links-container">
   {{ social.links() }}
 </div>
+
+<div class="section-head">
+  <h2>GitHub</h2>
+</div>
+
+{{ github.info('bcm-works', SITE_BUILD_ID) }}
 
 <div class="section-head">
   <h2>Recent Posts</h2>
@@ -31,9 +36,3 @@ body_class: page-home
   {% endif %}
   {% endfor %}
 </ul>
-
-<div class="section-head">
-  <h2>GitHub</h2>
-</div>
-
-{{ github.info('bcm-works', SITE_BUILD_ID) }}

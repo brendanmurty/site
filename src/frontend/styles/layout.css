@@ -1,4 +1,4 @@
-/* LAYOUT - structure and spacing only, no colours, fonts or decoration */
+/* LAYOUT */
 
 .layout-container {
   display: flex;
@@ -78,6 +78,7 @@ main {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  width: 100%;
   gap: 8px 16px;
   margin: 40px 0 8px;
 }

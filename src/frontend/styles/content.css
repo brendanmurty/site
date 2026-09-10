@@ -1,4 +1,4 @@
-/* CONTENT - typography, colour and internal element styling only */
+/* CONTENT */
 
 h1 {
   font-family: var(--font-family-header);
@@ -139,11 +139,13 @@ ul.posts-list-cards > li:first-child {
 }
 
 .post-card-title {
+  color: var(--colour-foreground);
   font-family: var(--font-family-header);
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  color: var(--colour-foreground);
+  display: block;
+  clear: both;
 }
 
 .post-card-link:hover .post-card-title,

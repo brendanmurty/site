@@ -60,7 +60,6 @@ cmd(`cat "${cssDir}/reset.css" \
   "${cssDir}/social-links.css" \
   "${cssDir}/github-info.css" \
   "${cssDir}/code.css" \
-  "${cssDir}/screen-small.css" \
   "${cssDir}/print.css" \
   > "${buildDir}/bcm.css"`);
 

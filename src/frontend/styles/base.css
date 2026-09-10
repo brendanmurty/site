@@ -1,8 +1,7 @@
 /* BASE LAYOUT, HELPERS, LIST DEFAULTS */
 
 html {
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
+  font-size: var(--base-font-size);
   height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -13,17 +12,15 @@ html {
 }
 
 body {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: var(--font-family-body);
-  min-height: 100vh;
-  min-width: 400px;
   padding: 0;
+  line-height: var(--base-line-height);
+  font-family: var(--font-family-body);
+  min-height: var(--base-min-height);
+  min-width: var(--base-min-width);
   background-color: var(--colour-background);
   color: var(--colour-foreground);
-  scrollbar-color: var(--colour-gray) var(--colour-black);
-  scrollbar-width: thin;
+  scrollbar-color: var(--base-scrollbar-colour);
+  scrollbar-width: var(--base-scrollbar-width);
 }
 
 /* HELPERS */

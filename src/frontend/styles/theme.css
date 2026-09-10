@@ -1,8 +1,16 @@
 /* THEME */
 
 :root {
+  /* BASE */
+  --base-font-size: 20px;
+  --base-line-height: 1.5;
+  --base-min-height: 100vh;
+  --base-min-width: 400px;
+  --base-scrollbar-colour: var(--colour-gray) var(--colour-black);
+  --base-scrollbar-width: thin;
+
   /* LAYOUT */
-  --content-max-width: 680px;
+  --content-max-width: 900px;
   --content-min-height: 400px;
   --radius-small: 6px;
   --space-section: 48px;
@@ -35,15 +43,15 @@
   --colour-code-comment: var(--colour-gray);
 
   /* FONTS */
-  --font-family-header: "MDIO-Black", var(--font-family-code);
   --font-family-body: var(--font-family-code);
+  --font-family-header: "MDIO-Black", var(--font-family-code);
   --font-family-code: "MDIO-Regular", monospace;
   --font-family-quote: var(--font-family-code);
-  --font-size-body: 17px;
-  --font-size-meta: 14px;
-  --line-height-body: 28px;
-  --font-site-name: normal 500 18px/26px var(--font-family-header);
-  --font-footer: normal 400 14px/22px var(--font-family-body);
+  --font-size-body: 1rem;
+  --font-size-meta: 0.8rem;
+  --line-height-body: 1.5;
+  --font-site-name: normal 500 1.25rem/1.5 var(--font-family-header);
+  --font-footer: normal 400 1rem/1.5 var(--font-family-body);
 }
 
 /* CUSTOM FONTS */
