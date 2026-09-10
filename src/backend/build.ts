@@ -21,17 +21,6 @@ cmd(`rm -rf "${publicDir}"`);
 cmd(`mkdir -p "${publicDir}"`);
 cmd(`mkdir -p "${publicDir}/css"`);
 
-logInfo("Applying PurgeCSS updates to site.css");
-
-cmd(`deno --quiet x --yes --no-check --unstable-detect-cjs npm:purgecss@8.0.0 \
-  --safelist ".content-body" \
-  --safelist "blockquote" \
-  --safelist "em" \
-  --safelist "strong" \
-  --css "./src/frontend/styles/site.css" \
-  --content "./src/frontend/**/*.njk" \
-  --output "./src/frontend/styles/site.css"`);
-
 logInfo("Copying over page content files to build directory");
 
 cmd(`cp content/*.md "${buildDir}"`);
@@ -47,7 +36,7 @@ cmdShow(`TZ="${timezone}" \
     --dest=${publicDir} \
     --location=${url}`);
 
-logInfo("Combining and minifying CSS");
+logInfo("Combining, optimising and minifying CSS");
 
 cmd(`cat "${cssDir}/reset.css" \
   "${cssDir}/theme.css" \
@@ -62,6 +51,15 @@ cmd(`cat "${cssDir}/reset.css" \
   "${cssDir}/code.css" \
   "${cssDir}/print.css" \
   > "${buildDir}/bcm.css"`);
+
+cmd(`deno --quiet x --yes --no-check --unstable-detect-cjs npm:purgecss@8.0.0 \
+  --safelist ".content-body" \
+  --safelist "blockquote" \
+  --safelist "em" \
+  --safelist "strong" \
+  --css "${buildDir}/bcm.css" \
+  --content "./src/frontend/**/*.njk" \
+  --output "${buildDir}/bcm.css"`);
 
 cmdShow(
   `deno --quiet x --yes --no-check npm:lightningcss-cli@1.32.0 \
