@@ -63,7 +63,7 @@ h2 {
 }
 
 h3,
-.post-card-title {
+.post-item-title {
   font-family: var(--font-family-header);
   color: var(--colour-foreground);
   font-size: 1.15rem;

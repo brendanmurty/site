@@ -4,7 +4,7 @@ body_class: page-home
 ---
 
 {% import "components/github.njk" as github %}
-{% import "components/post-card.njk" as card %}
+{% import "components/post.njk" as post %}
 {% import "components/social.njk" as social %}
 
 <div class="intro">
@@ -31,9 +31,9 @@ body_class: page-home
 
 <ul class="posts-list">
   {% set posts = search.pages("type=post", "date=desc") %}
-  {% for post in posts.slice(0, 6) %}
-  {% if post.url != '/posts/' %}
-  {{ card.card(post) }}
+  {% for p in posts.slice(0, 6) %}
+  {% if p.url != '/posts/' %}
+  {{ post.item(p) }}
   {% endif %}
   {% endfor %}
 </ul>

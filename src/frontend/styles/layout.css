@@ -110,13 +110,13 @@ ul.post-info li:first-child {
   margin-right: auto;
 }
 
-.post-card {
+.post-item {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.post-card-link {
+.post-item-link {
   display: block;
 }
 

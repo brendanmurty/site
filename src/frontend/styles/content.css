@@ -71,30 +71,30 @@ ul.posts-list > li:first-child {
   border-top: none;
 }
 
-.post-card-link {
+.post-item-link {
   color: var(--colour-foreground);
   text-decoration: none;
 }
 
-.post-card-link:hover,
-.post-card-link:focus {
+.post-item-link:hover,
+.post-item-link:focus {
   text-decoration: none;
 }
 
-.post-card-title {
+.post-item-title {
   color: var(--colour-foreground);
   display: block;
   clear: both;
 }
 
-.post-card-link:hover .post-card-title,
-.post-card-link:focus .post-card-title {
+.post-item-link:hover .post-item-title,
+.post-item-link:focus .post-item-title {
   color: var(--colour-highlight);
   text-decoration: var(--link-decoration-active);
   text-underline-offset: var(--link-decoration-underline-offset);
 }
 
-.post-card-summary {
+.post-item-summary {
   color: var(--colour-muted);
   display: block;
   clear: both;

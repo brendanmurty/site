@@ -6,12 +6,12 @@ body_class: page-posts-list
 
 <h2>Posts</h2>
 
-{% import "components/post-card.njk" as card %}
+{% import "components/post.njk" as post %}
 <ul class="posts-list">
   {% set posts = search.pages("type=post", "date=desc") %}
-  {% for post in posts %}
-  {% if post.url != '/posts/' %}
-  {{ card.card(post) }}
+  {% for p in posts %}
+  {% if p.url != '/posts/' %}
+  {{ post.item(p) }}
   {% endif %}
   {% endfor %}
 </ul>
