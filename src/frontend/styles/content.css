@@ -98,7 +98,7 @@ ul.posts-list > li:first-child {
   color: var(--colour-muted);
   display: block;
   clear: both;
-  margin: 16px 0;
+  margin: 12px 0;
 }
 
 .page-post .link-post,
