@@ -135,7 +135,6 @@
   },
   "exclude": [
     "node_modules/",
-    ".claude/",
     ".delta/",
     ".github/",
     ".prototypes/",

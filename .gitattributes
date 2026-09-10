@@ -4,13 +4,13 @@
 
 # GitHub repo linguist configuration
 
-.claude/** -linguist-detectable
 .github/** -linguist-detectable
 .zed/** -linguist-detectable
 .env.* -linguist-detectable
 .prototypes/** -linguist-detectable
 .* -linguist-detectable
 .*.* -linguist-detectable
+opencode.json -linguist-detectable
 deno.lock linguist-generated
 **/go.sum linguist-generated
 

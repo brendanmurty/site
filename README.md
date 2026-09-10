@@ -8,7 +8,6 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 
 ## Structure
 
-- [.claude](.claude/) - Project specific config for [Claude Code](https://claude.com/product/claude-code).
 - [.github](.github/) - GitHub config and [Actions](https://github.com/features/actions) workflows.
 - [.prototypes](.prototypes/) - Ideas and half-built prototypes.
 - [.zed](.zed/) - Customised [Zed Editor](https://zed.dev/) project configuration.
@@ -27,7 +26,7 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 - [src/frontend/manifest.json](src/frontend/manifest.json) - Progressive Web App configuration.
 - [.editorconfig](.editorconfig) - Sets basic code style rules via [EditorConfig](https://editorconfig.org)
 - [deno.json](deno.json) - [Deno](https://deno.land/) imports, tasks and configuration.
-- [opencode.json](opencode.json) - Project specific config for [OpenCode](https://opencode.ai/).
+- [opencode.json](opencode.json) - AI config for [OpenCode](https://opencode.ai/).
 
 ## Tech Stack
 

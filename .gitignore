@@ -26,9 +26,5 @@ coverage.*
 # AI tools
 
 .antigravitycli
-.claude/graph.json
-.claude/graph-index.json
-.claude/code-map.md
-.claude/settings.local.json
-.claude/tsc-cache
+.claude
 .delta
