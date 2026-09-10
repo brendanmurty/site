@@ -87,23 +87,3 @@ h6 {
   font-size: var(--font-size-meta);
   color: var(--colour-muted);
 }
-
-img {
-  height: auto;
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-ul {
-  list-style: disc inside none;
-  margin: 0 0 12px;
-}
-
-ol {
-  list-style: decimal inside none;
-  margin: 0 0 12px;
-}
-
-li {
-  margin: 0 0 6px;
-}

@@ -52,15 +52,6 @@ cmd(`cat "${cssDir}/reset.css" \
   "${cssDir}/print.css" \
   > "${buildDir}/bcm.css"`);
 
-cmd(`deno --quiet x --yes --no-check --unstable-detect-cjs npm:purgecss@8.0.0 \
-  --safelist ".content-body" \
-  --safelist "blockquote" \
-  --safelist "em" \
-  --safelist "strong" \
-  --css "${buildDir}/bcm.css" \
-  --content "./src/frontend/**/*.njk" \
-  --output "${buildDir}/bcm.css"`);
-
 cmdShow(
   `deno --quiet x --yes --no-check npm:lightningcss-cli@1.32.0 \
   --minify \
