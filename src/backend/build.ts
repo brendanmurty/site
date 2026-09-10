@@ -52,8 +52,12 @@ logInfo("Combining and minifying CSS");
 cmd(`cat "${cssDir}/reset.css" \
   "${cssDir}/theme.css" \
   "${cssDir}/animations.css" \
-  "${cssDir}/layout.css" \
+  "${cssDir}/base.css" \
   "${cssDir}/content.css" \
+  "${cssDir}/emphasis.css" \
+  "${cssDir}/tags.css" \
+  "${cssDir}/social-links.css" \
+  "${cssDir}/github-info.css" \
   "${cssDir}/code.css" \
   "${cssDir}/screen-small.css" \
   "${cssDir}/print.css" \
