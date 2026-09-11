@@ -33,7 +33,7 @@ ENV SITE_PUBLIC_DIR=${SITE_PUBLIC_DIR}
 RUN test "${TARGETARCH}" = "amd64" \
     || (echo "Unsupported architecture: ${TARGETARCH}; expected amd64" >&2 && exit 1)
 
-# Copy the repository, excluding files matched by Site.Dockerfile.dockerignore.
+# Copy the repository, excluding files matched by .dockerignore.
 COPY . .
 
 RUN echo "Building site configuration ${SITE_CONFIG_HASH}" && \

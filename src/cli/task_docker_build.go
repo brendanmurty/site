@@ -8,7 +8,7 @@ import (
 )
 
 // Site configuration needed at build time, matching the
-// build arguments declared in src/docker/Site.Dockerfile.
+// build arguments declared in Dockerfile.
 var dockerBuildEnvVars = []string{
 	"SITE_ENV",
 	"SITE_URL",
@@ -49,7 +49,7 @@ func TaskDockerBuild() {
 		}
 	}
 
-	args = append(args, "--file", "src/docker/Site.Dockerfile", ".")
+	args = append(args, "--file", "Dockerfile", ".")
 
 	CmdArgs("docker", args...)
 
