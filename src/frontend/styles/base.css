@@ -74,14 +74,14 @@ h1,
   font-family: var(--font-family-header);
   font-weight: 600;
   color: var(--colour-foreground);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 0.7rem;
 }
 
 h2 {
   font-family: var(--font-family-header);
   color: var(--colour-foreground);
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   margin-bottom: 0.7rem;
 }
 
@@ -89,7 +89,7 @@ h3,
 .post-item-title {
   font-family: var(--font-family-header);
   color: var(--colour-foreground);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   margin-bottom: 0.7rem;
 }
 
