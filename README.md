@@ -19,7 +19,7 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 - [docs/INFRA.md](docs/INFRA.md) - Infrastructure and deployment documentation.
 - [src/backend](src/backend/) - Backend [Deno](https://deno.land/) file server, API and utilities.
 - [src/cli](src/cli/) - CLI tool written in [Go](https://go.dev/).
-- [src/docker](src/docker/) - Project config and scripts for [Docker](https://www.docker.com/).
+- [src/docker](src/docker/) - Project configuration for [Docker](https://www.docker.com/).
 - [src/frontend](src/frontend/) - Frontend [Lume](https://lume.land/) templates and styles.
 - [src/frontend/styles/theme.css](src/frontend/styles/theme.css) - Frontend design colour scheme and theme setup.
 - [src/frontend/manifest.json](src/frontend/manifest.json) - Progressive Web App configuration.

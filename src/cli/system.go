@@ -42,6 +42,32 @@ func Cmd(command string, workingDir ...string) {
 	}
 }
 
+// Run a system command with arguments and return its combined
+// output, without exiting when the command fails.
+func CmdOutput(name string, args ...string) (string, error) {
+	cmd := exec.Command(name, args...)
+	cmd.Dir = DirGet()
+
+	output, err := cmd.CombinedOutput()
+
+	return strings.TrimSpace(string(output)), err
+}
+
+// Run a system command with arguments, logging its output and
+// exiting when the command fails.
+func CmdArgs(name string, args ...string) {
+	output, err := CmdOutput(name, args...)
+
+	if err != nil {
+		LogError(fmt.Sprintf("Cmd Error: %s", err.Error()))
+		os.Exit(1)
+	}
+
+	if output != "" {
+		Log(output)
+	}
+}
+
 // Get the value of an environment variable value,
 // return an optional default value, or return an empty string.
 func EnvGet(varName string, defaultValue ...string) string {
@@ -51,9 +77,13 @@ func EnvGet(varName string, defaultValue ...string) string {
 	// Load the env vars from the file "/.env"
 	env, err := godotenv.Read(".env")
 
-	// If the env file was loaded successfully, use that variable's value
+	// If the env file was loaded successfully, use that variable's
+	// value, while falling back to the system env var when the
+	// variable is not defined in the file.
 	if err == nil {
-		envValue = env[varName]
+		if fileValue, ok := env[varName]; ok {
+			envValue = fileValue
+		}
 	}
 
 	// If the env var is still empty, use the default value if provided

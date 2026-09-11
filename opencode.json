@@ -84,6 +84,8 @@
       "git status *": "allow",
       "git tag": "allow",
       "git tag *": "allow",
+      "go version": "allow",
+      "go version *": "allow",
       "grep": "allow",
       "grep *": "allow",
       "head": "allow",
