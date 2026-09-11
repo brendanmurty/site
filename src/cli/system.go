@@ -85,7 +85,7 @@ func EnvGetUrl() string {
 
 // Get the port for this environment, using appropriate
 // fallback values that support both local and hosted
-// environments like Deno Deploy.
+// environments.
 func EnvGetPort() int {
 	// First check for the system-level 'PORT' env var
 	envPort := EnvGet("PORT", "0")

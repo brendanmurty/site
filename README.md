@@ -29,7 +29,7 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 
 ## Tech Stack
 
-- [Deno Deploy](https://deno.com/deploy) - Infrastructure and deployment.
+- [Railway](https://railway.com/) - Infrastructure and deployment.
 - [GitHub Actions](https://github.com/features/actions) - Test workflow, PR template and Dependabot config.
 - [PostHog](https://posthog.com/) - Site analytics and visitor usage insights.
 - [Go](https://go.dev/) - Tasks CLI.

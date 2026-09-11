@@ -11,10 +11,10 @@ From the repository root:
 bash src/docker/docker-build.sh
 ```
 
-The build helper reads site configuration from `.env`. If that file is absent,
-it creates a temporary build secret from the current process environment. Site
-metadata is needed at build time because Lume embeds it in the generated static
-pages. The build secret is not stored in the resulting image.
+The build helper reads site configuration from `.env`, falling back to the
+current process environment. Site metadata is needed at build time because Lume
+embeds it in the generated static pages, so the helper passes it to the image as
+Docker build arguments (`SITE_*`).
 
 `SITE_BUILD_DIR`, and `SITE_PUBLIC_DIR` can also be set in the
 environment before running the helper.
@@ -48,3 +48,7 @@ Build the image for `linux/amd64` and inject runtime secrets through the hosting
 platform's environment-variable store. Set `PORT` when required by the host.
 Configure readiness checks against `/api/health/`; the image also includes an
 equivalent Docker health check.
+
+The hosting platform must supply the build-time `SITE_*` values as Docker build
+arguments. Refer to [docs/INFRA.md](../../docs/INFRA.md) for the hosted
+deployment setup.
