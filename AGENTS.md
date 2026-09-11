@@ -34,4 +34,3 @@ Fetch information from the following websites to clarify suggested changes:
 - Deno packages (JSR): https://jsr.io/
 - Node packages (NPM): https://www.npmjs.com/
 - Go documentation: https://go.dev/doc/
-- Ollama models: https://ollama.com/library
