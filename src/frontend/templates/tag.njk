@@ -8,7 +8,7 @@ body_class: page-tag
 {% set tag = url | replace("/tags/", "") | replace("/", "") %}
 {% set posts = search.pages(tag + " type=post", "date=desc") %}
 
-<h2>{{ tag }}</h2>
+<h2>Posts tagged with {{ tag }}</h2>
 
 <ul class="posts-list">
   {% for p in posts %}

@@ -4,6 +4,8 @@ layout: layouts/page.njk
 body_class: page-tags-list
 ---
 
+<h2>Post tags</h2>
+
 {% import "components/link.njk" as link %}
 <ul class="tag-list">
   {% set posts = search.pages("type=post") %}
