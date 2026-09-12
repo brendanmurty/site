@@ -2,8 +2,6 @@
 
 This repository contains my website at [bcm.works](https://bcm.works/), related assets, tooling and documentation.
 
-## Status
-
 [![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbcm-works%2Fstatus%2Fmain%2Fapi%2Fbcm-works%2Fuptime.json&style=flat-square&logo=upptime&label=Website%20Uptime&labelColor=444444)](https://github.com/bcm-works/status)
 
 ## Structure
@@ -19,17 +17,17 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 - [docs/INFRA.md](docs/INFRA.md) - Infrastructure and deployment documentation.
 - [src/backend](src/backend/) - Backend [Deno](https://deno.land/) file server, API and utilities.
 - [src/cli](src/cli/) - CLI tool written in [Go](https://go.dev/).
-- [src/docker](src/docker/) - Project config and scripts for [Docker](https://www.docker.com/).
 - [src/frontend](src/frontend/) - Frontend [Lume](https://lume.land/) templates and styles.
 - [src/frontend/styles/theme.css](src/frontend/styles/theme.css) - Frontend design colour scheme and theme setup.
 - [src/frontend/manifest.json](src/frontend/manifest.json) - Progressive Web App configuration.
 - [.editorconfig](.editorconfig) - Sets basic code style rules via [EditorConfig](https://editorconfig.org)
+- [Dockerfile](Dockerfile) - Production [Docker](https://www.docker.com/) container build for the static site and backend API.
 - [deno.json](deno.json) - [Deno](https://deno.land/) imports, tasks and configuration.
 - [opencode.json](opencode.json) - AI config for [OpenCode](https://opencode.ai/).
 
 ## Tech Stack
 
-- [Deno Deploy](https://deno.com/deploy) - Infrastructure and deployment.
+- [Railway](https://railway.com/) - Infrastructure and deployment.
 - [GitHub Actions](https://github.com/features/actions) - Test workflow, PR template and Dependabot config.
 - [PostHog](https://posthog.com/) - Site analytics and visitor usage insights.
 - [Go](https://go.dev/) - Tasks CLI.
@@ -49,7 +47,7 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 - [GitHub CLI](https://cli.github.com/) - Consider installing via my [GitHub setup script](https://github.com/bcm-works/dotfiles/blob/main/dev/git/github.sh).
 - AI tools - Consider installing via my [Dotfiles AI directory](https://github.com/bcm-works/dotfiles/tree/main/ai).
 
-## Helper Commands
+## Commands
 
 A `task` binary is included to make it easier to run local dev tasks. The source code for this is in [src/cli](src/cli/).
 
@@ -63,6 +61,24 @@ To list all of the available tasks:
 
 ```bash
 ./task list
+```
+
+Build the Docker Image:
+
+```bash
+./task docker-build
+```
+
+Start the Docker Container using the Docker Image:
+
+```bash
+./task docker-start
+```
+
+Stop the Docker Container:
+
+```bash
+./task docker-stop
 ```
 
 ## Infrastructure and Deployment

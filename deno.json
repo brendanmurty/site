@@ -141,7 +141,6 @@
     ".zed/",
     "build/",
     "public/",
-    "src/cli/",
-    "src/docker/"
+    "src/cli/"
   ]
 }

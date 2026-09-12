@@ -1,6 +1,6 @@
 ## Infrastructure and Deployment
 
-Following the intial setup below, new releases will be automatically triggered from [Deno Deploy](https://deno.com/deploy) when new commits are pushed to the `main` branch in the GitHub Repository.
+Following the initial setup below, [Railway](https://railway.com/) triggers a deployment when a new commit is pushed to the `main` branch.
 
 ## Initial Setup
 
@@ -36,37 +36,26 @@ Edit the repository labels:
 - Add new secret `SITE_FEED_DESC`, set to a value like `Jane writes about technology and the climate.`
 - Add new secret `SITE_FEED_DEFAULT_TITLE`, set to a value like `Post by Jane Doe`
 
-### Deno Deploy
+### Railway
 
 #### Project Setup
 
-- Login to [Deno Deploy Console](https://console.deno.com/)
+- Login to [Railway](https://railway.com/)
 - Create a new Project
-- Create (or navigate to) the Organisation, then the App
-- Setup/confirm the App configuration
-  - App Directory: `(root)`
-  - Framework preset: `No Preset`
-  - Install command: `deno task install`
-  - Build command: `deno task build`
-  - Pre-deploy command: `(empty)`
-  - Runtime Configuration: `Dynamic App`
-  - Runtime Configuration > Entrypoint: `src/backend/server.ts`
-  - Runtime Configuration > Memory Limit: `512 MiB`
-  - Build Memory Limit: `2 GiB`
-  - Deploy from GitHub: `(link to this repository)`
-- Create (or navigate to) the Organisation
-- Setup/confirm the Organisation configuration
-  - Domains
-    - Setup each domain manually
-    - Link each domain to the App
-    - Update `allowedOrigins` in `src/backend/headers.ts` to match each of these
+- Add a new Service and choose `Deploy from GitHub repo`, linking this repository on the `main` branch
+- Set the Service variable `RAILWAY_DOCKERFILE_PATH` to `Dockerfile`
+- Confirm the Service builds a `linux/amd64` image
+- Set the Service healthcheck path to `/api/health/`
+- Add each custom domain to the Service and update DNS as directed
+- Update `allowedOrigins` in [src/backend/headers.ts](../src/backend/headers.ts) if the domain list changes
 
 #### Environment Variables
 
-- Navigate to your App in the Deno Deploy Console
-- Click Settings in the sidebar
-- Then add each item below in the Environment Variables section
-- Add new `Secret` item named `SITE_GITHUB_ID`, set to the same value for `SITE_GITHUB_ID` from GitHub Actions above
+Add each item below to the Service variables in the Railway dashboard. Railway
+matches the `SITE_*` names against the Dockerfile build arguments during the
+build, and injects every value into the container at runtime.
+
+- Add new `Secret` item named `SITE_GITHUB_ID`, refer to the setup steps for this from the GitHub Actions section above
 - Add new `Secret` item named `SITE_POSTHOG_ID`, set to a value like `aaabbbccc`
 - Add new `Plain Text` item named `SITE_POSTHOG_API_HOST`, set to a value like `https://eu.posthog.com`
 - Add new `Plain Text` item named `SITE_POSTHOG_UI_HOST`, set to a value like `https://eu.posthog.com`
@@ -83,3 +72,6 @@ Edit the repository labels:
 - Add new `Plain Text` item named `SITE_FEED_TITLE`, set to a value like `Posts by Jane Doe`
 - Add new `Plain Text` item named `SITE_FEED_DESC`, set to a value like `Jane writes about technology and the climate.`
 - Add new `Plain Text` item named `SITE_FEED_DEFAULT_TITLE`, set to a value like `Post by Jane Doe`
+
+Site metadata is embedded into the static pages at build time, so changing any
+`SITE_*` build value requires a redeploy.
