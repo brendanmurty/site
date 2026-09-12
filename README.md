@@ -2,8 +2,6 @@
 
 This repository contains my website at [bcm.works](https://bcm.works/), related assets, tooling and documentation.
 
-## Status
-
 [![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbcm-works%2Fstatus%2Fmain%2Fapi%2Fbcm-works%2Fuptime.json&style=flat-square&logo=upptime&label=Website%20Uptime&labelColor=444444)](https://github.com/bcm-works/status)
 
 ## Structure
@@ -49,7 +47,7 @@ This repository contains my website at [bcm.works](https://bcm.works/), related 
 - [GitHub CLI](https://cli.github.com/) - Consider installing via my [GitHub setup script](https://github.com/bcm-works/dotfiles/blob/main/dev/git/github.sh).
 - AI tools - Consider installing via my [Dotfiles AI directory](https://github.com/bcm-works/dotfiles/tree/main/ai).
 
-## Helper Commands
+## Commands
 
 A `task` binary is included to make it easier to run local dev tasks. The source code for this is in [src/cli](src/cli/).
 
@@ -65,60 +63,23 @@ To list all of the available tasks:
 ./task list
 ```
 
-## Docker image
-
-The [Dockerfile](Dockerfile) contains the production container build for the static site and
-backend API. The image intentionally supports `linux/amd64` only.
-
-### Build
-
-From the repository root:
+Build the Docker Image:
 
 ```bash
 ./task docker-build
 ```
 
-The build helper reads site configuration from `.env`, falling back to the
-current process environment. Site metadata is needed at build time because Lume
-embeds it in the generated static pages, so the helper passes it to the image as
-Docker build arguments (`SITE_*`).
-
-`SITE_BUILD_DIR`, and `SITE_PUBLIC_DIR` can also be set in the
-environment before running the helper.
-
-### Run locally
+Start the Docker Container using the Docker Image:
 
 ```bash
 ./task docker-start
 ```
 
-The helper starts `bcm-site:latest` and publishes it at
-`http://localhost:${PORT:-${SITE_PORT:-8000}}`. Runtime API configuration is
-read from `.env` or from the current process environment.
-
-The service:
-
-- binds to `PORT`, then `SITE_PORT`, then `8000`;
-- serves its health endpoint at `/api/health/`;
-- runs as the unprivileged `deno` user; and
-- starts using only dependencies cached in the image.
-
-Stop it with:
+Stop the Docker Container:
 
 ```bash
 ./task docker-stop
 ```
-
-### Hosted environments
-
-Build the image for `linux/amd64` and inject runtime secrets through the hosting
-platform's environment-variable store. Set `PORT` when required by the host.
-Configure readiness checks against `/api/health/`; the image also includes an
-equivalent Docker health check.
-
-The hosting platform must supply the build-time `SITE_*` values as Docker build
-arguments. Refer to [docs/INFRA.md](docs/INFRA.md) for the hosted
-deployment setup.
 
 ## Infrastructure and Deployment
 
