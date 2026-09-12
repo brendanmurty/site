@@ -1,9 +1,6 @@
 ## Infrastructure and Deployment
 
-Following the initial setup below, new releases are automatically triggered from
-[Railway](https://railway.com/) when new commits are pushed to the `main` branch
-in the GitHub Repository. Railway builds the container image from
-[Dockerfile](../Dockerfile) and deploys it.
+Following the initial setup below, [Railway](https://railway.com/) triggers a deployment when a new commit is pushed to the `main` branch.
 
 ## Initial Setup
 
@@ -51,10 +48,6 @@ Edit the repository labels:
 - Set the Service healthcheck path to `/api/health/`
 - Add each custom domain to the Service and update DNS as directed
 - Update `allowedOrigins` in [src/backend/headers.ts](../src/backend/headers.ts) if the domain list changes
-
-Railway builds [Dockerfile](../Dockerfile)
-natively from the repository on every push to `main`, and injects a `PORT`
-variable for the container to listen on, which the Dockerfile already handles.
 
 #### Environment Variables
 
