@@ -62,7 +62,7 @@ Add each item below to the Service variables in the Railway dashboard. Railway
 matches the `SITE_*` names against the Dockerfile build arguments during the
 build, and injects every value into the container at runtime.
 
-- Add new `Secret` item named `SITE_GITHUB_ID`, set to the same value for `SITE_GITHUB_ID` from GitHub Actions above
+- Add new `Secret` item named `SITE_GITHUB_ID`, refer to the setup steps for this from the GitHub Actions section above
 - Add new `Secret` item named `SITE_POSTHOG_ID`, set to a value like `aaabbbccc`
 - Add new `Plain Text` item named `SITE_POSTHOG_API_HOST`, set to a value like `https://eu.posthog.com`
 - Add new `Plain Text` item named `SITE_POSTHOG_UI_HOST`, set to a value like `https://eu.posthog.com`
